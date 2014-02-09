@@ -45,6 +45,20 @@ module bcd_add_datapath(
     reg [7:0] B;
     reg [15:0] ABResult;
 
+    //Setup registers to hold BCD values.
+    reg [7:0] A_BCD;
+    reg [7:0] B_BCD;
+    reg [7:0] ABResult_BCD;
+
+    //Wires
+    wire [7:0] wire_A_to_BCD;
+    wire [7:0] wire_B_to_BCD;
+    wire [7:0] wire_ABResult_to_BCD;
+
+    //Instantiate the sub modules to make BCD convrsions.
+    
+
+
     always@(posedge CLK)
         begin
             
