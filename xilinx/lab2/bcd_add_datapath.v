@@ -56,7 +56,18 @@ module bcd_add_datapath(
     wire [7:0] wire_ABResult_to_BCD;
 
     //Instantiate the sub modules to make BCD convrsions.
-    
+    BCD_From_7bit_Binary aBCD(.inputNumber(A), 
+										.mostSignificant(A_BCD[7:4]), 
+										.leastSignificant(A_BCD[3:0]));
+										
+	 BCD_From_7bit_Binary bBCD(.inputNumber(B), 
+										.mostSignificant(B_BCD[7:4]), 
+										.leastSignificant(B_BCD[3:0]));
+										
+	 BCD_From_7bit_Binary cBCD(.inputNumber(C), 
+										.mostSignificant(C_BCD[7:4]), 
+										.leastSignificant(C_BCD[3:0]));
+	 
 
 
     always@(posedge CLK)
@@ -100,12 +111,12 @@ module bcd_add_datapath(
                     BCD_ADD_ACK = 1;
                 end
 
-            IF(BCD_DISPLAY_RESULT_LS)
+            if(BCD_DISPLAY_RESULT_LS)
                 begin
 
                 end
 
-            IF(BCD_DISPLAY_RESULT_MS)
+            if(BCD_DISPLAY_RESULT_MS)
                 begin
 
                 end

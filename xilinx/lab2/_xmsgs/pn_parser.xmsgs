@@ -8,19 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v&quot; into library work</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v</arg>&quot; Line <arg fmt="%d" index="2">90</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v</arg>&quot; Line <arg fmt="%d" index="2">95</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v&quot; into library work</arg>
 </msg>
 
 </messages>
