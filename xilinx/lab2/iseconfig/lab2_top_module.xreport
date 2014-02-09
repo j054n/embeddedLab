@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-09T00:37:16</DateModified>
+  <DateModified>2014-02-09T11:43:30</DateModified>
   <ModuleName>lab2_top_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/vmartin/Developer/embeddedLab/xilinx/lab2/iseconfig/lab2_top_module.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/vmartin/Developer/embeddedLab/xilinx/lab2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/vmartin/Developer/embeddedLab/xilinx/lab2/</ImplementationReportsDirectory>
   <DateInitialized>2014-02-09T00:37:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

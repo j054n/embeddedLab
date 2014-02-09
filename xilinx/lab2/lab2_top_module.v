@@ -56,7 +56,9 @@ module lab2_top_module(
 
 	
 	//Instantiate the modules.
-	bcd_add_controller controller(.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
+	bcd_add_controller controller(.LOAD_DISPLAY_A(BTNL), .LOAD_DISPLAY_B(BTNR),
+									.LOAD_ADD_DISPLAY_LS_RESULT(BTND), .LOAD_DISPLAY_MS_RESULT(BTNU),
+									.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
 									.BCD_LOAD_A(wire_BCD_LOAD_A), .BCD_LOAD_A_ACK(wire_BCD_LOAD_A_ACK),
 									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
 									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
@@ -68,8 +70,8 @@ module lab2_top_module(
 									);
 	
 
-	bcd_add_datapath datapath(.BCD_INIT(), .BCD_INIT_ACK(),
-									.BCD_LOAD_A(wire_BCD_INIT), .BCD_LOAD_A_ACK(wire_BCD_INIT_ACK),
+	bcd_add_datapath datapath(.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
+									.BCD_LOAD_A(wire_BCD_LOAD_A), .BCD_LOAD_A_ACK(wire_BCD_LOAD_A_ACK),
 									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
 									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
 									.BCD_DISPLAY_B(wire_BCD_DISPLAY_B), .BCD_DISPLAY_B_ACK(wire_BCD_DISPLAY_B_ACK),

@@ -5,34 +5,52 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 59: Port <arg fmt="%s" index="1">LOAD_DISPLAY_MS_RESULT</arg> is not connected to this instance
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">bcd_add_controller</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 60: Assignment to <arg fmt="%s" index="1">wire_BCD_LOAD_A</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v" Line 32: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 61: Target &lt;<arg fmt="%s" index="1">A_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 60: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">inputNumber</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 62: Target &lt;<arg fmt="%s" index="1">A_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 64: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">inputNumber</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 65: Target &lt;<arg fmt="%s" index="1">B_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 33: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 66: Target &lt;<arg fmt="%s" index="1">B_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 34: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 69: Target &lt;<arg fmt="%s" index="1">ABResult_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 81: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BCD_OUTPUT_DATA</arg>&gt;. Formal port size is <arg fmt="%d" index="2">12</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 70: Target &lt;<arg fmt="%s" index="1">ABResult_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 51: Net &lt;<arg fmt="%s" index="1">wire_BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">lab2_top_module</arg>&gt; remains a black box.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">datapath</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">wire_BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
 </msg>
 
 </messages>

@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_add_datapath(
     input [7:0] BCD_INPUT_DATA,
-    output [11:0] BCD_OUTPUT_DATA,
+    output reg [11:0] BCD_OUTPUT_DATA,
 	 input CLK,
     input BCD_INIT,
     output reg BCD_INIT_ACK,
@@ -51,24 +51,24 @@ module bcd_add_datapath(
     reg [11:0] ABResult_BCD;
 
     //Wires
-    wire [7:0] wire_A_to_BCD;
-    wire [7:0] wire_B_to_BCD;
-    wire [11:0] wire_ABResult_to_BCD;
+    wire [7:0] wire_A;
+    wire [7:0] wire_B;
+    wire [11:0] wire_ABResult;
 
 
     //Instantiate the sub modules to make BCD convrsions.
     BCD_From_7bit_Binary aBCD(.inputNumber(A), 
-										.mostSignificant(A_BCD[7:4]), 
-										.leastSignificant(A_BCD[3:0]));
+										.mostSignificant(wire_A[7:4]), 
+										.leastSignificant(wire_A[3:0]));
 										
 	 BCD_From_7bit_Binary bBCD(.inputNumber(B), 
-										.mostSignificant(B_BCD[7:4]), 
-										.leastSignificant(B_BCD[3:0]));
+										.mostSignificant(wire_B[7:4]), 
+										.leastSignificant(wire_B[3:0]));
 										
-	 7BitBinaryTo3DigitBCD outputBCD(.inputNumber(ABResult),
-                                        .hundreds(ABResult_BCD[11:8]),
-                                        .tens(ABResult_BCD[7:4]),
-                                        .ones(ABResult_BCD[3:0]));
+	 SevenBitBinaryTo3DigitBCD outputBCD(.inputNumber(ABResult),
+                                        .hundreds(wire_ABResult[11:8]),
+                                        .tens(wire_ABResult[7:4]),
+                                        .ones(wire_ABResult[3:0]));
 
 
     always @(posedge CLK)
@@ -100,14 +100,14 @@ module bcd_add_datapath(
             //Display the A value on the LED in BCD format.
             if(BCD_DISPLAY_A)
                 begin
-                    BCD_OUTPUT_DATA = A_BCD;
+                    BCD_OUTPUT_DATA = wire_A;
                     BCD_DISPLAY_A_ACK = 1;
                 end
 
             //Display the B value on the LED in BCD format.
             if(BCD_DISPLAY_B)
                 begin
-                    BCD_OUTPUT_DATA = B_BCD;
+                    BCD_OUTPUT_DATA = wire_B;
                     BCD_DISPLAY_B_ACK = 1;
                 end
             
@@ -121,8 +121,8 @@ module bcd_add_datapath(
             //Show the least significant 2 digits. For example in 124, show the 2,4
             if(BCD_DISPLAY_RESULT_LS)
                 begin
-                    BCD_OUTPUT_DATA[7:4] = ABResult_BCD[7:4];
-                    BCD_OUTPUT_DATA[3:0] = ABResult_BCD[3:0];
+                    BCD_OUTPUT_DATA[7:4] = wire_ABResult[7:4];
+                    BCD_OUTPUT_DATA[3:0] = wire_ABResult[3:0];
                     BCD_DISPLAY_RESULT_LS_ACK = 1;
                 end
             
@@ -130,7 +130,7 @@ module bcd_add_datapath(
             if(BCD_DISPLAY_RESULT_MS)
                 begin
                     BCD_OUTPUT_DATA[7:4] = 0;
-                    BCD_OUTPUT_DATA[3:0] = ABResult_BCD[11:8];
+                    BCD_OUTPUT_DATA[3:0] = wire_ABResult[11:8];
                     BCD_DISPLAY_RESULT_MS_ACK = 1;
                 end
 
