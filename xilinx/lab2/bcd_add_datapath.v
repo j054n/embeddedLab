@@ -23,21 +23,21 @@ module bcd_add_datapath(
     output [7:0] BCD_OUTPUT_DATA,
 	 input CLK,
     input BCD_INIT,
-    output BCD_INIT_ACK,
+    output reg BCD_INIT_ACK,
     input BCD_LOAD_A,
-    output BCD_LOAD_A_ACK,
+    output reg BCD_LOAD_A_ACK,
     input BCD_LOAD_B,
-    output BCD_LOAD_B_ACK,
+    output reg BCD_LOAD_B_ACK,
     input BCD_DISPLAY_A,
-    output BCD_DISPLAY_A_ACK,
+    output reg BCD_DISPLAY_A_ACK,
     input BCD_DISPLAY_B,
-    output BCD_DISPLAY_B_ACK,
+    output reg BCD_DISPLAY_B_ACK,
     input BCD_ADD,
-    output BCD_ADD_ACK,
+    output reg BCD_ADD_ACK,
     input BCD_DISPLAY_RESULT_LS,
-    output BCD_DISPLAY_RESULT_LS_ACK,
+    output reg BCD_DISPLAY_RESULT_LS_ACK,
     input BCD_DISPLAY_RESULT_MS,
-    output BCD_DISPLAY_RESULT_MS_ACK
+    output reg BCD_DISPLAY_RESULT_MS_ACK
     );
 
     //Setup an A and B register to hold the values to add.
@@ -55,6 +55,7 @@ module bcd_add_datapath(
     wire [7:0] wire_B_to_BCD;
     wire [7:0] wire_ABResult_to_BCD;
 
+
     //Instantiate the sub modules to make BCD convrsions.
     BCD_From_7bit_Binary aBCD(.inputNumber(A), 
 										.mostSignificant(A_BCD[7:4]), 
@@ -64,13 +65,13 @@ module bcd_add_datapath(
 										.mostSignificant(B_BCD[7:4]), 
 										.leastSignificant(B_BCD[3:0]));
 										
-	 BCD_From_7bit_Binary cBCD(.inputNumber(C), 
-										.mostSignificant(C_BCD[7:4]), 
-										.leastSignificant(C_BCD[3:0]));
+	 BCD_From_7bit_Binary cBCD(.inputNumber(ABResult), 
+										.mostSignificant(ABResult_BCD[7:4]), 
+										.leastSignificant(ABResult_BCD[3:0]));
 	 
 
 
-    always@(posedge CLK)
+    always @(posedge CLK)
         begin
             
             //Clear the input and output values.
@@ -79,23 +80,20 @@ module bcd_add_datapath(
                     A = 0;
                     B = 0;
                     ABResult = 0;
-                    BCD_INIT = 0;
                     BCD_INIT_ACK = 1;
                 end
 
             //Load the A value.
             if(BCD_LOAD_A)
                 begin
-                    A = SW[7:0];
-                    BCD_LOAD_A = 0;
+                    A = BCD_INPUT_DATA[7:0];
                     BCD_LOAD_A_ACK = 1;
                 end
 
             //Load the B value.
             if(BCD_LOAD_B)
                 begin
-                    B = SW[7:0];
-                    BCD_LOAD_B = 0;
+                    B = BCD_INPUT_DATA[7:0];
                     BCD_LOAD_B_ACK = 1;
                 end
 
@@ -107,7 +105,6 @@ module bcd_add_datapath(
             if(BCD_ADD)
                 begin
                     ABResult = A + B;
-                    BCD_ADD = 0;
                     BCD_ADD_ACK = 1;
                 end
 

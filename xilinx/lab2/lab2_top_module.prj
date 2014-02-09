@@ -1,0 +1,4 @@
+verilog work "BCD_From_7bit_Binary.v"
+verilog work "bcd_add_datapath.v"
+verilog work "bcd_add_controller.v"
+verilog work "lab2_top_module.v"

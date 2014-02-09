@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 59: Port <arg fmt="%s" index="1">LOAD_DISPLAY_MS_RESULT</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">bcd_add_controller</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 60: Assignment to <arg fmt="%s" index="1">wire_BCD_LOAD_A</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 61: Target &lt;<arg fmt="%s" index="1">A_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 62: Target &lt;<arg fmt="%s" index="1">A_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 65: Target &lt;<arg fmt="%s" index="1">B_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 66: Target &lt;<arg fmt="%s" index="1">B_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 69: Target &lt;<arg fmt="%s" index="1">ABResult_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 70: Target &lt;<arg fmt="%s" index="1">ABResult_BCD</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">lab2_top_module</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

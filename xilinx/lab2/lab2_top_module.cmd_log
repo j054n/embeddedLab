@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+vhdtdtfi -lib work /home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v -lang verilog -prj lab2 -o lab2_top_module.spl -module lab2_top_module -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 lab2_top_module.spl /home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.sym 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 
+xst -intstyle ise -ifn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.xst" -ofn "/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.syr" 

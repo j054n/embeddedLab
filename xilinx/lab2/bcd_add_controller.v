@@ -36,10 +36,10 @@ module bcd_add_controller(
     input BCD_DISPLAY_B_ACK,
     output BCD_ADD,
     input BCD_ADD_ACK,
-    output BCD_DISP_RESULT_LS,
-    input BCD_DISP_RESULT_LS_ACK,
-    output BCD_DISP_RESULT_MS,
-    input BCD_DISP_RESULT_MS_ACK
+    output BCD_DISPLAY_RESULT_LS,
+    input BCD_DISPLAY_RESULT_LS_ACK,
+    output BCD_DISPLAY_RESULT_MS,
+    input BCD_DISPLAY_RESULT_MS_ACK
     );
 
 
