@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_add_datapath(
     input [7:0] BCD_INPUT_DATA,
-    output reg [11:0] BCD_OUTPUT_DATA,
+    output reg [7:0] BCD_OUTPUT_DATA,
 	 input CLK,
     input BCD_INIT,
     output reg BCD_INIT_ACK,

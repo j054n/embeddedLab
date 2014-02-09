@@ -16,11 +16,6 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-ERROR:NgdBuild:604 - logical block 'controller' with type 'bcd_add_controller'
-   could not be resolved. A pin name misspelling can cause this, a missing edif
-   or ngc file, case mismatch between the block name and the edif or ngc file
-   name, or the misspelling of a type name. Symbol 'bcd_add_controller' is not
-   supported in target 'spartan6'.
 
 Partition Implementation Status
 -------------------------------
@@ -30,14 +25,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     1
+  Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 404452 kilobytes
+Total memory usage is 404168 kilobytes
 
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   4 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "lab2_top_module.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "lab2_top_module.bld"...

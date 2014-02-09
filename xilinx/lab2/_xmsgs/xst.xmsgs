@@ -5,7 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">bcd_add_controller</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 293: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="new" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 308: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 339: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v" Line 32: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
@@ -23,34 +29,43 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 34: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 81: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BCD_OUTPUT_DATA</arg>&gt;. Formal port size is <arg fmt="%d" index="2">12</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v" Line 51: Net &lt;<arg fmt="%s" index="1">wire_BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; does not have a driver.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">BCD_DISPLAY_RESULT_MS_ACK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">datapath</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ABResult_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">wire_BCD_DISPLAY_RESULT_LS_ACK</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ABResult_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BCD_OUTPUT_DATA_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">bcd_add_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/ABResult_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/A_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">datapath/B_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">controller/BCD_ADD</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab2_top_module</arg>&gt;.
 </msg>
 
 </messages>

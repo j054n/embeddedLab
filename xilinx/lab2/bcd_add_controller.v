@@ -24,21 +24,21 @@ module bcd_add_controller(
     input LOAD_DISPLAY_B,
     input LOAD_ADD_DISPLAY_LS_RESULT,
 	 input CLK,
-    output BCD_INIT,
+    output reg BCD_INIT,
     input BCD_INIT_ACK,
-    output BCD_LOAD_A,
+    output reg BCD_LOAD_A,
     input BCD_LOAD_A_ACK,
-    output BCD_LOAD_B,
+    output reg BCD_LOAD_B,
     input BCD_LOAD_B_ACK,
-    output BCD_DISPLAY_A,
+    output reg BCD_DISPLAY_A,
     input BCD_DISPLAY_A_ACK,
-    output BCD_DISPLAY_B,
+    output reg BCD_DISPLAY_B,
     input BCD_DISPLAY_B_ACK,
-    output BCD_ADD,
+    output reg BCD_ADD,
     input BCD_ADD_ACK,
-    output BCD_DISPLAY_RESULT_LS,
+    output reg BCD_DISPLAY_RESULT_LS,
     input BCD_DISPLAY_RESULT_LS_ACK,
-    output BCD_DISPLAY_RESULT_MS,
+    output reg BCD_DISPLAY_RESULT_MS,
     input BCD_DISPLAY_RESULT_MS_ACK
     );
 
@@ -68,7 +68,7 @@ module bcd_add_controller(
 
     always @(posedge CLK)
         begin
-            if(INIT)
+            if(bcdControllerState == INIT)
                 begin
                     //Set flags
                     BCD_INIT                    <= 1;
@@ -203,7 +203,7 @@ module bcd_add_controller(
 
                     DISP_A_ACK:
                         begin
-                            if(BCD_DISP_A_ACK)
+                            if(BCD_DISPLAY_A_ACK)
                             begin
                                 //Set flags
                                 BCD_INIT                    <= 0;
@@ -238,7 +238,7 @@ module bcd_add_controller(
 
                     DISP_B_ACK:
                         begin
-                            if(BCD_DISP_B_ACK)
+                            if(BCD_DISPLAY_B_ACK)
                             begin
                                 //Set flags
                                 BCD_INIT                    <= 0;
