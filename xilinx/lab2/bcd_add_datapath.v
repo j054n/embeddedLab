@@ -98,9 +98,19 @@ module bcd_add_datapath(
                 end
 
             //Display the A value on the LED in BCD format.
+            if(BCD_DISPLAY_A)
+                begin
+                    BCD_OUTPUT_DATA = A_BCD;
+                    BCD_DISPLAY_A_ACK = 1;
+                end
 
             //Display the B value on the LED in BCD format.
-
+            if(BCD_DISPLAY_B)
+                begin
+                    BCD_OUTPUT_DATA = B_BCD;
+                    BCD_DISPLAY_B_ACK = 1;
+                end
+            
             //Add A and B
             if(BCD_ADD)
                 begin
@@ -110,7 +120,7 @@ module bcd_add_datapath(
 
             if(BCD_DISPLAY_RESULT_LS)
                 begin
-
+                    
                 end
 
             if(BCD_DISPLAY_RESULT_MS)
