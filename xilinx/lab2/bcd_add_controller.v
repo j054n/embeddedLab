@@ -286,10 +286,45 @@ module bcd_add_controller(
                                 BCD_DISPLAY_RESULT_MS       <= 0;   
                                 
                                 //Set next state
-                                bcdControllerState <= WAIT_INPUT;
+                                bcdControllerState <= DISP_ADD;
                             end
                         end
 
+
+                    DISP_ADD:
+                        begin
+                            BCD_INIT                    <= 0;
+                            BCD_LOAD_A                  <= 0;
+                            BCD_LOAD_B                  <= 0;
+                            BCD_DISPLAY_A               <= 0;
+                            BCD_DISPLAY_B               <= 0;
+                            BCD_ADD                     <= 0;
+                            BCD_DISPLAY_RESULT_LS       <= 1;
+                            BCD_DISPLAY_RESULT_MS       <= 0;   
+                                
+                            //Set next state
+                            bcdControllerState <= DISP_ADD_ACK;
+                        end
+
+                    DISP_ADD_ACK:
+                        begin
+                            if(BCD_DISPLAY_RESULT_LS_ACK)
+                             begin
+                                
+                                //Set flags
+                                BCD_INIT                    <= 0;
+                                BCD_LOAD_A                  <= 0;
+                                BCD_LOAD_B                  <= 0;
+                                BCD_DISPLAY_A               <= 0;
+                                BCD_DISPLAY_B               <= 0;
+                                BCD_ADD                     <= 0;
+                                BCD_DISPLAY_RESULT_LS       <= 0;
+                                BCD_DISPLAY_RESULT_MS       <= 0;   
+                                
+                                //Set next state
+                                bcdControllerState <= WAIT_INPUT;
+                            end
+                        end
                     DISP_ADD_MS:
                         begin
                             BCD_INIT                    <= 0;
