@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/vmartin/xilinx/lab1/testmain_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testmain" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/testmain/LED" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LED[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testmain/SW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testmain/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[6:0]</obj_property>
+      <obj_property name="ObjectShortName">i[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

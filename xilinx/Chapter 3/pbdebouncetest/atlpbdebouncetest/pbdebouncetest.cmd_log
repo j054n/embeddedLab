@@ -1,0 +1,77 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg484-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg484-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbdebouncetest/atlpbdebouncetest/pbdebouncetest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlpbdebouncetest.ucf -p xc6slx45-csg324-3 "pbdebouncetest.ngc" pbdebouncetest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbdebouncetest_map.ncd pbdebouncetest.ngd pbdebouncetest.pcf 
+par -w -intstyle ise -ol high -mt off pbdebouncetest_map.ncd pbdebouncetest.ncd pbdebouncetest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbdebouncetest.twx pbdebouncetest.ncd -o pbdebouncetest.twr pbdebouncetest.pcf -ucf atlpbdebouncetest.ucf 
+bitgen -intstyle ise -f pbdebouncetest.ut pbdebouncetest.ncd 

@@ -1,0 +1,56 @@
+//
+// lab3 : version 09/06/2012
+//                 
+// This file contains the test vectors for the
+// 7 segment decoder
+// The first column is the input display_on signal
+// The next four columns are the inputs: bcd_in[3:0]
+// The next 7 columns are the signals to the display:
+// seg_out[6:0], representing the g,f,e,d,c,b,a segments.
+//
+// This needs to be 32 lines long to cover all possibilities
+//
+/* This is what they gave me, but I am going to just comment it all
+out and then start over with my own generated file.
+
+1_0000_0111111
+1_0001_0110000
+
+I basically copied this data from the excel sheet truth table and then used
+tr -d '\t' <test.txt >> tb_svn_seg_decoder.txt
+to strip it of the tab delimiters.
+*/
+
+
+1_0000_0111111
+1_0001_0110000
+1_0010_1011011
+1_0011_1111001
+1_0100_1110100
+1_0101_1101101
+1_0110_1101111
+1_0111_0111000
+1_1000_1111111
+1_1001_1111101
+1_1010_0000000
+1_1011_0000000
+1_1100_0000000
+1_1101_0000000
+1_1110_0000000
+1_1111_0000000
+0_0000_0000000
+0_0001_0000000
+0_0010_0000000
+0_0011_0000000
+0_0100_0000000
+0_0101_0000000
+0_0110_0000000
+0_0111_0000000
+0_1000_0000000
+0_1001_0000000
+0_1010_0000000
+0_1011_0000000
+0_1100_0000000
+0_1101_0000000
+0_1110_0000000
+0_1111_0000000

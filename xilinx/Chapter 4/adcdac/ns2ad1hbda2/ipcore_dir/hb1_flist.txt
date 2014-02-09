@@ -1,0 +1,17 @@
+# Output products list for <hb1>
+_xmsgs\pn_parser.xmsgs
+hb1.asy
+hb1.gise
+hb1.mif
+hb1.ngc
+hb1.sym
+hb1.v
+hb1.veo
+hb1.xco
+hb1.xise
+hb1COEFF_auto0_0.mif
+hb1COEFF_auto_HALFBAND_CENTRE0.mif
+hb1_flist.txt
+hb1_readme.txt
+hb1_xmdf.tcl
+hb1filt_decode_rom.mif

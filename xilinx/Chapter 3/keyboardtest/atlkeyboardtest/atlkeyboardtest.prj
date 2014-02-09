@@ -1,0 +1,5 @@
+verilog work "../../peripherals/keyboard.v"
+verilog work "remote_sources/_/_/peripherals/pbdebounce.v"
+verilog work "remote_sources/_/_/peripherals/clslcd.v"
+verilog work "remote_sources/_/_/peripherals/clock.v"
+verilog work "altkeyboardtest.v"

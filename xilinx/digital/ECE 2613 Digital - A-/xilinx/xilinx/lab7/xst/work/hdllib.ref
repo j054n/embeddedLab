@@ -1,0 +1,4 @@
+MO lab7_top_io_wrapper NULL lab7_top_io_wrapper.v vlg63/lab7__top__io__wrapper.bin 1350267795
+MO svn_seg_decoder NULL svn_seg_decoder.v vlg1A/svn__seg__decoder.bin 1350267795
+MO sw_core NULL sw_core.v vlg6A/sw__core.bin 1350267795
+MO dsp_drvr NULL dsp_drvr.v vlg74/dsp__drvr.bin 1350267795

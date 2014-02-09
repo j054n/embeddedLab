@@ -1,0 +1,60 @@
+ISim log file
+Running: /home/students/tuc56100/xilinx/lab9_10/tb_sw_core_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/students/tuc56100/xilinx/lab9_10/tb_sw_core_isim_beh.wdb 
+ISim O.76xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+WARNING:  For instance udd/U1/, width 1 of formal port display_on is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Start button pressed.
+digit0 changed to: 1001111 - time: 152000000 ns
+digit0 changed to: 0100100 - time: 250000040 ns
+digit0 changed to: 0000110 - time: 250002040 ns
+digit0 changed to: 0001011 - time: 250004040 ns
+digit0 changed to: 0010010 - time: 250006040 ns
+digit0 changed to: 0010000 - time: 250008040 ns
+digit0 changed to: 1000111 - time: 250010040 ns
+digit0 changed to: 0000000 - time: 250012040 ns
+digit0 changed to: 0000010 - time: 250014040 ns
+digit0 changed to: 1000000 - time: 250016040 ns
+ digit1 changed to: 1001111 - time: 250016060 ns
+ digit1 changed to: 0100100 - time: 250036060 ns
+ digit1 changed to: 0000110 - time: 250056060 ns
+ digit1 changed to: 0001011 - time: 250076060 ns
+ digit1 changed to: 0010010 - time: 250096060 ns
+ digit1 changed to: 0010000 - time: 250116060 ns
+ digit1 changed to: 1000111 - time: 250136060 ns
+ digit1 changed to: 0000000 - time: 250156060 ns
+ digit1 changed to: 0000010 - time: 250176060 ns
+  digit2 changed - to 1001111 - time = 250196000 ns
+  digit2 changed - to 0100100 - time = 250396000 ns
+  digit2 changed - to 0000110 - time = 250596000 ns
+  digit2 changed - to 0001011 - time = 250796000 ns
+  digit2 changed - to 0010010 - time = 250996000 ns
+  digit2 changed - to 1000000 - time = 251196000 ns
+   digit3 changed - to 1001111 - time = 251196020 ns
+   digit3 changed - to 0100100 - time = 252396020 ns
+   digit3 changed - to 0000110 - time = 253596020 ns
+   digit3 changed - to 0001011 - time = 254796020 ns
+   digit3 changed - to 0010010 - time = 255996020 ns
+   digit3 changed - to 0010000 - time = 257196020 ns
+   digit3 changed - to 1000111 - time = 258396020 ns
+   digit3 changed - to 0000000 - time = 259596020 ns
+   digit3 changed - to 0000010 - time = 260796020 ns
+Clear button pressed.
+Stop button pressed.
+   digit3 changed - to 1000000 - time = 262000000 ns
+Digits should equal zero pattern: 1000000
+digit0: 1000000
+digit1: 1000000
+digit2: 1000000
+digit3: 1000000
+Simulation complete!!!
+Stopped at time : 265995120 ns : File "/home/students/tuc56100/xilinx/lab9_10/tb_sw_core.v" Line 151

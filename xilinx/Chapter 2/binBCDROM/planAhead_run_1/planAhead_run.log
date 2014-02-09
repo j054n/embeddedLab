@@ -1,0 +1,98 @@
+
+****** PlanAhead v14.3
+  **** Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/s6EDPGA-v14/Chapter 2/binBCDROM/pa.fromNcd.tcl}
+# create_project -name binBCDROM -dir "C:/s6EDPGA-v14/Chapter 2/binBCDROM/planAhead_run_1" -part xc6slx16csg324-3
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/s6EDPGA-v14/Chapter 2/binBCDROM} {ipcore_dir} }
+# add_files [list {ipcore_dir/ROMbinBCD.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "binBCDns3.ucf" [current_fileset -constrset]
+Adding file 'C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDns3.ucf' to fileset 'constrs_1'
+# add_files [list {binBCDns3.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design binBCDROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to binBCDROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file binBCDROM.edif ...
+ngc2edif: Total memory usage is 73004 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/binBCDROM.data/cache/binBCDROM_ngc_367374ec.edif]
+Finished Parsing EDIF File [./planAhead_run_1/binBCDROM.data/cache/binBCDROM_ngc_367374ec.edif]
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ROMbinBCD.ngc ...
+WARNING:NetListWriters:298 - No output is written to ROMbinBCD.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ROMbinBCD.edif ...
+ngc2edif: Total memory usage is 73004 kilobytes
+
+Reading core file 'C:/s6EDPGA-v14/Chapter 2/binBCDROM/ipcore_dir/ROMbinBCD.ngc' for (cell view 'ROMbinBCD', library 'binBCDROM_lib', file 'binBCDROM.ngc')
+Parsing EDIF File [./planAhead_run_1/binBCDROM.data/cache/ROMbinBCD_ngc_d4c08f.edif]
+Finished Parsing EDIF File [./planAhead_run_1/binBCDROM.data/cache/ROMbinBCD_ngc_d4c08f.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDROM/ipcore_dir/ROMbinBCD.ncf]
+Finished Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDROM/ipcore_dir/ROMbinBCD.ncf]
+Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDns3.ucf]
+Finished Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDns3.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 6df6445b
+link_design: Time (s): elapsed = 00:00:16 . Memory (MB): peak = 495.164 ; gain = 133.734
+# read_xdl -file "C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.ncd"
+Release 14.3 - xdl P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.3\ISE_DS\ISE\.
+   "binBCDROM" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+Successfully converted design 'C:\s6EDPGA-v14\Chapter 2\binBCDROM\binBCDROM.ncd' to 'C:\s6EDPGA-v14\Chapter 2\binBCDROM\binBCDROM.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.ncd
+INFO: [Designutils 20-671] Placed 304 instances
+read_xdl: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 495.164 ; gain = 0.000
+# if {[catch {read_twx -name results_1 -file "C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/s6EDPGA-v14/Chapter 2/binBCDROM/binBCDROM.twx\": $eInfo"
+# }
+INFO: [Timing 38-71] No path element with name M3/clkq<4>_rt.1 found. It will be ignored.
+INFO: [Timing 38-71] No path element with name M3/clkq<2>_rt.1 found. It will be ignored.
+INFO: [Timing 38-71] No path element with name M3/clkq<3>_rt.1 found. It will be ignored.
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 09 22:05:00 2012...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,2 @@
+verilog work "svn_seg_decoder.v"
+verilog work "lab3_top_io_wrapper.v"

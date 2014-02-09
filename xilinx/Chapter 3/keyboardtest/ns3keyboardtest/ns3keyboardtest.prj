@@ -1,0 +1,5 @@
+verilog work "../../peripherals/pbdebounce.v"
+verilog work "../../peripherals/clplcd.v"
+verilog work "remote_sources/_/_/peripherals/keyboard.v"
+verilog work "remote_sources/_/_/peripherals/clock.v"
+verilog work "ns3keyboardtest.v"

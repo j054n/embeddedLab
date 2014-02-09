@@ -1,0 +1,41 @@
+ISim log file
+Running: /home/students/tuc56100/xilinx/lab9_10/tb_css_ctrl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/students/tuc56100/xilinx/lab9_10/tb_css_ctrl_isim_beh.wdb 
+ISim O.76xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Mismatch--index           2, tmr_clr expected 1, received 0
+Mismatch--index           4, tmr_clr expected 1, received 0
+Mismatch--index           6, tmr_on expected 0, received 1
+Mismatch--index           6, strt_pls expected 1, received 0
+Mismatch--index          14, tmr_clr expected 1, received 0
+Mismatch--index          14, tmr_on expected 0, received 1
+Mismatch--index          16, tmr_clr expected 1, received 0
+Mismatch--index          16, tmr_on expected 0, received 1
+Mismatch--index          18, tmr_on expected 0, received 1
+Mismatch--index          18, strt_pls expected 1, received 0
+Mismatch--index          19, tmr_on expected 0, received 1
+Mismatch--index          20, tmr_on expected 0, received 1
+Mismatch--index          21, tmr_on expected 0, received 1
+Mismatch--index          22, tmr_on expected 0, received 1
+Mismatch--index          23, tmr_on expected 0, received 1
+Mismatch--index          24, tmr_clr expected 1, received 0
+Mismatch--index          24, tmr_on expected 0, received 1
+Mismatch--index          25, tmr_on expected 0, received 1
+Mismatch--index          27, tmr_clr expected 1, received 0
+Mismatch--index          29, tmr_clr expected 1, received 0
+Mismatch--index          31, tmr_on expected 0, received 1
+Mismatch--index          31, strt_pls expected 1, received 0
+Mismatch--index          33, tmr_clr expected 1, received 0
+Mismatch--index          35, tmr_on expected 0, received 1
+Mismatch--index          35, strt_pls expected 1, received 0
+Mismatch--index          38, tmr_clr expected 1, received 0
+Mismatch--index          40, tmr_on expected 0, received 1
+Mismatch--index          40, strt_pls expected 1, received 0
+Mismatch--index          45, tmr_clr expected 1, received 0
+Mismatch--index          47, tmr_on expected 0, received 1
+Mismatch--index          47, strt_pls expected 1, received 0

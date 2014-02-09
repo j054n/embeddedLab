@@ -1,0 +1,14 @@
+//
+// lab3 : version 09/06/2012
+//                 
+// This file contains the test vectors for the
+// 7 segment decoder
+// The first column is the input display_on signal
+// The next four columns are the inputs: bcd_in[3:0]
+// The next 7 columns are the signals to the display:
+// seg_out[6:0], representing the g,f,e,d,c,b,a segments.
+//
+// This needs to be 32 lines long to cover all possibilities
+//
+1_0000_0111111
+1_0001_0110000

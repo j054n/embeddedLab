@@ -1,0 +1,76 @@
+
+****** PlanAhead v14.3
+  **** Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/s6EDPGA-v14/Chapter 2/binBCDiterative/pa.fromNetlist.tcl}
+# create_project -name binBCDiterative -dir "C:/s6EDPGA-v14/Chapter 2/binBCDiterative/planAhead_run_2" -part xc3s500efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDiter.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/s6EDPGA-v14/Chapter 2/binBCDiterative} }
+# set_property target_constrs_file "binBCDns3.ucf" [current_fileset -constrset]
+Adding file 'C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf' to fileset 'constrs_1'
+# add_files [list {binBCDns3.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design binBCDiter.ngc ...
+WARNING:NetListWriters:298 - No output is written to binBCDiter.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus M3/Mcompar_clkq_cmp_ge0000_lut<10 : 1>
+   on block binBCDiter is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file binBCDiter.edif ...
+ngc2edif: Total memory usage is 73260 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/binBCDiterative.data/cache/binBCDiter_ngc_865ce753.edif]
+Finished Parsing EDIF File [./planAhead_run_2/binBCDiterative.data/cache/binBCDiter_ngc_865ce753.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V10 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:7]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U17 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:93]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N14 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:96]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'CG' at site L14, Illegal to place instance CG_OBUF on site L14 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:97]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N16 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:99]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N15 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:100]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'LED[1]' at site V16, Illegal to place instance LED_1_OBUF on site V16 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:106]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M11 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:109]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'LED[7]' at site T11, Illegal to place instance LED_7_OBUF on site T11 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:112]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T9 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:116]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M8 [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf:118]
+Finished Parsing UCF File [C:/s6EDPGA-v14/Chapter 2/binBCDiterative/binBCDns3.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 05044d55
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 453.578 ; gain = 73.691
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 09 13:55:31 2012...
+INFO: [Common 17-83] Releasing license: PlanAhead

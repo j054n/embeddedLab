@@ -1,0 +1,3 @@
+verilog work "../../Chapter 3/peripherals/sevensegment.v"
+verilog work "../../Chapter 3/peripherals/clock.v"
+verilog work "elapsedtimens3.v"

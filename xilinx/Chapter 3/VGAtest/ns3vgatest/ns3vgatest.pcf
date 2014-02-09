@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue May 21 16:51:33 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "HS" LOCATE = SITE "N6" LEVEL 1;
+COMP "VS" LOCATE = SITE "P7" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "BTND" LOCATE = SITE "C9" LEVEL 1;
+COMP "BL<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "BL<2>" LOCATE = SITE "T7" LEVEL 1;
+COMP "GR<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "GR<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "GR<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "RD<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "RD<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "RD<2>" LOCATE = SITE "N7" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M4/sclclk" BEL "M3/sclclk" BEL "M4/clkq_0" BEL
+        "M4/clkq_1" BEL "M4/clkq_2" BEL "M4/clkq_3" BEL "M4/clkq_4" BEL
+        "M4/clkq_5" BEL "M4/clkq_6" BEL "M4/clkq_7" BEL "M4/clkq_8" BEL
+        "M4/clkq_9" BEL "M4/clkq_10" BEL "M4/clkq_11" BEL "M4/clkq_12" BEL
+        "M4/clkq_13" BEL "M4/clkq_14" BEL "M4/clkq_15" BEL "M4/clkq_16" BEL
+        "M4/clkq_17" BEL "M4/clkq_18" BEL "M4/clkq_19" BEL "M4/clkq_20" BEL
+        "M4/clkq_21" BEL "M4/clkq_22" BEL "M4/clkq_23" BEL "M4/clkq_24" BEL
+        "M4/clkq_25" BEL "M4/clkq_26" BEL "M4/clkq_27" BEL "M4/clkq_28" BEL
+        "M4/clkq_29" BEL "M4/clkq_30" BEL "M4/clkq_31" BEL "M3/clkq_0" BEL
+        "M3/clkq_1" BEL "M3/clkq_2" BEL "M3/clkq_3" BEL "M3/clkq_4" BEL
+        "M3/clkq_5" BEL "M3/clkq_6" BEL "M3/clkq_7" BEL "M3/clkq_8" BEL
+        "M3/clkq_9" BEL "M3/clkq_10" BEL "M3/clkq_11" BEL "M3/clkq_12" BEL
+        "M3/clkq_13" BEL "M3/clkq_14" BEL "M3/clkq_15" BEL "M3/clkq_16" BEL
+        "M3/clkq_17" BEL "M3/clkq_18" BEL "M3/clkq_19" BEL "M3/clkq_20" BEL
+        "M3/clkq_21" BEL "M3/clkq_22" BEL "M3/clkq_23" BEL "M3/clkq_24" BEL
+        "M3/clkq_25" BEL "M3/clkq_26" BEL "M3/clkq_27" BEL "M3/clkq_28" BEL
+        "M3/clkq_29" BEL "M3/clkq_30" BEL "M3/clkq_31" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,143 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc3s500e-fg320-4 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/dds/ns3ddsfreqgen/ns3ddsfreqgen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ddsfreqgen.ucf -p xc6slx16-csg324-3 "ns3ddsfreqgen.ngc" ns3ddsfreqgen.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ngd ns3ddsfreqgen.pcf 
+par -w -intstyle ise -ol high -mt off ns3ddsfreqgen_map.ncd ns3ddsfreqgen.ncd ns3ddsfreqgen.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ddsfreqgen.twx ns3ddsfreqgen.ncd -o ns3ddsfreqgen.twr ns3ddsfreqgen.pcf -ucf ns3ddsfreqgen.ucf 
+bitgen -intstyle ise -f ns3ddsfreqgen.ut ns3ddsfreqgen.ncd 

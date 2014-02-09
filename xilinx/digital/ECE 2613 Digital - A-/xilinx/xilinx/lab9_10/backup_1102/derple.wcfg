@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/students/tuc56100/xilinx/lab9_10/tb_dbnc_ctrl_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_dbnc_ctrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_dbnc_ctrl/times_up" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">times_up</obj_property>
+      <obj_property name="ObjectShortName">times_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/test_vector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">test_vector[0:1037,3:0]</obj_property>
+      <obj_property name="ObjectShortName">test_vector[0:1037,3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/single_vector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">single_vector[3:0]</obj_property>
+      <obj_property name="ObjectShortName">single_vector[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/strt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/m_sec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m_sec</obj_property>
+      <obj_property name="ObjectShortName">m_sec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/COLUMNS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">COLUMNS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COLUMNS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/ROWS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ROWS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROWS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/uut/millisecond_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">millisecond_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">millisecond_count[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dbnc_ctrl/uut/next_millisecond_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_millisecond_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">next_millisecond_count[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

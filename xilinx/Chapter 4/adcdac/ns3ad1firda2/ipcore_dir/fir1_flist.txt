@@ -1,0 +1,15 @@
+# Output products list for <fir1>
+fir1.asy
+fir1.gise
+fir1.mif
+fir1.ngc
+fir1.sym
+fir1.v
+fir1.veo
+fir1.xco
+fir1.xise
+fir1COEFF_auto0_0.mif
+fir1_flist.txt
+fir1_readme.txt
+fir1_xmdf.tcl
+fir1filt_decode_rom.mif

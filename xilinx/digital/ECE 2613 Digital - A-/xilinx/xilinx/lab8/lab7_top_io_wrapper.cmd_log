@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/students/tuc56100/xilinx/lab8/lab7_top_io_wrapper.xst" -ofn "/home/students/tuc56100/xilinx/lab8/lab7_top_io_wrapper.syr" 
+xst -intstyle ise -ifn "/home/students/tuc56100/xilinx/lab8/lab7_top_io_wrapper.xst" -ofn "/home/students/tuc56100/xilinx/lab8/lab7_top_io_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc 2612_lab7.ucf -p xc3s500e-fg320-4 lab7_top_io_wrapper.ngc lab7_top_io_wrapper.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab7_top_io_wrapper_map.ncd lab7_top_io_wrapper.ngd lab7_top_io_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_top_io_wrapper_map.ncd lab7_top_io_wrapper.ncd lab7_top_io_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab7_top_io_wrapper.twx lab7_top_io_wrapper.ncd -o lab7_top_io_wrapper.twr lab7_top_io_wrapper.pcf -ucf 2612_lab7.ucf 
+bitgen -intstyle ise -f lab7_top_io_wrapper.ut lab7_top_io_wrapper.ncd 

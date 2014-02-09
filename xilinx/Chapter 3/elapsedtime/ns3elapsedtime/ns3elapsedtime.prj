@@ -1,0 +1,4 @@
+verilog work "../../peripherals/clplcd.v"
+verilog work "../../peripherals/clock.v"
+verilog work "elapsedtime.v"
+verilog work "ns3elapsedtime.v"

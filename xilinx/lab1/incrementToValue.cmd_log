@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj lab1 -o /home/vmartin/xilinx/lab1/incrementToValue.tfi -lib work /home/vmartin/xilinx/lab1//incrementToValue.v -module incrementToValue -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

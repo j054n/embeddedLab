@@ -1,0 +1,4 @@
+verilog work "svn_seg_decoder.v"
+verilog work "dsp_drvr.v"
+verilog work "sw_core.v"
+verilog work "lab7_top_io_wrapper.v"

@@ -1,0 +1,11 @@
+will need a module from counter 0 to 9 and 0 to 5
+
+example
+
+module counter_0to9
+	(input ena
+	input clr
+etc. etc.
+
+remember you will have to add new modules.
+

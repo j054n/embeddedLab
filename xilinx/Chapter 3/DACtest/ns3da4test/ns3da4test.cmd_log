@@ -1,0 +1,306 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/DACtest/ns3da4test/ns3da4test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3da4test.ucf -p xc6slx16-csg324-3 "ns3da4test.ngc" ns3da4test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3da4test_map.ncd ns3da4test.ngd ns3da4test.pcf 
+par -w -intstyle ise -ol high -mt off ns3da4test_map.ncd ns3da4test.ncd ns3da4test.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3da4test.twx ns3da4test.ncd -o ns3da4test.twr ns3da4test.pcf -ucf ns3da4test.ucf 
+bitgen -intstyle ise -f ns3da4test.ut ns3da4test.ncd 

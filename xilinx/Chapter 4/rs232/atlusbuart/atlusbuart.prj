@@ -1,0 +1,4 @@
+verilog work "remote_sources/_/_/_/Chapter 3/peripherals/clock.v"
+verilog work "../../peripherals/txmit.v"
+verilog work "../../peripherals/rcvr.v"
+verilog work "atlusbuart.v"

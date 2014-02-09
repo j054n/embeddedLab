@@ -1,0 +1,6 @@
+MO clock NULL "../../../Chapter 3/peripherals/clock.v" vlg20/clock.bin 1359516023
+MO genddsfreq NULL ns3ddsfreqgen.v vlg13/genddsfreq.bin 1359516023
+MO rotary NULL "../../../Chapter 3/peripherals/rotary.v" vlg69/rotary.bin 1359516022
+MO da2dac NULL "../../../Chapter 3/peripherals/da2dac.v" vlg7B/da2dac.bin 1359516022
+MO ns3ddsfreqgen NULL ns3ddsfreqgen.v vlg27/ns3ddsfreqgen.bin 1359516023
+MO dds1 NULL ipcore_dir/dds1.v vlg08/dds1.bin 1359516022

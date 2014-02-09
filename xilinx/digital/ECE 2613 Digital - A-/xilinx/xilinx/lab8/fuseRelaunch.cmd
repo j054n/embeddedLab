@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/students/tuc56100/xilinx/lab8/tb_divideby100_isim_beh.exe" -prj "/home/students/tuc56100/xilinx/lab8/tb_divideby100_beh.prj" "work.tb_divideby100" "work.glbl" 

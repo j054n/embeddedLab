@@ -1,0 +1,745 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: atlAC97test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "atlAC97test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "atlAC97test"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : atlAC97test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\s6sac97.v" into library work
+Parsing module <s6AC97>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\AC97test\atlAC97test\atlac97test.v" into library work
+Parsing module <atlAC97test>.
+Parsing module <genAC97>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <atlAC97test>.
+
+Elaborating module <s6AC97>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 3\peripherals\s6sac97.v" Line 39: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 3\peripherals\s6sac97.v" Line 115: Result of 10-bit expression is truncated to fit in 9-bit target.
+
+Elaborating module <genAC97>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <atlAC97test>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\AC97test\atlAC97test\atlac97test.v".
+    Summary:
+	no macro.
+Unit <atlAC97test> synthesized.
+
+Synthesizing Unit <s6AC97>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\s6sac97.v".
+        rstlowtime = 8'b10010110
+        rst2clk = 5'b10010
+    Found 1-bit register for signal <rstaud>.
+    Found 1-bit register for signal <syncaud>.
+    Found 1-bit register for signal <framedone>.
+    Found 20-bit register for signal <cmdadr>.
+    Found 20-bit register for signal <cmddat>.
+    Found 1-bit register for signal <ready>.
+    Found 1-bit register for signal <sdoaud>.
+    Found 9-bit register for signal <bitcount>.
+    Found 20-bit register for signal <slot1in>.
+    Found 20-bit register for signal <slot2in>.
+    Found 20-bit register for signal <leftin>.
+    Found 20-bit register for signal <rightin>.
+    Found 20-bit register for signal <leftadc>.
+    Found 20-bit register for signal <rightadc>.
+    Found 20-bit register for signal <regstatus>.
+    Found 20-bit register for signal <statusdata>.
+    Found 8-bit register for signal <rstlow>.
+    Found 8-bit adder for signal <rstlow[7]_GND_2_o_add_3_OUT> created at line 39.
+    Found 9-bit adder for signal <bitcount[8]_GND_2_o_add_42_OUT> created at line 115.
+    Found 5-bit subtractor for signal <GND_2_o_GND_2_o_sub_25_OUT<4:0>> created at line 79.
+    Found 5-bit subtractor for signal <GND_2_o_GND_2_o_sub_30_OUT<4:0>> created at line 87.
+    Found 5-bit subtractor for signal <GND_2_o_GND_2_o_sub_35_OUT<4:0>> created at line 95.
+    Found 5-bit subtractor for signal <GND_2_o_GND_2_o_sub_40_OUT<4:0>> created at line 103.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_2_o_X_2_o_Mux_25_o> created at line 79.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_2_o_X_2_o_Mux_30_o> created at line 87.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_2_o_X_2_o_Mux_35_o> created at line 95.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_2_o_X_2_o_Mux_40_o> created at line 103.
+    Found 9-bit comparator greater for signal <n0023> created at line 63
+    Found 9-bit comparator lessequal for signal <n0036> created at line 76
+    Found 9-bit comparator lessequal for signal <n0038> created at line 76
+    Found 9-bit comparator lessequal for signal <n0044> created at line 84
+    Found 9-bit comparator lessequal for signal <n0046> created at line 84
+    Found 9-bit comparator lessequal for signal <n0053> created at line 92
+    Found 9-bit comparator lessequal for signal <n0055> created at line 92
+    Found 9-bit comparator lessequal for signal <n0062> created at line 100
+    Found 9-bit comparator lessequal for signal <n0064> created at line 100
+    Found 9-bit comparator lessequal for signal <n0085> created at line 122
+    Found 9-bit comparator lessequal for signal <n0087> created at line 122
+    Found 9-bit comparator lessequal for signal <n0090> created at line 127
+    Found 9-bit comparator lessequal for signal <n0092> created at line 127
+    Found 9-bit comparator lessequal for signal <n0095> created at line 132
+    Found 9-bit comparator lessequal for signal <n0097> created at line 132
+    Found 9-bit comparator lessequal for signal <n0100> created at line 137
+    Found 9-bit comparator lessequal for signal <n0102> created at line 137
+    Found 9-bit comparator lessequal for signal <n0105> created at line 142
+    Found 9-bit comparator lessequal for signal <n0107> created at line 142
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 222 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <s6AC97> synthesized.
+
+Synthesizing Unit <genAC97>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\AC97test\atlAC97test\atlac97test.v".
+WARNING:Xst:647 - Input <regstatus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <statusdata<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <statusdata<19:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <cmdvd>.
+    Found 1-bit register for signal <leftvd>.
+    Found 1-bit register for signal <rightvd>.
+    Found 20-bit register for signal <leftdac>.
+    Found 20-bit register for signal <rightdac>.
+    Found 8-bit register for signal <cmdaddr>.
+    Found 16-bit register for signal <cmddata>.
+    Found 1-bit register for signal <set>.
+    Found 4-bit register for signal <ac97state>.
+    Found finite state machine <FSM_0> for signal <ac97state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 17                                             |
+    | Clock              | genclk (rising_edge)                           |
+    | Reset              | BTND (positive)                                |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  68 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <genAC97> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 5-bit subtractor                                      : 4
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 25
+ 1-bit register                                        : 9
+ 16-bit register                                       : 1
+ 20-bit register                                       : 12
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 19
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 18
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 20-to-1 multiplexer                             : 4
+ 20-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <cmdaddr_0> in Unit <M1> is equivalent to the following FF/Latch, which will be removed : <cmdaddr_6> 
+INFO:Xst:2261 - The FF/Latch <cmddata_0> in Unit <M1> is equivalent to the following 13 FFs/Latches, which will be removed : <cmddata_1> <cmddata_3> <cmddata_4> <cmddata_5> <cmddata_6> <cmddata_7> <cmddata_8> <cmddata_9> <cmddata_11> <cmddata_12> <cmddata_13> <cmddata_14> <cmddata_15> 
+WARNING:Xst:1710 - FF/Latch <cmdaddr_0> (without init value) has a constant value of 0 in block <M1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cmddata_0> (without init value) has a constant value of 0 in block <M1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <slot2in_8> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_9> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_10> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_11> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_12> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_13> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_14> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_15> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_16> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_17> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_18> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <slot2in_19> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_0> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_1> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_2> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_3> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_8> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_9> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_10> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_11> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_12> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_13> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_14> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_15> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_16> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_17> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_18> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2677 - Node <statusdata_19> of sequential type is unconnected in block <M0>.
+WARNING:Xst:2404 -  FFs/Latches <cmddata<15:11>> (without init value) have a constant value of 0 in block <genAC97>.
+
+Synthesizing (advanced) Unit <s6AC97>.
+The following registers are absorbed into counter <rstlow>: 1 register on signal <rstlow>.
+The following registers are absorbed into counter <bitcount>: 1 register on signal <bitcount>.
+Unit <s6AC97> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 5-bit subtractor                                      : 4
+# Counters                                             : 2
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 268
+ Flip-Flops                                            : 268
+# Comparators                                          : 19
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 18
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 20-to-1 multiplexer                             : 4
+ 20-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <cmdaddr_0> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdaddr_6> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_0> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_1> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_3> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_4> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_5> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_6> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_7> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_8> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddata_9> (without init value) has a constant value of 0 in block <genAC97>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M1/FSM_0> on signal <ac97state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 010
+ 0011  | 011
+ 0100  | 100
+ 0101  | 101
+-------------------
+WARNING:Xst:1710 - FF/Latch <cmdadr_0> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_1> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_2> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_3> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_4> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_5> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_6> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_7> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_8> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_9> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_10> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdadr_11> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddat_0> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddat_1> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddat_2> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmddat_3> (without init value) has a constant value of 0 in block <s6AC97>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <cmddata_2> in Unit <genAC97> is equivalent to the following FF/Latch, which will be removed : <cmddata_10> 
+
+Optimizing unit <atlAC97test> ...
+
+Optimizing unit <s6AC97> ...
+
+Optimizing unit <genAC97> ...
+WARNING:Xst:2677 - Node <M0/statusdata_19> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_18> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_17> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_16> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_15> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_14> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_13> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_12> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_11> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_10> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_9> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_8> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_3> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_2> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_1> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/statusdata_0> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_19> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_18> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_17> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_16> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_15> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_14> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_13> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_12> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_11> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_10> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_9> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_8> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_7> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_6> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_5> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_4> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_3> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_2> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_1> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/regstatus_0> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_19> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_18> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_17> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_16> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_15> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_14> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_13> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_12> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_11> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_10> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_9> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot2in_8> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_19> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_18> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_17> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_16> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_15> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_14> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_13> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_12> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_11> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_10> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_9> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_8> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_7> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_6> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_5> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_4> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_3> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_2> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_1> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:2677 - Node <M0/slot1in_0> of sequential type is unconnected in block <atlAC97test>.
+WARNING:Xst:1710 - FF/Latch <M0/cmddat_19> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_18> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_17> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_16> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_15> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_13> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_12> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_11> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_10> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_9> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_8> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_7> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_5> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmddat_4> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmdadr_18> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M0/cmdadr_12> (without init value) has a constant value of 0 in block <atlAC97test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M1/rightvd> in Unit <atlAC97test> is equivalent to the following FF/Latch, which will be removed : <M1/leftvd> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block atlAC97test, actual ratio is 1.
+FlipFlop M0/bitcount_0 has been replicated 3 time(s)
+FlipFlop M0/bitcount_1 has been replicated 3 time(s)
+FlipFlop M0/bitcount_3 has been replicated 1 time(s)
+FlipFlop M0/bitcount_5 has been replicated 1 time(s)
+FlipFlop M0/bitcount_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 185
+ Flip-Flops                                            : 185
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : atlAC97test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 239
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 5
+#      LUT3                        : 116
+#      LUT4                        : 4
+#      LUT5                        : 17
+#      LUT6                        : 42
+#      MUXCY                       : 15
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 17
+# FlipFlops/Latches                : 185
+#      FD                          : 11
+#      FD_1                        : 92
+#      FDR                         : 35
+#      FDRE                        : 46
+#      FDS                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 5
+#      IBUF                        : 2
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             185  out of  54576     0%  
+ Number of Slice LUTs:                  201  out of  27288     0%  
+    Number used as Logic:               201  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    248
+   Number with an unused Flip Flop:      63  out of    248    25%  
+   Number with an unused LUT:            47  out of    248    18%  
+   Number of fully used LUT-FF pairs:   138  out of    248    55%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    218     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+BITCLK                             | BUFGP                  | 123   |
+CLK                                | BUFGP                  | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.322ns (Maximum Frequency: 120.166MHz)
+   Minimum input arrival time before clock: 4.275ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BITCLK'
+  Clock period: 8.322ns (frequency: 120.166MHz)
+  Total number of paths / destination ports: 1796 / 143
+-------------------------------------------------------------------------
+Delay:               4.161ns (Levels of Logic = 3)
+  Source:            M0/bitcount_2 (FF)
+  Destination:       M0/statusdata_7 (FF)
+  Source Clock:      BITCLK rising
+  Destination Clock: BITCLK falling
+
+  Data Path: M0/bitcount_2 to M0/statusdata_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.447   1.300  M0/bitcount_2 (M0/bitcount_2)
+     LUT5:I2->O            5   0.205   0.715  M0/_n0341_inv11 (M0/_n0341_inv1)
+     LUT5:I4->O           15   0.205   0.982  M0/_n0341_inv2 (M0/_n0341_inv)
+     LUT3:I2->O            1   0.205   0.000  M0/statusdata_7_rstpot (M0/statusdata_7_rstpot)
+     FD_1:D                    0.102          M0/statusdata_7
+    ----------------------------------------
+    Total                      4.161ns (1.164ns logic, 2.997ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.344ns (frequency: 230.181MHz)
+  Total number of paths / destination ports: 255 / 72
+-------------------------------------------------------------------------
+Delay:               4.344ns (Levels of Logic = 3)
+  Source:            M0/rstlow_6 (FF)
+  Destination:       M0/rstlow_6 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M0/rstlow_6 to M0/rstlow_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  M0/rstlow_6 (M0/rstlow_6)
+     LUT3:I0->O            1   0.205   0.580  M0/Mcount_rstlow_val1_SW0 (N12)
+     LUT6:I5->O            6   0.205   0.745  M0/Mcount_rstlow_val1 (M0/Mcount_rstlow_val1)
+     LUT2:I1->O            4   0.205   0.683  M0/Mcount_rstlow_val2 (M0/Mcount_rstlow_val)
+     FDR:R                     0.430          M0/rstlow_0
+    ----------------------------------------
+    Total                      4.344ns (1.492ns logic, 2.852ns route)
+                                       (34.3% logic, 65.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 66 / 66
+-------------------------------------------------------------------------
+Offset:              4.275ns (Levels of Logic = 2)
+  Source:            BTND (PAD)
+  Destination:       M0/rstlow_6 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTND to M0/rstlow_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            63   1.222   1.738  BTND_IBUF (BTND_IBUF)
+     LUT2:I0->O            4   0.203   0.683  M0/Mcount_rstlow_val2 (M0/Mcount_rstlow_val)
+     FDR:R                     0.430          M0/rstlow_0
+    ----------------------------------------
+    Total                      4.275ns (1.855ns logic, 2.420ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BITCLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.169ns (Levels of Logic = 3)
+  Source:            AUDSDI (PAD)
+  Destination:       M0/slot2in_0 (FF)
+  Destination Clock: BITCLK falling
+
+  Data Path: AUDSDI to M0/slot2in_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  AUDSDI_IBUF (AUDSDI_IBUF)
+     LUT3:I1->O            1   0.203   0.684  M0/_n0305_inv_SW8 (N47)
+     LUT6:I4->O            1   0.203   0.000  M0/slot2in_0_rstpot (M0/slot2in_0_rstpot)
+     FD_1:D                    0.102          M0/slot2in_0
+    ----------------------------------------
+    Total                      3.169ns (1.730ns logic, 1.439ns route)
+                                       (54.6% logic, 45.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BITCLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            M0/syncaud (FF)
+  Destination:       AUDSYNC (PAD)
+  Source Clock:      BITCLK rising
+
+  Data Path: M0/syncaud to AUDSYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  M0/syncaud (M0/syncaud)
+     OBUF:I->O                 2.571          AUDSYNC_OBUF (AUDSYNC)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            M0/rstaud (FF)
+  Destination:       AUDRST (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: M0/rstaud to AUDRST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  M0/rstaud (M0/rstaud)
+     OBUF:I->O                 2.571          AUDRST_OBUF (AUDRST)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock BITCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BITCLK         |    7.924|         |    4.161|         |
+CLK            |    6.364|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BITCLK         |    3.053|    2.743|         |         |
+CLK            |    4.344|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.32 secs
+ 
+--> 
+
+Total memory usage is 186688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  147 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

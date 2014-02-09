@@ -1,0 +1,53 @@
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab12/bp_cu.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab12/tb_bp_cu.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab12/bp_cu.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab7/svn_seg_decoder.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/counter_0to5.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/counter_0to9.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/ctr_blk.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/divideby100.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/dsp_drvr.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/sw_core.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/tb_divideby100.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/tb_sw_core.v" into library work
+ERROR:HDLCompiler:806 - "/home/students/tuc56100/xilinx/lab8/tb_sw_core.v" Line
+   117: Syntax error near "$finish".
+ERROR:ProjectMgmt - 1 error(s) found while parsing design hierarchy.
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab7/svn_seg_decoder.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/counter_0to5.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/counter_0to9.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/ctr_blk.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/divideby100.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/dsp_drvr.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/lab7_top_io_wrapper.v" into library work
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/sw_core.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/tb_sw_core.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:HDLCompiler:1835 - Analyzing Verilog file
+   "/home/students/tuc56100/xilinx/lab8/tb_divideby100.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+_pn: Fatal IO error: client killed

@@ -1,0 +1,94 @@
+// This file contains the test vectors for the
+// clear/start/stop controller.
+// The first column (index 6) is the input rst signal
+// The second column (index 5) is the input c_btn signal
+// The third column (index 4) is the input ss_btn signal
+// The fourth column (index 3) is the input db_done signal
+// There is one row per clock edge. The inputs
+//   are set up before the clock edge. The
+//   outputs are observed after the clock edge.
+// The fifth column (index 2) is the output tmr_clr
+// The sixth column (index 1) is the output tmr_on
+// The seventh column (index 0) is the output strt_pls
+//
+//
+1000_000	// idle state - db_done should do nothing
+0001_000	// idle state - c_btn and ss_btn should tmr_clr
+0110_100	// enter ICLEAR state
+0110_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+0010_010	// test 3 combinations of inputs to
+0100_010	// see that there is no transition
+0110_010
+0111_010	// entering RUN state
+0000_010	// holding in RUN state
+0001_010	// holding in RUN state
+0110_100	// enter RCLEAR state
+0110_010	// return to RUN state
+0100_100	// enter RCLEAR state
+0000_010	// return to RUN state
+0010_001	// enter STOP state
+0000_000	// enter SPWAIT state
+0010_000	// test 3 combinations of inputs to
+0100_000	// see that there is no transition
+0110_000
+0111_000	// entering IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// now test the reset operation from every state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+// from ICLEAR state
+1000_000	// should return to IDLE either way
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from START state
+0010_001	// enter START state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from STWAIT state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from RUN state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+0001_010	// entering RUN state
+0000_010	// holding in RUN state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from RCLEAR state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+0001_010	// entering RUN state
+0000_010	// holding in RUN state
+0100_100	// enter RCLEAR state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from STOP state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+0001_010	// entering RUN state
+0000_010	// holding in RUN state
+0010_001	// enter STOP state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state
+// from SPWAIT state
+0010_001	// enter START state
+0000_010	// enter STWAIT state
+0001_010	// entering RUN state
+0000_010	// holding in RUN state
+0010_001	// enter STOP state
+0000_000	// enter SPWAIT state
+1000_000	// return to IDLE state
+0100_100	// enter ICLEAR state
+0000_000	// return to IDLE state

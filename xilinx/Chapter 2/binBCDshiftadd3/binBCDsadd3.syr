@@ -1,0 +1,606 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: binBCDsadd3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "binBCDsadd3.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "binBCDsadd3"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : binBCDsadd3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\shiftadd3.v" into library work
+Parsing module <shiftadd3>.
+Parsing module <shiftadd>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\remote_sources\_\_\Chapter 3\peripherals\sevensegment.v" into library work
+Parsing module <sevensegment>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\remote_sources\_\_\Chapter 3\peripherals\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\gensadd3data.v" into library work
+Parsing module <gensadd3data>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\binBCDsadd3.v" into library work
+Parsing module <binBCDsadd3>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <binBCDsadd3>.
+
+Elaborating module <gensadd3data>.
+
+Elaborating module <sevensegment>.
+
+Elaborating module <shiftadd3>.
+
+Elaborating module <shiftadd>.
+
+Elaborating module <clock>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <binBCDsadd3>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\binBCDsadd3.v".
+    Summary:
+	no macro.
+Unit <binBCDsadd3> synthesized.
+
+Synthesizing Unit <gensadd3data>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\gensadd3data.v".
+WARNING:Xst:653 - Signal <data<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:2935 - Signal 'setdp', unconnected in block 'gensadd3data', is tied to its initial value (0).
+    Found 3-bit register for signal <gstate>.
+    Found 1-bit register for signal <data<3>>.
+    Found 1-bit register for signal <data<2>>.
+    Found 1-bit register for signal <data<1>>.
+    Found 1-bit register for signal <data<0>>.
+    Found 3-bit register for signal <digit>.
+    Found 8-bit register for signal <bindata>.
+    Found finite state machine <FSM_0> for signal <gstate>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  15 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gensadd3data> synthesized.
+
+Synthesizing Unit <sevensegment>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\remote_sources\_\_\Chapter 3\peripherals\sevensegment.v".
+    Found 4-bit register for signal <anodedata>.
+    Found 8-bit register for signal <cathodedata>.
+    Found 32x8-bit Read Only RAM for signal <data[4]_PWR_3_o_wide_mux_1_OUT>
+    Found 8x4-bit Read Only RAM for signal <digit[2]_PWR_3_o_wide_mux_5_OUT>
+    Summary:
+	inferred   2 RAM(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sevensegment> synthesized.
+
+Synthesizing Unit <shiftadd3>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\shiftadd3.v".
+    Summary:
+	no macro.
+Unit <shiftadd3> synthesized.
+
+Synthesizing Unit <shiftadd>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\shiftadd3.v".
+    Found 16x4-bit Read Only RAM for signal <outdata>
+    Summary:
+	inferred   1 RAM(s).
+Unit <shiftadd> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 2\binBCDshiftadd3\remote_sources\_\_\Chapter 3\peripherals\clock.v".
+    Found 1-bit register for signal <clk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_6_o_add_1_OUT> created at line 11.
+    Found 32-bit comparator greater for signal <n0001> created at line 12
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 9
+ 16x4-bit single-port Read Only RAM                    : 7
+ 32x8-bit single-port Read Only RAM                    : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 10
+ 1-bit register                                        : 5
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <digit_2> (without init value) has a constant value of 0 in block <M0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <digit<2:2>> (without init value) have a constant value of 0 in block <gensadd3data>.
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sevensegment>.
+INFO:Xst:3231 - The small RAM <Mram_digit[2]_PWR_3_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data[4]_PWR_3_o_wide_mux_1_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <data>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sevensegment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <shiftadd>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_outdata> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <indata>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <outdata>       |          |
+    -----------------------------------------------------------------------
+Unit <shiftadd> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 9
+ 16x4-bit single-port distributed Read Only RAM        : 7
+ 32x8-bit single-port distributed Read Only RAM        : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M0/FSM_0> on signal <gstate[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0001
+ 001   | 0010
+ 010   | 0100
+ 011   | 1000
+-------------------
+
+Optimizing unit <binBCDsadd3> ...
+
+Optimizing unit <gensadd3data> ...
+
+Optimizing unit <sevensegment> ...
+WARNING:Xst:1710 - FF/Latch <M1/cathodedata_0> (without init value) has a constant value of 1 in block <binBCDsadd3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M1/anodedata_3> (without init value) has a constant value of 1 in block <binBCDsadd3>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block binBCDsadd3, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : binBCDsadd3.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 269
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 62
+#      LUT2                        : 36
+#      LUT3                        : 6
+#      LUT4                        : 9
+#      LUT5                        : 12
+#      LUT6                        : 9
+#      MUXCY                       : 68
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 61
+#      FD                          : 36
+#      FD_1                        : 10
+#      FDE                         : 15
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 9
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  18224     0%  
+ Number of Slice LUTs:                  139  out of   9112     1%  
+    Number used as Logic:               139  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    150
+   Number with an unused Flip Flop:      89  out of    150    59%  
+   Number with an unused LUT:            11  out of    150     7%  
+   Number of fully used LUT-FF pairs:    50  out of    150    33%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 33    |
+M3/clk                             | BUFG                   | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.329ns (Maximum Frequency: 187.656MHz)
+   Minimum input arrival time before clock: 3.130ns
+   Maximum output required time after clock: 3.847ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.329ns (frequency: 187.656MHz)
+  Total number of paths / destination ports: 33199 / 34
+-------------------------------------------------------------------------
+Delay:               5.329ns (Levels of Logic = 33)
+  Source:            M3/clkq_0 (FF)
+  Destination:       M3/clk (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M3/clkq_0 to M3/clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  M3/clkq_0 (M3/clkq_0)
+     INV:I->O              1   0.206   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_lut<0>_INV_0 (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<0> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<1> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<2> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<3> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<4> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<5> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<6> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<7> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<8> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<9> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<10> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<11> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<12> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<13> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<14> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<15> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<16> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<17> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<18> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<19> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<20> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<21> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<22> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<23> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<24> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<25> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<26> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<27> (M3/Madd_clkq[31]_GND_6_o_add_1_OUT_cy<27>)
+     XORCY:CI->O           2   0.180   0.961  M3/Madd_clkq[31]_GND_6_o_add_1_OUT_xor<28> (M3/clkq[31]_GND_6_o_add_1_OUT<28>)
+     LUT5:I0->O            0   0.203   0.000  M3/Mcompar_n0001_lutdi4 (M3/Mcompar_n0001_lutdi4)
+     MUXCY:DI->O           1   0.145   0.000  M3/Mcompar_n0001_cy<4> (M3/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O          33   0.258   1.305  M3/Mcompar_n0001_cy<5> (M3/Mcompar_n0001_cy<5>)
+     FDE:CE                    0.322          M3/clk
+    ----------------------------------------
+    Total                      5.329ns (2.446ns logic, 2.883ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M3/clk'
+  Clock period: 4.189ns (frequency: 238.712MHz)
+  Total number of paths / destination ports: 184 / 34
+-------------------------------------------------------------------------
+Delay:               4.189ns (Levels of Logic = 3)
+  Source:            M0/bindata_4 (FF)
+  Destination:       M0/data_3 (FF)
+  Source Clock:      M3/clk rising
+  Destination Clock: M3/clk rising
+
+  Data Path: M0/bindata_4 to M0/data_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.447   1.194  M0/bindata_4 (M0/bindata_4)
+     LUT6:I0->O            4   0.203   1.028  M2/M4/Mram_outdata11 (M2/M4/Mram_outdata)
+     LUT5:I0->O            1   0.203   0.808  M0/gstate__n00671 (M0/gstate__n0067)
+     LUT3:I0->O            1   0.205   0.000  M0/gstate__n00673 (M0/_n0067)
+     FDE:D                     0.102          M0/data_3
+    ----------------------------------------
+    Total                      4.189ns (1.160ns logic, 3.029ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M3/clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.130ns (Levels of Logic = 2)
+  Source:            BTND (PAD)
+  Destination:       M0/bindata_7 (FF)
+  Destination Clock: M3/clk rising
+
+  Data Path: BTND to M0/bindata_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.580  BTND_IBUF (BTND_IBUF)
+     LUT2:I1->O            8   0.205   0.802  M0/gstate__n0144_inv1 (M0/_n0144_inv)
+     FDE:CE                    0.322          M0/bindata_0
+    ----------------------------------------
+    Total                      3.130ns (1.749ns logic, 1.381ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M3/clk'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              3.847ns (Levels of Logic = 1)
+  Source:            M0/bindata_7 (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      M3/clk rising
+
+  Data Path: M0/bindata_7 to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.447   0.829  M0/bindata_7 (M0/bindata_7)
+     OBUF:I->O                 2.571          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      3.847ns (3.018ns logic, 0.829ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.329|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M3/clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M3/clk         |    4.189|         |    1.773|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.30 secs
+ 
+--> 
+
+Total memory usage is 185628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

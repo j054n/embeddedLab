@@ -1,0 +1,11 @@
+//
+// lab2 : version 09/04/2012
+//                  
+// This file contains the test vectors for the
+// 4 bit even parity generator
+// The first three columns are the inputs: d[3:0]
+// The fourth column is the output: parity
+// It needs to be 16 lines long to cover all possibilities
+//
+0000_1
+0001_0

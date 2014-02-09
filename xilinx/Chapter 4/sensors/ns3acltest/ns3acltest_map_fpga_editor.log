@@ -1,0 +1,17 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.40xd
+#Current Working Directory:
+#:D   C:\s6EDPGA-v14\Chapter 4\sensors\ns3acltest
+#Date/Time:
+#:T   Mon Mar 11 18:13:52 2013
+#------------------------------
+	#Reading ns3acltest_map.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.3\ISE_DS\ISE\.
+	#   "ns3acltest" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+	#Design creation date: 2013.03.11.22.13.35
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

@@ -1,0 +1,414 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sincoslut/ns3sincosdtmf/ns3sincosdtmf.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3sincosdtmf.ucf -p xc6slx16-csg324-3 "ns3sincosdtmf.ngc" ns3sincosdtmf.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3sincosdtmf_map.ncd ns3sincosdtmf.ngd ns3sincosdtmf.pcf 
+par -w -intstyle ise -ol high -mt off ns3sincosdtmf_map.ncd ns3sincosdtmf.ncd ns3sincosdtmf.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3sincosdtmf.twx ns3sincosdtmf.ncd -o ns3sincosdtmf.twr ns3sincosdtmf.pcf -ucf ns3sincosdtmf.ucf 
+bitgen -intstyle ise -f ns3sincosdtmf.ut ns3sincosdtmf.ncd 

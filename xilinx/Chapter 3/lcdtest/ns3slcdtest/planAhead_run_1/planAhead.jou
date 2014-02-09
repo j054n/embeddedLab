@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1
+# Build 179419 by xbuild on Thu Apr 26 11:41:35 MDT 2012
+# Start of session at: Mon Sep 03 19:01:09 2012
+# Process ID: 5040
+# Log file: C:/s6EDPGA-v14/Chapter 3/lcdtest/ns3slcdtest/planAhead_run_1/planAhead.log
+# Journal file: C:/s6EDPGA-v14/Chapter 3/lcdtest/ns3slcdtest/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/s6EDPGA-v14/Chapter 3/lcdtest/ns3slcdtest/pa.fromNetlist.tcl}
+exit

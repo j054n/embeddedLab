@@ -1,0 +1,13 @@
+# Output products list for <binbcddiv>
+_xmsgs\pn_parser.xmsgs
+binbcddiv.asy
+binbcddiv.gise
+binbcddiv.ngc
+binbcddiv.sym
+binbcddiv.v
+binbcddiv.veo
+binbcddiv.xco
+binbcddiv.xise
+binbcddiv_flist.txt
+binbcddiv_readme.txt
+binbcddiv_xmdf.tcl

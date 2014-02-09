@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/sinelut2.v"
+verilog work "ipcore_dir/sinelut1.v"
+verilog work "../../../Chapter 3/peripherals/keypad.v"
+verilog work "../../../Chapter 3/peripherals/da2dac.v"
+verilog work "../../../Chapter 3/peripherals/clock.v"
+verilog work "ns3sincosdtmf.v"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/students/tuc56100/xilinx/lab3/lab4_top_io_wrapper.ncd
+OUTFILE=/home/students/tuc56100/xilinx/lab3/lab4_top_io_wrapper.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/students/tuc56100/xilinx/lab3
+LICENSE=ISE
+USER_INFO=174393175_174132533_207651624_920

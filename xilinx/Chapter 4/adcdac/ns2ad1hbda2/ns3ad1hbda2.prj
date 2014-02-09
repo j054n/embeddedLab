@@ -1,0 +1,5 @@
+verilog work "remote_sources/_/_/_/Chapter 3/peripherals/da2dac.v"
+verilog work "remote_sources/_/_/_/Chapter 3/peripherals/clock.v"
+verilog work "remote_sources/_/_/_/Chapter 3/peripherals/ad1adc.v"
+verilog work "ipcore_dir/hb1.v"
+verilog work "ns3ad1hbda2.v"

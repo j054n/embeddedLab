@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/students/tuc56100/xilinx/lab12/tb_bp_cu_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_bp_cu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/tb_bp_cu/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/ir_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ir_load</obj_property>
+      <obj_property name="ObjectShortName">ir_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/rf_s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_s</obj_property>
+      <obj_property name="ObjectShortName">rf_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/alu_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_s[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_s[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/rf_w_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_w_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_w_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/rf_rq_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_rq_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rq_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/rf_w_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_w_wr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_w_wr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/ud_flags" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ud_flags</obj_property>
+      <obj_property name="ObjectShortName">ud_flags</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/datam_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datam_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datam_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/FETCH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FETCH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FETCH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/DECODE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DECODE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DECODE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/LOAD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LOAD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LOAD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/STORE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">STORE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STORE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/ADDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/IDLE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/INCR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INCR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INCR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/MOVR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MOVR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MOVR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/CODE_LOAD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CODE_LOAD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CODE_LOAD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/CODE_STORE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CODE_STORE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CODE_STORE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/CODE_ADDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CODE_ADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CODE_ADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/CODE_INCR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CODE_INCR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CODE_INCR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bp_cu/uut/CODE_MOVR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CODE_MOVR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CODE_MOVR[3:0]</obj_property>
+   </wvobject>
+</wave_config>

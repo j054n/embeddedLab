@@ -1,0 +1,48 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue May 21 16:19:37 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JC2" LOCATE = SITE "L7" LEVEL 1;
+COMP "JC3" LOCATE = SITE "K6" LEVEL 1;
+COMP "JC4" LOCATE = SITE "G3" LEVEL 1;
+COMP "JC7" LOCATE = SITE "G1" LEVEL 1;
+COMP "JC8" LOCATE = SITE "J7" LEVEL 1;
+COMP "JD7" LOCATE = SITE "D12" LEVEL 1;
+COMP "JC9" LOCATE = SITE "J6" LEVEL 1;
+COMP "JD8" LOCATE = SITE "C12" LEVEL 1;
+COMP "JD9" LOCATE = SITE "F12" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "JC10" LOCATE = SITE "F2" LEVEL 1;
+COMP "BTND" LOCATE = SITE "C9" LEVEL 1;
+COMP "BTNL" LOCATE = SITE "C4" LEVEL 1;
+COMP "BTNR" LOCATE = SITE "D9" LEVEL 1;
+COMP "BTNU" LOCATE = SITE "A8" LEVEL 1;
+COMP "JC1" LOCATE = SITE "H3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M0/sclclk" BEL "M0/clkq_0" BEL "M0/clkq_1" BEL
+        "M0/clkq_2" BEL "M0/clkq_3" BEL "M0/clkq_4" BEL "M0/clkq_5" BEL
+        "M0/clkq_6" BEL "M0/clkq_7" BEL "M0/clkq_8" BEL "M0/clkq_9" BEL
+        "M0/clkq_10" BEL "M0/clkq_11" BEL "M0/clkq_12" BEL "M0/clkq_13" BEL
+        "M0/clkq_14" BEL "M0/clkq_15" BEL "M0/clkq_16" BEL "M0/clkq_17" BEL
+        "M1/lcdcount_23" BEL "M1/lcdcount_22" BEL "M1/lcdcount_21" BEL
+        "M1/lcdcount_20" BEL "M1/lcdcount_19" BEL "M1/lcdcount_18" BEL
+        "M1/lcdcount_17" BEL "M1/lcdcount_16" BEL "M1/lcdcount_15" BEL
+        "M1/lcdcount_14" BEL "M1/lcdcount_13" BEL "M1/lcdcount_12" BEL
+        "M1/lcdcount_11" BEL "M1/lcdcount_10" BEL "M1/lcdcount_9" BEL
+        "M1/lcdcount_8" BEL "M1/lcdcount_7" BEL "M1/lcdcount_6" BEL
+        "M1/lcdcount_5" BEL "M1/lcdcount_4" BEL "M1/lcdcount_3" BEL
+        "M1/lcdcount_2" BEL "M1/lcdcount_1" BEL "M1/lcdcount_0" BEL
+        "M1/lcdd_7" BEL "M1/lcdd_6" BEL "M1/lcdd_5" BEL "M1/lcdd_3" BEL
+        "M1/lcdd_2" BEL "M1/lcdd_1" BEL "M1/lcdd_0" BEL "M1/lcdstate_3" BEL
+        "M1/lcdstate_2" BEL "M1/lcdstate_1" BEL "M1/lcdstate_0" BEL "M1/elcd"
+        BEL "M1/lcddata" BEL "M1/lcdclear" BEL "M1/lcdreset" BEL
+        "M3/gstate_FSM_FFd1" BEL "M3/gstate_FSM_FFd2" BEL "M3/gstate_FSM_FFd4"
+        BEL "M3/gstate_FSM_FFd5" BEL "M3/gstate_FSM_FFd3" BEL "M3/lcddatin_0"
+        BEL "M3/lcddatin_1" BEL "M3/lcddatin_2" BEL "M3/lcddatin_3" BEL
+        "M3/initlcd" BEL "M3/lcddatin_5" BEL "M3/lcddatin_6" BEL
+        "M3/digitmux_1" BEL "M3/digitmux_0" BEL "M3/resetlcd" BEL "M3/datalcd"
+        BEL "M3/clearlcd" BEL "M3/addrlcd" BEL "M1/rslcd" BEL "M1/lcdaddr" BEL
+        "M3/initlcd_1" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

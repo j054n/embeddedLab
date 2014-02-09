@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ettest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="64998659390000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/ettest/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/digit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">digit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/setdp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">setdp</obj_property>
+      <obj_property name="ObjectShortName">setdp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/clocksec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clocksec</obj_property>
+      <obj_property name="ObjectShortName">clocksec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/BTNL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTNL</obj_property>
+      <obj_property name="ObjectShortName">BTNL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/BTNR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTNR</obj_property>
+      <obj_property name="ObjectShortName">BTNR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ettest/BTND" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTND</obj_property>
+      <obj_property name="ObjectShortName">BTND</obj_property>
+   </wvobject>
+</wave_config>

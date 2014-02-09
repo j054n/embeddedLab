@@ -1,0 +1,4 @@
+verilog work "sevensegment.v"
+verilog work "iterative.v"
+verilog work "geniterdata.v"
+verilog work "binBCDiter.v"

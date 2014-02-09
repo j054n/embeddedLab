@@ -1,0 +1,26 @@
+//
+// lab2 : version 9/04/2012 Modified by Vincent Martin for odd parity test
+//                  
+// This file contains the test vectors for the
+// 4 bit odd parity generator
+// The first four columns are the inputs: d[3:0]
+// The fourth column is the output: parity
+// It needs to be 16 lines long to cover all possibilities
+//
+// modify your truth table to include the parity bit.
+0000_1
+0001_0
+0010_0
+0011_1
+0100_0
+0101_1
+0110_1
+0111_0
+1000_0
+1001_1
+1010_1
+1011_0
+1100_1
+1101_0
+1110_0
+1111_1

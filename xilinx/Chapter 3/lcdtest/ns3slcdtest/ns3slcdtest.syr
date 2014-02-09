@@ -1,0 +1,672 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ns3slcdtest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ns3slcdtest.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ns3slcdtest"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ns3slcdtest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\clslcd.v" into library work
+Parsing module <clslcd>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v" into library work
+Parsing module <ns3slcdtest>.
+Parsing module <genlcd>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ns3slcdtest>.
+
+Elaborating module <clslcd>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 3\peripherals\clslcd.v" Line 300: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v" Line 14: Assignment to lcderase ignored, since the identifier is never used
+
+Elaborating module <genlcd>.
+WARNING:HDLCompiler:872 - "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v" Line 30: Using initial value of strdata since it is never assigned
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:634 - "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v" Line 13: Net <eraselcd> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ns3slcdtest>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v".
+INFO:Xst:3210 - "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v" line 13: Output port <lcderase> of the instance <M0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <eraselcd> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ns3slcdtest> synthesized.
+
+Synthesizing Unit <clslcd>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\clslcd.v".
+    Found 1-bit register for signal <lcdclear>.
+    Found 1-bit register for signal <lcddata>.
+    Found 1-bit register for signal <lcdaddr>.
+    Found 1-bit register for signal <lcderase>.
+    Found 5-bit register for signal <lcdstate>.
+    Found 3-bit register for signal <prestate>.
+    Found 3-bit register for signal <sndstate>.
+    Found 1-bit register for signal <snddat>.
+    Found 1-bit register for signal <datsnd>.
+    Found 1-bit register for signal <predat>.
+    Found 1-bit register for signal <datpre>.
+    Found 1-bit register for signal <ss>.
+    Found 1-bit register for signal <mosi>.
+    Found 1-bit register for signal <sclk>.
+    Found 8-bit register for signal <lcdd>.
+    Found 4-bit register for signal <ddat>.
+    Found 32-bit register for signal <i>.
+    Found 1-bit register for signal <lcdreset>.
+    Found 32-bit adder for signal <i[31]_GND_2_o_add_156_OUT> created at line 479.
+    Found 4-bit subtractor for signal <GND_2_o_GND_2_o_sub_89_OUT<3:0>> created at line 300.
+    Found 3-bit subtractor for signal <GND_2_o_i[31]_sub_160_OUT<2:0>> created at line 486.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_2_o_lcdd[7]_Mux_160_o> created at line 486.
+    Found 4-bit comparator greater for signal <n0121> created at line 297
+    Found 32-bit comparator lessequal for signal <n0211> created at line 480
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  67 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 137 Multiplexer(s).
+Unit <clslcd> synthesized.
+
+Synthesizing Unit <genlcd>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\lcdtest\ns3slcdtest\ns3slcdtest.v".
+    Found 1-bit register for signal <resetlcd>.
+    Found 1-bit register for signal <clearlcd>.
+    Found 1-bit register for signal <datalcd>.
+    Found 5-bit register for signal <gstate>.
+    Found 8-bit register for signal <lcddatin>.
+    Found 1-bit register for signal <addrlcd>.
+    Found 32-bit register for signal <i>.
+    Found 1-bit register for signal <initlcd>.
+    Found finite state machine <FSM_0> for signal <gstate>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 20                                             |
+    | Clock              | lcdclk (rising_edge)                           |
+    | Reset              | debpb (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit subtractor for signal <i[31]_GND_3_o_sub_12_OUT> created at line 123.
+    Found 8-bit subtractor for signal <n0089> created at line 106.
+    Found 175-bit shifter logical right for signal <n0091> created at line 106
+    Found 175-bit shifter logical left for signal <n0090> created at line 106
+    Found 32-bit comparator greater for signal <GND_3_o_i[31]_LessThan_13_o> created at line 124
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <genlcd> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 3-bit register for signal <pbshift<2:0>>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\clock.v".
+    Found 1-bit register for signal <sclclk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_5_o_add_1_OUT> created at line 12.
+    Found 32-bit comparator greater for signal <n0001> created at line 13
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 31
+ 1-bit register                                        : 20
+ 3-bit register                                        : 3
+ 32-bit register                                       : 4
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 3
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 139
+ 1-bit 2-to-1 multiplexer                              : 80
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 23
+ 8-bit 2-to-1 multiplexer                              : 23
+# Logic shifters                                       : 2
+ 175-bit shifter logical left                          : 1
+ 175-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 118
+ Flip-Flops                                            : 118
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 3
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 146
+ 1-bit 2-to-1 multiplexer                              : 88
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 23
+ 8-bit 2-to-1 multiplexer                              : 22
+# Logic shifters                                       : 2
+ 175-bit shifter logical left                          : 1
+ 175-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <lcderase> (without init value) has a constant value of 0 in block <clslcd>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M1/FSM_0> on signal <gstate[1:16]> with one-hot encoding.
+---------------------------
+ State | Encoding
+---------------------------
+ 00000 | 0000000000000001
+ 00001 | 0000000000000010
+ 00010 | 0000000000000100
+ 00011 | 0000000000001000
+ 00100 | 0000000000010000
+ 00101 | 0000000000100000
+ 00110 | 0000000001000000
+ 00111 | 0000000010000000
+ 01000 | 0000000100000000
+ 01001 | 0000001000000000
+ 01010 | 0000010000000000
+ 01011 | 0000100000000000
+ 01100 | 0001000000000000
+ 01101 | 0010000000000000
+ 01110 | 0100000000000000
+ 01111 | 1000000000000000
+---------------------------
+
+Optimizing unit <ns3slcdtest> ...
+
+Optimizing unit <clslcd> ...
+
+Optimizing unit <genlcd> ...
+WARNING:Xst:1710 - FF/Latch <i_0> (without init value) has a constant value of 1 in block <genlcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_1> (without init value) has a constant value of 1 in block <genlcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_2> (without init value) has a constant value of 1 in block <genlcd>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ns3slcdtest, actual ratio is 6.
+FlipFlop M0/lcdstate_0 has been replicated 1 time(s)
+FlipFlop M0/lcdstate_1 has been replicated 1 time(s)
+FlipFlop M1/initlcd has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 198
+ Flip-Flops                                            : 198
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ns3slcdtest.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 978
+#      GND                         : 1
+#      INV                         : 40
+#      LUT1                        : 156
+#      LUT2                        : 79
+#      LUT3                        : 26
+#      LUT4                        : 23
+#      LUT5                        : 67
+#      LUT6                        : 196
+#      MUXCY                       : 201
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 181
+# FlipFlops/Latches                : 198
+#      FD                          : 27
+#      FDE                         : 79
+#      FDR                         : 83
+#      FDRE                        : 3
+#      FDS                         : 6
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 1
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             198  out of  18224     1%  
+ Number of Slice LUTs:                  587  out of   9112     6%  
+    Number used as Logic:               587  out of   9112     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    618
+   Number with an unused Flip Flop:     420  out of    618    67%  
+   Number with an unused LUT:            31  out of    618     5%  
+   Number of fully used LUT-FF pairs:   167  out of    618    27%  
+   Number of unique control sets:        26
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 66    |
+M3/sclclk                          | NONE(M2/pbshift_2)     | 4     |
+M4/sclclk                          | BUFG                   | 128   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 13.546ns (Maximum Frequency: 73.823MHz)
+   Minimum input arrival time before clock: 3.087ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.120ns (frequency: 163.405MHz)
+  Total number of paths / destination ports: 60887 / 132
+-------------------------------------------------------------------------
+Delay:               6.120ns (Levels of Logic = 31)
+  Source:            M4/clkq_0 (FF)
+  Destination:       M4/clkq_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M4/clkq_0 to M4/clkq_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  M4/clkq_0 (M4/clkq_0)
+     INV:I->O              1   0.206   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_lut<0>_INV_0 (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<0> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<1> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<2> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<3> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<4> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<5> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<6> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<7> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<8> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<9> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<10> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<11> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<12> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<13> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<14> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<15> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<16> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<17> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<18> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<19> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<20> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<21> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<22> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<23> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<24> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<25> (M4/Madd_clkq[31]_GND_5_o_add_1_OUT_cy<25>)
+     XORCY:CI->O           2   0.180   0.961  M4/Madd_clkq[31]_GND_5_o_add_1_OUT_xor<26> (M4/clkq[31]_GND_5_o_add_1_OUT<26>)
+     LUT5:I0->O            0   0.203   0.000  M4/Mcompar_n0001_lutdi4 (M4/Mcompar_n0001_lutdi4)
+     MUXCY:DI->O           1   0.339   0.580  M4/Mcompar_n0001_cy<4> (M4/Mcompar_n0001_cy<4>)
+     LUT6:I5->O           33   0.205   1.305  M4/Mcompar_n0001_cy<5> (M4/Mcompar_n0001_cy<5>)
+     FDR:R                     0.430          M4/clkq_0
+    ----------------------------------------
+    Total                      6.120ns (2.657ns logic, 3.463ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M3/sclclk'
+  Clock period: 2.540ns (frequency: 393.685MHz)
+  Total number of paths / destination ports: 9 / 4
+-------------------------------------------------------------------------
+Delay:               2.540ns (Levels of Logic = 1)
+  Source:            M2/pbshift_1 (FF)
+  Destination:       M2/pbreg (FF)
+  Source Clock:      M3/sclclk rising
+  Destination Clock: M3/sclclk rising
+
+  Data Path: M2/pbshift_1 to M2/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  M2/pbshift_1 (M2/pbshift_1)
+     LUT4:I1->O            1   0.205   0.579  M2/_n00181 (M2/_n0018)
+     FDR:R                     0.430          M2/pbreg
+    ----------------------------------------
+    Total                      2.540ns (1.082ns logic, 1.458ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/sclclk'
+  Clock period: 13.546ns (frequency: 73.823MHz)
+  Total number of paths / destination ports: 2968214 / 216
+-------------------------------------------------------------------------
+Delay:               13.546ns (Levels of Logic = 11)
+  Source:            M1/initlcd_1 (FF)
+  Destination:       M0/i_31 (FF)
+  Source Clock:      M4/sclclk rising
+  Destination Clock: M4/sclclk rising
+
+  Data Path: M1/initlcd_1 to M0/i_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.447   1.086  M1/initlcd_1 (M1/initlcd_1)
+     LUT2:I0->O           14   0.203   0.957  M0/Mmux_lcdstate[4]_GND_2_o_mux_2_OUT31 (M0/lcdstate[4]_GND_2_o_mux_2_OUT<2>)
+     MUXF7:S->O            1   0.148   0.580  M0/Mmux_lcdstate[4]_GND_2_o_mux_33_OUT1144_SW0 (N26)
+     LUT6:I5->O           18   0.205   1.154  M0/Mmux_lcdstate[4]_GND_2_o_mux_33_OUT1144 (M0/lcdstate[4]_lcdstate[4]_mux_27_OUT<0>)
+     LUT6:I4->O            7   0.203   0.774  M0/Mmux_lcdstate[4]_GND_2_o_mux_63_OUT163 (M0/lcdstate[4]_lcdstate[4]_mux_58_OUT<2>)
+     LUT6:I5->O           13   0.205   0.933  M0/_n0519<4>1 (M0/_n0519)
+     LUT6:I5->O           19   0.205   1.072  M0/Mmux_lcdstate[4]_GND_2_o_mux_80_OUT1291 (M0/lcdstate[4]_lcdstate[4]_mux_76_OUT<0>)
+     LUT6:I5->O            1   0.205   0.684  M0/Mmux_GND_2_o_GND_2_o_equal_143_o1111_SW4 (N77)
+     LUT6:I4->O            3   0.203   0.651  M0/Mmux_GND_2_o_GND_2_o_equal_143_o1111 (M0/Mmux_GND_2_o_GND_2_o_equal_143_o111)
+     LUT6:I5->O            4   0.205   0.684  M0/Mmux_GND_2_o_GND_2_o_equal_143_o11 (M0/GND_2_o_GND_2_o_equal_143_o)
+     LUT6:I5->O            2   0.205   0.721  M0/Mmux_datsnd_prestate[2]_MUX_132_o11_1 (M0/Mmux_datsnd_prestate[2]_MUX_132_o11)
+     LUT4:I2->O           32   0.203   1.291  M0/_n0599_inv1_cepot (M0/_n0599_inv1_cepot)
+     FDE:CE                    0.322          M0/i_0
+    ----------------------------------------
+    Total                     13.546ns (2.959ns logic, 10.587ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M3/sclclk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.087ns (Levels of Logic = 2)
+  Source:            BTNR (PAD)
+  Destination:       M2/pbreg (FF)
+  Destination Clock: M3/sclclk rising
+
+  Data Path: BTNR to M2/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  BTNR_IBUF (BTNR_IBUF)
+     LUT4:I3->O            1   0.205   0.579  M2/_n00181 (M2/_n0018)
+     FDR:R                     0.430          M2/pbreg
+    ----------------------------------------
+    Total                      3.087ns (1.857ns logic, 1.230ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M4/sclclk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            M0/ss (FF)
+  Destination:       JA1 (PAD)
+  Source Clock:      M4/sclclk rising
+
+  Data Path: M0/ss to JA1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.650  M0/ss (M0/ss)
+     OBUF:I->O                 2.571          JA1_OBUF (JA1)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    6.120|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M3/sclclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M3/sclclk      |    2.540|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/sclclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M3/sclclk      |    3.657|         |         |         |
+M4/sclclk      |   13.546|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.40 secs
+ 
+--> 
+
+Total memory usage is 198848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

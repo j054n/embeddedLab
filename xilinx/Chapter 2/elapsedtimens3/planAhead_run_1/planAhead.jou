@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Tue Dec 11 20:01:47 2012
+# Process ID: 7884
+# Log file: C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/planAhead_run_1/planAhead.log
+# Journal file: C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/pa.fromNcd.tcl}

@@ -1,0 +1,45 @@
+ISim O.76xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+WARNING:  For instance udd/U1/, width 1 of formal port display_on is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim>  run all
+digit0 changed to: 1001111 - time: 100000020 ns
+digit0 changed to: 0100100 - time: 200000020 ns
+digit0 changed to: 0000110 - time: 200002020 ns
+digit0 changed to: 0001011 - time: 200004020 ns
+digit0 changed to: 0010010 - time: 200006020 ns
+digit0 changed to: 0010000 - time: 200008020 ns
+digit0 changed to: 1000111 - time: 200010020 ns
+digit0 changed to: 0000000 - time: 200012020 ns
+digit0 changed to: 0000010 - time: 200014020 ns
+digit0 changed to: 1000000 - time: 200016020 ns
+ digit1 changed to: 1001111 - time: 200016040 ns
+ digit1 changed to: 0100100 - time: 200036040 ns
+ digit1 changed to: 0000110 - time: 200056040 ns
+ digit1 changed to: 0001011 - time: 200076040 ns
+ digit1 changed to: 0010010 - time: 200096040 ns
+ digit1 changed to: 0010000 - time: 200116040 ns
+ digit1 changed to: 1000111 - time: 200136040 ns
+ digit1 changed to: 0000000 - time: 200156040 ns
+ digit1 changed to: 0000010 - time: 200176040 ns
+ digit1 changed to: 1000000 - time: 200196040 ns
+  digit2 changed - to 1001111 - time = 200196060 ns
+  digit2 changed - to 0100100 - time = 200396060 ns
+  digit2 changed - to 0000110 - time = 200596060 ns
+  digit2 changed - to 0001011 - time = 200796060 ns
+  digit2 changed - to 0010010 - time = 200996060 ns
+  digit2 changed - to 1000000 - time = 201196060 ns
+   digit3 changed - to 1001111 - time = 201196080 ns
+   digit3 changed - to 0100100 - time = 202396080 ns
+   digit3 changed - to 0000110 - time = 203596080 ns
+   digit3 changed - to 0001011 - time = 204796080 ns
+   digit3 changed - to 0010010 - time = 205996080 ns
+   digit3 changed - to 0010000 - time = 207196080 ns
+   digit3 changed - to 1000111 - time = 208396080 ns
+   digit3 changed - to 0000000 - time = 209596080 ns
+   digit3 changed - to 0000010 - time = 210796080 ns
+Simulation complete!!!
+Stopped at time : 210796080 ns : File "/home/students/tuc56100/xilinx/lab8/tb_sw_core.v" Line 116
+ISim>  

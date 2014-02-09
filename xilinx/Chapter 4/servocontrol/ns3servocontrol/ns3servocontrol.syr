@@ -1,0 +1,524 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: ns3servocontrol.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ns3servocontrol.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ns3servocontrol"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ns3servocontrol
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\rotary.v" into library work
+Parsing module <rotary>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" into library work
+Parsing module <ns3servocontrol>.
+Parsing module <servomotor>.
+Parsing module <servospeed>.
+Parsing module <servocontrol>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ns3servocontrol>.
+WARNING:HDLCompiler:1127 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 15: Assignment to rotA ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 16: Assignment to rotB ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 17: Assignment to rotCTR ignored, since the identifier is never used
+
+Elaborating module <servospeed>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 91: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:189 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 26: Size mismatch in connection of port <speed>. Formal port size is 18-bit while actual signal size is 15-bit.
+
+Elaborating module <servomotor>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 45: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 51: Result of 32-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 66: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 72: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:189 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 27: Size mismatch in connection of port <speed>. Formal port size is 18-bit while actual signal size is 15-bit.
+
+Elaborating module <servocontrol>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 126: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:189 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 28: Size mismatch in connection of port <pwm>. Formal port size is 9-bit while actual signal size is 15-bit.
+
+Elaborating module <rotary>.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:634 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 28: Net <BTN0> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 29: Net <ROTA> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v" Line 30: Net <CCLK> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ns3servocontrol>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v".
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTND> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <JA1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <JA2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <JA3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <BTN0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ROTA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ROTB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ROTCTR> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <CCLK> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ns3servocontrol> synthesized.
+
+Synthesizing Unit <servospeed>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v".
+    Found 18-bit register for signal <speed>.
+    Found 1-bit register for signal <spddav>.
+    Found 1-bit register for signal <flagsa>.
+    Found 18-bit register for signal <cspeed>.
+    Found 18-bit adder for signal <cspeed[17]_GND_2_o_add_1_OUT> created at line 91.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <servospeed> synthesized.
+
+Synthesizing Unit <servomotor>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v".
+    Found 9-bit register for signal <pwm>.
+    Found 1-bit register for signal <davspd>.
+    Found 9-bit register for signal <tpwm>.
+    Found 18-bit register for signal <dspeed>.
+    Found 18-bit adder for signal <dspeed[17]_GND_3_o_add_1_OUT> created at line 45.
+    Found 9-bit adder for signal <tpwm[8]_GND_3_o_add_17_OUT> created at line 72.
+    Found 18-bit subtractor for signal <_n0059> created at line 52.
+    Found 9-bit subtractor for signal <GND_3_o_GND_3_o_sub_13_OUT<8:0>> created at line 66.
+    Found 18-bit comparator greater for signal <GND_3_o_dspeed[17]_LessThan_3_o> created at line 46
+    Found 18-bit comparator greater for signal <speed[17]_dspeed[17]_LessThan_12_o> created at line 64
+    Found 9-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_14_o> created at line 67
+    Found 18-bit comparator greater for signal <dspeed[17]_speed[17]_LessThan_17_o> created at line 70
+    Found 9-bit comparator greater for signal <PWR_3_o_tpwm[8]_LessThan_19_o> created at line 73
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <servomotor> synthesized.
+
+Synthesizing Unit <servocontrol>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 4\servocontrol\ns3servocontrol\ns3servocontrol.v".
+    Found 1-bit register for signal <flagpwm>.
+    Found 9-bit register for signal <pwmcount>.
+    Found 1-bit register for signal <en>.
+    Found 1-bit register for signal <dir>.
+    Found 9-bit adder for signal <pwmcount[8]_GND_10_o_add_5_OUT> created at line 126.
+    Found 9-bit comparator greater for signal <PWR_6_o_pwmcount[8]_LessThan_8_o> created at line 131
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <servocontrol> synthesized.
+
+Synthesizing Unit <rotary>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\rotary.v".
+    Found 1-bit register for signal <rotCTRreg>.
+    Found 3-bit register for signal <rotCTRshift<2:0>>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <rotary> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\clock.v".
+    Found 1-bit register for signal <sclclk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_12_o_add_1_OUT> created at line 12.
+    Found 32-bit comparator greater for signal <n0001> created at line 13
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 18-bit adder                                          : 2
+ 18-bit subtractor                                     : 1
+ 32-bit adder                                          : 2
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 1
+# Registers                                            : 18
+ 1-bit register                                        : 9
+ 18-bit register                                       : 3
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 9-bit register                                        : 3
+# Comparators                                          : 8
+ 18-bit comparator greater                             : 3
+ 32-bit comparator greater                             : 2
+ 9-bit comparator greater                              : 3
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 1
+ 18-bit 2-to-1 multiplexer                             : 5
+ 9-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <M0> is unconnected in block <ns3servocontrol>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <ns3servocontrol>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M3> is unconnected in block <ns3servocontrol>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M5> is unconnected in block <ns3servocontrol>.
+   It will be removed from the design.
+WARNING:Xst:1293 - FF/Latch <clkq_11> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_12> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_13> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_14> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_15> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_16> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_17> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_18> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_19> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_20> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_21> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_22> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_23> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_24> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_25> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_26> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_27> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_28> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_29> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_30> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_31> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sclclk> (without init value) has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dir> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <en> has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <flagpwm> (without init value) has a constant value of 1 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_0> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_1> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_2> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_3> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_4> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_5> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_6> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_7> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pwmcount_8> (without init value) has a constant value of 0 in block <M2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_0> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_1> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_2> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_3> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_4> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_5> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_6> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_7> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_8> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_9> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkq_10> has a constant value of 0 in block <M4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <M4> is unconnected in block <ns3servocontrol>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <servospeed>.
+The following registers are absorbed into counter <cspeed>: 1 register on signal <cspeed>.
+Unit <servospeed> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 18-bit adder                                          : 2
+ 18-bit subtractor                                     : 1
+ 32-bit adder                                          : 2
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 1
+# Counters                                             : 3
+ 18-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Comparators                                          : 8
+ 18-bit comparator greater                             : 3
+ 32-bit comparator greater                             : 2
+ 9-bit comparator greater                              : 3
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 19
+ 18-bit 2-to-1 multiplexer                             : 4
+ 9-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <en> has a constant value of 0 in block <servocontrol>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <flagpwm> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_0> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_1> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_2> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_3> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_4> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_5> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_6> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_7> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:2677 - Node <pwmcount_8> of sequential type is unconnected in block <servocontrol>.
+WARNING:Xst:1710 - FF/Latch <rotCTRshift_0> (without init value) has a constant value of 0 in block <rotary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rotCTRreg> (without init value) has a constant value of 0 in block <rotary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rotCTRshift_1> (without init value) has a constant value of 0 in block <rotary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rotCTRshift_2> (without init value) has a constant value of 0 in block <rotary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M4/sclclk> (without init value) has a constant value of 0 in block <ns3servocontrol>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/dir> (without init value) has a constant value of 0 in block <ns3servocontrol>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <M0> of block <servospeed> are unconnected in block <ns3servocontrol>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <M1> of block <servomotor> are unconnected in block <ns3servocontrol>. Underlying logic will be removed.
+WARNING:Xst:2677 - Node <M5/sclclk> of sequential type is unconnected in block <ns3servocontrol>.
+
+Optimizing unit <ns3servocontrol> ...
+
+Optimizing unit <servospeed> ...
+
+Optimizing unit <servomotor> ...
+WARNING:Xst:1293 - FF/Latch <tpwm_0> has a constant value of 0 in block <servomotor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pwm_0> (without init value) has a constant value of 0 in block <servomotor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <dspeed_0> has a constant value of 0 in block <servomotor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <dspeed_0> has a constant value of 0 in block <servomotor>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ns3servocontrol, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ns3servocontrol.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                   7  out of    232     3%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            JB3 (PAD)
+  Destination:       JC1 (PAD)
+
+  Data Path: JB3 to JC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  JB3_IBUF (JC1_OBUF)
+     OBUF:I->O                 2.571          JC1_OBUF (JC1)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.83 secs
+ 
+--> 
+
+Total memory usage is 185432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   99 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

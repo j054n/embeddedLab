@@ -1,0 +1,460 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: ns3da4test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ns3da4test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ns3da4test"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ns3da4test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\peripherals\da4dac.v" into library work
+Parsing module <da4dac>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da4test\ns3da4test.v" into library work
+Parsing module <ns3da4test>.
+Parsing module <gendac>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ns3da4test>.
+
+Elaborating module <da4dac>.
+
+Elaborating module <gendac>.
+WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da4test\ns3da4test.v" Line 76: Result of 13-bit expression is truncated to fit in 12-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ns3da4test>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da4test\ns3da4test.v".
+    Summary:
+	no macro.
+Unit <ns3da4test> synthesized.
+
+Synthesizing Unit <da4dac>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\peripherals\da4dac.v".
+    Found 1-bit register for signal <davdac>.
+    Found 1-bit register for signal <dacsync>.
+    Found 1-bit register for signal <dacsck>.
+    Found 1-bit register for signal <dacout>.
+    Found 7-bit register for signal <dacstate>.
+    Found 128x7-bit Read Only RAM for signal <dacstate[6]_PWR_2_o_wide_mux_5_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  11 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <da4dac> synthesized.
+
+Synthesizing Unit <gendac>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da4test\ns3da4test.v".
+    Found 1-bit register for signal <dacdav>.
+    Found 12-bit register for signal <dacdata>.
+    Found 8-bit register for signal <dacaux>.
+    Found 4-bit register for signal <daccmd>.
+    Found 4-bit register for signal <dacaddr>.
+    Found 3-bit register for signal <gstate>.
+    Found finite state machine <FSM_0> for signal <gstate>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | genclk (rising_edge)                           |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <dacdata[11]_GND_3_o_add_17_OUT> created at line 76.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gendac> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x7-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Registers                                            : 9
+ 1-bit register                                        : 5
+ 12-bit register                                       : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 62
+ 12-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <dacaux_1> in Unit <M1> is equivalent to the following 6 FFs/Latches, which will be removed : <dacaux_2> <dacaux_3> <dacaux_4> <dacaux_5> <dacaux_6> <dacaux_7> 
+WARNING:Xst:1293 - FF/Latch <dacaux_1> has a constant value of 0 in block <M1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <da4dac>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dacstate[6]_PWR_2_o_wide_mux_5_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 7-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <dacstate[6]_GND_2_o_mux_2_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <da4dac> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x7-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 62
+ 12-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <dacaux_1> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_2> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_3> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_4> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_5> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_6> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dacaux_7> has a constant value of 0 in block <gendac>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M1/FSM_0> on signal <gstate[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+INFO:Xst:2261 - The FF/Latch <daccmd_0> in Unit <gendac> is equivalent to the following FF/Latch, which will be removed : <daccmd_1> 
+
+Optimizing unit <ns3da4test> ...
+
+Optimizing unit <da4dac> ...
+
+Optimizing unit <gendac> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ns3da4test, actual ratio is 0.
+FlipFlop M1/dacdav has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ns3da4test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 100
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 11
+#      LUT2                        : 11
+#      LUT3                        : 15
+#      LUT4                        : 16
+#      LUT5                        : 4
+#      LUT6                        : 15
+#      MUXCY                       : 11
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 33
+#      FD                          : 11
+#      FDE                         : 22
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of  18224     0%  
+ Number of Slice LUTs:                   74  out of   9112     0%  
+    Number used as Logic:                74  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     78
+   Number with an unused Flip Flop:      45  out of     78    57%  
+   Number with an unused LUT:             4  out of     78     5%  
+   Number of fully used LUT-FF pairs:    29  out of     78    37%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    232     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 33    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.261ns (Maximum Frequency: 234.670MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.261ns (frequency: 234.670MHz)
+  Total number of paths / destination ports: 411 / 55
+-------------------------------------------------------------------------
+Delay:               4.261ns (Levels of Logic = 4)
+  Source:            M0/dacstate_2 (FF)
+  Destination:       M0/dacstate_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M0/dacstate_2 to M0/dacstate_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   0.774  M0/dacstate_2 (M0/dacstate_2)
+     LUT2:I1->O           10   0.205   0.961  M0/Mmux_dacstate[6]_GND_2_o_mux_2_OUT31 (M0/dacstate[6]_GND_2_o_mux_2_OUT<2>)
+     LUT2:I0->O            1   0.203   0.580  M0_Mram_dacstate[6]_PWR_2_o_wide_mux_5_OUT1_SW0 (M0_N01)
+     LUT6:I5->O            1   0.205   0.580  M0_Mram_dacstate[6]_PWR_2_o_wide_mux_5_OUT1 (M0/dacstate[6]_PWR_2_o_wide_mux_5_OUT<0>)
+     LUT4:I3->O            1   0.205   0.000  M0/Mmux_dacstate[6]_dacstate[6]_mux_10_OUT11 (M0/dacstate[6]_dacstate[6]_mux_10_OUT<0>)
+     FD:D                      0.102          M0/dacstate_0
+    ----------------------------------------
+    Total                      4.261ns (1.367ns logic, 2.894ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            M0/dacsync (FF)
+  Destination:       JA1 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: M0/dacsync to JA1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  M0/dacsync (M0/dacsync)
+     OBUF:I->O                 2.571          JA1_OBUF (JA1)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.261|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.83 secs
+ 
+--> 
+
+Total memory usage is 196076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

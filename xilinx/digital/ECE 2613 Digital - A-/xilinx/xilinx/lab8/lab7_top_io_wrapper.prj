@@ -1,0 +1,8 @@
+verilog work "divideby100.v"
+verilog work "counter_0to9.v"
+verilog work "counter_0to5.v"
+verilog work "../lab7/svn_seg_decoder.v"
+verilog work "dsp_drvr.v"
+verilog work "ctr_blk.v"
+verilog work "sw_core.v"
+verilog work "lab7_top_io_wrapper.v"

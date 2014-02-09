@@ -1,0 +1,5 @@
+verilog work "../../peripherals/clplcd.v"
+verilog work "../../peripherals/clock.v"
+verilog work "remote_sources/_/_/peripherals/ad1adc.v"
+verilog work "adclcd.v"
+verilog work "ns3ad1test.v"

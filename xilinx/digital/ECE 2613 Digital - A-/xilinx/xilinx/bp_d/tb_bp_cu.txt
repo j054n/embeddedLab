@@ -1,0 +1,39 @@
+// This file contains the test vectors for the basic
+// processor control unit.
+//
+// This is NOT a self checking testbench. It only displays
+// the outputs to the terminal.
+//
+// Columns: (0 is rightmost column)
+// ------inputs------
+// [16] - reset signal: rst
+// [15:0] - instruction register : ir
+//
+// There is one clock cycle per test vector.
+// The inputs are set up 1/2 cycle before ^clk.
+// The inputs and outputs are displayed 1/2 cycle after ^clk.
+//
+// reset for one clock cycle
+1_xxxxxxxxxxxxxxxx
+// Load data instruction - pick register 5
+// Need to hold the IR for 3 clocks to get
+// through the state machine.
+0_0000010100001111
+0_0000010100001111
+0_0000010100001111
+// Store data instruction - pick register 14
+0_0001111011110000
+0_0001111011110000
+0_0001111011110000
+// Add registers - pick 3 and 7
+0_0010000001110011
+0_0010000001110011
+0_0010000001110011
+// Increment register - pick 2
+0_0011000000000010
+0_0011000000000010
+0_0011000000000010
+// Move register 2 to register 9
+0_0100000000101001
+0_0100000000101001
+0_0100000000101001

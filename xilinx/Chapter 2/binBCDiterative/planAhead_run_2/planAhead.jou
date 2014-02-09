@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Sun Dec 09 13:55:01 2012
+# Process ID: 4316
+# Log file: C:/s6EDPGA-v14/Chapter 2/binBCDiterative/planAhead_run_2/planAhead.log
+# Journal file: C:/s6EDPGA-v14/Chapter 2/binBCDiterative/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/s6EDPGA-v14/Chapter 2/binBCDiterative/pa.fromNetlist.tcl}

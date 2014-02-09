@@ -1,0 +1,104 @@
+// This file contains the test vectors for the basic processor
+// datapath.
+// Columns: (0 is rightmost column)
+// ------inputs------
+// [48] - register file input mux selector: rf_s
+// [47:44] - register file write address: rf_w_addr
+// [43:42] - register file write enable: rf_w_wr
+// [41:38] - register file read q address: rf_rq_addr
+// [37:35] - ALU function selector: alu_s
+// [34] - update flags strobe: ud_flags
+// [33:18] - input data ('1' side of mux): in_data
+// ------outputs------
+// [17:16] - registered carry out and zero flags: flag_reg
+// [15:0] - output data ('a' input side of ALU, which is
+//    equal to the the output of the register file
+//    selected by w_addr): out_data
+//
+// There is one clock cycle per test vector.
+// The inputs are set up 1/2 cycle before ^clk.
+// The outputs are compared 1/2 cycle after ^clk.
+//
+// load registers and read same register
+1_0000_11_xxxx_xxx_1_1010010110100000__xx_1010010110100000
+1_0001_11_xxxx_xxx_1_1010010110100001__0x_1010010110100001
+1_0010_11_xxxx_xxx_1_1010010110100010__0x_1010010110100010
+1_0011_11_xxxx_xxx_1_1010010110100011__0x_1010010110100011
+1_0100_11_xxxx_xxx_1_1010010110100100__0x_1010010110100100
+1_0101_11_xxxx_xxx_1_1010010110100101__0x_1010010110100101
+1_0110_11_xxxx_xxx_1_1010010110100110__0x_1010010110100110
+1_0111_11_xxxx_xxx_1_1010010110100111__0x_1010010110100111
+1_1000_11_xxxx_xxx_1_1010010110101000__0x_1010010110101000
+1_1001_11_xxxx_xxx_1_1010010110101001__0x_1010010110101001
+1_1010_11_xxxx_xxx_1_1010010110101010__0x_1010010110101010
+1_1011_11_xxxx_xxx_1_1010010110101011__0x_1010010110101011
+1_1100_11_xxxx_xxx_1_1010010110101100__0x_1010010110101100
+1_1101_11_xxxx_xxx_1_1010010110101101__0x_1010010110101101
+1_1110_11_xxxx_xxx_1_1010010110101110__0x_1010010110101110
+1_1111_11_xxxx_xxx_1_1010010110101111__0x_1010010110101111
+// all registers uniquely loaded
+// xor on reg 0 and write it to get a 0
+0_0000_11_0000_110_1_xxxxxxxxxxxxxxxx__01_0000000000000000
+// check if zero bit holds
+x_0001_00_0000_110_0_xxxxxxxxxxxxxxxx__01_1010010110100001
+// then it should clear
+x_0001_00_0000_110_1_xxxxxxxxxxxxxxxx__00_1010010110100001
+// test byte write to reg 0
+1_0000_01_xxxx_xxx_0_1111111111111111__00_0000000011111111
+1_0000_10_xxxx_xxx_0_1111111100000000__00_1111111111111111
+// write 0 to reg 0
+1_0000_11_xxxx_xxx_0_0000000000000000__00_0000000000000000
+// read reg 1 to the output port
+x_0001_00_xxxx_xxx_0_xxxxxxxxxxxxxxxx__00_1010010110100001
+// increment register a few times
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_0000000000000001
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_0000000000000010
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_0000000000000011
+// complement reg 0
+0_0000_11_xxxx_111_1_xxxxxxxxxxxxxxxx__00_1111111111111100
+// increment a few times to set flags
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_1111111111111101
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_1111111111111110
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__00_1111111111111111
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__11_0000000000000000
+// complement reg 0 to set to all 1's
+0_0000_11_xxxx_111_1_xxxxxxxxxxxxxxxx__00_1111111111111111
+// and with reg 14
+0_0000_11_1110_100_1_xxxxxxxxxxxxxxxx__00_1010010110101110
+// register to register write - write reg3 to reg0
+// first set flags to then see that they don't get cleared
+1_0000_11_xxxx_xxx_1_1111111111111111__00_1111111111111111
+0_0000_11_xxxx_010_1_xxxxxxxxxxxxxxxx__11_0000000000000000
+// now do the write (flags should be unchanged)
+0_0000_11_0011_011_0_xxxxxxxxxxxxxxxx__11_1010010110100011
+// register to register add reg 1 + reg 3 to reg 1 (carry is set)
+0_0001_11_0011_000_1_xxxxxxxxxxxxxxxx__10_0100101101000101
+// register to register subtract reg 1 - reg 3 to reg 1 (carry is set)
+0_0001_11_0011_001_1_xxxxxxxxxxxxxxxx__10_1010010110100001
+// register to register or
+// first add reg 1 to itself to shift the bits (carry is set)
+0_0001_11_0001_000_1_xxxxxxxxxxxxxxxx__10_0100101101000011
+// now or it with reg 12
+0_0001_11_1100_101_1_xxxxxxxxxxxxxxxx__00_1110111111101111
+// flag tests (3)
+// clear carry flag and set zero flag with xor with no write
+// first add reg 1 to itself to shift the bits (no write)
+0_0001_00_0001_000_1_xxxxxxxxxxxxxxxx__10_1110111111101111
+// now xor with no write - the flags should flip
+x_0001_00_0001_110_1_xxxxxxxxxxxxxxxx__01_1110111111101111
+// set carry and clear zero in two steps
+// start with zero in reg 1
+0_0001_11_0001_110_1_xxxxxxxxxxxxxxxx__01_0000000000000000
+// first set carry flag with select b no-op (no write)
+x_xxxx_00_0001_011_1_xxxxxxxxxxxxxxxx__11_xxxxxxxxxxxxxxxx
+// then subtract any register from itself (no write)
+x_0001_00_0001_001_1_xxxxxxxxxxxxxxxx__10_0000000000000000
+// set carry and zero flag depends on value in register
+// clear flags by reg 8 or'ed with itself (no write)
+x_1000_00_1000_101_1_xxxxxxxxxxxxxxxx__00_1010010110101000
+// set both flags by selecting reg 1 (zero value) and b no-op
+x_xxxx_00_0001_011_1_xxxxxxxxxxxxxxxx__11_xxxxxxxxxxxxxxxx
+// clear flags by reg 8 or'ed with itself (no write)
+x_1000_00_1000_101_1_xxxxxxxxxxxxxxxx__00_1010010110101000
+// set only carry flag by selecting reg 8 (non zero value) and b no-op
+x_xxxx_00_1000_011_1_xxxxxxxxxxxxxxxx__10_xxxxxxxxxxxxxxxx

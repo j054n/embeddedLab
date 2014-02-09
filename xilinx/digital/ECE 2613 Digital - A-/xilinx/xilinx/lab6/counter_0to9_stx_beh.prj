@@ -1,0 +1,2 @@
+verilog isim_temp "counter_0to9.v"
+verilog isim_temp "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

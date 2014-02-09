@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/bargraphtest/ns3bargraphtest/bargraphtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3bargraphtest.ucf -p xc6slx16-csg324-3 "bargraphtest.ngc" bargraphtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o bargraphtest_map.ncd bargraphtest.ngd bargraphtest.pcf 
+par -w -intstyle ise -ol high -mt off bargraphtest_map.ncd bargraphtest.ncd bargraphtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml bargraphtest.twx bargraphtest.ncd -o bargraphtest.twr bargraphtest.pcf -ucf ns3bargraphtest.ucf 
+bitgen -intstyle ise -f bargraphtest.ut bargraphtest.ncd 

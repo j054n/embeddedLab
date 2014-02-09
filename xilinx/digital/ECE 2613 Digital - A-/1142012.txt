@@ -1,0 +1,17 @@
+blocking <=
+non blocking =
+
+blocking is used mostly in postedge always statemnets
+non blocking is used mostly in always statements combinational
+
+flip-flops:
+synchronous vs. asynchroonous resets
+
+we will mostly use synchronous
+
+from scratch we will make a 3bit up/down counter (binary)
+0 -> 7
+or 
+7 -> 0
+
+

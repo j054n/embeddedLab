@@ -1,0 +1,623 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: lab1_top_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab1_top_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab1_top_module"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : lab1_top_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/vmartin/xilinx/lab1/mealyStateMachineLab1.v" into library work
+Parsing module <mealyStateMachineLab1>.
+Analyzing Verilog file "/home/vmartin/xilinx/lab1/incrementToValue.v" into library work
+Parsing module <incrementToValue>.
+Analyzing Verilog file "/home/vmartin/xilinx/lab1/clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v" into library work
+Parsing module <BCD_From_7bit_Binary>.
+Analyzing Verilog file "/home/vmartin/xilinx/lab1/lab1_top_module.v" into library work
+Parsing module <lab1_top_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lab1_top_module>.
+
+Elaborating module <mealyStateMachineLab1>.
+
+Elaborating module <clock>.
+
+Elaborating module <incrementToValue>.
+WARNING:HDLCompiler:91 - "/home/vmartin/xilinx/lab1/incrementToValue.v" Line 49: Signal <nextCurrentValue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <BCD_From_7bit_Binary>.
+WARNING:HDLCompiler:413 - "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v" Line 32: Result of 7-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab1_top_module>.
+    Related source file is "/home/vmartin/xilinx/lab1/lab1_top_module.v".
+        CLOCK_SCALE = 32'b00000001011111010111100001000000
+        END_VALUE = 7'b1100011
+    Summary:
+	no macro.
+Unit <lab1_top_module> synthesized.
+
+Synthesizing Unit <mealyStateMachineLab1>.
+    Related source file is "/home/vmartin/xilinx/lab1/mealyStateMachineLab1.v".
+        IDLE = 0
+        START = 1
+        PAUSE = 2
+    Found 2-bit register for signal <currentState>.
+    Found 2-bit 4-to-1 multiplexer for signal <nextState> created at line 45.
+    Found 2-bit 4-to-1 multiplexer for signal <outputState> created at line 45.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <currentState> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <mealyStateMachineLab1> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "/home/vmartin/xilinx/lab1/clock.v".
+    Found 1-bit register for signal <sclclk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_3_o_add_1_OUT> created at line 12.
+    Found 32-bit comparator greater for signal <n0001> created at line 13
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <incrementToValue>.
+    Related source file is "/home/vmartin/xilinx/lab1/incrementToValue.v".
+    Found 7-bit register for signal <currentValue>.
+    Found 7-bit adder for signal <n0054> created at line 50.
+    Found 7-bit adder for signal <startValue[6]_GND_4_o_add_5_OUT> created at line 50.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 7-bit comparator greater for signal <nextCurrentValue[6]_endValue[6]_LessThan_4_o> created at line 49
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   7 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <incrementToValue> synthesized.
+
+Synthesizing Unit <BCD_From_7bit_Binary>.
+    Related source file is "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v".
+    Summary:
+	no macro.
+Unit <BCD_From_7bit_Binary> synthesized.
+
+Synthesizing Unit <div_7u_4u>.
+    Related source file is "".
+    Found 11-bit adder for signal <GND_13_o_b[3]_add_1_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_13_o_b[3]_add_3_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_13_o_b[3]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_13_o_b[3]_add_7_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT[6:0]> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_13_o_add_11_OUT[6:0]> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_13_o_add_13_OUT[6:0]> created at line 0.
+    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  31 Multiplexer(s).
+Unit <div_7u_4u> synthesized.
+
+Synthesizing Unit <mod_7u_4u>.
+    Related source file is "".
+    Found 11-bit adder for signal <GND_14_o_b[3]_add_1_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_14_o_b[3]_add_3_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_14_o_b[3]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_14_o_b[3]_add_7_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_14_o_add_11_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_14_o_add_13_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_14_o_add_15_OUT> created at line 0.
+    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  50 Multiplexer(s).
+Unit <mod_7u_4u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 32-bit adder                                          : 1
+ 7-bit adder                                           : 9
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 2
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 2-bit register                                        : 1
+ 32-bit register                                       : 1
+ 7-bit register                                        : 1
+# Latches                                              : 7
+ 1-bit latch                                           : 7
+# Comparators                                          : 18
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 8
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 97
+ 1-bit 2-to-1 multiplexer                              : 91
+ 2-bit 4-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 17
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 14
+ 7-bit adder carry in                                  : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 18
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 8
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 97
+ 1-bit 2-to-1 multiplexer                              : 91
+ 2-bit 4-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lab1_top_module> ...
+
+Optimizing unit <incrementToValue> ...
+WARNING:Xst:1293 - FF/Latch <clockScaler/clkq_25> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_26> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_27> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_28> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_29> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_30> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_31> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab1_top_module, actual ratio is 0.
+FlipFlop incrementer/currentValue_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab1_top_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 228
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 48
+#      LUT2                        : 33
+#      LUT3                        : 2
+#      LUT4                        : 12
+#      LUT5                        : 9
+#      LUT6                        : 6
+#      MUXCY                       : 61
+#      VCC                         : 1
+#      XORCY                       : 52
+# FlipFlops/Latches                : 43
+#      FD                          : 35
+#      FDE                         : 1
+#      LD                          : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 10
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              42  out of  54576     0%  
+ Number of Slice LUTs:                  113  out of  27288     0%  
+    Number used as Logic:               113  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    117
+   Number with an unused Flip Flop:      75  out of    117    64%  
+   Number with an unused LUT:             4  out of    117     3%  
+   Number of fully used LUT-FF pairs:    38  out of    117    32%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    218     8%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------------+----------------------------------------+-------+
+Clock Signal                                                                              | Clock buffer(FF name)                  | Load  |
+------------------------------------------------------------------------------------------+----------------------------------------+-------+
+CLK                                                                                       | BUFGP                                  | 28    |
+clockScaler/sclclk                                                                        | NONE(incrementer/currentValue_6)       | 8     |
+incrementer/currentValue[6]_GND_4_o_OR_40_o(incrementer/currentValue[6]_GND_4_o_OR_40_o:O)| NONE(*)(incrementer/nextCurrentValue_0)| 7     |
+------------------------------------------------------------------------------------------+----------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.180ns (Maximum Frequency: 193.035MHz)
+   Minimum input arrival time before clock: 3.446ns
+   Maximum output required time after clock: 6.154ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.180ns (frequency: 193.035MHz)
+  Total number of paths / destination ports: 14240 / 29
+-------------------------------------------------------------------------
+Delay:               5.180ns (Levels of Logic = 29)
+  Source:            clockScaler/clkq_0 (FF)
+  Destination:       clockScaler/sclclk (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: clockScaler/clkq_0 to clockScaler/sclclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  clockScaler/clkq_0 (clockScaler/clkq_0)
+     INV:I->O              1   0.206   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_lut<0>_INV_0 (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<0> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<1> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<2> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<3> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<4> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<5> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<6> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<7> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<8> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<9> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<10> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<11> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<12> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<13> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<14> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<15> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<16> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<17> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<18> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<19> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<20> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<21> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<22> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<22>)
+     XORCY:CI->O           2   0.180   0.961  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_xor<23> (clockScaler/clkq[31]_GND_3_o_add_1_OUT<23>)
+     LUT5:I0->O            1   0.203   0.000  clockScaler/Mcompar_n0001_lut<3> (clockScaler/Mcompar_n0001_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  clockScaler/Mcompar_n0001_cy<3> (clockScaler/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Mcompar_n0001_cy<4> (clockScaler/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O          26   0.258   1.206  clockScaler/Mcompar_n0001_cy<5> (clockScaler/Mcompar_n0001_cy<5>)
+     FDE:CE                    0.322          clockScaler/sclclk
+    ----------------------------------------
+    Total                      5.180ns (2.397ns logic, 2.783ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              2.374ns (Levels of Logic = 2)
+  Source:            BTNL (PAD)
+  Destination:       stateMachine/currentState_1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTNL to stateMachine/currentState_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.845  BTNL_IBUF (BTNL_IBUF)
+     LUT5:I2->O            1   0.205   0.000  stateMachine/Mmux_nextState21 (stateMachine/nextState<1>)
+     FD:D                      0.102          stateMachine/currentState_1
+    ----------------------------------------
+    Total                      2.374ns (1.529ns logic, 0.845ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'incrementer/currentValue[6]_GND_4_o_OR_40_o'
+  Total number of paths / destination ports: 70 / 7
+-------------------------------------------------------------------------
+Offset:              3.446ns (Levels of Logic = 3)
+  Source:            BTNU (PAD)
+  Destination:       incrementer/nextCurrentValue_0 (LATCH)
+  Destination Clock: incrementer/currentValue[6]_GND_4_o_OR_40_o falling
+
+  Data Path: BTNU to incrementer/nextCurrentValue_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.845  BTNU_IBUF (BTNU_IBUF)
+     LUT5:I2->O            9   0.205   0.934  stateMachine/outputState<0>1 (stateMachineToIncrementer<0>)
+     LUT4:I2->O            1   0.203   0.000  incrementer/Mmux_nextCurrentValue[6]_currentValue[0]_MUX_112_o11 (incrementer/nextCurrentValue[6]_currentValue[0]_MUX_112_o)
+     LD:D                      0.037          incrementer/nextCurrentValue_0
+    ----------------------------------------
+    Total                      3.446ns (1.667ns logic, 1.779ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockScaler/sclclk'
+  Total number of paths / destination ports: 56 / 8
+-------------------------------------------------------------------------
+Offset:              6.154ns (Levels of Logic = 3)
+  Source:            incrementer/currentValue_5 (FF)
+  Destination:       LED<3> (PAD)
+  Source Clock:      clockScaler/sclclk rising
+
+  Data Path: incrementer/currentValue_5 to LED<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   1.227  incrementer/currentValue_5 (incrementer/currentValue_5)
+     LUT6:I1->O            1   0.203   0.924  bcd/inputNumber[6]_PWR_5_o_mod_1/BUS_0008_INV_144_o1 (bcd/inputNumber[6]_PWR_5_o_mod_1/BUS_0008_INV_144_o)
+     LUT5:I0->O            1   0.203   0.579  bcd/inputNumber[6]_PWR_5_o_mod_1/Mmux_o41 (LED_3_OBUF)
+     OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
+    ----------------------------------------
+    Total                      6.154ns (3.424ns logic, 2.730ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.180|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clockScaler/sclclk
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+incrementer/currentValue[6]_GND_4_o_OR_40_o|         |    1.250|         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock incrementer/currentValue[6]_GND_4_o_OR_40_o
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+CLK               |         |         |    2.785|         |
+clockScaler/sclclk|         |         |    3.695|         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 12.78 secs
+ 
+--> 
+
+
+Total memory usage is 392244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,130 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Sun Mar 24 15:41:32 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JA1" LOCATE = SITE "T12" LEVEL 1;
+COMP "JA2" LOCATE = SITE "V12" LEVEL 1;
+COMP "JA3" LOCATE = SITE "N10" LEVEL 1;
+COMP "JA4" LOCATE = SITE "P11" LEVEL 1;
+COMP "JC1" LOCATE = SITE "H3" LEVEL 1;
+COMP "JC2" LOCATE = SITE "L7" LEVEL 1;
+COMP "JC3" LOCATE = SITE "K6" LEVEL 1;
+COMP "JC4" LOCATE = SITE "G3" LEVEL 1;
+COMP "JC7" LOCATE = SITE "G1" LEVEL 1;
+COMP "JC8" LOCATE = SITE "J7" LEVEL 1;
+COMP "JC9" LOCATE = SITE "J6" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "JC10" LOCATE = SITE "F2" LEVEL 1;
+COMP "BTND" LOCATE = SITE "C9" LEVEL 1;
+COMP "BTNL" LOCATE = SITE "C4" LEVEL 1;
+COMP "BTNR" LOCATE = SITE "D9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M3/sclclk" BEL "M1/sclclk" BEL "M0/sclclk" BEL
+        "M1/clkq_0" BEL "M1/clkq_1" BEL "M1/clkq_2" BEL "M1/clkq_3" BEL
+        "M1/clkq_4" BEL "M1/clkq_5" BEL "M1/clkq_6" BEL "M1/clkq_7" BEL
+        "M1/clkq_8" BEL "M0/clkq_0" BEL "M0/clkq_1" BEL "M0/clkq_2" BEL
+        "M0/clkq_3" BEL "M0/clkq_4" BEL "M0/clkq_5" BEL "M0/clkq_6" BEL
+        "M0/clkq_7" BEL "M0/clkq_8" BEL "M0/clkq_9" BEL "M6/phasein2_6" BEL
+        "M6/phasein2_5" BEL "M6/phasein2_4" BEL "M6/phasein2_3" BEL
+        "M6/phasein2_2" BEL "M6/phasein2_1" BEL "M6/phasein2_0" BEL
+        "M6/gstate3_FSM_FFd1" BEL "M6/phasein1_6" BEL "M6/phasein1_5" BEL
+        "M6/phasein1_4" BEL "M6/phasein1_3" BEL "M6/phasein1_2" BEL
+        "M6/phasein1_1" BEL "M6/phasein1_0" BEL "M6/gstate3_FSM_FFd2" BEL
+        "M6/clkdivb_8" BEL "M6/clkdivb_7" BEL "M6/clkdivb_1" BEL
+        "M6/clkdivb_0" BEL "M6/highreg_1" BEL "M6/highreg_0" BEL
+        "M6/clkdiva_9" BEL "M6/clkdiva_6" BEL "M6/clkdiva_5" BEL
+        "M6/clkdiva_4" BEL "M6/clkdiva_2" BEL "M6/clkdiva_1" BEL
+        "M6/dacdata_11" BEL "M6/dacdata_10" BEL "M6/dacdata_9" BEL
+        "M6/dacdata_8" BEL "M6/dacdata_7" BEL "M6/dacdata_6" BEL
+        "M6/dacdata_5" BEL "M6/dacdata_4" BEL "M6/dacdata_3" BEL
+        "M6/dacdata_2" BEL "M6/dacdata_1" BEL "M6/dacdata_0" BEL "M6/highf_11"
+        BEL "M6/highf_10" BEL "M6/highf_9" BEL "M6/highf_8" BEL "M6/highf_7"
+        BEL "M6/highf_6" BEL "M6/highf_5" BEL "M6/highf_4" BEL "M6/highf_3"
+        BEL "M6/highf_2" BEL "M6/highf_1" BEL "M6/lowf_11" BEL "M6/lowf_10"
+        BEL "M6/lowf_9" BEL "M6/lowf_8" BEL "M6/lowf_7" BEL "M6/lowf_6" BEL
+        "M6/lowf_5" BEL "M6/lowf_4" BEL "M6/lowf_3" BEL "M6/lowf_2" BEL
+        "M6/lowf_1" BEL "M6/lowreg_1" BEL "M6/lowreg_0" BEL "M2/sclclk" BEL
+        "M6/pdav2" BEL "M6/pdav1" BEL "M6/gstate2" BEL "M6/gstate1" BEL
+        "M3/clkq_1" BEL "M3/clkq_2" BEL "M3/clkq_3" BEL "M3/clkq_4" BEL
+        "M3/clkq_5" BEL "M3/clkq_6" BEL "M3/clkq_7" BEL "M3/clkq_8" BEL
+        "M3/clkq_9" BEL "M3/clkq_10" BEL "M3/clkq_11" BEL "M3/clkq_12" BEL
+        "M3/clkq_13" BEL "M3/clkq_14" BEL "M3/clkq_15" BEL "M3/clkq_16" BEL
+        "M3/clkq_17" BEL "M3/clkq_18" BEL "M3/clkq_19" BEL "CLK_BUFGP/BUFG"
+        BEL "M7/blk00000001/blk00000003" BEL "M7/blk00000001/blk00000004" BEL
+        "M7/blk00000001/blk00000005" BEL "M7/blk00000001/blk00000006" BEL
+        "M7/blk00000001/blk00000007" BEL "M7/blk00000001/blk00000008" BEL
+        "M7/blk00000001/blk00000009" BEL "M7/blk00000001/blk0000000a" BEL
+        "M7/blk00000001/blk0000000b" BEL "M7/blk00000001/blk00000021" BEL
+        "M7/blk00000001/blk00000022" BEL "M7/blk00000001/blk00000023" BEL
+        "M7/blk00000001/blk00000024" BEL "M7/blk00000001/blk00000025" BEL
+        "M7/blk00000001/blk00000026" BEL "M7/blk00000001/blk00000027" BEL
+        "M7/blk00000001/blk00000028" BEL "M7/blk00000001/blk00000029" BEL
+        "M7/blk00000001/blk0000002a" BEL "M7/blk00000001/blk0000002b" BEL
+        "M7/blk00000001/blk0000002c" BEL "M7/blk00000001/blk0000002d" BEL
+        "M7/blk00000001/blk0000002e" BEL "M7/blk00000001/blk0000002f" BEL
+        "M7/blk00000001/blk00000030" BEL "M7/blk00000001/blk00000031" BEL
+        "M7/blk00000001/blk00000032" BEL "M7/blk00000001/blk00000035" BEL
+        "M7/blk00000001/blk00000036" BEL "M7/blk00000001/blk00000037" BEL
+        "M7/blk00000001/blk00000038" BEL "M8/blk00000001/blk00000003" BEL
+        "M8/blk00000001/blk00000004" BEL "M8/blk00000001/blk00000005" BEL
+        "M8/blk00000001/blk00000006" BEL "M8/blk00000001/blk00000007" BEL
+        "M8/blk00000001/blk00000008" BEL "M8/blk00000001/blk00000009" BEL
+        "M8/blk00000001/blk0000000a" BEL "M8/blk00000001/blk0000000b" BEL
+        "M8/blk00000001/blk00000021" BEL "M8/blk00000001/blk00000022" BEL
+        "M8/blk00000001/blk00000023" BEL "M8/blk00000001/blk00000024" BEL
+        "M8/blk00000001/blk00000025" BEL "M8/blk00000001/blk00000026" BEL
+        "M8/blk00000001/blk00000027" BEL "M8/blk00000001/blk00000028" BEL
+        "M8/blk00000001/blk00000029" BEL "M8/blk00000001/blk0000002a" BEL
+        "M8/blk00000001/blk0000002b" BEL "M8/blk00000001/blk0000002c" BEL
+        "M8/blk00000001/blk0000002d" BEL "M8/blk00000001/blk0000002e" BEL
+        "M8/blk00000001/blk0000002f" BEL "M8/blk00000001/blk00000030" BEL
+        "M8/blk00000001/blk00000031" BEL "M8/blk00000001/blk00000032" BEL
+        "M8/blk00000001/blk00000035" BEL "M8/blk00000001/blk00000036" BEL
+        "M8/blk00000001/blk00000037" BEL "M8/blk00000001/blk00000038" BEL
+        "M7/blk00000001/blk0000000c_Narrowed/LOW" BEL
+        "M7/blk00000001/blk0000000c_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk0000000d_Narrowed/LOW" BEL
+        "M7/blk00000001/blk0000000d_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk0000000e_Narrowed/LOW" BEL
+        "M7/blk00000001/blk0000000e_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk0000000f_Narrowed/LOW" BEL
+        "M7/blk00000001/blk0000000f_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000010_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000010_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000011_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000011_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000012_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000012_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000013_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000013_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000014_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000014_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000015_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000015_Narrowed/HIGH" BEL
+        "M7/blk00000001/blk00000016_Narrowed/LOW" BEL
+        "M7/blk00000001/blk00000016_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk0000000c_Narrowed/LOW" BEL
+        "M8/blk00000001/blk0000000c_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk0000000d_Narrowed/LOW" BEL
+        "M8/blk00000001/blk0000000d_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk0000000e_Narrowed/LOW" BEL
+        "M8/blk00000001/blk0000000e_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk0000000f_Narrowed/LOW" BEL
+        "M8/blk00000001/blk0000000f_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000010_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000010_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000011_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000011_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000012_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000012_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000013_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000013_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000014_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000014_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000015_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000015_Narrowed/HIGH" BEL
+        "M8/blk00000001/blk00000016_Narrowed/LOW" BEL
+        "M8/blk00000001/blk00000016_Narrowed/HIGH";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

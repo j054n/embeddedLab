@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue Jan 29 19:38:31 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M2/clk" BEL "M1/clk" BEL "M0/clk" BEL "M2/clkq_0"
+        BEL "M2/clkq_1" BEL "M2/clkq_2" BEL "M2/clkq_3" BEL "M2/clkq_4" BEL
+        "M2/clkq_5" BEL "M2/clkq_6" BEL "M2/clkq_7" BEL "M2/clkq_8" BEL
+        "M2/clkq_9" BEL "M2/clkq_10" BEL "M2/clkq_11" BEL "M2/clkq_12" BEL
+        "M2/clkq_13" BEL "M2/clkq_14" BEL "M2/clkq_15" BEL "M2/clkq_16" BEL
+        "M2/clkq_17" BEL "M2/clkq_18" BEL "M2/clkq_19" BEL "M2/clkq_20" BEL
+        "M2/clkq_21" BEL "M2/clkq_22" BEL "M2/clkq_23" BEL "M1/clkq_5" BEL
+        "M1/clkq_6" BEL "M1/clkq_7" BEL "M1/clkq_8" BEL "M1/clkq_9" BEL
+        "M1/clkq_10" BEL "M1/clkq_11" BEL "M1/clkq_12" BEL "M1/clkq_13" BEL
+        "M1/clkq_14" BEL "M1/clkq_15" BEL "M1/clkq_16" BEL "M1/clkq_17" BEL
+        "M1/clkq_18" BEL "M1/clkq_19" BEL "M1/clkq_20" BEL "M1/clkq_21" BEL
+        "M1/clkq_22" BEL "M1/clkq_23" BEL "M1/clkq_24" BEL "M0/clkq_6" BEL
+        "M0/clkq_7" BEL "M0/clkq_8" BEL "M0/clkq_9" BEL "M0/clkq_10" BEL
+        "M0/clkq_11" BEL "M0/clkq_12" BEL "M0/clkq_13" BEL "M0/clkq_14" BEL
+        "M0/clkq_15" BEL "M0/clkq_16" BEL "M0/clkq_17" BEL "M0/clkq_18" BEL
+        "M0/clkq_19" BEL "M0/clkq_20" BEL "M0/clkq_21" BEL "M0/clkq_22" BEL
+        "M0/clkq_23" BEL "M0/clkq_24" BEL "M0/clkq_25" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

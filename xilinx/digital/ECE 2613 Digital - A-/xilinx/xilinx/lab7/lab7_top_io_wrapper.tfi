@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+lab7_top_io_wrapper instance_name (
+    .clk(clk), 
+    .seg(seg), 
+    .dp(dp), 
+    .an(an), 
+    .Led(Led), 
+    .JA(JA), 
+    .JB(JB), 
+    .sw(sw)
+    );
+
+

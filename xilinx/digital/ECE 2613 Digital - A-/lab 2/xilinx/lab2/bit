@@ -1,0 +1,104 @@
+-rw-r--r-- 1 tuc56100 tuc56100 6.9K Jan 28  2012 2612_ver3.ucf
+-rw-rw-r-- 1 tuc56100 tuc56100 1.3K Sep  4 19:29 fuse.log
+-rw-rw-r-- 1 tuc56100 tuc56100  251 Sep  4 19:29 fuseRelaunch.cmd
+-rw-rw-r-- 1 tuc56100 tuc56100  360 Sep  4 19:29 fuse.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100   41 Sep  4 19:29 isim.cmd
+-rw-rw-r-- 1 tuc56100 tuc56100 1.2K Sep  4 19:31 isim.log
+-rw-rw-r-- 1 tuc56100 tuc56100 6.4K Sep  4 20:32 lab2_top_io_wrapper.bgn
+-rw-rw-r-- 1 tuc56100 tuc56100 278K Sep  4 20:32 lab2_top_io_wrapper.bit
+-rw-rw-r-- 1 tuc56100 tuc56100  289 Sep  4 20:32 lab2_top_io_wrapper_bitgen.xwbt
+-rw-rw-r-- 1 tuc56100 tuc56100 1.1K Sep  4 20:31 lab2_top_io_wrapper.bld
+-rw-rw-r-- 1 tuc56100 tuc56100 4.2K Sep  4 20:32 lab2_top_io_wrapper.cmd_log
+-rw-rw-r-- 1 tuc56100 tuc56100 1.5K Sep  4 20:32 lab2_top_io_wrapper.drc
+-rw-rw-r-- 1 tuc56100 tuc56100  14K Sep  4 20:32 lab2_top_io_wrapper_envsettings.html
+-rw-rw-r-- 1 tuc56100 tuc56100    0 Sep  4 19:53 lab2_top_io_wrapper_fpga_editor.log
+-rw-rw-r-- 1 tuc56100 tuc56100 5.6K Sep  4 20:32 lab2_top_io_wrapper_guide.ncd
+-rw-rw-r-- 1 tuc56100 tuc56100    5 Sep  4 20:31 lab2_top_io_wrapper.lso
+-rw-rw-r-- 1 tuc56100 tuc56100 4.3K Sep  4 20:31 lab2_top_io_wrapper_map.map
+-rw-rw-r-- 1 tuc56100 tuc56100  12K Sep  4 20:31 lab2_top_io_wrapper_map.mrp
+-rw-rw-r-- 1 tuc56100 tuc56100 4.5K Sep  4 20:31 lab2_top_io_wrapper_map.ncd
+-rw-rw-r-- 1 tuc56100 tuc56100  20K Sep  4 20:31 lab2_top_io_wrapper_map.ngm
+-rw-rw-r-- 1 tuc56100 tuc56100  25K Sep  4 20:31 lab2_top_io_wrapper_map.xrpt
+-rw-rw-r-- 1 tuc56100 tuc56100 5.6K Sep  4 20:32 lab2_top_io_wrapper.ncd
+-rw-rw-r-- 1 tuc56100 tuc56100 4.2K Sep  4 20:31 lab2_top_io_wrapper.ngc
+-rw-rw-r-- 1 tuc56100 tuc56100 9.9K Sep  4 20:31 lab2_top_io_wrapper.ngd
+-rw-rw-r-- 1 tuc56100 tuc56100 5.7K Sep  4 20:31 lab2_top_io_wrapper_ngdbuild.xrpt
+-rw-rw-r-- 1 tuc56100 tuc56100 4.0K Sep  4 20:31 lab2_top_io_wrapper.ngr
+-rw-rw-r-- 1 tuc56100 tuc56100  14K Sep  4 20:32 lab2_top_io_wrapper.pad
+-rw-rw-r-- 1 tuc56100 tuc56100  14K Sep  4 20:32 lab2_top_io_wrapper_pad.csv
+-rw-rw-r-- 1 tuc56100 tuc56100  62K Sep  4 20:32 lab2_top_io_wrapper_pad.txt
+-rw-rw-r-- 1 tuc56100 tuc56100 6.8K Sep  4 20:32 lab2_top_io_wrapper.par
+-rw-rw-r-- 1 tuc56100 tuc56100 154K Sep  4 20:32 lab2_top_io_wrapper_par.xrpt
+-rw-rw-r-- 1 tuc56100 tuc56100 1.7K Sep  4 20:31 lab2_top_io_wrapper.pcf
+-rw-rw-r-- 1 tuc56100 tuc56100 2.7K Sep  4 18:38 lab2_top_io_wrapper_preroute.twr
+-rw-rw-r-- 1 tuc56100 tuc56100  20K Sep  4 18:38 lab2_top_io_wrapper_preroute.twx
+-rw-rw-r-- 1 tuc56100 tuc56100   65 Sep  4 20:31 lab2_top_io_wrapper.prj
+-rw-rw-r-- 1 tuc56100 tuc56100  17K Sep  4 20:32 lab2_top_io_wrapper.ptwx
+-rw-rw-r-- 1 tuc56100 tuc56100    0 Sep  4 20:31 lab2_top_io_wrapper.stx
+-rw-rw-r-- 1 tuc56100 tuc56100 9.1K Sep  4 20:32 lab2_top_io_wrapper_summary.html
+-rw-rw-r-- 1 tuc56100 tuc56100  404 Sep  4 20:32 lab2_top_io_wrapper_summary.xml
+-rw-rw-r-- 1 tuc56100 tuc56100  11K Sep  4 20:31 lab2_top_io_wrapper.syr
+-rw-rw-r-- 1 tuc56100 tuc56100 2.5K Sep  4 20:32 lab2_top_io_wrapper.twr
+-rw-rw-r-- 1 tuc56100 tuc56100  19K Sep  4 20:32 lab2_top_io_wrapper.twx
+-rw-rw-r-- 1 tuc56100 tuc56100  413 Sep  4 20:32 lab2_top_io_wrapper.unroutes
+-rw-rw-r-- 1 tuc56100 tuc56100 6.2K Sep  4 20:32 lab2_top_io_wrapper_usage.xml
+-rw-rw-r-- 1 tuc56100 tuc56100  370 Sep  4 20:32 lab2_top_io_wrapper.ut
+-rw-rw-r-- 1 tuc56100 tuc56100   43 Sep  4 20:32 lab2_top_io_wrapper.xpi
+-rw-rw-r-- 1 tuc56100 tuc56100 1.1K Sep  4 20:31 lab2_top_io_wrapper.xst
+-rw-rw-r-- 1 tuc56100 tuc56100  11K Sep  4 20:31 lab2_top_io_wrapper_xst.xrpt
+-rw-rw-r-- 1 tuc56100 tuc56100  19K Sep  4 20:32 oddparity4bit.gise
+-rw-r--r-- 1 tuc56100 tuc56100  34K Sep  4 18:56 oddparity4bit.xise
+-rwxr-xr-x 1 tuc56100 tuc56100  22K Sep  4 18:51 op_4bit_isim_beh.exe
+-rw-rw-r-- 1 tuc56100 tuc56100  106 Sep  4 18:54 op_4bit_stx_beh.prj
+-rw-r----- 1 tuc56100 tuc56100  862 Sep  4 20:28 op_4bit.v
+-rw-rw-r-- 1 tuc56100 tuc56100  124 Sep  4 19:29 tb_op_4bit_beh.prj
+-rwxr-xr-x 1 tuc56100 tuc56100  22K Sep  4 19:29 tb_op_4bit_isim_beh.exe
+-rw-rw-r-- 1 tuc56100 tuc56100 5.9K Sep  4 19:31 tb_op_4bit_isim_beh.wdb
+-rw-rw-r-- 1 tuc56100 tuc56100  139 Sep  4 18:44 tb_op_4bit_stx_beh.prj
+-rw-r----- 1 tuc56100 tuc56100  442 Sep  4 14:43 tb_op_4bit.txt
+-rw-r----- 1 tuc56100 tuc56100  300 Sep  4 14:35 tb_op_4bit.txt.old
+-rw-r--r-- 1 tuc56100 tuc56100 1.5K Jan 29  2012 tb_op_4bit.v
+-rw-r--r-- 1 tuc56100 tuc56100  813 Jan 28  2012 top_io_wrapper_op_4bit.v
+-rw-rw-r-- 1 tuc56100 tuc56100  32K Sep  4 20:32 usage_statistics_webtalk.html
+-rw-rw-r-- 1 tuc56100 tuc56100  692 Sep  4 20:32 webtalk.log
+-rw-rw-r-- 1 tuc56100 tuc56100 3.0K Sep  4 20:31 webtalk_pn.xml
+-rw-rw-r-- 1 tuc56100 tuc56100   15 Sep  4 19:29 xilinxsim.ini
+
+iseconfig:
+total 32K
+-rw-rw-r-- 1 tuc56100 tuc56100  21K Sep  4 18:39 lab2_top_io_wrapper.xreport
+-rw-rw-r-- 1 tuc56100 tuc56100 5.7K Sep  4 15:50 oddparity4bit.projectmgr
+
+isim:
+total 24K
+-rw-rw-r-- 1 tuc56100 tuc56100 1.7K Sep  4 19:31 isim_usage_statistics.html
+-rw-r--r-- 1 tuc56100 tuc56100    0 Sep  4 18:41 lockfile
+drwxrwxr-x 4 tuc56100 tuc56100 4.0K Sep  4 18:51 op_4bit_isim_beh.exe.sim
+-rw-rw-r-- 1 tuc56100 tuc56100    5 Sep  4 19:29 pn_info
+drwxrwxr-x 4 tuc56100 tuc56100 4.0K Sep  4 19:29 tb_op_4bit_isim_beh.exe.sim
+drwxrwxr-x 2 tuc56100 tuc56100 4.0K Sep  4 18:44 temp
+drwxrwxr-x 2 tuc56100 tuc56100 4.0K Sep  4 19:29 work
+
+_ngo:
+total 4.0K
+-rw-rw-r-- 1 tuc56100 tuc56100 74 Sep  4 20:31 netlist.lst
+
+xlnx_auto_0_xdb:
+total 8.0K
+-rw-rw-r-- 1 tuc56100 tuc56100 5.8K Sep  4 20:31 cst.xbcd
+
+_xmsgs:
+total 28K
+-rw-rw-r-- 1 tuc56100 tuc56100 2.2K Sep  4 20:32 bitgen.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100 3.1K Sep  4 20:31 map.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100  360 Sep  4 20:31 ngdbuild.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100 3.0K Sep  4 20:32 par.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100  746 Sep  4 20:28 pn_parser.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100 1.6K Sep  4 20:32 trce.xmsgs
+-rw-rw-r-- 1 tuc56100 tuc56100 1.3K Sep  4 20:31 xst.xmsgs
+
+xst:
+total 12K
+drwxrwxr-x 3 tuc56100 tuc56100 4.0K Sep  4 15:31 dump.xst
+drwxrwxr-x 2 tuc56100 tuc56100 4.0K Sep  4 20:31 projnav.tmp
+drwxrwxr-x 4 tuc56100 tuc56100 4.0K Sep  4 15:31 work

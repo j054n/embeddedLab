@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/lcdtest/atlslcdtest/atlslcdtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlslcdtest.ucf -p xc6slx45-csg324-3 "atlslcdtest.ngc" atlslcdtest.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o atlslcdtest_map.ncd atlslcdtest.ngd atlslcdtest.pcf 
+par -w -intstyle ise -ol high -mt off atlslcdtest_map.ncd atlslcdtest.ncd atlslcdtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml atlslcdtest.twx atlslcdtest.ncd -o atlslcdtest.twr atlslcdtest.pcf -ucf atlslcdtest.ucf 
+bitgen -intstyle ise -f atlslcdtest.ut atlslcdtest.ncd 

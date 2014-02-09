@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/servocontrol/ns3servocontrol/ns3servocontrol.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/servocontrol/ns3servocontrol/ns3servocontrol.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3servocontrol.ucf -p xc6slx16-csg324-3 "ns3servocontrol.ngc" ns3servocontrol.ngd  
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/servocontrol/ns3servocontrol/ns3servocontrol.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/servocontrol/ns3servocontrol/ns3servocontrol.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3servocontrol.ucf -p xc6slx16-csg324-3 "ns3servocontrol.ngc" ns3servocontrol.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ns3servocontrol_map.ncd ns3servocontrol.ngd ns3servocontrol.pcf 
+par -w -intstyle ise -ol high -mt off ns3servocontrol_map.ncd ns3servocontrol.ncd ns3servocontrol.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3servocontrol.twx ns3servocontrol.ncd -o ns3servocontrol.twr ns3servocontrol.pcf -ucf ns3servocontrol.ucf 
+bitgen -intstyle ise -f ns3servocontrol.ut ns3servocontrol.ncd 

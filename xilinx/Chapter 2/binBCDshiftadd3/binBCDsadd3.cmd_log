@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "binBCDsadd3.ngc" binBCDsadd3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o binBCDsadd3_map.ncd binBCDsadd3.ngd binBCDsadd3.pcf 
+par -w -intstyle ise -ol high -mt off binBCDsadd3_map.ncd binBCDsadd3.ncd binBCDsadd3.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml binBCDsadd3.twx binBCDsadd3.ncd -o binBCDsadd3.twr binBCDsadd3.pcf 
+bitgen -intstyle ise -f binBCDsadd3.ut binBCDsadd3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "binBCDsadd3.ngc" binBCDsadd3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o binBCDsadd3_map.ncd binBCDsadd3.ngd binBCDsadd3.pcf 
+par -w -intstyle ise -ol high -mt off binBCDsadd3_map.ncd binBCDsadd3.ncd binBCDsadd3.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml binBCDsadd3.twx binBCDsadd3.ncd -o binBCDsadd3.twr binBCDsadd3.pcf 
+bitgen -intstyle ise -f binBCDsadd3.ut binBCDsadd3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/BCDshiftadd3/binBCDsadd3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "binBCDsadd3.ngc" binBCDsadd3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o binBCDsadd3_map.ncd binBCDsadd3.ngd binBCDsadd3.pcf 
+par -w -intstyle ise -ol high -mt off binBCDsadd3_map.ncd binBCDsadd3.ncd binBCDsadd3.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml binBCDsadd3.twx binBCDsadd3.ncd -o binBCDsadd3.twr binBCDsadd3.pcf 
+bitgen -intstyle ise -f binBCDsadd3.ut binBCDsadd3.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binBCDns3.ucf -p xc6slx16-csg324-3 "binBCDsadd3.ngc" binBCDsadd3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o binBCDsadd3_map.ncd binBCDsadd3.ngd binBCDsadd3.pcf 
+par -w -intstyle ise -ol high -mt off binBCDsadd3_map.ncd binBCDsadd3.ncd binBCDsadd3.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml binBCDsadd3.twx binBCDsadd3.ncd -o binBCDsadd3.twr binBCDsadd3.pcf -ucf binBCDns3.ucf 
+bitgen -intstyle ise -f binBCDsadd3.ut binBCDsadd3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/binBCDshiftadd3/binBCDsadd3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/binBCDshiftadd3/binBCDsadd3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binBCDns3.ucf -p xc6slx16-csg324-3 "binBCDsadd3.ngc" binBCDsadd3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o binBCDsadd3_map.ncd binBCDsadd3.ngd binBCDsadd3.pcf 
+par -w -intstyle ise -ol high -mt off binBCDsadd3_map.ncd binBCDsadd3.ncd binBCDsadd3.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml binBCDsadd3.twx binBCDsadd3.ncd -o binBCDsadd3.twr binBCDsadd3.pcf -ucf binBCDns3.ucf 
+bitgen -intstyle ise -f binBCDsadd3.ut binBCDsadd3.ncd 

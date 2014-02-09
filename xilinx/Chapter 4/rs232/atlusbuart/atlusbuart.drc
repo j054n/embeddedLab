@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Mar 09 12:30:38 2013
+
+drc -z atlusbuart.ncd atlusbuart.pcf
+
+DRC detected 0 errors and 0 warnings.

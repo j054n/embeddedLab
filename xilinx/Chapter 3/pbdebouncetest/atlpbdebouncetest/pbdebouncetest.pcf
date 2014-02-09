@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Mon Jan 28 20:38:16 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "N12" LEVEL 1;
+COMP "CLK" LOCATE = SITE "L15" LEVEL 1;
+COMP "BTNR" LOCATE = SITE "F6" LEVEL 1;
+PIN BTNR_pin<0> = BEL "BTNR" PINNAME PAD;
+PIN "BTNR_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

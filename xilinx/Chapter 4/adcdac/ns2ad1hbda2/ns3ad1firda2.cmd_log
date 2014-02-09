@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ad1firda2.ucf -p xc6slx16-csg324-3 "ns3ad1firda2.ngc" ns3ad1firda2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ad1firda2_map.ncd ns3ad1firda2.ngd ns3ad1firda2.pcf 
+par -w -intstyle ise -ol high -mt off ns3ad1firda2_map.ncd ns3ad1firda2.ncd ns3ad1firda2.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ad1firda2.twx ns3ad1firda2.ncd -o ns3ad1firda2.twr ns3ad1firda2.pcf -ucf ns3ad1firda2.ucf 
+bitgen -intstyle ise -f ns3ad1firda2.ut ns3ad1firda2.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ad1firda2.ucf -p xc6slx16-csg324-3 "ns3ad1firda2.ngc" ns3ad1firda2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ad1firda2_map.ncd ns3ad1firda2.ngd ns3ad1firda2.pcf 
+par -w -intstyle ise -ol high -mt off ns3ad1firda2_map.ncd ns3ad1firda2.ncd ns3ad1firda2.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ad1firda2.twx ns3ad1firda2.ncd -o ns3ad1firda2.twr ns3ad1firda2.pcf -ucf ns3ad1firda2.ucf 
+bitgen -intstyle ise -f ns3ad1firda2.ut ns3ad1firda2.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ad1firda2.ucf -p xc6slx16-csg324-3 "ns3ad1firda2.ngc" ns3ad1firda2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ad1firda2_map.ncd ns3ad1firda2.ngd ns3ad1firda2.pcf 
+par -w -intstyle ise -ol high -mt off ns3ad1firda2_map.ncd ns3ad1firda2.ncd ns3ad1firda2.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ad1firda2.twx ns3ad1firda2.ncd -o ns3ad1firda2.twr ns3ad1firda2.pcf -ucf ns3ad1firda2.ucf 
+bitgen -intstyle ise -f ns3ad1firda2.ut ns3ad1firda2.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ad1firda2.ucf -p xc6slx16-csg324-3 "ns3ad1firda2.ngc" ns3ad1firda2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ad1firda2_map.ncd ns3ad1firda2.ngd ns3ad1firda2.pcf 
+par -w -intstyle ise -ol high -mt off ns3ad1firda2_map.ncd ns3ad1firda2.ncd ns3ad1firda2.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ad1firda2.twx ns3ad1firda2.ncd -o ns3ad1firda2.twr ns3ad1firda2.pcf -ucf ns3ad1firda2.ucf 
+bitgen -intstyle ise -f ns3ad1firda2.ut ns3ad1firda2.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/adcdac/ns3ad1firda2/ns3ad1firda2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ns3ad1firda2.ucf -p xc6slx16-csg324-3 "ns3ad1firda2.ngc" ns3ad1firda2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3ad1firda2_map.ncd ns3ad1firda2.ngd ns3ad1firda2.pcf 
+par -w -intstyle ise -ol high -mt off ns3ad1firda2_map.ncd ns3ad1firda2.ncd ns3ad1firda2.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3ad1firda2.twx ns3ad1firda2.ncd -o ns3ad1firda2.twr ns3ad1firda2.pcf -ucf ns3ad1firda2.ucf 
+bitgen -intstyle ise -f ns3ad1firda2.ut ns3ad1firda2.ncd 

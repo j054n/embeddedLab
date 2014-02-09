@@ -1,0 +1,5 @@
+verilog work "remote_sources/_/_/peripherals/clplcd.v"
+verilog work "remote_sources/_/_/peripherals/clock.v"
+verilog work "gyrolcd.v"
+verilog work "../../peripherals/gyro.v"
+verilog work "ns3gyrotest.v"

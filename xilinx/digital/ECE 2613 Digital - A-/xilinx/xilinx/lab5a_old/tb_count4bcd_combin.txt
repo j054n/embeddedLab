@@ -1,0 +1,25 @@
+//
+// lab5a : version 09/23/2012
+//            
+// This file contains the test vectors for the
+// bcd combinational block for a 4 bit BCD counter.
+// The first column is the input clr signal
+// The second column is the input ena signal
+// The next four columns are the inputs: q[3:0]
+// The next column is the carry out, c_o
+// The next 4 columns are the outputs: Next_q[3:0]
+//
+// This needs to be 64 lines long to cover all possibilities
+//
+// hold condition
+00_0000_00000
+00_0001_00001
+// plus 1
+01_0000_00001
+01_0001_00010
+// clear to 0
+10_0000_00000
+10_0001_00000
+// clear to maximum
+11_0000_11001
+11_0001_11001

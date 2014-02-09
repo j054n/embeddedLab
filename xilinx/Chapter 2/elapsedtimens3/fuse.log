@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_isim_beh.exe -prj C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_beh.prj work.ettest work.glbl 
+ISim P.40xd (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/../../Chapter 3/peripherals/sevensegment.v" into library work
+Analyzing Verilog file "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/../../Chapter 3/peripherals/clock.v" into library work
+Analyzing Verilog file "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.v" into library work
+Analyzing Verilog file "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117716 KB
+Fuse CPU Usage: 311 ms
+Compiling module elapsedtime
+Compiling module ettest
+Compiling module glbl
+Time Resolution for simulation is 1fs.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_isim_beh.exe
+Fuse Memory Usage: 122308 KB
+Fuse CPU Usage: 358 ms

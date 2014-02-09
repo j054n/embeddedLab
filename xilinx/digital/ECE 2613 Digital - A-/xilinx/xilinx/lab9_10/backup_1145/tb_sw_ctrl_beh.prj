@@ -1,0 +1,5 @@
+verilog work "dbnc_ctrl.v"
+verilog work "css_ctrl.v"
+verilog work "sw_ctrl.v"
+verilog work "tb_sw_ctrl.v"
+verilog work "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,14 @@
+ISim log file
+Running: /home/students/tuc56100/xilinx/lab9_10/tb_dbnc_ctrl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/students/tuc56100/xilinx/lab9_10/tb_dbnc_ctrl_isim_beh.wdb 
+ISim O.76xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Simulation complete!!!
+Stopped at time : 20760 ns : File "/home/students/tuc56100/xilinx/lab9_10/tb_dbnc_ctrl.v" Line 61
+# exit 0

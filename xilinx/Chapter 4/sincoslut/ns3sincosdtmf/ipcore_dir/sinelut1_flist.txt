@@ -1,0 +1,15 @@
+# Output products list for <sinelut1>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_sinelut1.vhd
+sinelut1.asy
+sinelut1.gise
+sinelut1.ngc
+sinelut1.v
+sinelut1.veo
+sinelut1.xco
+sinelut1.xise
+sinelut1\doc\dds_compiler_v5_0_readme.txt
+sinelut1\doc\dds_compiler_v5_0_vinfo.html
+sinelut1\doc\ds794_dds_compiler.pdf
+sinelut1_flist.txt
+sinelut1_xmdf.tcl

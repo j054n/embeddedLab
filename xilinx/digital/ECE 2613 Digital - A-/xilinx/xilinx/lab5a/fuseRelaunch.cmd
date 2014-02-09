@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/students/tuc56100/xilinx/lab5a/tb_count4bcd_combin_isim_beh.exe" -prj "/home/students/tuc56100/xilinx/lab5a/tb_count4bcd_combin_beh.prj" "work.tb_count4bcd_combin" "work.glbl" 

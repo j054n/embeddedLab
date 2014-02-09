@@ -1,0 +1,3 @@
+verilog work "bp_cu.v"
+verilog work "tb_bp_cu.v"
+verilog work "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

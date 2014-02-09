@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Mon Jan 07 14:06:55 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JA1" LOCATE = SITE "T12" LEVEL 1;
+COMP "JA2" LOCATE = SITE "V12" LEVEL 1;
+COMP "JB1" LOCATE = SITE "K2" LEVEL 1;
+COMP "JA3" LOCATE = SITE "N10" LEVEL 1;
+COMP "JB2" LOCATE = SITE "K1" LEVEL 1;
+COMP "JA4" LOCATE = SITE "P11" LEVEL 1;
+COMP "JC1" LOCATE = SITE "H3" LEVEL 1;
+COMP "JB3" LOCATE = SITE "L4" LEVEL 1;
+COMP "JB4" LOCATE = SITE "L3" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "SW0" LOCATE = SITE "T10" LEVEL 1;
+COMP "SW1" LOCATE = SITE "T9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M4/clk" BEL "M3/clk" BEL "M4/clkq_0" BEL
+        "M4/clkq_1" BEL "M4/clkq_2" BEL "M4/clkq_3" BEL "M4/clkq_4" BEL
+        "M4/clkq_5" BEL "M4/clkq_6" BEL "M4/clkq_7" BEL "M4/clkq_8" BEL
+        "M4/clkq_9" BEL "M4/clkq_10" BEL "M4/clkq_11" BEL "M4/clkq_12" BEL
+        "M4/clkq_13" BEL "M4/clkq_14" BEL "M4/clkq_15" BEL "M4/clkq_16" BEL
+        "M4/clkq_17" BEL "M4/clkq_18" BEL "M4/clkq_19" BEL "M4/clkq_20" BEL
+        "M4/clkq_21" BEL "M4/clkq_22" BEL "M4/clkq_23" BEL "M4/clkq_24" BEL
+        "M4/clkq_25" BEL "M4/clkq_26" BEL "M4/clkq_27" BEL "M4/clkq_28" BEL
+        "M4/clkq_29" BEL "M4/clkq_30" BEL "M4/clkq_31" BEL "M3/clkq_0" BEL
+        "M3/clkq_1" BEL "M3/clkq_2" BEL "M3/clkq_3" BEL "M3/clkq_4" BEL
+        "M3/clkq_5" BEL "M3/clkq_6" BEL "M3/clkq_7" BEL "M3/clkq_8" BEL
+        "M3/clkq_9" BEL "M3/clkq_10" BEL "M3/clkq_11" BEL "M3/clkq_12" BEL
+        "M3/clkq_13" BEL "M3/clkq_14" BEL "M3/clkq_15" BEL "M3/clkq_16" BEL
+        "M3/clkq_17" BEL "M3/clkq_18" BEL "M3/clkq_19" BEL "M3/clkq_20" BEL
+        "M3/clkq_21" BEL "M3/clkq_22" BEL "M3/clkq_23" BEL "M3/clkq_24" BEL
+        "M3/clkq_25" BEL "M3/clkq_26" BEL "M3/clkq_27" BEL "M3/clkq_28" BEL
+        "M3/clkq_29" BEL "M3/clkq_30" BEL "M3/clkq_31" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,17 @@
+ISim log file
+Running: /home/students/tuc56100/xilinx/lab8/tb_divideby100_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/students/tuc56100/xilinx/lab8/tb_divideby100_isim_beh.wdb 
+ISim O.76xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Simulation complete!!!
+Stopped at time : 4480 ns : File "/home/students/tuc56100/xilinx/lab8/tb_divideby100.v" Line 61
+# exit 0

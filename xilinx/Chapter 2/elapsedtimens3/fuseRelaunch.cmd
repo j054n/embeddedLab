@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_isim_beh.exe" -prj "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/ettest_beh.prj" "work.ettest" "work.glbl" 

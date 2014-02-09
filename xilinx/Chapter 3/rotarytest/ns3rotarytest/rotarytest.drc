@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Jan 29 18:18:35 2013
+
+drc -z rotarytest.ncd rotarytest.pcf
+
+DRC detected 0 errors and 0 warnings.

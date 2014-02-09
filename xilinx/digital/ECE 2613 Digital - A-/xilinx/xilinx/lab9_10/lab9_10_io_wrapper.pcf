@@ -1,0 +1,77 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Thu Nov 08 14:12:03 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Led<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "Led<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "Led<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "Led<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "B18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "Led<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "dp" LOCATE = SITE "C17" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "D18" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "E18" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "JA<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "JA<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "JA<2>" LOCATE = SITE "L17" LEVEL 1;
+COMP "JA<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "JA<4>" LOCATE = SITE "K13" LEVEL 1;
+COMP "JA<5>" LOCATE = SITE "L16" LEVEL 1;
+COMP "JA<6>" LOCATE = SITE "M14" LEVEL 1;
+COMP "Led<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "JA<7>" LOCATE = SITE "M16" LEVEL 1;
+COMP "Led<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "Led<2>" LOCATE = SITE "K15" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "utop/ucb/u0/count_7" BEL "utop/ucb/u0/count_6" BEL
+        "utop/ucb/u0/count_5" BEL "utop/ucb/u0/count_4" BEL
+        "utop/ucb/u0/count_3" BEL "utop/ucb/u0/count_2" BEL
+        "utop/ucb/u0/count_1" BEL "utop/ucb/u0/count_0" BEL "utop/ucb/u4/q_3"
+        BEL "utop/ucb/u4/q_2" BEL "utop/ucb/u4/q_1" BEL "utop/ucb/u4/q_0" BEL
+        "utop/ucb/u2/q_3" BEL "utop/ucb/u2/q_0" BEL "utop/ucb/u1/q_3" BEL
+        "utop/ucb/u1/q_0" BEL "utop/ucb/u3/q_2" BEL "utop/ucb/u3/q_0" BEL
+        "utop/usc/ucss/state_2" BEL "utop/usc/ucss/state_1" BEL
+        "utop/usc/ucss/state_0" BEL "utop/usc/ucbnc/millisecond_count_8" BEL
+        "utop/usc/ucbnc/millisecond_count_7" BEL
+        "utop/usc/ucbnc/millisecond_count_6" BEL
+        "utop/usc/ucbnc/millisecond_count_5" BEL
+        "utop/usc/ucbnc/millisecond_count_4" BEL
+        "utop/usc/ucbnc/millisecond_count_3" BEL
+        "utop/usc/ucbnc/millisecond_count_2" BEL
+        "utop/usc/ucbnc/millisecond_count_1" BEL
+        "utop/usc/ucbnc/millisecond_count_0" BEL "utop/udd/anreg_1" BEL
+        "utop/udd/anreg_0" BEL "utop/udd/count_15" BEL "utop/udd/count_14" BEL
+        "utop/udd/count_13" BEL "utop/udd/count_12" BEL "utop/udd/count_11"
+        BEL "utop/udd/count_10" BEL "utop/udd/count_9" BEL "utop/udd/count_8"
+        BEL "utop/udd/count_7" BEL "utop/udd/count_6" BEL "utop/udd/count_5"
+        BEL "utop/udd/count_4" BEL "utop/udd/count_3" BEL "utop/udd/count_2"
+        BEL "utop/udd/count_1" BEL "utop/udd/count_0" BEL "utop/ucb/u2/q_2"
+        BEL "utop/ucb/u2/q_1" BEL "utop/ucb/u1/q_2" BEL "utop/ucb/u1/q_1" BEL
+        "utop/ucb/u3/q_1" BEL "Mshreg_btn1/SRL16E" BEL "btn1" BEL
+        "Mshreg_btn0/SRL16E" BEL "btn0" BEL "Mshreg_btn2/SRL16E" BEL "btn2"
+        BEL "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

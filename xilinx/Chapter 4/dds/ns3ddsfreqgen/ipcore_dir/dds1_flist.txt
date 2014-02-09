@@ -1,0 +1,15 @@
+# Output products list for <dds1>
+_xmsgs\pn_parser.xmsgs
+dds1.asy
+dds1.gise
+dds1.ngc
+dds1.v
+dds1.veo
+dds1.xco
+dds1.xise
+dds1\doc\dds_compiler_v5_0_readme.txt
+dds1\doc\dds_compiler_v5_0_vinfo.html
+dds1\doc\ds794_dds_compiler.pdf
+dds1_flist.txt
+dds1_xmdf.tcl
+demo_tb\tb_dds1.vhd

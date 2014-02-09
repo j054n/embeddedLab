@@ -1,0 +1,5 @@
+verilog work "rf_16x16_2r1w.v"
+verilog work "bp_alu.v"
+verilog work "bp_dp.v"
+verilog work "tb_bp_dp.v"
+verilog work "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

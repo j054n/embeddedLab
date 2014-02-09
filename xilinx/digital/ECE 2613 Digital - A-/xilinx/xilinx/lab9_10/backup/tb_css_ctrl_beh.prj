@@ -1,0 +1,3 @@
+verilog work "css_ctrl.v"
+verilog work "tb_css_ctrl.v"
+verilog work "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

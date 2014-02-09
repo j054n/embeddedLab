@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+incrementToValue instance_name (
+    .startValue(startValue), 
+    .endValue(endValue), 
+    .countStatus(countStatus), 
+    .reset(reset), 
+    .clk(clk), 
+    .RST(RST), 
+    .currentValue(currentValue)
+    );
+
+

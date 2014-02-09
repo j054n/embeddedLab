@@ -1,0 +1,3 @@
+verilog isim_temp "svn_seg_decoder.v"
+verilog isim_temp "tb_svn_seg_decoder.v"
+verilog isim_temp "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

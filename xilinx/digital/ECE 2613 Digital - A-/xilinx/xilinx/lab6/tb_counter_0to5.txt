@@ -1,0 +1,34 @@
+//
+// lab6 : version 10/02/2012
+//            
+// This file contains the test vectors for the
+// zero to five counter.
+// The first column is the input clr signal
+// The second column is the input ena signal
+// There is one row per clock edge. The inputs
+//   are set up before the clock edge. The
+//   outputs are observed after the clock edge.
+// The next column is the carry out, c_o
+// The next four columns are the outputs: q[3:0]
+//
+// Not all possibilities can be easily achieved.
+// Most can be probed in several lines
+//
+11_10101
+10_00000
+01_00001
+01_00010
+01_00011
+01_00100
+01_10101
+00_00101
+01_00000
+01_00001
+01_00010
+01_00011
+01_00100
+00_00100
+01_10101
+01_00000
+01_00001
+11_10101

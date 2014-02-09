@@ -1,0 +1,29 @@
+Running: /data/fhiggins/xilinx_se/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/students/tuc56100/xilinx/lab7/tb_sw_core_isim_beh.exe -prj /home/students/tuc56100/xilinx/lab7/tb_sw_core_beh.prj work.tb_sw_core work.glbl 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab7/svn_seg_decoder.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab7/dsp_drvr.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab7/sw_core.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab7/tb_sw_core.v" into library work
+Analyzing Verilog file "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/students/tuc56100/xilinx/lab7/tb_sw_core.v" Line 18: Port m_sec is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/students/tuc56100/xilinx/lab7/sw_core.v" Line 32: Port m_sec is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/students/tuc56100/xilinx/lab7/dsp_drvr.v" Line 88: Size mismatch in connection of port <display_on>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 93460 KB
+Fuse CPU Usage: 1510 ms
+Compiling module svn_seg_decoder
+Compiling module dsp_drvr
+Compiling module sw_core
+Compiling module tb_sw_core
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable /home/students/tuc56100/xilinx/lab7/tb_sw_core_isim_beh.exe
+Fuse Memory Usage: 651624 KB
+Fuse CPU Usage: 1530 ms
+GCC CPU Usage: 490 ms

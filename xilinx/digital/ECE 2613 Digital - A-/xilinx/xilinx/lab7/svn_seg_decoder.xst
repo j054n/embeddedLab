@@ -1,0 +1,5 @@
+set -tmpdir "/home/students/tuc56100/xilinx/lab7/xst/projnav.tmp"
+set -xsthdpdir "/home/students/tuc56100/xilinx/lab7/xst"
+elaborate
+-ifn svn_seg_decoder.prj
+-ifmt mixed

@@ -1,0 +1,23 @@
+Release 13.3 - par O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Sep 28 08:20:18 2012
+
+6 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   GLOBAL_LOGIC0
+   GLOBAL_LOGIC1
+   U1/Next_q<0>
+   sw_4_IBUF
+   sw_5_BUFGP
+   sw_5_BUFGP/IBUFG
+WARNING:ParHelpers:361 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   sw<1>_IBUF
+   sw<2>_IBUF
+   sw<3>_IBUF
+
+

@@ -1,0 +1,427 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: clocktest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "clocktest.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "clocktest"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : clocktest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\clocktest\atlclocktest\remote_sources\_\_\peripherals\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 3\clocktest\atlclocktest\clocktest.v" into library work
+Parsing module <clocktest>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <clocktest>.
+
+Elaborating module <clock>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <clocktest>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\clocktest\atlclocktest\clocktest.v".
+    Summary:
+	no macro.
+Unit <clocktest> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\s6EDPGA-v14\Chapter 3\clocktest\atlclocktest\remote_sources\_\_\peripherals\clock.v".
+    Found 1-bit register for signal <clk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_2_o_add_1_OUT> created at line 10.
+    Found 32-bit comparator greater for signal <n0001> created at line 11
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 6
+ 1-bit register                                        : 3
+ 32-bit register                                       : 3
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 3
+ 32-bit up counter                                     : 3
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <clocktest> ...
+WARNING:Xst:1293 - FF/Latch <M0/clkq_31> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M0/clkq_30> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M0/clkq_29> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M0/clkq_28> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M0/clkq_27> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M0/clkq_26> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_31> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_30> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_29> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_28> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_27> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_26> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M1/clkq_25> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_31> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_30> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_29> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_28> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_27> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_26> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_25> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M2/clkq_24> has a constant value of 0 in block <clocktest>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M2/clkq_0> in Unit <clocktest> is equivalent to the following 2 FFs/Latches, which will be removed : <M1/clkq_0> <M0/clkq_0> 
+INFO:Xst:2261 - The FF/Latch <M2/clkq_1> in Unit <clocktest> is equivalent to the following 2 FFs/Latches, which will be removed : <M1/clkq_1> <M0/clkq_1> 
+INFO:Xst:2261 - The FF/Latch <M2/clkq_2> in Unit <clocktest> is equivalent to the following 2 FFs/Latches, which will be removed : <M1/clkq_2> <M0/clkq_2> 
+INFO:Xst:2261 - The FF/Latch <M2/clkq_3> in Unit <clocktest> is equivalent to the following 2 FFs/Latches, which will be removed : <M1/clkq_3> <M0/clkq_3> 
+INFO:Xst:2261 - The FF/Latch <M2/clkq_4> in Unit <clocktest> is equivalent to the following 2 FFs/Latches, which will be removed : <M1/clkq_4> <M0/clkq_4> 
+INFO:Xst:2261 - The FF/Latch <M1/clkq_5> in Unit <clocktest> is equivalent to the following FF/Latch, which will be removed : <M0/clkq_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block clocktest, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : clocktest.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 528
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 144
+#      LUT2                        : 64
+#      LUT3                        : 3
+#      LUT4                        : 6
+#      LUT5                        : 12
+#      MUXCY                       : 164
+#      VCC                         : 1
+#      XORCY                       : 124
+# FlipFlops/Latches                : 67
+#      FD                          : 64
+#      FDE                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              67  out of  54576     0%  
+ Number of Slice LUTs:                  238  out of  27288     0%  
+    Number used as Logic:               238  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    238
+   Number with an unused Flip Flop:     171  out of    238    71%  
+   Number with an unused LUT:             0  out of    238     0%  
+   Number of fully used LUT-FF pairs:    67  out of    238    28%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    218     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 67    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.275ns (Maximum Frequency: 189.584MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.275ns (frequency: 189.584MHz)
+  Total number of paths / destination ports: 36660 / 70
+-------------------------------------------------------------------------
+Delay:               5.275ns (Levels of Logic = 28)
+  Source:            M2/clkq_0 (FF)
+  Destination:       M2/clk (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: M2/clkq_0 to M2/clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   0.744  M2/clkq_0 (M2/clkq_0)
+     INV:I->O              1   0.206   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_lut<0>_INV_0 (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<0> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<1> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<2> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<3> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<4> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<5> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<6> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<7> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<8> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<9> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<10> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<11> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<12> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<13> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<14> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<15> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<16> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<17> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<18> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<19> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<20> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<21> (M2/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<21>)
+     XORCY:CI->O           2   0.180   0.961  M2/Madd_clkq[31]_GND_2_o_add_1_OUT_xor<22> (M2/clkq[31]_GND_2_o_add_1_OUT<22>)
+     LUT5:I0->O            1   0.203   0.000  M2/Mcompar_n0001_lut<3> (M2/Mcompar_n0001_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  M2/Mcompar_n0001_cy<3> (M2/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  M2/Mcompar_n0001_cy<4> (M2/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O          25   0.258   1.192  M2/Mcompar_n0001_cy<5> (M2/Mcompar_n0001_cy<5>)
+     FDE:CE                    0.322          M2/clk
+    ----------------------------------------
+    Total                      5.275ns (2.378ns logic, 2.897ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            M2/clk (FF)
+  Destination:       LED<2> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: M2/clk to LED<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  M2/clk (M2/clk)
+     OBUF:I->O                 2.571          LED_2_OBUF (LED<2>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.275|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.80 secs
+ 
+--> 
+
+Total memory usage is 195052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

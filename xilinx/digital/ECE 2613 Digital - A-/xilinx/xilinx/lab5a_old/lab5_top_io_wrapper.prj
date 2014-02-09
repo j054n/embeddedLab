@@ -1,0 +1,2 @@
+verilog work "count4bcd_combin.v"
+verilog work "lab5_top_io_wrapper.v"

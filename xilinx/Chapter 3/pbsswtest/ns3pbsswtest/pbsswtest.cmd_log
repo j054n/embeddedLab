@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3pbsswtest.ucf -p xc6slx16-csg324-3 "pbsswtest.ngc" pbsswtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3pbsswtest.ucf -p xc6slx16-csg324-3 "pbsswtest.ngc" pbsswtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+par -w -intstyle ise -ol high -mt off pbsswtest_map.ncd pbsswtest.ncd pbsswtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbsswtest.twx pbsswtest.ncd -o pbsswtest.twr pbsswtest.pcf -ucf ns3pbsswtest.ucf 
+bitgen -intstyle ise -f pbsswtest.ut pbsswtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3pbsswtest.ucf -p xc6slx16-csg324-3 "pbsswtest.ngc" pbsswtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+par -w -intstyle ise -ol high -mt off pbsswtest_map.ncd pbsswtest.ncd pbsswtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbsswtest.twx pbsswtest.ncd -o pbsswtest.twr pbsswtest.pcf -ucf ns3pbsswtest.ucf 
+bitgen -intstyle ise -f pbsswtest.ut pbsswtest.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+par -w -intstyle ise -ol high -mt off pbsswtest_map.ncd pbsswtest.ncd pbsswtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbsswtest.twx pbsswtest.ncd -o pbsswtest.twr pbsswtest.pcf -ucf ns3pbsswtest.ucf 
+bitgen -intstyle ise -f pbsswtest.ut pbsswtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3pbsswtest.ucf -p xc6slx16-csg324-3 "pbsswtest.ngc" pbsswtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+par -w -intstyle ise -ol high -mt off pbsswtest_map.ncd pbsswtest.ncd pbsswtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbsswtest.twx pbsswtest.ncd -o pbsswtest.twr pbsswtest.pcf -ucf ns3pbsswtest.ucf 
+bitgen -intstyle ise -f pbsswtest.ut pbsswtest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.xst" -ofn "C:/s6EDPGA-v14/Chapter 3/pbsswtest/ns3pbsswtest/pbsswtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3pbsswtest.ucf -p xc6slx16-csg324-3 "pbsswtest.ngc" pbsswtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o pbsswtest_map.ncd pbsswtest.ngd pbsswtest.pcf 
+par -w -intstyle ise -ol high -mt off pbsswtest_map.ncd pbsswtest.ncd pbsswtest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml pbsswtest.twx pbsswtest.ncd -o pbsswtest.twr pbsswtest.pcf -ucf ns3pbsswtest.ucf 
+bitgen -intstyle ise -f pbsswtest.ut pbsswtest.ncd 

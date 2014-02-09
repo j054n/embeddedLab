@@ -1,0 +1,6 @@
+verilog work "../../Chapter 3/peripherals/sevensegment.v"
+verilog work "../../Chapter 3/peripherals/clock.v"
+verilog work "ipcore_dir/ROMbinBCD.v"
+verilog work "ipcore_dir/ROMbinBCD_synth.v"
+verilog work "genROMdata.v"
+verilog work "binBCDROM.v"

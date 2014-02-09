@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elapsedtimens3.ucf -p xc6slx16-csg324-3 "elapsedtimens3.ngc" elapsedtimens3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o elapsedtimens3_map.ncd elapsedtimens3.ngd elapsedtimens3.pcf 
+par -w -intstyle ise -ol high -mt off elapsedtimens3_map.ncd elapsedtimens3.ncd elapsedtimens3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml elapsedtimens3.twx elapsedtimens3.ncd -o elapsedtimens3.twr elapsedtimens3.pcf -ucf elapsedtimens3.ucf 
+bitgen -intstyle ise -f elapsedtimens3.ut elapsedtimens3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elapsedtimens3.ucf -p xc6slx16-csg324-3 "elapsedtimens3.ngc" elapsedtimens3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o elapsedtimens3_map.ncd elapsedtimens3.ngd elapsedtimens3.pcf 
+par -w -intstyle ise -ol high -mt off elapsedtimens3_map.ncd elapsedtimens3.ncd elapsedtimens3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml elapsedtimens3.twx elapsedtimens3.ncd -o elapsedtimens3.twr elapsedtimens3.pcf -ucf elapsedtimens3.ucf 
+bitgen -intstyle ise -f elapsedtimens3.ut elapsedtimens3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elapsedtimens3.ucf -p xc6slx16-csg324-3 "elapsedtimens3.ngc" elapsedtimens3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o elapsedtimens3_map.ncd elapsedtimens3.ngd elapsedtimens3.pcf 
+par -w -intstyle ise -ol high -mt off elapsedtimens3_map.ncd elapsedtimens3.ncd elapsedtimens3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml elapsedtimens3.twx elapsedtimens3.ncd -o elapsedtimens3.twr elapsedtimens3.pcf -ucf elapsedtimens3.ucf 
+bitgen -intstyle ise -f elapsedtimens3.ut elapsedtimens3.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.xst" -ofn "C:/s6EDPGA-v14/Chapter 2/elapsedtimens3/elapsedtimens3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elapsedtimens3.ucf -p xc6slx16-csg324-3 "elapsedtimens3.ngc" elapsedtimens3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o elapsedtimens3_map.ncd elapsedtimens3.ngd elapsedtimens3.pcf 
+par -w -intstyle ise -ol high -mt off elapsedtimens3_map.ncd elapsedtimens3.ncd elapsedtimens3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml elapsedtimens3.twx elapsedtimens3.ncd -o elapsedtimens3.twr elapsedtimens3.pcf -ucf elapsedtimens3.ucf 
+bitgen -intstyle ise -f elapsedtimens3.ut elapsedtimens3.ncd 

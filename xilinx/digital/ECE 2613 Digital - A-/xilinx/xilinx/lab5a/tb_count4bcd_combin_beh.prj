@@ -1,0 +1,3 @@
+verilog work "count4bcd_combin.v"
+verilog work "tb_count4bcd_combin.v"
+verilog work "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v"

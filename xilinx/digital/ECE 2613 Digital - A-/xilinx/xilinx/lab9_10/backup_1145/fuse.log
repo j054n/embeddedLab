@@ -1,0 +1,25 @@
+Running: /data/fhiggins/xilinx_se/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/students/tuc56100/xilinx/lab9_10/tb_sw_ctrl_isim_beh.exe -prj /home/students/tuc56100/xilinx/lab9_10/tb_sw_ctrl_beh.prj work.tb_sw_ctrl work.glbl 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab9_10/dbnc_ctrl.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab9_10/css_ctrl.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab9_10/sw_ctrl.v" into library work
+Analyzing Verilog file "/home/students/tuc56100/xilinx/lab9_10/tb_sw_ctrl.v" into library work
+Analyzing Verilog file "/data/fhiggins/xilinx_se/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 93468 KB
+Fuse CPU Usage: 1500 ms
+Compiling module css_ctrl
+Compiling module dbnc_ctrl
+Compiling module sw_ctrl
+Compiling module tb_sw_ctrl
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 5 Verilog Units
+Built simulation executable /home/students/tuc56100/xilinx/lab9_10/tb_sw_ctrl_isim_beh.exe
+Fuse Memory Usage: 651688 KB
+Fuse CPU Usage: 1530 ms
+GCC CPU Usage: 590 ms

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/students/tuc56100/xilinx/lab6/tb_counter_0to9_isim_beh.exe" -prj "/home/students/tuc56100/xilinx/lab6/tb_counter_0to9_beh.prj" "work.tb_counter_0to9" "work.glbl" 

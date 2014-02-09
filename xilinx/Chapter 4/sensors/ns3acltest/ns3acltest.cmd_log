@@ -1,0 +1,355 @@
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -u -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -u -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
+xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/ns3acltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "ns3acltest.ngc" ns3acltest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ns3acltest_map.ncd ns3acltest.ngd ns3acltest.pcf 
+par -w -intstyle ise -ol high -mt off ns3acltest_map.ncd ns3acltest.ncd ns3acltest.pcf 
+trce -intstyle ise -e 3 -s 3 -n 3 -xml ns3acltest.twx ns3acltest.ncd -o ns3acltest.twr ns3acltest.pcf -ucf ns3acltest.ucf 
+bitgen -intstyle ise -f ns3acltest.ut ns3acltest.ncd 
