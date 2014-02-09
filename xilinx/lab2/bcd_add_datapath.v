@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_add_datapath(
     input [7:0] BCD_INPUT_DATA,
-    output [7:0] BCD_OUTPUT_DATA,
+    output [11:0] BCD_OUTPUT_DATA,
 	 input CLK,
     input BCD_INIT,
     output reg BCD_INIT_ACK,
@@ -43,17 +43,17 @@ module bcd_add_datapath(
     //Setup an A and B register to hold the values to add.
     reg [7:0] A;
     reg [7:0] B;
-    reg [15:0] ABResult;
+    reg [7:0] ABResult;
 
     //Setup registers to hold BCD values.
     reg [7:0] A_BCD;
     reg [7:0] B_BCD;
-    reg [7:0] ABResult_BCD;
+    reg [11:0] ABResult_BCD;
 
     //Wires
     wire [7:0] wire_A_to_BCD;
     wire [7:0] wire_B_to_BCD;
-    wire [7:0] wire_ABResult_to_BCD;
+    wire [11:0] wire_ABResult_to_BCD;
 
 
     //Instantiate the sub modules to make BCD convrsions.
@@ -65,10 +65,10 @@ module bcd_add_datapath(
 										.mostSignificant(B_BCD[7:4]), 
 										.leastSignificant(B_BCD[3:0]));
 										
-	 BCD_From_7bit_Binary cBCD(.inputNumber(ABResult), 
-										.mostSignificant(ABResult_BCD[7:4]), 
-										.leastSignificant(ABResult_BCD[3:0]));
-	 
+	 7BitBinaryTo3DigitBCD outputBCD(.inputNumber(ABResult),
+                                        .hundreds(ABResult_BCD[11:8]),
+                                        .tens(ABResult_BCD[7:4]),
+                                        .ones(ABResult_BCD[3:0]));
 
 
     always @(posedge CLK)
@@ -118,18 +118,21 @@ module bcd_add_datapath(
                     BCD_ADD_ACK = 1;
                 end
 
+            //Show the least significant 2 digits. For example in 124, show the 2,4
             if(BCD_DISPLAY_RESULT_LS)
                 begin
-                    
+                    BCD_OUTPUT_DATA[7:4] = ABResult_BCD[7:4];
+                    BCD_OUTPUT_DATA[3:0] = ABResult_BCD[3:0];
+                    BCD_DISPLAY_RESULT_LS_ACK = 1;
                 end
-
+            
+            //Show the least significant 2 digits. For example in 124, show the 0,1
             if(BCD_DISPLAY_RESULT_MS)
                 begin
-
+                    BCD_OUTPUT_DATA[7:4] = 0;
+                    BCD_OUTPUT_DATA[3:0] = ABResult_BCD[11:8];
+                    BCD_DISPLAY_RESULT_MS_ACK = 1;
                 end
-
-
-
 
         end //End of always block.
 

@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module 7BitBinaryTo3DigitBCD(
-    input [6:0] inputNumber,
+    input [7:0] inputNumber,
     output reg [3:0] hundreds,
     output reg [3:0] tens,
     output reg [3:0] ones;
