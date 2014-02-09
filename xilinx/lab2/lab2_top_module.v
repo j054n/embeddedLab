@@ -52,10 +52,33 @@ module lab2_top_module(
 	
 	wire wire_BCD_DISPLAY_RESULT_MS;
 	wire wire_BCD_DISPLAY_RESULT_MS_ACK;
+
+
 	
 	//Instantiate the modules.
-	bcd_add_controller controller();
-	bcd_add_datapath datapath();
+	bcd_add_controller controller(.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
+									.BCD_LOAD_A(wire_BCD_LOAD_A), .BCD_LOAD_A_ACK(wire_BCD_LOAD_A_ACK),
+									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
+									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
+									.BCD_DISPLAY_B(wire_BCD_DISPLAY_B), .BCD_DISPLAY_B_ACK(wire_BCD_DISPLAY_B_ACK),
+									.BCD_ADD(wire_BCD_ADD), .BCD_ADD_ACK(wire_BCD_ADD_ACK),
+									.BCD_DISP_RESULT_LS(wire_BCD_DISPLAY_RESULT_LS), .BCD_DISP_RESULT_LS_ACK(wire_BCD_DISPLAY_RESULT_LS_ACK),
+									.BCD_DISP_RESULT_MS(wire_BCD_DISPLAY_RESULT_MS), .BCD_DISP_RESULT_MS_ACK(wire_BCD_DISPLAY_RESULT_MS_ACK),
+									.CLK(CLK)
+									);
+	
+
+	bcd_add_datapath datapath(.BCD_INIT(), .BCD_INIT_ACK(),
+									.BCD_LOAD_A(wire_BCD_INIT), .BCD_LOAD_A_ACK(wire_BCD_INIT_ACK),
+									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
+									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
+									.BCD_DISPLAY_B(wire_BCD_DISPLAY_B), .BCD_DISPLAY_B_ACK(wire_BCD_DISPLAY_B_ACK),
+									.BCD_ADD(wire_BCD_ADD), .BCD_ADD_ACK(wire_BCD_ADD_ACK),
+									.BCD_DISP_RESULT_LS(wire_BCD_DISPLAY_RESULT_LS), .BCD_DISP_RESULT_LS_ACK(),
+									.BCD_DISP_RESULT_MS(wire_BCD_DISPLAY_RESULT_MS), .BCD_DISP_RESULT_MS_ACK(wire_BCD_DISPLAY_RESULT_MS_ACK),
+									.BCD_INPUT_DATA(SW[7:0]), .BCD_OUTPUT_DATA(LED[7:0]),
+									.CLK(CLK)
+
 	
 	
 	

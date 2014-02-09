@@ -19,8 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_add_datapath(
-    input [7:0] SW,
-    output [7:0] LED,
+    input [7:0] BCD_INPUT_DATA,
+    output [7:0] BCD_OUTPUT_DATA,
 	 input CLK,
     input BCD_INIT,
     output BCD_INIT_ACK,
