@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: lab2_top_module.prj
@@ -379,7 +379,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 6.79 secs
+Total CPU time to Xst completion: 6.66 secs
  
 --> 
 

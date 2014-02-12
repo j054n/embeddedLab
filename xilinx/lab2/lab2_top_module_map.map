@@ -11,7 +11,7 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Feb 12 13:14:06 2014
+Mapped Date    : Wed Feb 12 13:44:49 2014
 
 Mapping design into LUTs...
 Running directed packing...
@@ -34,19 +34,19 @@ Phase 3.31  Local Placement Optimization (Checksum:2776aec5) REAL time: 18 secs
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:2776aec5) REAL time: 20 secs 
+(Checksum:2776aec5) REAL time: 19 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:2776aec5) REAL time: 20 secs 
+Phase 5.36  Local Placement Optimization (Checksum:2776aec5) REAL time: 19 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:2776aec5) REAL time: 20 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:2776aec5) REAL time: 19 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:2776aec5) REAL time: 20 secs 
+Phase 7.3  Local Placement Optimization (Checksum:2776aec5) REAL time: 19 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:2776aec5) REAL time: 20 secs 
+Phase 8.5  Local Placement Optimization (Checksum:2776aec5) REAL time: 19 secs 
 
 Phase 9.8  Global Placement
 Phase 9.8  Global Placement (Checksum:2776aec5) REAL time: 20 secs 
@@ -112,8 +112,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                0.00
 
-Peak Memory Usage:  725 MB
-Total REAL time to MAP completion:  22 secs 
+Peak Memory Usage:  726 MB
+Total REAL time to MAP completion:  21 secs 
 Total CPU time to MAP completion:   9 secs 
 
 Mapping completed.

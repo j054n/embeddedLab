@@ -43,7 +43,17 @@ module bcd_add_datapath(
 				output reg [7:0] output_value = 0
     );
 
-	//Set some temorary variables for the math.
+	//Set some default values for the acknowledgement signals.
+	/*
+	load_a_ack = 0;
+	load_b_ack = 0;
+	display_a_ack = 0;
+	display_b_ack = 0;
+	display_ls_ack = 0;
+	display_ms_ack = 0;
+	*/
+	
+	//Set some temorary registers for the math.
 	reg [6:0] A = 0;
 	reg [6:0] B = 0;
 	reg [7:0] C = 0;
