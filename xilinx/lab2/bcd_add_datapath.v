@@ -40,7 +40,7 @@ module bcd_add_datapath(
 				output reg display_ms_ack,
 				
 				//Output to the outside world.
-				output reg [7:0] output_value
+				output reg [7:0] output_value = 0
     );
 
 	//Set some temorary variables for the math.
@@ -57,13 +57,14 @@ module bcd_add_datapath(
 			begin
 				A = input_value;
 				load_a_ack = 1;
+			
 			end
 			
 		if(display_a)
 			begin
-				output_value = {0,A};
+				output_value = A;
 				display_a_ack = 1;
-				load_a_ack = 0; //clear load_a_ack. (added for debug)
+				load_a_ack = 0; //clear load_a_ack. 
 			end
 			
 		if(load_b)
@@ -74,19 +75,21 @@ module bcd_add_datapath(
 			
 		if(display_b)
 			begin
-				output_value = {0,B};
+				output_value = B;
 				display_b_ack = 1;
-				load_b_ack = 0; //clear load_a_ack. (added for debug)
+				load_b_ack = 0; //clear load_b_ack.
 			end
 		
 		if(display_ls)
 			begin
 				output_value = C;
+				display_ls_ack = 1;
 			end
 			
-		if(display_ls)
+		if(display_ms)
 			begin
-				output_value = C+1;
+				output_value = C;
+				display_ms_ack = 1;
 			end
 			
 	end

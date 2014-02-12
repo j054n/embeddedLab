@@ -32,7 +32,6 @@ module lab2_top_module(
 	wire w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
 	
 	bcd_add_controller M1 (.CLK(CLK),
-							.init_input(RST),
 							.load_a_input(BTNL),
 							.load_b_input(BTNR),
 							.display_ls_input(BTNU),

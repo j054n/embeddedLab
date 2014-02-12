@@ -4,66 +4,66 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="25">
-<DesignStatistics TimeStamp="Wed Feb 12 01:12:35 2014"><group name="NetStatistics">
-<item name="NumNets_Active" rev="25">
+<DeviceUsageSummary rev="44">
+<DesignStatistics TimeStamp="Wed Feb 12 13:16:01 2014"><group name="NetStatistics">
+<item name="NumNets_Active" rev="44">
 <attrib name="value" value="32"/></item>
-<item name="NumNets_Gnd" rev="25">
+<item name="NumNets_Gnd" rev="44">
 <attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Gnd_DOUBLE" rev="25">
+<item name="NumNodesOfType_Gnd_DOUBLE" rev="44">
 <attrib name="value" value="4"/></item>
-<item name="NumNodesOfType_Gnd_GENERIC" rev="25">
+<item name="NumNodesOfType_Gnd_GENERIC" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="25">
+<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="25">
+<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_OUTBOUND" rev="25">
+<item name="NumNodesOfType_Gnd_OUTBOUND" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_OUTPUT" rev="25">
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="44">
 <attrib name="value" value="9"/></item>
-<item name="NumNodesOfType_Gnd_PADINPUT" rev="25">
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_PINFEED" rev="25">
+<item name="NumNodesOfType_Gnd_PINFEED" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Gnd_QUAD" rev="25">
+<item name="NumNodesOfType_Gnd_QUAD" rev="44">
 <attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Gnd_SINGLE" rev="25">
+<item name="NumNodesOfType_Gnd_SINGLE" rev="44">
 <attrib name="value" value="4"/></item>
 </group>
 <group name="SiteStatistics">
-<item name="IOB-IOBM" rev="25">
+<item name="IOB-IOBM" rev="44">
 <attrib name="value" value="11"/></item>
-<item name="IOB-IOBS" rev="25">
+<item name="IOB-IOBS" rev="44">
 <attrib name="value" value="9"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="24">
+<item name="AGG_BONDED_IO" rev="43">
 <attrib name="value" value="20"/></item>
-<item name="AGG_IO" rev="24">
+<item name="AGG_IO" rev="43">
 <attrib name="value" value="20"/></item>
-<item name="AGG_LOCED_IO" rev="24">
+<item name="AGG_LOCED_IO" rev="43">
 <attrib name="value" value="20"/></item>
-<item name="NUM_BONDED_IOB" rev="24">
+<item name="NUM_BONDED_IOB" rev="43">
 <attrib name="value" value="20"/></item>
-<item name="NUM_LOCED_IOB" rev="24">
+<item name="NUM_LOCED_IOB" rev="43">
 <attrib name="value" value="20"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Wed Feb 12 01:12:35 2014"><group name="SiteSummary">
-<item name="IOB" rev="25">
+<DeviceUsage TimeStamp="Wed Feb 12 13:16:01 2014"><group name="SiteSummary">
+<item name="IOB" rev="44">
 <attrib name="total" value="1000000"/><attrib name="used" value="20"/></item>
-<item name="IOB_IMUX" rev="25">
+<item name="IOB_IMUX" rev="44">
 <attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
-<item name="IOB_INBUF" rev="25">
+<item name="IOB_INBUF" rev="44">
 <attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
-<item name="IOB_OUTBUF" rev="25">
+<item name="IOB_OUTBUF" rev="44">
 <attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
-<item name="PAD" rev="25">
+<item name="PAD" rev="44">
 <attrib name="total" value="1000000"/><attrib name="used" value="20"/></item>
 </group>
 </DeviceUsage>
-<ReportConfigData TimeStamp="Wed Feb 12 01:12:35 2014"><group name="REG_SR">
+<ReportConfigData TimeStamp="Wed Feb 12 13:16:01 2014"><group name="REG_SR">
 <item name="CK" rev="23">
 <attrib name="CK" value="52"/><attrib name="CK_INV" value="0"/></item>
 <item name="LATCH_OR_FF" rev="23">
@@ -90,11 +90,11 @@
 <attrib name="CLK" value="1"/><attrib name="CLK_INV" value="0"/></item>
 </group>
 <group name="IOB_OUTBUF">
-<item name="DRIVEATTRBOX" rev="25">
+<item name="DRIVEATTRBOX" rev="44">
 <attrib name="12" value="8"/></item>
-<item name="SLEW" rev="25">
+<item name="SLEW" rev="44">
 <attrib name="SLOW" value="8"/></item>
-<item name="SUSPEND" rev="25">
+<item name="SUSPEND" rev="44">
 <attrib name="3STATE" value="8"/></item>
 </group>
 <group name="SLICEX">
@@ -110,7 +110,7 @@
 <attrib name="ASYNC" value="1"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Wed Feb 12 01:12:35 2014"><group name="REG_SR">
+<ReportPinData TimeStamp="Wed Feb 12 13:16:01 2014"><group name="REG_SR">
 <item name="CE" rev="23">
 <attrib name="value" value="14"/></item>
 <item name="CK" rev="23">
@@ -259,9 +259,9 @@
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IOB_OUTBUF">
-<item name="IN" rev="25">
+<item name="IN" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="OUT" rev="25">
+<item name="OUT" rev="44">
 <attrib name="value" value="8"/></item>
 </group>
 <group name="SLICEX">
@@ -351,13 +351,13 @@
 <attrib name="value" value="1"/></item>
 </group>
 <group name="PAD">
-<item name="PAD" rev="25">
+<item name="PAD" rev="44">
 <attrib name="value" value="20"/></item>
 </group>
 <group name="IOB_INBUF">
-<item name="OUT" rev="25">
+<item name="OUT" rev="44">
 <attrib name="value" value="12"/></item>
-<item name="PAD" rev="25">
+<item name="PAD" rev="44">
 <attrib name="value" value="12"/></item>
 </group>
 <group name="CARRY4">
@@ -433,17 +433,17 @@
 <attrib name="value" value="4"/></item>
 </group>
 <group name="IOB_IMUX">
-<item name="I" rev="25">
+<item name="I" rev="44">
 <attrib name="value" value="12"/></item>
-<item name="OUT" rev="25">
+<item name="OUT" rev="44">
 <attrib name="value" value="12"/></item>
 </group>
 <group name="IOB">
-<item name="I" rev="25">
+<item name="I" rev="44">
 <attrib name="value" value="12"/></item>
-<item name="O" rev="25">
+<item name="O" rev="44">
 <attrib name="value" value="8"/></item>
-<item name="PAD" rev="25">
+<item name="PAD" rev="44">
 <attrib name="value" value="20"/></item>
 </group>
 <group name="HARD0">

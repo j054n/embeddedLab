@@ -21,7 +21,6 @@
 module bcd_add_controller(
 			//input from the outside world.
 			input CLK,
-			input init_input,
 			input load_a_input,
 			input load_b_input,
 			input display_ls_input,
@@ -53,12 +52,12 @@ module bcd_add_controller(
 				DISPLAY_LS_STATE = 5,
 				DISPLAY_MS_STATE = 6;
 			
-	reg [2:0] state;
+	reg [2:0] state = INIT_STATE; //Set the default state to INIT_STATE.
 	
 	//Let's now create the logic of the state machine.
 	always @(posedge CLK)
 		begin
-			if(INIT_STATE) //Given init reset everything.
+			if(state == INIT_STATE) //Given init reset everything.
 				begin
 					//set all output values to default states.
 					load_a <= 0;
@@ -75,65 +74,117 @@ module bcd_add_controller(
 					LOAD_A_STATE: begin
 						if(load_a_ack) state <= DISPLAY_A_STATE;
 						//init_input <= 0; //more debug stuff.
+						
+						//Set the output signals.
 						load_a <= 1;
+						load_b <= 0;
+						display_a <= 0;
+						display_b <= 0;
+						display_ls <= 0;
+						display_ms <= 0;
+						
 					end
 					
 					DISPLAY_A_STATE: begin
-						//load_a_ack <= 0; //clear the load_a_ack flag from LOAD_A_STATE
+						//Now that loading is done, unset load_a and set display_a.
+						
+						//Set the output signals.
+						load_a <= 0;
+						load_b <= 0;
 						display_a <= 1;
 						display_b <= 0;
 						display_ls <= 0;
 						display_ms <= 0;
 						
 						//Wait in this state unless the following buttons happen.
-						if(load_a_input) state <= LOAD_A_STATE;
-						if(load_b_input) state <= LOAD_B_STATE;
-						if(display_ls_input) state <= DISPLAY_LS_STATE;
-						if(display_ms_input) state <= DISPLAY_MS_STATE;
+						if(display_a_ack) begin //added recently...
+							//Unset display_a flag.
+							display_a <= 0;
+							if(load_a_input) state <= LOAD_A_STATE;
+							if(load_b_input) state <= LOAD_B_STATE;
+							if(display_ls_input) state <= DISPLAY_LS_STATE;
+							if(display_ms_input) state <= DISPLAY_MS_STATE;
+						end
 					end
 					
 					LOAD_B_STATE: begin
 						if(load_b_ack) state <= DISPLAY_B_STATE;
+							
+						//Set the output signals.
+						load_a <= 0;
 						load_b <= 1;
+						display_a <= 0;
+						display_b <= 0;
+						display_ls <= 0;
+						display_ms <= 0;
+						
 					end
 								
 					DISPLAY_B_STATE: begin
-						//load_b_ack <= 0; //clear the load_a_ack flag from LOAD_A_STATE
+						//load_b_ack <= 0; //clear the load_a_ack flag from LOAD_B_STATE
+						//Now that loading is done, unset load_b and set display_b.
+							
+						//Set the output signals.
+						load_a <= 0;
+						load_b <= 0;
 						display_a <= 0;
 						display_b <= 1;
 						display_ls <= 0;
-						display_ms <= 0;						
+						display_ms <= 0;
+						
 						//Wait in this state unless the following buttons happen.
-						if(load_a_input) state <= LOAD_A_STATE;
-						if(load_b_input) state <= LOAD_B_STATE;
-						if(display_ls_input) state <= DISPLAY_LS_STATE;
-						if(display_ms_input) state <= DISPLAY_MS_STATE;
+						if(display_b_ack) begin //added recently...
+							//Unset display_a flag.
+							display_b <= 0;
+							if(load_a_input) state <= LOAD_A_STATE;
+							if(load_b_input) state <= LOAD_B_STATE;
+							if(display_ls_input) state <= DISPLAY_LS_STATE;
+							if(display_ms_input) state <= DISPLAY_MS_STATE;
+						end
 					end
 					
 					DISPLAY_LS_STATE: begin
+						
+						//Set the output signals.
+						load_a <= 0;
+						load_b <= 0;
 						display_a <= 0;
 						display_b <= 0;
 						display_ls <= 1;
 						display_ms <= 0;
 						
 						//Wait in this state unless the following buttons happen.
-						if(load_a_input) state <= LOAD_A_STATE;
-						if(load_b_input) state <= LOAD_B_STATE;
-						if(display_ls_input) state <= DISPLAY_LS_STATE;
-						if(display_ms_input) state <= DISPLAY_MS_STATE;
+						if(display_ls_ack) begin
+							//Set display_ls back to 0 once it is displayed.
+							display_ls <= 0;
+							
+							if(load_a_input) state <= LOAD_A_STATE;
+							if(load_b_input) state <= LOAD_B_STATE;
+							if(display_ls_input) state <= DISPLAY_LS_STATE;
+							if(display_ms_input) state <= DISPLAY_MS_STATE;
+						end
 					end
 					
 					DISPLAY_MS_STATE: begin
+							
+						//Set the output signals.
+						load_a <= 0;
+						load_b <= 0;
 						display_a <= 0;
 						display_b <= 0;
 						display_ls <= 0;
 						display_ms <= 1;
 						
 						//Wait in this state unless the following buttons happen.
-						if(load_a_input) state <= LOAD_A_STATE;
-						if(load_b_input) state <= LOAD_B_STATE;
-						if(display_ls_input) state <= DISPLAY_LS_STATE;
-						if(display_ms_input) state <= DISPLAY_MS_STATE;
+						if(display_ms_ack) begin
+							//Set the display_ms back to 0 once the display_ms_ack comes.
+							display_ms <= 0;
+							
+							if(load_a_input) state <= LOAD_A_STATE;
+							if(load_b_input) state <= LOAD_B_STATE;
+							if(display_ls_input) state <= DISPLAY_LS_STATE;
+							if(display_ms_input) state <= DISPLAY_MS_STATE;
+						end
 					end
 				endcase
 			end		
