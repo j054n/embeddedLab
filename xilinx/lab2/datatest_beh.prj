@@ -1,0 +1,5 @@
+verilog work "BCD_From_7bit_Binary.v"
+verilog work "7BitBinaryTo3DigitBCD.v"
+verilog work "bcd_add_datapath.v"
+verilog work "datatest.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

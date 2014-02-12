@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v" Line 32: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 33: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 34: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ABResult_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">bcd_add_datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">bcdControllerState_FSM_FFd16</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">bcd_add_controller</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+</messages>
+

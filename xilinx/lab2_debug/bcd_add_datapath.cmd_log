@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v -lang verilog -prj lab2 -o bcd_add_datapath.spl -module bcd_add_datapath -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 bcd_add_datapath.spl /home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.sym 

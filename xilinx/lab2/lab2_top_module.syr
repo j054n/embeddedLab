@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: lab2_top_module.prj
@@ -108,10 +108,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v" into library work
-Parsing module <BCD_From_7bit_Binary>.
-Analyzing Verilog file "/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" into library work
-Parsing module <SevenBitBinaryTo3DigitBCD>.
 Analyzing Verilog file "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" into library work
 Parsing module <bcd_add_datapath>.
 Analyzing Verilog file "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" into library work
@@ -126,20 +122,8 @@ Parsing module <lab2_top_module>.
 Elaborating module <lab2_top_module>.
 
 Elaborating module <bcd_add_controller>.
-WARNING:HDLCompiler:295 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 293: case condition never applies
-WARNING:HDLCompiler:295 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 308: case condition never applies
-WARNING:HDLCompiler:413 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v" Line 339: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <bcd_add_datapath>.
-
-Elaborating module <BCD_From_7bit_Binary>.
-WARNING:HDLCompiler:413 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v" Line 32: Result of 7-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:189 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 60: Size mismatch in connection of port <inputNumber>. Formal port size is 7-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v" Line 64: Size mismatch in connection of port <inputNumber>. Formal port size is 7-bit while actual signal size is 8-bit.
-
-Elaborating module <SevenBitBinaryTo3DigitBCD>.
-WARNING:HDLCompiler:413 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 33: Result of 8-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v" Line 34: Result of 7-bit expression is truncated to fit in 4-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -153,229 +137,69 @@ Unit <lab2_top_module> synthesized.
 
 Synthesizing Unit <bcd_add_controller>.
     Related source file is "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v".
-        IDLE = 0
-        LOAD_A = 1
-        LOAD_A_ACK = 2
-        LOAD_B = 3
-        LOAD_B_ACK = 4
-        DISP_A = 5
-        DISP_A_ACK = 6
-        DISP_B = 7
-        DISP_B_ACK = 8
-        ADD = 9
-        ADD_ACK = 10
-        DISP_ADD = 11
-        DISP_ADD_ACK = 12
-        WAIT_INPUT = 13
-        INIT = 14
-        INIT_ACK = 15
-        DISP_ADD_MS = 16
-        DISP_ADD_MS_ACK = 17
-WARNING:Xst:647 - Input <BCD_DISPLAY_RESULT_LS_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <BCD_DISPLAY_RESULT_MS_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <BCD_LOAD_A>.
-    Found 1-bit register for signal <BCD_LOAD_B>.
-    Found 1-bit register for signal <BCD_DISPLAY_A>.
-    Found 1-bit register for signal <BCD_DISPLAY_B>.
-    Found 1-bit register for signal <BCD_ADD>.
-    Found 1-bit register for signal <BCD_DISPLAY_RESULT_LS>.
-    Found 1-bit register for signal <BCD_DISPLAY_RESULT_MS>.
-    Found 4-bit register for signal <bcdControllerState>.
-    Found 1-bit register for signal <BCD_INIT>.
-    Found finite state machine <FSM_0> for signal <bcdControllerState>.
+        INIT_STATE = 0
+        LOAD_A_STATE = 1
+        DISPLAY_A_STATE = 2
+        LOAD_B_STATE = 3
+        DISPLAY_B_STATE = 4
+        DISPLAY_LS_STATE = 5
+        DISPLAY_MS_STATE = 6
+    Found 1-bit register for signal <load_b>.
+    Found 1-bit register for signal <display_a>.
+    Found 1-bit register for signal <display_b>.
+    Found 1-bit register for signal <display_ls>.
+    Found 1-bit register for signal <display_ms>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <load_a>.
+    Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 14                                             |
-    | Transitions        | 24                                             |
+    | States             | 7                                              |
+    | Transitions        | 29                                             |
     | Inputs             | 10                                             |
-    | Outputs            | 10                                             |
+    | Outputs            | 6                                              |
     | Clock              | CLK (rising_edge)                              |
-    | Power Up State     | 1110                                           |
+    | Power Up State     | 000                                            |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
 	inferred   6 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <bcd_add_controller> synthesized.
 
 Synthesizing Unit <bcd_add_datapath>.
     Related source file is "/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v".
-    Found 8-bit register for signal <B>.
-    Found 8-bit register for signal <ABResult>.
-    Found 8-bit register for signal <BCD_OUTPUT_DATA>.
-    Found 8-bit register for signal <A>.
-    Found 8-bit adder for signal <A[7]_B[7]_add_8_OUT> created at line 117.
+    Found 7-bit register for signal <A>.
+    Found 1-bit register for signal <load_a_ack>.
+    Found 8-bit register for signal <output_value>.
+    Found 1-bit register for signal <display_a_ack>.
+    Found 7-bit register for signal <B>.
+    Found 1-bit register for signal <load_b_ack>.
+    Found 1-bit register for signal <display_b_ack>.
+    Found 1-bit register for signal <display_ls_ack>.
+    Found 1-bit register for signal <display_ms_ack>.
+    Found 8-bit adder for signal <n0037> created at line 66.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
 Unit <bcd_add_datapath> synthesized.
-
-Synthesizing Unit <BCD_From_7bit_Binary>.
-    Related source file is "/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v".
-    Summary:
-	no macro.
-Unit <BCD_From_7bit_Binary> synthesized.
-
-Synthesizing Unit <div_7u_4u>.
-    Related source file is "".
-    Found 11-bit adder for signal <n0201> created at line 0.
-    Found 11-bit adder for signal <GND_5_o_b[3]_add_1_OUT> created at line 0.
-    Found 10-bit adder for signal <n0205> created at line 0.
-    Found 10-bit adder for signal <GND_5_o_b[3]_add_3_OUT> created at line 0.
-    Found 9-bit adder for signal <n0209> created at line 0.
-    Found 9-bit adder for signal <GND_5_o_b[3]_add_5_OUT> created at line 0.
-    Found 8-bit adder for signal <n0213> created at line 0.
-    Found 8-bit adder for signal <GND_5_o_b[3]_add_7_OUT> created at line 0.
-    Found 7-bit adder for signal <n0217> created at line 0.
-    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT[6:0]> created at line 0.
-    Found 7-bit adder for signal <n0221> created at line 0.
-    Found 7-bit adder for signal <a[6]_GND_5_o_add_11_OUT[6:0]> created at line 0.
-    Found 7-bit adder for signal <n0225> created at line 0.
-    Found 7-bit adder for signal <a[6]_GND_5_o_add_13_OUT[6:0]> created at line 0.
-    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Summary:
-	inferred  14 Adder/Subtractor(s).
-	inferred   8 Comparator(s).
-	inferred  31 Multiplexer(s).
-Unit <div_7u_4u> synthesized.
-
-Synthesizing Unit <mod_7u_4u>.
-    Related source file is "".
-    Found 11-bit adder for signal <GND_6_o_b[3]_add_1_OUT> created at line 0.
-    Found 10-bit adder for signal <GND_6_o_b[3]_add_3_OUT> created at line 0.
-    Found 9-bit adder for signal <GND_6_o_b[3]_add_5_OUT> created at line 0.
-    Found 8-bit adder for signal <GND_6_o_b[3]_add_7_OUT> created at line 0.
-    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT> created at line 0.
-    Found 7-bit adder for signal <a[6]_GND_6_o_add_11_OUT> created at line 0.
-    Found 7-bit adder for signal <a[6]_GND_6_o_add_13_OUT> created at line 0.
-    Found 7-bit adder for signal <a[6]_GND_6_o_add_15_OUT> created at line 0.
-    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Summary:
-	inferred   8 Adder/Subtractor(s).
-	inferred   8 Comparator(s).
-	inferred  50 Multiplexer(s).
-Unit <mod_7u_4u> synthesized.
-
-Synthesizing Unit <SevenBitBinaryTo3DigitBCD>.
-    Related source file is "/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v".
-    Summary:
-	no macro.
-Unit <SevenBitBinaryTo3DigitBCD> synthesized.
-
-Synthesizing Unit <div_8u_7u>.
-    Related source file is "".
-    Found 15-bit adder for signal <GND_8_o_b[6]_add_1_OUT> created at line 0.
-    Found 14-bit adder for signal <GND_8_o_b[6]_add_3_OUT> created at line 0.
-    Found 13-bit adder for signal <GND_8_o_b[6]_add_5_OUT> created at line 0.
-    Found 12-bit adder for signal <GND_8_o_b[6]_add_7_OUT> created at line 0.
-    Found 11-bit adder for signal <GND_8_o_b[6]_add_9_OUT> created at line 0.
-    Found 10-bit adder for signal <GND_8_o_b[6]_add_11_OUT> created at line 0.
-    Found 9-bit adder for signal <GND_8_o_b[6]_add_13_OUT> created at line 0.
-    Found 8-bit adder for signal <a[7]_b[6]_add_15_OUT[7:0]> created at line 0.
-    Found 15-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 14-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 13-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 12-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 11-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 9-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Summary:
-	inferred   8 Adder/Subtractor(s).
-	inferred   9 Comparator(s).
-	inferred  50 Multiplexer(s).
-Unit <div_8u_7u> synthesized.
-
-Synthesizing Unit <mod_4u_7u>.
-    Related source file is "".
-    Found 11-bit adder for signal <GND_9_o_b[6]_add_1_OUT> created at line 0.
-    Found 10-bit adder for signal <GND_9_o_b[6]_add_3_OUT> created at line 0.
-    Found 9-bit adder for signal <GND_9_o_b[6]_add_5_OUT> created at line 0.
-    Found 8-bit adder for signal <GND_9_o_b[6]_add_7_OUT> created at line 0.
-    Found 7-bit adder for signal <GND_9_o_b[6]_add_9_OUT> created at line 0.
-    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Summary:
-	inferred   5 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
-	inferred  20 Multiplexer(s).
-Unit <mod_4u_7u> synthesized.
-
-Synthesizing Unit <mod_4u_4u>.
-    Related source file is "".
-    Found 8-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
-    Found 7-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
-    Found 6-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
-    Found 5-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
-    Found 4-bit adder for signal <a[3]_b[3]_add_9_OUT[3:0]> created at line 0.
-    Found 8-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 5-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 4-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Summary:
-	inferred   5 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
-	inferred  14 Multiplexer(s).
-Unit <mod_4u_4u> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 77
- 10-bit adder                                          : 10
- 11-bit adder                                          : 10
- 12-bit adder                                          : 1
- 13-bit adder                                          : 1
- 14-bit adder                                          : 1
- 15-bit adder                                          : 1
- 4-bit adder                                           : 1
- 5-bit adder                                           : 1
- 6-bit adder                                           : 1
- 7-bit adder                                           : 28
- 8-bit adder                                           : 12
- 9-bit adder                                           : 10
-# Registers                                            : 10
- 1-bit register                                        : 6
- 8-bit register                                        : 4
-# Comparators                                          : 59
- 10-bit comparator lessequal                           : 7
- 11-bit comparator lessequal                           : 7
- 12-bit comparator lessequal                           : 1
- 13-bit comparator lessequal                           : 1
- 14-bit comparator lessequal                           : 1
- 15-bit comparator lessequal                           : 1
- 4-bit comparator lessequal                            : 1
- 5-bit comparator lessequal                            : 1
- 6-bit comparator lessequal                            : 1
- 7-bit comparator lessequal                            : 22
- 8-bit comparator lessequal                            : 9
- 9-bit comparator lessequal                            : 7
-# Multiplexers                                         : 284
- 1-bit 2-to-1 multiplexer                              : 262
- 4-bit 2-to-1 multiplexer                              : 4
- 7-bit 2-to-1 multiplexer                              : 9
- 8-bit 2-to-1 multiplexer                              : 9
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 15
+ 1-bit register                                        : 12
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 11
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 
 =========================================================================
@@ -389,31 +213,13 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 56
- 4-bit adder                                           : 12
- 7-bit adder                                           : 14
- 7-bit adder carry in                                  : 21
- 8-bit adder                                           : 9
-# Registers                                            : 38
- Flip-Flops                                            : 38
-# Comparators                                          : 59
- 10-bit comparator lessequal                           : 7
- 11-bit comparator lessequal                           : 7
- 12-bit comparator lessequal                           : 1
- 13-bit comparator lessequal                           : 1
- 14-bit comparator lessequal                           : 1
- 15-bit comparator lessequal                           : 1
- 4-bit comparator lessequal                            : 1
- 5-bit comparator lessequal                            : 1
- 6-bit comparator lessequal                            : 1
- 7-bit comparator lessequal                            : 22
- 8-bit comparator lessequal                            : 9
- 9-bit comparator lessequal                            : 7
-# Multiplexers                                         : 284
- 1-bit 2-to-1 multiplexer                              : 262
- 4-bit 2-to-1 multiplexer                              : 4
- 7-bit 2-to-1 multiplexer                              : 9
- 8-bit 2-to-1 multiplexer                              : 9
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 18
+ 8-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 
 =========================================================================
@@ -422,46 +228,24 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <controller/FSM_0> on signal <bcdControllerState[1:4]> with user encoding.
+Optimizing FSM <M1/FSM_0> on signal <state[1:3]> with sequential encoding.
 -------------------
  State | Encoding
 -------------------
- 1111  | 1111
- 1110  | 1110
- 0010  | 0010
- 0101  | 0101
- 0100  | 0100
- 0111  | 0111
- 0110  | 0110
- 1101  | 1101
- 1000  | 1000
- 1010  | 1010
- 0001  | 0001
- 0011  | 0011
- 1001  | 1001
- 0000  | 0000
+ 001   | 000
+ 000   | 001
+ 010   | 010
+ 011   | 011
+ 101   | 100
+ 110   | 101
+ 100   | 110
 -------------------
-WARNING:Xst:2677 - Node <ABResult_0> of sequential type is unconnected in block <bcd_add_datapath>.
-WARNING:Xst:2677 - Node <ABResult_1> of sequential type is unconnected in block <bcd_add_datapath>.
 
 Optimizing unit <lab2_top_module> ...
 
 Optimizing unit <bcd_add_datapath> ...
 
-Optimizing unit <div_7u_4u> ...
-
-Optimizing unit <mod_7u_4u> ...
-
 Optimizing unit <bcd_add_controller> ...
-WARNING:Xst:2677 - Node <datapath/ABResult_7> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/ABResult_6> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/ABResult_5> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/ABResult_4> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/ABResult_3> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/ABResult_2> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/A_7> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <datapath/B_7> of sequential type is unconnected in block <lab2_top_module>.
-WARNING:Xst:2677 - Node <controller/BCD_ADD> of sequential type is unconnected in block <lab2_top_module>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -473,8 +257,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 31
- Flip-Flops                                            : 31
+# Registers                                            : 37
+ Flip-Flops                                            : 37
 
 =========================================================================
 
@@ -497,16 +281,18 @@ Top Level Output File Name         : lab2_top_module.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 47
-#      LUT2                        : 3
-#      LUT3                        : 3
-#      LUT4                        : 15
-#      LUT5                        : 8
-#      LUT6                        : 13
-#      MUXF7                       : 5
-# FlipFlops/Latches                : 31
-#      FD                          : 23
-#      FDE                         : 8
+# BELS                             : 70
+#      GND                         : 1
+#      LUT2                        : 14
+#      LUT3                        : 13
+#      LUT4                        : 11
+#      LUT6                        : 16
+#      MUXCY                       : 8
+#      XORCY                       : 7
+# FlipFlops/Latches                : 37
+#      FD                          : 16
+#      FDE                         : 15
+#      FDRE                        : 6
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 19
@@ -520,19 +306,19 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              31  out of  54576     0%  
- Number of Slice LUTs:                   42  out of  27288     0%  
-    Number used as Logic:                42  out of  27288     0%  
+ Number of Slice Registers:              37  out of  54576     0%  
+ Number of Slice LUTs:                   54  out of  27288     0%  
+    Number used as Logic:                54  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     42
-   Number with an unused Flip Flop:      11  out of     42    26%  
-   Number with an unused LUT:             0  out of     42     0%  
-   Number of fully used LUT-FF pairs:    31  out of     42    73%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:     61
+   Number with an unused Flip Flop:      24  out of     61    39%  
+   Number with an unused LUT:             7  out of     61    11%  
+   Number of fully used LUT-FF pairs:    30  out of     61    49%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          21
+ Number of IOs:                          20
  Number of bonded IOBs:                  20  out of    218     9%  
 
 Specific Feature Utilization:
@@ -559,7 +345,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 31    |
+CLK                                | BUFGP                  | 37    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -570,8 +356,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.633ns (Maximum Frequency: 379.867MHz)
-   Minimum input arrival time before clock: 3.295ns
+   Minimum period: 2.987ns (Maximum Frequency: 334.762MHz)
+   Minimum input arrival time before clock: 3.461ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -581,61 +367,61 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 2.633ns (frequency: 379.867MHz)
-  Total number of paths / destination ports: 181 / 39
+  Clock period: 2.987ns (frequency: 334.762MHz)
+  Total number of paths / destination ports: 308 / 57
 -------------------------------------------------------------------------
-Delay:               2.633ns (Levels of Logic = 1)
-  Source:            controller/BCD_DISPLAY_B (FF)
-  Destination:       datapath/BCD_OUTPUT_DATA_7 (FF)
+Delay:               2.987ns (Levels of Logic = 1)
+  Source:            M1/state_FSM_FFd1 (FF)
+  Destination:       M1/display_ls (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: controller/BCD_DISPLAY_B to datapath/BCD_OUTPUT_DATA_7
+  Data Path: M1/state_FSM_FFd1 to M1/display_ls
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   0.857  controller/BCD_DISPLAY_B (controller/BCD_DISPLAY_B)
-     LUT2:I1->O            8   0.205   0.802  datapath/_n0069_inv1 (datapath/_n0069_inv)
-     FDE:CE                    0.322          datapath/BCD_OUTPUT_DATA_0
+     FD:C->Q              13   0.447   1.161  M1/state_FSM_FFd1 (M1/state_FSM_FFd1)
+     LUT3:I0->O            6   0.205   0.744  M1/state_GND_2_o_GND_2_o_equal_2_o1 (M1/GND_2_o_GND_2_o_equal_2_o)
+     FDRE:R                    0.430          M1/load_b
     ----------------------------------------
-    Total                      2.633ns (0.974ns logic, 1.659ns route)
-                                       (37.0% logic, 63.0% route)
+    Total                      2.987ns (1.082ns logic, 1.905ns route)
+                                       (36.2% logic, 63.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 26 / 18
+  Total number of paths / destination ports: 34 / 24
 -------------------------------------------------------------------------
-Offset:              3.295ns (Levels of Logic = 3)
-  Source:            BTND (PAD)
-  Destination:       controller/bcdControllerState_FSM_FFd1 (FF)
+Offset:              3.461ns (Levels of Logic = 3)
+  Source:            BTNU (PAD)
+  Destination:       M1/state_FSM_FFd3 (FF)
   Destination Clock: CLK rising
 
-  Data Path: BTND to controller/bcdControllerState_FSM_FFd1
+  Data Path: BTNU to M1/state_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.879  BTND_IBUF (BTND_IBUF)
-     LUT3:I0->O            1   0.205   0.684  controller/bcdControllerState_FSM_FFd1-In_SW0 (N6)
-     LUT6:I4->O            1   0.203   0.000  controller/bcdControllerState_FSM_FFd1-In (controller/bcdControllerState_FSM_FFd1-In)
-     FD:D                      0.102          controller/bcdControllerState_FSM_FFd1
+     IBUF:I->O             4   1.222   1.048  BTNU_IBUF (BTNU_IBUF)
+     LUT6:I0->O            1   0.203   0.684  M1/state_FSM_FFd1-In3 (M1/state_FSM_FFd1-In3)
+     LUT6:I4->O            1   0.203   0.000  M1/state_FSM_FFd1-In4 (M1/state_FSM_FFd1-In)
+     FD:D                      0.102          M1/state_FSM_FFd1
     ----------------------------------------
-    Total                      3.295ns (1.732ns logic, 1.563ns route)
-                                       (52.6% logic, 47.4% route)
+    Total                      3.461ns (1.730ns logic, 1.731ns route)
+                                       (50.0% logic, 50.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
-  Source:            datapath/BCD_OUTPUT_DATA_7 (FF)
+  Source:            M2/output_value_7 (FF)
   Destination:       LED<7> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: datapath/BCD_OUTPUT_DATA_7 to LED<7>
+  Data Path: M2/output_value_7 to LED<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.447   0.579  datapath/BCD_OUTPUT_DATA_7 (datapath/BCD_OUTPUT_DATA_7)
+     FDE:C->Q              1   0.447   0.579  M2/output_value_7 (M2/output_value_7)
      OBUF:I->O                 2.571          LED_7_OBUF (LED<7>)
     ----------------------------------------
     Total                      3.597ns (3.018ns logic, 0.579ns route)
@@ -651,21 +437,21 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.633|         |         |         |
+CLK            |    2.987|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 8.29 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 6.53 secs
  
 --> 
 
 
-Total memory usage is 393444 kilobytes
+Total memory usage is 391424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   21 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
