@@ -19,364 +19,126 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_add_controller(
-    input LOAD_DISPLAY_MS_RESULT,
-    input LOAD_DISPLAY_A,
-    input LOAD_DISPLAY_B,
-    input LOAD_ADD_DISPLAY_LS_RESULT,
-	 input CLK,
-    output reg BCD_INIT,
-    input BCD_INIT_ACK,
-    output reg BCD_LOAD_A,
-    input BCD_LOAD_A_ACK,
-    output reg BCD_LOAD_B,
-    input BCD_LOAD_B_ACK,
-    output reg BCD_DISPLAY_A,
-    input BCD_DISPLAY_A_ACK,
-    output reg BCD_DISPLAY_B,
-    input BCD_DISPLAY_B_ACK,
-    output reg BCD_ADD,
-    input BCD_ADD_ACK,
-    output reg BCD_DISPLAY_RESULT_LS,
-    input BCD_DISPLAY_RESULT_LS_ACK,
-    output reg BCD_DISPLAY_RESULT_MS,
-    input BCD_DISPLAY_RESULT_MS_ACK
-    );
+			//input from the outside world.
+			input CLK,
+			input init_input,
+			input load_a_input,
+			input load_b_input,
+			input display_ls_input,
+			input display_ms_input,
+			
+			//inputs back from the datapath.
+			input load_a_ack,
+			input load_b_ack,
+			input display_a_ack,
+			input display_b_ack,
+			input display_ls_ack,
+			input display_ms_ack,
+			
+			//outputs to the datpath.
+			output reg load_a,
+			output reg load_b,
+			output reg display_a,
+			output reg display_b,
+			output reg display_ls,
+			output reg display_ms
+			);
+	 
+	//Let us declare our states in a friendly manner and then make a register to hold them.
+	parameter INIT_STATE = 0,
+				LOAD_A_STATE = 1,
+				DISPLAY_A_STATE = 2,
+				LOAD_B_STATE = 3,
+				DISPLAY_B_STATE = 4,
+				DISPLAY_LS_STATE = 5,
+				DISPLAY_MS_STATE = 6;
+			
+	reg [2:0] state;
+	
+	//Let's now create the logic of the state machine.
+	always @(posedge CLK)
+		begin
+			if(INIT_STATE) //Given init reset everything.
+				begin
+					//set all output values to default states.
+					load_a <= 0;
+					load_b <= 0;
+					display_a <= 0;
+					display_b <= 0;
+					display_ls <= 0;
+					display_ms <= 0;
+					state <= LOAD_A_STATE;
+				end
+				
+			else
+				case(state)
+					LOAD_A_STATE: begin
+						if(load_a_ack) state <= DISPLAY_A_STATE;
+						//init_input <= 0; //more debug stuff.
+						load_a <= 1;
+					end
+					
+					DISPLAY_A_STATE: begin
+						//load_a_ack <= 0; //clear the load_a_ack flag from LOAD_A_STATE
+						display_a <= 1;
+						display_b <= 0;
+						display_ls <= 0;
+						display_ms <= 0;
+						
+						//Wait in this state unless the following buttons happen.
+						if(load_a_input) state <= LOAD_A_STATE;
+						if(load_b_input) state <= LOAD_B_STATE;
+						if(display_ls_input) state <= DISPLAY_LS_STATE;
+						if(display_ms_input) state <= DISPLAY_MS_STATE;
+					end
+					
+					LOAD_B_STATE: begin
+						if(load_b_ack) state <= DISPLAY_B_STATE;
+						load_b <= 1;
+					end
+								
+					DISPLAY_B_STATE: begin
+						//load_b_ack <= 0; //clear the load_a_ack flag from LOAD_A_STATE
+						display_a <= 0;
+						display_b <= 1;
+						display_ls <= 0;
+						display_ms <= 0;						
+						//Wait in this state unless the following buttons happen.
+						if(load_a_input) state <= LOAD_A_STATE;
+						if(load_b_input) state <= LOAD_B_STATE;
+						if(display_ls_input) state <= DISPLAY_LS_STATE;
+						if(display_ms_input) state <= DISPLAY_MS_STATE;
+					end
+					
+					DISPLAY_LS_STATE: begin
+						display_a <= 0;
+						display_b <= 0;
+						display_ls <= 1;
+						display_ms <= 0;
+						
+						//Wait in this state unless the following buttons happen.
+						if(load_a_input) state <= LOAD_A_STATE;
+						if(load_b_input) state <= LOAD_B_STATE;
+						if(display_ls_input) state <= DISPLAY_LS_STATE;
+						if(display_ms_input) state <= DISPLAY_MS_STATE;
+					end
+					
+					DISPLAY_MS_STATE: begin
+						display_a <= 0;
+						display_b <= 0;
+						display_ls <= 0;
+						display_ms <= 1;
+						
+						//Wait in this state unless the following buttons happen.
+						if(load_a_input) state <= LOAD_A_STATE;
+						if(load_b_input) state <= LOAD_B_STATE;
+						if(display_ls_input) state <= DISPLAY_LS_STATE;
+						if(display_ms_input) state <= DISPLAY_MS_STATE;
+					end
+				endcase
+			end		
+					
+					
+  
 
-
-    parameter IDLE = 0, 
-                LOAD_A = 1, 
-                LOAD_A_ACK = 2,
-                LOAD_B = 3, 
-                LOAD_B_ACK = 4,
-                DISP_A = 5,
-                DISP_A_ACK = 6,
-                DISP_B = 7,
-                DISP_B_ACK = 8,
-                ADD = 9,
-                ADD_ACK = 10,
-                DISP_ADD = 11,
-                DISP_ADD_ACK = 12,
-                WAIT_INPUT = 13,
-                INIT = 14,
-                INIT_ACK = 15,
-                DISP_ADD_MS = 16,
-                DISP_ADD_MS_ACK = 17;
-
-
-    reg [3:0] bcdControllerState = INIT;
-
-
-    always @(posedge CLK)
-        begin
-            if(bcdControllerState == INIT)
-                begin
-                    //Set flags
-                    BCD_INIT                    <= 1;
-                    BCD_LOAD_A                  <= 0;
-                    BCD_LOAD_B                  <= 0;
-                    BCD_DISPLAY_A               <= 0;
-                    BCD_DISPLAY_B               <= 0;
-                    BCD_ADD                     <= 0;
-                    BCD_DISPLAY_RESULT_LS       <= 0;
-                    BCD_DISPLAY_RESULT_MS       <= 0;                         
-
-                    //Set next state.
-                    bcdControllerState <= INIT_ACK;
-                end
-
-            else
-                case(bcdControllerState)
-
-                     INIT_ACK:
-                            begin
-                                if(BCD_INIT_ACK)
-                                    begin
-                                        
-                                    //Set flags
-                                    BCD_INIT                    <= 0;
-                                    BCD_LOAD_A                  <= 0;
-                                    BCD_LOAD_B                  <= 0;
-                                    BCD_DISPLAY_A               <= 0;
-                                    BCD_DISPLAY_B               <= 0;
-                                    BCD_ADD                     <= 0;
-                                    BCD_DISPLAY_RESULT_LS       <= 0;
-                                    BCD_DISPLAY_RESULT_MS       <= 0;   
-                                    
-                                    //Set next state
-                                    
-                                    bcdControllerState <= WAIT_INPUT;
-                                end
-
-                            end
-
-
-
-                    LOAD_A:
-                        begin
-                            //Set flags
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 1;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 0;                         
-
-                            //Set next state.
-                            bcdControllerState <= LOAD_A_ACK;
-                        end
-
-                    LOAD_A_ACK:
-                        begin
-                            if(BCD_LOAD_A_ACK)
-                                begin
-                                    
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 1;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                
-                                bcdControllerState <= DISP_A;
-                            end
-
-                        end
-
-                    LOAD_B:
-                        begin
-                            //Set flags
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 1;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 0;   
-                            
-                            //Set next state
-                            bcdControllerState <= LOAD_B_ACK;
-                        end
-
-                    LOAD_B_ACK:
-                        begin
-                            if(BCD_LOAD_B_ACK)
-                            begin
-                                bcdControllerState <= DISP_B;
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 1;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= DISP_B;   
-                            end                             
-                        end
-
-                    DISP_A:
-                        begin
-                            //Set flags
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 1;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                            //Set next state
-                            bcdControllerState <= DISP_A_ACK;
-                        end
-
-                    DISP_A_ACK:
-                        begin
-                            if(BCD_DISPLAY_A_ACK)
-                            begin
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= WAIT_INPUT;
-                            end
-                        end
-
-                    DISP_B:
-                        begin
-                            //Set flags
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 1;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                            //Set next state
-                            bcdControllerState <= DISP_B_ACK;
-                        end
-
-                    DISP_B_ACK:
-                        begin
-                            if(BCD_DISPLAY_B_ACK)
-                            begin
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= WAIT_INPUT;
-                            end
-                        end                  
-
-                    ADD:
-                        begin
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 1;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                            //Set next state
-                            bcdControllerState <= ADD_ACK;
-                        end
-
-                    ADD_ACK:
-                        begin
-                            if(BCD_ADD_ACK)
-                             begin
-                                
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= DISP_ADD;
-                            end
-                        end
-
-
-                    DISP_ADD:
-                        begin
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 1;
-                            BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                            //Set next state
-                            bcdControllerState <= DISP_ADD_ACK;
-                        end
-
-                    DISP_ADD_ACK:
-                        begin
-                            if(BCD_DISPLAY_RESULT_LS_ACK)
-                             begin
-                                
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= WAIT_INPUT;
-                            end
-                        end
-                    DISP_ADD_MS:
-                        begin
-                            BCD_INIT                    <= 0;
-                            BCD_LOAD_A                  <= 0;
-                            BCD_LOAD_B                  <= 0;
-                            BCD_DISPLAY_A               <= 0;
-                            BCD_DISPLAY_B               <= 0;
-                            BCD_ADD                     <= 0;
-                            BCD_DISPLAY_RESULT_LS       <= 0;
-                            BCD_DISPLAY_RESULT_MS       <= 1;   
-                                
-                            //Set next state
-                            bcdControllerState <= DISP_ADD_MS_ACK;
-                        end
-
-                    DISP_ADD_MS_ACK:
-                        begin
-                            if(BCD_DISPLAY_RESULT_MS_ACK)
-                             begin
-                                
-                                //Set flags
-                                BCD_INIT                    <= 0;
-                                BCD_LOAD_A                  <= 0;
-                                BCD_LOAD_B                  <= 0;
-                                BCD_DISPLAY_A               <= 0;
-                                BCD_DISPLAY_B               <= 0;
-                                BCD_ADD                     <= 0;
-                                BCD_DISPLAY_RESULT_LS       <= 0;
-                                BCD_DISPLAY_RESULT_MS       <= 0;   
-                                
-                                //Set next state
-                                bcdControllerState <= WAIT_INPUT;
-                            end
-                        end
-
-
-                    WAIT_INPUT:
-                        begin
-                            bcdControllerState <= WAIT_INPUT;
-                            if(LOAD_DISPLAY_A)
-                                bcdControllerState <= LOAD_A;
-                            if(LOAD_DISPLAY_B)
-                                bcdControllerState <= LOAD_B;
-                            if(LOAD_ADD_DISPLAY_LS_RESULT)
-                                bcdControllerState <= ADD;
-                            if(LOAD_DISPLAY_MS_RESULT)
-                                bcdControllerState <= DISP_ADD_MS;
-                        end
-
-                endcase;
-            
-
-        end
-
-endmodule
+ endmodule

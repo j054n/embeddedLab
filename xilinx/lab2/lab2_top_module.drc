@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Feb  9 14:09:27 2014
+Wed Feb 12 01:09:46 2014
 
 drc -z lab2_top_module.ncd lab2_top_module.pcf
 

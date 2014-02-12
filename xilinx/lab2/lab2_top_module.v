@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module lab2_top_module(
     input CLK,
-    input [7:0] SW,
+    input [6:0] SW,
     input BTNU,
     input BTND,
     input BTNL,
@@ -28,62 +28,43 @@ module lab2_top_module(
     output [7:0] LED
     );
 	
-	//Declare the wires that will connect the two modules together.
-	wire wire_BCD_INIT;
-	wire wire_BCD_INIT_ACK;
 	
-	wire wire_BCD_LOAD_A;
-	wire wire_BCD_LOAD_A_ACK;
+	wire w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
 	
-	wire wire_BCD_LOAD_B;
-	wire wire_BCD_LOAD_B_ACK;
+	bcd_add_controller M1 (.CLK(CLK),
+							.init_input(RST),
+							.load_a_input(BTNL),
+							.load_b_input(BTNR),
+							.display_ls_input(BTNU),
+							.display_ms_input(BTND),
+							.load_a_ack(w1),
+							.load_b_ack(w2),
+							.display_a_ack(w3),
+							.display_b_ack(w4),
+							.display_ls_ack(w5),
+							.display_ms_ack(w6),
+							.load_a(w8),
+							.load_b(w9),
+							.display_a(w10),
+							.display_b(w11),
+							.display_ls(w12),
+							.display_ms(w13));
 	
-	wire wire_BCD_DISPLAY_A;
-	wire wire_BCD_DISPLAY_A_ACK;
-	
-	wire wire_BCD_DISPLAY_B;
-	wire wire_BCD_DISPLAY_B_ACK;
-	
-	wire wire_BCD_ADD;
-	wire wire_BCD_ADD_ACK;
-	
-	wire wire_BCD_DISPLAY_RESULT_LS;
-	wire wire_BCD_DISPLAY_RESULT_LS_ACK;
-	
-	wire wire_BCD_DISPLAY_RESULT_MS;
-	wire wire_BCD_DISPLAY_RESULT_MS_ACK;
-
-
-	
-	//Instantiate the modules.
-	bcd_add_controller controller(.LOAD_DISPLAY_A(BTNL), .LOAD_DISPLAY_B(BTNR),
-									.LOAD_ADD_DISPLAY_LS_RESULT(BTND), .LOAD_DISPLAY_MS_RESULT(BTNU),
-									.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
-									.BCD_LOAD_A(wire_BCD_LOAD_A), .BCD_LOAD_A_ACK(wire_BCD_LOAD_A_ACK),
-									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
-									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
-									.BCD_DISPLAY_B(wire_BCD_DISPLAY_B), .BCD_DISPLAY_B_ACK(wire_BCD_DISPLAY_B_ACK),
-									.BCD_ADD(wire_BCD_ADD), .BCD_ADD_ACK(wire_BCD_ADD_ACK),
-									.BCD_DISPLAY_RESULT_LS(wire_BCD_DISPLAY_RESULT_LS), .BCD_DISPLAY_RESULT_LS_ACK(wire_BCD_DISPLAY_RESULT_LS_ACK),
-									.BCD_DISPLAY_RESULT_MS(wire_BCD_DISPLAY_RESULT_MS), .BCD_DISPLAY_RESULT_MS_ACK(wire_BCD_DISPLAY_RESULT_MS_ACK),
-									.CLK(CLK)
-									);
-	
-
-	bcd_add_datapath datapath(.BCD_INIT(wire_BCD_INIT), .BCD_INIT_ACK(wire_BCD_INIT_ACK),
-									.BCD_LOAD_A(wire_BCD_LOAD_A), .BCD_LOAD_A_ACK(wire_BCD_LOAD_A_ACK),
-									.BCD_LOAD_B(wire_BCD_LOAD_B), .BCD_LOAD_B_ACK(wire_BCD_LOAD_B_ACK),
-									.BCD_DISPLAY_A(wire_BCD_DISPLAY_A), .BCD_DISPLAY_A_ACK(wire_BCD_DISPLAY_A_ACK),
-									.BCD_DISPLAY_B(wire_BCD_DISPLAY_B), .BCD_DISPLAY_B_ACK(wire_BCD_DISPLAY_B_ACK),
-									.BCD_ADD(wire_BCD_ADD), .BCD_ADD_ACK(wire_BCD_ADD_ACK),
-									.BCD_DISPLAY_RESULT_LS(wire_BCD_DISPLAY_RESULT_LS), .BCD_DISPLAY_RESULT_LS_ACK(wire_BCD_DISPLAY_RESULT_LS_ACK),
-									.BCD_DISPLAY_RESULT_MS(wire_BCD_DISPLAY_RESULT_MS), .BCD_DISPLAY_RESULT_MS_ACK(wire_BCD_DISPLAY_RESULT_MS_ACK),
-									.BCD_INPUT_DATA(SW[7:0]), .BCD_OUTPUT_DATA(LED[7:0]),
-									.CLK(CLK));
-
-	
-	
-	
+	bcd_add_datapath M2 (.CLK(CLK),
+							.input_value(SW[6:0]),
+							.load_a(w8),
+							.load_b(w9),
+							.display_a(w10),
+							.display_b(w11),
+							.display_ls(w12),
+							.display_ms(w13),
+							.load_a_ack(w1),
+							.load_b_ack(w2),
+							.display_a_ack(w3),
+							.display_b_ack(w4),
+							.display_ls_ack(w5),
+							.display_ms_ack(w6),
+							.output_value(LED[7:0]));
 	
 	
 	
