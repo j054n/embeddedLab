@@ -31,19 +31,19 @@ module bcd_add_datapath(
 				input display_ls,
 				input display_ms,
 				
-				//Output back to the bcd_add_controller.
-				output reg load_a_ack,
-				output reg load_b_ack,
-				output reg display_a_ack,
-				output reg display_b_ack,
-				output reg display_ls_ack,
-				output reg display_ms_ack,
+				//Output back to the bcd_add_controller all set to 0 initially.
+				output reg load_a_ack = 0,
+				output reg load_b_ack = 0,
+				output reg display_a_ack = 0,
+				output reg display_b_ack = 0,
+				output reg display_ls_ack = 0,
+				output reg display_ms_ack = 0,
 				
 				//Output to the outside world.
 				output reg [7:0] output_value = 0
     );
-
-	//Set some default values for the acknowledgement signals.
+	
+	//Default settings for output control signals.
 	/*
 	load_a_ack = 0;
 	load_b_ack = 0;
@@ -57,6 +57,8 @@ module bcd_add_datapath(
 	reg [6:0] A = 0;
 	reg [6:0] B = 0;
 	reg [7:0] C = 0;
+	
+	
 	
 	//Run through all the logic.
 	always @(posedge CLK) begin

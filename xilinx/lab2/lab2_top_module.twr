@@ -30,18 +30,58 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Wed Feb 12 13:46:09 2014 
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+BTND        |    2.898(R)|      SLOW  |   -1.627(R)|      FAST  |CLK_BUFGP         |   0.000|
+BTNL        |    3.491(R)|      SLOW  |   -1.774(R)|      FAST  |CLK_BUFGP         |   0.000|
+BTNR        |    4.678(R)|      SLOW  |   -2.510(R)|      FAST  |CLK_BUFGP         |   0.000|
+BTNU        |    3.474(R)|      SLOW  |   -1.660(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<0>       |    6.050(R)|      SLOW  |   -2.700(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<1>       |    6.676(R)|      SLOW  |   -3.411(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<2>       |    6.223(R)|      SLOW  |   -3.236(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<3>       |    3.921(R)|      SLOW  |   -2.097(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<4>       |    3.774(R)|      SLOW  |   -1.854(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<5>       |    3.940(R)|      SLOW  |   -2.260(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<6>       |    4.172(R)|      SLOW  |   -2.363(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |         9.005(R)|      SLOW  |         5.146(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<1>      |         8.991(R)|      SLOW  |         5.145(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<2>      |         9.018(R)|      SLOW  |         5.146(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<3>      |         9.437(R)|      SLOW  |         5.403(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<4>      |         9.667(R)|      SLOW  |         5.533(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<5>      |        14.098(R)|      SLOW  |         8.301(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<6>      |        10.944(R)|      SLOW  |         6.279(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<7>      |        10.667(R)|      SLOW  |         6.102(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.405|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Feb 12 14:17:08 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 433 MB
+Peak Memory Usage: 436 MB
 
 
 
