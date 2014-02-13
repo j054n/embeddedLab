@@ -29,28 +29,33 @@ module lab2_top_module(
     );
 	
 	
-	
-	
+	//Set the clock speed to 50mhz.
+	parameter SLOWCLOCK = 50000000;
 	
 	wire button_up;
 	wire button_down;
 	wire button_left;
 	wire button_right;
+	wire wClock;
 	
 	wire w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14;
-	/*
-	pbdebounce debounce_up(.clk(CLK), .button(BTNU), .pbreg(button_up));
-	pbdebounce debounce_down(.clk(CLK), .button(BTND), .pbreg(button_down));
-	pbdebounce debounce_left(.clk(CLK), .button(BTNL), .pbreg(button_left));
-	pbdebounce debounce_right(.clk(CLK), .button(BTNR), .pbreg(button_right));
-	*/
 
+	pbdebounce debounce_up(.clk(wClock), .button(BTNU), .pbreg(button_up));
+	pbdebounce debounce_down(.clk(wClock), .button(BTND), .pbreg(button_down));
+	pbdebounce debounce_left(.clk(wClock), .button(BTNL), .pbreg(button_left));
+	pbdebounce debounce_right(.clk(wClock), .button(BTNR), .pbreg(button_right));
+	
+	
+	//Instantiate the 50mhz clock to drive the debouncers.
+	clock clock50 (.CLK(CLK), .clkscale(SLOWCLOCK), .sclclk(wClock));
+	
+	
 	bcd_add_controller M1 (.clock(CLK),
 							.init(w0),
-							.load_a_input(BTNL),
-							.load_b_input(BTNR),
-							.display_ls_input(BTNU),
-							.display_ms_input(BTND),
+							.load_a_input(button_left),
+							.load_b_input(button_right),
+							.display_ls_input(button_up),
+							.display_ms_input(button_down),
 							.load_a_ack(w1),
 							.load_b_ack(w2),
 							.display_a_ack(w3),
