@@ -1,16 +1,25 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/vmartin/xilinx/lab1/main1tb_isim_beh.exe -prj /home/vmartin/xilinx/lab1/main1tb_beh.prj work.main1tb work.glbl 
-ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 1
-Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module_isim_beh.exe" -prj "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module_beh.prj" "work.lab1_top_module" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/counter_lab1.v" into library work
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/lab1_top_module.v" into library work
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/main1tb.v" into library work
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 54: <BTNU> is not declared.
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 59: <BTNU> is not declared.
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 64: <BTNL> is not declared.
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 69: <BTNL> is not declared.
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 73: <BTNR> is not declared.
-ERROR:HDLCompiler:69 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 78: <BTNR> is not declared.
-ERROR:HDLCompiler:598 - "/home/vmartin/xilinx/lab1/main1tb.v" Line 25: Module <main1tb> ignored due to previous errors.
-Verilog file /home/vmartin/xilinx/lab1/main1tb.v ignored due to errors
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/mealyStateMachineLab1.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/incrementToValue.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/clock.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/BCD_From_7bit_Binary.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module mealyStateMachineLab1
+Compiling module clock
+Compiling module incrementToValue
+Compiling module BCD_From_7bit_Binary
+Compiling module lab1_top_module
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module_isim_beh.exe
+Fuse Memory Usage: 25832 KB
+Fuse CPU Usage: 763 ms

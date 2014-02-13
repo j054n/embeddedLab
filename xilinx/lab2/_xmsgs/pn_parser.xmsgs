@@ -8,22 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<<<<<<< HEAD
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/7BitBinaryTo3DigitBCD.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/BCD_From_7bit_Binary.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_controller.v&quot; into library work</arg>
-</msg>
-
-=======
->>>>>>> debug
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/bcd_add_datapath.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab2/lab2_top_module.v&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab2/test_M2_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_M2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/test_M2/load_a_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_a_ack</obj_property>
+      <obj_property name="ObjectShortName">load_a_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/load_b_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b_ack</obj_property>
+      <obj_property name="ObjectShortName">load_b_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_a_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_a_ack</obj_property>
+      <obj_property name="ObjectShortName">display_a_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_b_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_b_ack</obj_property>
+      <obj_property name="ObjectShortName">display_b_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_ls_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_ls_ack</obj_property>
+      <obj_property name="ObjectShortName">display_ls_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_ms_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_ms_ack</obj_property>
+      <obj_property name="ObjectShortName">display_ms_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/output_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output_value[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/input_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_value[6:0]</obj_property>
+      <obj_property name="ObjectShortName">input_value[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/load_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_a</obj_property>
+      <obj_property name="ObjectShortName">load_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/load_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b</obj_property>
+      <obj_property name="ObjectShortName">load_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_a</obj_property>
+      <obj_property name="ObjectShortName">display_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_b</obj_property>
+      <obj_property name="ObjectShortName">display_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_ls" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_ls</obj_property>
+      <obj_property name="ObjectShortName">display_ls</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/display_ms" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">display_ms</obj_property>
+      <obj_property name="ObjectShortName">display_ms</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/uut/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[6:0]</obj_property>
+      <obj_property name="ObjectShortName">A[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/uut/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[6:0]</obj_property>
+      <obj_property name="ObjectShortName">B[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_M2/uut/C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C[7:0]</obj_property>
+      <obj_property name="ObjectShortName">C[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

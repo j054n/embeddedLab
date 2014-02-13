@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/vmartin/xilinx/lab1/main1tb_isim_beh.exe" -prj "/home/vmartin/xilinx/lab1/main1tb_beh.prj" "work.main1tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module_isim_beh.exe" -prj "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab1/lab1_top_module_beh.prj" "work.lab1_top_module" "work.glbl" 

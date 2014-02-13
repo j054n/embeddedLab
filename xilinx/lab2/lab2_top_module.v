@@ -29,9 +29,24 @@ module lab2_top_module(
     );
 	
 	
-	wire w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
 	
-	bcd_add_controller M1 (.CLK(CLK),
+	
+	
+	wire button_up;
+	wire button_down;
+	wire button_left;
+	wire button_right;
+	
+	wire w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14;
+	/*
+	pbdebounce debounce_up(.clk(CLK), .button(BTNU), .pbreg(button_up));
+	pbdebounce debounce_down(.clk(CLK), .button(BTND), .pbreg(button_down));
+	pbdebounce debounce_left(.clk(CLK), .button(BTNL), .pbreg(button_left));
+	pbdebounce debounce_right(.clk(CLK), .button(BTNR), .pbreg(button_right));
+	*/
+
+	bcd_add_controller M1 (.clock(CLK),
+							.init(w0),
 							.load_a_input(BTNL),
 							.load_b_input(BTNR),
 							.display_ls_input(BTNU),
@@ -42,6 +57,7 @@ module lab2_top_module(
 							.display_b_ack(w4),
 							.display_ls_ack(w5),
 							.display_ms_ack(w6),
+							.init_ack(w14),
 							.load_a(w8),
 							.load_b(w9),
 							.display_a(w10),
@@ -49,8 +65,9 @@ module lab2_top_module(
 							.display_ls(w12),
 							.display_ms(w13));
 	
-	bcd_add_datapath M2 (.CLK(CLK),
+	bcd_add_datapath M2 (.clock(CLK),
 							.input_value(SW[6:0]),
+							.init(w0),
 							.load_a(w8),
 							.load_b(w9),
 							.display_a(w10),
@@ -63,8 +80,9 @@ module lab2_top_module(
 							.display_b_ack(w4),
 							.display_ls_ack(w5),
 							.display_ms_ack(w6),
+							.init_ack(w14),
 							.output_value(LED[7:0]));
-	
-	
-	
+
+
+
 endmodule

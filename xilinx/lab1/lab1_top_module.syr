@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.19 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.19 secs
  
---> 
-Reading design: lab1_top_module.prj
+--> Reading design: lab1_top_module.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,15 +105,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/mealyStateMachineLab1.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\mealyStateMachineLab1.v" into library work
 Parsing module <mealyStateMachineLab1>.
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/incrementToValue.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\incrementToValue.v" into library work
 Parsing module <incrementToValue>.
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/clock.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\clock.v" into library work
 Parsing module <clock>.
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\BCD_From_7bit_Binary.v" into library work
 Parsing module <BCD_From_7bit_Binary>.
-Analyzing Verilog file "/home/vmartin/xilinx/lab1/lab1_top_module.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\lab1_top_module.v" into library work
 Parsing module <lab1_top_module>.
 
 =========================================================================
@@ -130,25 +127,25 @@ Elaborating module <mealyStateMachineLab1>.
 Elaborating module <clock>.
 
 Elaborating module <incrementToValue>.
-WARNING:HDLCompiler:91 - "/home/vmartin/xilinx/lab1/incrementToValue.v" Line 49: Signal <nextCurrentValue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\incrementToValue.v" Line 49: Signal <nextCurrentValue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <BCD_From_7bit_Binary>.
-WARNING:HDLCompiler:413 - "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v" Line 32: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\BCD_From_7bit_Binary.v" Line 32: Result of 7-bit expression is truncated to fit in 4-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <lab1_top_module>.
-    Related source file is "/home/vmartin/xilinx/lab1/lab1_top_module.v".
-        CLOCK_SCALE = 32'b00000001011111010111100001000000
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\lab1_top_module.v".
+        CLOCK_SCALE = 32'b00001011111010111100001000000000
         END_VALUE = 7'b1100011
     Summary:
 	no macro.
 Unit <lab1_top_module> synthesized.
 
 Synthesizing Unit <mealyStateMachineLab1>.
-    Related source file is "/home/vmartin/xilinx/lab1/mealyStateMachineLab1.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\mealyStateMachineLab1.v".
         IDLE = 0
         START = 1
         PAUSE = 2
@@ -162,7 +159,7 @@ Synthesizing Unit <mealyStateMachineLab1>.
 Unit <mealyStateMachineLab1> synthesized.
 
 Synthesizing Unit <clock>.
-    Related source file is "/home/vmartin/xilinx/lab1/clock.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\clock.v".
     Found 1-bit register for signal <sclclk>.
     Found 32-bit register for signal <clkq>.
     Found 32-bit adder for signal <clkq[31]_GND_3_o_add_1_OUT> created at line 12.
@@ -174,7 +171,7 @@ Synthesizing Unit <clock>.
 Unit <clock> synthesized.
 
 Synthesizing Unit <incrementToValue>.
-    Related source file is "/home/vmartin/xilinx/lab1/incrementToValue.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\incrementToValue.v".
     Found 7-bit register for signal <currentValue>.
     Found 7-bit adder for signal <n0054> created at line 50.
     Found 7-bit adder for signal <startValue[6]_GND_4_o_add_5_OUT> created at line 50.
@@ -195,7 +192,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <nextCurrentValue<0>>. Latches ma
 Unit <incrementToValue> synthesized.
 
 Synthesizing Unit <BCD_From_7bit_Binary>.
-    Related source file is "/home/vmartin/xilinx/lab1/BCD_From_7bit_Binary.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab1\BCD_From_7bit_Binary.v".
     Summary:
 	no macro.
 Unit <BCD_From_7bit_Binary> synthesized.
@@ -326,10 +323,7 @@ Macro Statistics
 Optimizing unit <lab1_top_module> ...
 
 Optimizing unit <incrementToValue> ...
-WARNING:Xst:1293 - FF/Latch <clockScaler/clkq_25> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_26> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_27> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_28> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clockScaler/clkq_28> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_29> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_30> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clockScaler/clkq_31> has a constant value of 0 in block <lab1_top_module>. This FF/Latch will be trimmed during the optimization process.
@@ -345,8 +339,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 36
- Flip-Flops                                            : 36
+# Registers                                            : 39
+ Flip-Flops                                            : 39
 
 =========================================================================
 
@@ -369,20 +363,20 @@ Top Level Output File Name         : lab1_top_module.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 228
+# BELS                             : 245
 #      GND                         : 1
 #      INV                         : 3
-#      LUT1                        : 48
-#      LUT2                        : 33
+#      LUT1                        : 54
+#      LUT2                        : 36
 #      LUT3                        : 2
 #      LUT4                        : 12
 #      LUT5                        : 9
 #      LUT6                        : 6
-#      MUXCY                       : 61
+#      MUXCY                       : 66
 #      VCC                         : 1
-#      XORCY                       : 52
-# FlipFlops/Latches                : 43
-#      FD                          : 35
+#      XORCY                       : 55
+# FlipFlops/Latches                : 46
+#      FD                          : 38
 #      FDE                         : 1
 #      LD                          : 7
 # Clock Buffers                    : 1
@@ -398,15 +392,15 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              42  out of  54576     0%  
- Number of Slice LUTs:                  113  out of  27288     0%  
-    Number used as Logic:               113  out of  27288     0%  
+ Number of Slice Registers:              45  out of  54576     0%  
+ Number of Slice LUTs:                  122  out of  27288     0%  
+    Number used as Logic:               122  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    117
-   Number with an unused Flip Flop:      75  out of    117    64%  
-   Number with an unused LUT:             4  out of    117     3%  
-   Number of fully used LUT-FF pairs:    38  out of    117    32%  
+ Number of LUT Flip Flop pairs used:    126
+   Number with an unused Flip Flop:      81  out of    126    64%  
+   Number with an unused LUT:             4  out of    126     3%  
+   Number of fully used LUT-FF pairs:    41  out of    126    32%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -438,7 +432,7 @@ Clock Information:
 ------------------------------------------------------------------------------------------+----------------------------------------+-------+
 Clock Signal                                                                              | Clock buffer(FF name)                  | Load  |
 ------------------------------------------------------------------------------------------+----------------------------------------+-------+
-CLK                                                                                       | BUFGP                                  | 28    |
+CLK                                                                                       | BUFGP                                  | 31    |
 clockScaler/sclclk                                                                        | NONE(incrementer/currentValue_6)       | 8     |
 incrementer/currentValue[6]_GND_4_o_OR_40_o(incrementer/currentValue[6]_GND_4_o_OR_40_o:O)| NONE(*)(incrementer/nextCurrentValue_0)| 7     |
 ------------------------------------------------------------------------------------------+----------------------------------------+-------+
@@ -455,7 +449,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.180ns (Maximum Frequency: 193.035MHz)
+   Minimum period: 5.261ns (Maximum Frequency: 190.076MHz)
    Minimum input arrival time before clock: 3.446ns
    Maximum output required time after clock: 6.154ns
    Maximum combinational path delay: No path found
@@ -466,10 +460,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 5.180ns (frequency: 193.035MHz)
-  Total number of paths / destination ports: 14240 / 29
+  Clock period: 5.261ns (frequency: 190.076MHz)
+  Total number of paths / destination ports: 18710 / 32
 -------------------------------------------------------------------------
-Delay:               5.180ns (Levels of Logic = 29)
+Delay:               5.261ns (Levels of Logic = 31)
   Source:            clockScaler/clkq_0 (FF)
   Destination:       clockScaler/sclclk (FF)
   Source Clock:      CLK rising
@@ -504,14 +498,16 @@ Delay:               5.180ns (Levels of Logic = 29)
      MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<20> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<20>)
      MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<21> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<21>)
      MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<22> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<22>)
-     XORCY:CI->O           2   0.180   0.961  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_xor<23> (clockScaler/clkq[31]_GND_3_o_add_1_OUT<23>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<23> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<24> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<25> (clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_cy<25>)
+     XORCY:CI->O           2   0.180   0.961  clockScaler/Madd_clkq[31]_GND_3_o_add_1_OUT_xor<26> (clockScaler/clkq[31]_GND_3_o_add_1_OUT<26>)
      LUT5:I0->O            1   0.203   0.000  clockScaler/Mcompar_n0001_lut<3> (clockScaler/Mcompar_n0001_lut<3>)
      MUXCY:S->O            1   0.172   0.000  clockScaler/Mcompar_n0001_cy<3> (clockScaler/Mcompar_n0001_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  clockScaler/Mcompar_n0001_cy<4> (clockScaler/Mcompar_n0001_cy<4>)
-     MUXCY:CI->O          26   0.258   1.206  clockScaler/Mcompar_n0001_cy<5> (clockScaler/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O          29   0.258   1.249  clockScaler/Mcompar_n0001_cy<4> (clockScaler/Mcompar_n0001_cy<4>)
      FDE:CE                    0.322          clockScaler/sclclk
     ----------------------------------------
-    Total                      5.180ns (2.397ns logic, 2.783ns route)
+    Total                      5.261ns (2.435ns logic, 2.826ns route)
                                        (46.3% logic, 53.7% route)
 
 =========================================================================
@@ -586,7 +582,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.180|         |         |         |
+CLK            |    5.261|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clockScaler/sclclk
@@ -609,15 +605,14 @@ clockScaler/sclclk|         |         |    3.695|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 12.78 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.09 secs
  
 --> 
 
-
-Total memory usage is 392244 kilobytes
+Total memory usage is 235500 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

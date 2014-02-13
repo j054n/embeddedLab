@@ -1,12 +1,13 @@
-Release 14.7 ngdbuild P.20131013 (lin64)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3
 lab2_top_module.ngc lab2_top_module.ngd
 
 Reading NGO file
-"/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.ngc" ...
+"C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab2/lab2_top_module.ngc"
+...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 404224 kilobytes
+Total memory usage is 176680 kilobytes
 
 Writing NGD file "lab2_top_module.ngd" ...
-Total REAL time to NGDBUILD completion:  8 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   11 sec
 
 Writing NGDBUILD log file "lab2_top_module.bld"...

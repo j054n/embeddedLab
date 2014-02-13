@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
-3 -fastpaths -xml lab1_top_module.twx lab1_top_module.ncd -o
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab1_top_module.twx lab1_top_module.ncd -o
 lab1_top_module.twr lab1_top_module.pcf -ucf atlys.ucf
 
 Design file:              lab1_top_module.ncd
@@ -37,13 +37,13 @@ Setup/Hold to clock BTNL
             |Max Setup to|  Process   |Max Hold to |  Process   |                                           | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                          | Phase  |
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
-SW<0>       |    1.286(F)|      SLOW  |    1.008(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<1>       |    2.043(F)|      SLOW  |    0.208(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<2>       |    1.670(F)|      SLOW  |    0.296(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<3>       |   -0.396(F)|      FAST  |    2.469(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<4>       |   -0.712(F)|      FAST  |    2.859(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<5>       |   -0.368(F)|      FAST  |    2.224(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<6>       |   -0.433(F)|      FAST  |    1.992(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<0>       |    1.294(F)|      SLOW  |    1.058(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<1>       |    1.876(F)|      SLOW  |    0.431(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<2>       |    1.678(F)|      SLOW  |    0.346(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<3>       |   -0.431(F)|      FAST  |    2.536(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<4>       |   -0.704(F)|      FAST  |    2.851(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<5>       |   -0.360(F)|      FAST  |    2.216(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<6>       |   -0.425(F)|      FAST  |    1.984(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
 
 Setup/Hold to clock BTNR
@@ -51,13 +51,13 @@ Setup/Hold to clock BTNR
             |Max Setup to|  Process   |Max Hold to |  Process   |                                           | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                          | Phase  |
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
-SW<0>       |   -0.551(F)|      FAST  |    3.271(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<1>       |   -0.014(F)|      FAST  |    2.471(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<2>       |   -0.290(F)|      FAST  |    2.559(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<3>       |   -1.812(F)|      FAST  |    4.732(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<4>       |   -2.128(F)|      FAST  |    5.122(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<5>       |   -1.784(F)|      FAST  |    4.487(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<6>       |   -1.849(F)|      FAST  |    4.255(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<0>       |   -0.543(F)|      FAST  |    3.321(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<1>       |   -0.107(F)|      FAST  |    2.694(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<2>       |   -0.282(F)|      FAST  |    2.609(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<3>       |   -1.847(F)|      FAST  |    4.799(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<4>       |   -2.120(F)|      FAST  |    5.114(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<5>       |   -1.776(F)|      FAST  |    4.479(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<6>       |   -1.841(F)|      FAST  |    4.247(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
 
 Setup/Hold to clock BTNU
@@ -65,13 +65,13 @@ Setup/Hold to clock BTNU
             |Max Setup to|  Process   |Max Hold to |  Process   |                                           | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                          | Phase  |
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
-SW<0>       |    1.074(F)|      SLOW  |    1.234(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<1>       |    1.831(F)|      SLOW  |    0.434(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<2>       |    1.458(F)|      SLOW  |    0.522(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<3>       |   -0.600(F)|      FAST  |    2.695(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<4>       |   -0.916(F)|      FAST  |    3.085(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<5>       |   -0.572(F)|      FAST  |    2.450(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
-SW<6>       |   -0.637(F)|      FAST  |    2.218(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<0>       |    1.082(F)|      SLOW  |    1.284(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<1>       |    1.664(F)|      SLOW  |    0.657(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<2>       |    1.466(F)|      SLOW  |    0.572(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<3>       |   -0.635(F)|      FAST  |    2.762(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<4>       |   -0.908(F)|      FAST  |    3.077(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<5>       |   -0.564(F)|      FAST  |    2.442(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
+SW<6>       |   -0.629(F)|      FAST  |    2.210(F)|      SLOW  |incrementer/currentValue[6]_GND_4_o_OR_40_o|   0.000|
 ------------+------------+------------+------------+------------+-------------------------------------------+--------+
 
 Clock to Setup on destination clock BTNL
@@ -90,9 +90,9 @@ Clock to Setup on destination clock BTNR
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-BTNL           |         |         |   -1.125|   -1.125|
+BTNL           |         |         |   -1.117|   -1.117|
 BTNR           |         |         |    0.444|    0.444|
-BTNU           |         |         |   -0.907|   -0.907|
+BTNU           |         |         |   -0.899|   -0.899|
 CLK            |         |         |    0.135|         |
 ---------------+---------+---------+---------+---------+
 
@@ -115,18 +115,18 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 BTNL           |    2.273|    2.273|         |         |
 BTNR           |    4.536|    4.536|         |         |
 BTNU           |    2.499|    2.499|         |         |
-CLK            |    6.872|         |         |         |
+CLK            |    6.937|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Feb  3 23:08:48 2014 
+Analysis completed Thu Feb 13 13:22:49 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 437 MB
+Peak Memory Usage: 291 MB
 
 
 

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.ncd
-OUTFILE=/home/vmartin/Developer/embeddedLab/xilinx/lab2/lab2_top_module.bit
+INFILE=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab2\lab2_top_module.ncd
+OUTFILE=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab2\lab2_top_module.bit
 FAMILY=Spartan6
 PART=xc6slx45-3csg324
-WORKINGDIR=/home/vmartin/Developer/embeddedLab/xilinx/lab2
+WORKINGDIR=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab2
 LICENSE=WebPack
 USER_INFO=210668025_0_0_019

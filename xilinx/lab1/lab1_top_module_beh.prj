@@ -1,0 +1,6 @@
+verilog work "mealyStateMachineLab1.v"
+verilog work "incrementToValue.v"
+verilog work "clock.v"
+verilog work "BCD_From_7bit_Binary.v"
+verilog work "lab1_top_module.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
