@@ -37,8 +37,7 @@ module bcd_add_controller_ver2(
     input displayBAck,
     input displayLSAck,
     input displayMSAck,
-    input initAck,
-	 output reg [7:0] debugSig = 0
+    input initAck
     );
 
 	//Setup friendly state names.
@@ -72,7 +71,7 @@ module bcd_add_controller_ver2(
 							displayB = 0; 
 							displayLS = 0;
 							displayMS = 0;
-																	debugSig = 0;
+							//debugSig = 0;
 						end
 
 					//If we get an initAck back then we can go to the wait state to wait for any inputs received.
@@ -85,8 +84,8 @@ module bcd_add_controller_ver2(
 							displayB = 0; 
 							displayLS = 0;
 							displayMS = 0;
-																	debugSig = 1;
-
+							//debugSig = 1;
+							
 							next_state = WAIT;
 						end
 				end //End of if(STATE == INIT)
@@ -104,7 +103,7 @@ module bcd_add_controller_ver2(
 						if(displayLSDigit == 1) next_state = DISPLAY_LS;
 						if(displayMSDigit == 1) next_state = DISPLAY_MS;
 						
-																		debugSig = 3;
+																		//debugSig = 3;
 						
 					end //End of WAIT State.
 					
@@ -122,7 +121,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 	
-																		debugSig = 4;
+																		//debugSig = 4;
 							
 							next_state = LOAD_A;
 						end
@@ -136,10 +135,10 @@ module bcd_add_controller_ver2(
 							displayB = 0; 
 							displayLS = 0;
 							displayMS = 0;
-							debugSig = 6;
+							//debugSig = 6;
 							next_state = DISPLAY_A;
 							
-																		debugSig = 5;
+																		//debugSig = 5;
 
 						end
 					end //End of LOAD_A state.
@@ -158,7 +157,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 6;
+																		//debugSig = 6;
 
 							next_state = LOAD_B;
 						end
@@ -173,7 +172,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 7;
+																		//debugSig = 7;
 
 							next_state = DISPLAY_B;
 						end
@@ -192,7 +191,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 8;
+																		//debugSig = 8;
 
 							next_state = DISPLAY_B;
 						end
@@ -224,7 +223,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 9;
+																		//debugSig = 9;
 
 							next_state = DISPLAY_A;
 						end
@@ -239,7 +238,7 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 10;
+																		//debugSig = 10;
 
 							next_state = WAIT;
 						end
@@ -258,7 +257,7 @@ module bcd_add_controller_ver2(
 							displayLS = 1;
 							displayMS = 0;
 							
-																		debugSig = 11;
+																		//debugSig = 11;
 
 							next_state = DISPLAY_LS;
 						end
@@ -273,7 +272,6 @@ module bcd_add_controller_ver2(
 							displayLS = 0;
 							displayMS = 0;
 							
-																		debugSig = 12;
 
 							next_state = WAIT;
 						end
@@ -292,7 +290,7 @@ module bcd_add_controller_ver2(
 							displayB = 0; 
 							displayLS = 0;
 							displayMS = 1;
-																		debugSig = 13;
+																		//debugSig = 13;
 
 							next_state = DISPLAY_MS;
 						end
@@ -306,7 +304,7 @@ module bcd_add_controller_ver2(
 							displayB = 0; 
 							displayLS = 0;
 							displayMS = 0;
-																		debugSig = 14;
+																		//debugSig = 14;
 
 							next_state = WAIT;
 						end
@@ -314,7 +312,7 @@ module bcd_add_controller_ver2(
 										
 					default:
 					begin
-																		debugSig = 15;
+																		//debugSig = 15;
 
 						next_state = state;
 					end

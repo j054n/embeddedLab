@@ -30,7 +30,7 @@ module lab2_top_module(
 	
 	
 	//Set the clock speed for the debouncers.
-	parameter SLOWCLOCK = 1000000;
+	parameter SLOWCLOCK = 5000000;
 	
 	//Setup the huge bundle of wires.
 	wire button_up;
@@ -71,8 +71,8 @@ module lab2_top_module(
 							.displayA(w10),
 							.displayB(w11),
 							.displayLS(w12),
-							.displayMS(w13),
-							.debugSig(LED[3:0]));
+							.displayMS(w13)
+							);
 	
 	bcd_add_datapath M2 (.clock(CLK),
 							.input_value(SW[6:0]),
@@ -89,9 +89,10 @@ module lab2_top_module(
 							.display_b_ack(w4),
 							.display_ls_ack(w5),
 							.display_ms_ack(w6),
-							.init_ack(w14)
+							.init_ack(w14),
+							.output_value(LED[7:0])
 							);
-//output_value(LED[7:0])
+
 
 
 endmodule

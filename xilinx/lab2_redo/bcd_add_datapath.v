@@ -39,28 +39,55 @@ module bcd_add_datapath(
 				output reg display_a_ack = 0,
 				output reg display_b_ack = 0,
 				output reg display_ls_ack = 0,
-				output reg display_ms_ack = 0
+				output reg display_ms_ack = 0,
 				
 				//Output to the outside world.
-				//output reg [7:0] output_value = 0
+				output reg [7:0] output_value = 0
     );
 	
+	//wire w1;
 	
+	
+	
+
 	
 	//Set some temorary registers for the math.
 	reg [6:0] A = 0;
 	reg [6:0] B = 0;
 	reg [7:0] C = 0;
 	
-	//This is to supress warnings that were gained by removing the output above.
-	reg [7:0] output_value = 0;
+	reg [3:0] Ahundreds = 0;
+	reg [3:0] Atens = 0;
+	reg [3:0] Aones = 0;
+	
+	reg [3:0] Bhundreds = 0;
+	reg [3:0] Btens = 0;
+	reg [3:0] Bones = 0;
+	
+	reg [3:0] Chundreds = 0;
+	reg [3:0] Ctens = 0;
+	reg [3:0] Cones = 0;
 	
 	
-		
+	
 	//Run through all the logic.
 	always @(posedge clock) begin
 		//Always add up A + B = C.
-		//C = A + B;
+		C = A + B;
+		
+		//Calculate the BCD Values for A,B and C.
+		Ahundreds = A/100;
+      Atens = (Ahundreds % 100) / 10;
+      Aones = (Atens % 10);
+		
+		Bhundreds = B/100;
+      Btens = (Bhundreds % 100) / 10;
+      Bones = (Btens % 10);
+	
+		Chundreds = C/100;
+      Ctens = (Chundreds % 100) / 10;
+      Cones = (Ctens % 10);
+
 		
 		if(init)
 			begin
@@ -93,6 +120,8 @@ module bcd_add_datapath(
 		if(display_a)
 			begin
 				//output_value = A; //Put A on the LED.
+				output_value[3:0] = Aones;
+				output_value[7:4] = Atens;
 				
 				//Set the ACK flags.
 				init_ack = 0;
@@ -121,7 +150,9 @@ module bcd_add_datapath(
 			
 		if(display_b)
 			begin
-				//output_value = B;
+				//output_value = output_value_bcdb[7:0];
+				output_value[3:0] = Bones;
+				output_value[7:4] = Btens;
 				
 				//Set the ACK flags.
 				init_ack = 0;
@@ -136,7 +167,9 @@ module bcd_add_datapath(
 		
 		if(display_ls)
 			begin
-				output_value = A+B;
+				//output_value = output_value_bcdc[7:0];
+				output_value[3:0] = Cones;
+				output_value[7:4] = Ctens;
 				
 				//Set the ACK flags.
 				init_ack = 0;
@@ -151,7 +184,10 @@ module bcd_add_datapath(
 			
 		if(display_ms)
 			begin
-				output_value = A+B;
+				//output_value[4:0] = output_value_bcdc[11:8];
+				//output_value[7:5] = 0;
+				output_value[3:0] = Chundreds;
+				output_value[7:4] = 0;
 				
 				//Set the ACK flags.
 				init_ack = 0;
