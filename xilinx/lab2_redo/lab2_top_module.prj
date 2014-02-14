@@ -1,0 +1,5 @@
+verilog work "pbdebounce.v"
+verilog work "clock.v"
+verilog work "bcd_add_datapath.v"
+verilog work "bcd_add_controller_ver2.v"
+verilog work "lab2_top_module.v"

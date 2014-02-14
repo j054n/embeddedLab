@@ -1,0 +1,29 @@
+Command line:
+   bcd_add_datapath_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61896
+
+Thu Feb 13 20:34:13 2014
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 518.275 Meg
+
+ Total Signals          : 30
+ Total Nets             : 43
+ Total Signal Drivers   : 22
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 25
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 175
+Total Line Count : 150
+
+ Total Simulation Time: 0.327601 sec
+
+ Current Memory Usage: 360.98 Meg
+
+Thu Feb 13 22:37:27 2014
+

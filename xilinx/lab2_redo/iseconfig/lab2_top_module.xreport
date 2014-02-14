@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report-views version="2.0" >
+ <header>
+  <ImplementationReportsDirectory>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab2_redo\</ImplementationReportsDirectory>
+  <ModuleName>lab2_top_module</ModuleName>
+  <DateModified>2014-02-13T20:21:49</DateModified>
+  <SavedFilePath>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab2_redo/iseconfig/lab2_top_module.xreport</SavedFilePath>
+  <DateInitialized>2014-02-13T12:08:18</DateInitialized>
+  <EnableMessageFiltering>false</EnableMessageFiltering>
+  <SummaryTimeStamp>2014-02-13T15:05:49</SummaryTimeStamp>
+ </header>
+</report-views>
