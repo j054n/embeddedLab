@@ -1,3 +1,0 @@
-verilog work "../../../Chapter 3/peripherals/rotary.v"
-verilog work "../../../Chapter 3/peripherals/clock.v"
-verilog work "ns3servocontrol.v"

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\s6EDPGA-v14\Chapter 3\pbsswtest\ns3pbsswtest\pbsswtest.ncd
-OUTFILE=C:\s6EDPGA-v14\Chapter 3\pbsswtest\ns3pbsswtest\pbsswtest.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\s6EDPGA-v14\Chapter 3\pbsswtest\ns3pbsswtest
-LICENSE=ISE
-USER_INFO=174393175_174132533_207651624_224

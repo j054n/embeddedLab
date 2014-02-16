@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/vmartin/xilinx/elapsedtimens3/elapsedtimens3.ncd
-OUTFILE=/home/vmartin/xilinx/elapsedtimens3/elapsedtimens3.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=/home/vmartin/xilinx/elapsedtimens3
-LICENSE=WebPack
-USER_INFO=210668025_0_0_019

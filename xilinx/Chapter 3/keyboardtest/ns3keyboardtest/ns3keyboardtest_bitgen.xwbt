@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\s6EDPGA-v14\Chapter 3\keyboardtest\ns3keyboardtest\ns3keyboardtest.ncd
-OUTFILE=C:\s6EDPGA-v14\Chapter 3\keyboardtest\ns3keyboardtest\ns3keyboardtest.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\s6EDPGA-v14\Chapter 3\keyboardtest\ns3keyboardtest
-LICENSE=ISE
-USER_INFO=174393175_174132533_210547215_409

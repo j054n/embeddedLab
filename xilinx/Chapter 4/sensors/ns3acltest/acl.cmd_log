@@ -1,4 +1,0 @@
-xst -intstyle ise -ifn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/acl.xst" -ofn "C:/s6EDPGA-v14/Chapter 4/sensors/ns3acltest/acl.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "acl.ngc" acl.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "acl.ngc" acl.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ns3acltest.ucf -p xc6slx16-csg324-3 "acl.ngc" acl.ngd  

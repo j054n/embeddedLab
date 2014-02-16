@@ -1,5 +1,0 @@
-verilog work "remote_sources/_/_/peripherals/clplcd.v"
-verilog work "remote_sources/_/_/peripherals/clock.v"
-verilog work "acllcd.v"
-verilog work "../../peripherals/acl.v"
-verilog work "ns3acltest.v"

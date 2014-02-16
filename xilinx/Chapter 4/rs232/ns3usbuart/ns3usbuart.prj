@@ -1,4 +1,0 @@
-verilog work "../../peripherals/txmit.v"
-verilog work "../../peripherals/rcvr.v"
-verilog work "../../../Chapter 3/peripherals/clock.v"
-verilog work "ns3usbuart.v"

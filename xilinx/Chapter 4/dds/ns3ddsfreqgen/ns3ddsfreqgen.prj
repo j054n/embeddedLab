@@ -1,5 +1,0 @@
-verilog work "ipcore_dir/dds1.v"
-verilog work "../../../Chapter 3/peripherals/rotary.v"
-verilog work "../../../Chapter 3/peripherals/da2dac.v"
-verilog work "../../../Chapter 3/peripherals/clock.v"
-verilog work "ns3ddsfreqgen.v"

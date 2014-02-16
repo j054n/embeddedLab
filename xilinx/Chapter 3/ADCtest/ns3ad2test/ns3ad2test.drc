@@ -1,8 +1,0 @@
-Release 14.3 Drc P.40xd (nt)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Sun Mar 03 14:43:34 2013
-
-drc -z ns3ad2test.ncd ns3ad2test.pcf
-
-DRC detected 0 errors and 0 warnings.

@@ -1,5 +1,0 @@
-verilog work "shiftadd3.v"
-verilog work "remote_sources/_/_/Chapter 3/peripherals/sevensegment.v"
-verilog work "remote_sources/_/_/Chapter 3/peripherals/clock.v"
-verilog work "gensadd3data.v"
-verilog work "binBCDsadd3.v"

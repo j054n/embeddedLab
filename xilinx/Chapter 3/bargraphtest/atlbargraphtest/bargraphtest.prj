@@ -1,3 +1,0 @@
-verilog work "remote_sources/_/_/peripherals/clock.v"
-verilog work "remote_sources/_/_/peripherals/bargraph.v"
-verilog work "bargraphtest.v"

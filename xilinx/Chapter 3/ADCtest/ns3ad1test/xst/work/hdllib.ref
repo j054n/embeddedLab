@@ -1,5 +1,0 @@
-MO clplcd NULL ../../peripherals/clplcd.v vlg3A/clplcd.bin 1356299816
-MO genad1adc NULL ns3ad1test.v vlg1C/genad1adc.bin 1356299816
-MO adclcd NULL adclcd.v vlg6F/adclcd.bin 1356299816
-MO ad1adc NULL remote_sources/_/_/peripherals/ad1adc.v vlg76/ad1adc.bin 1356299816
-MO ns3ad1test NULL ns3ad1test.v vlg62/ns3ad1test.bin 1356299816

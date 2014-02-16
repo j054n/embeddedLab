@@ -1,5 +1,0 @@
-verilog work "../../Chapter 3/peripherals/sevensegment.v"
-verilog work "../../Chapter 3/peripherals/clock.v"
-verilog work "elapsedtimens3.v"
-verilog work "ettest.v"
-verilog work "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v"

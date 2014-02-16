@@ -1,4 +1,0 @@
-verilog work "../../peripherals/clplcd.v"
-verilog work "remote_sources/_/_/peripherals/pbdebounce.v"
-verilog work "remote_sources/_/_/peripherals/clock.v"
-verilog work "ns3plcdtest.v"

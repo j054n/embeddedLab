@@ -1,4 +1,0 @@
-verilog work "../../peripherals/clplcd.v"
-verilog work "remote_sources/_/_/peripherals/mouse.v"
-verilog work "checkmouse.v"
-verilog work "ns3mousetest.v"

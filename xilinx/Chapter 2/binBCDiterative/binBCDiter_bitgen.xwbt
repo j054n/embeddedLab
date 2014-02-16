@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/vmartin/xilinx/Chapter 2/binBCDiterative/binBCDiter.ncd
-OUTFILE=/home/vmartin/xilinx/Chapter 2/binBCDiterative/binBCDiter.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=/home/vmartin/xilinx/Chapter 2/binBCDiterative
-LICENSE=WebPack
-USER_INFO=210668025_0_0_019

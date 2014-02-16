@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\s6EDPGA-v14\Chapter 4\adcdac\ns2ad1hbda2\ns3ad1hbda2.ncd
-OUTFILE=C:\s6EDPGA-v14\Chapter 4\adcdac\ns2ad1hbda2\ns3ad1hbda2.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\s6EDPGA-v14\Chapter 4\adcdac\ns2ad1hbda2
-LICENSE=ISE
-USER_INFO=174393175_174132533_210547215_409

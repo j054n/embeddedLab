@@ -1,5 +1,0 @@
-verilog work "../../Chapter 3/peripherals/sevensegment.v"
-verilog work "../../Chapter 3/peripherals/clock.v"
-verilog work "ipcore_dir/binbcddiv.v"
-verilog work "gendata.v"
-verilog work "binBCD.v"

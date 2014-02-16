@@ -1,8 +1,0 @@
-Release 14.3 Drc P.40xd (nt)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Sun Dec 09 21:03:44 2012
-
-drc -z binBCDsadd3.ncd binBCDsadd3.pcf
-
-DRC detected 0 errors and 0 warnings.

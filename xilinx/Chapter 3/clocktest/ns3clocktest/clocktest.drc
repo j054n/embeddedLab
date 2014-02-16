@@ -1,8 +1,0 @@
-Release 14.3 Drc P.40xd (nt)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Tue Jan 29 19:38:52 2013
-
-drc -z clocktest.ncd clocktest.pcf
-
-DRC detected 0 errors and 0 warnings.
