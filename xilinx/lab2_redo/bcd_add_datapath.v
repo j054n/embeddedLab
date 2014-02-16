@@ -39,14 +39,14 @@ module bcd_add_datapath(
 				output reg display_a_ack = 0,
 				output reg display_b_ack = 0,
 				output reg display_ls_ack = 0,
-				output reg display_ms_ack = 0,
+				output reg display_ms_ack = 0
 				
 				//Output to the outside world.
-				output reg [7:0] output_value = 0
+				//output reg [7:0] output_value = 0
     );
 	
 	//wire w1;
-	
+	reg [7:0] output_value = 0;
 	
 	
 

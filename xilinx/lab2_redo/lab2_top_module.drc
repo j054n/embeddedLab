@@ -1,16 +1,16 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Feb 14 01:06:53 2014
+Sun Feb 16 15:36:56 2014
 
 drc -z lab2_top_module.ncd lab2_top_module.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   M1/state[3]_GND_4_o_MUX_311_o is sourced by a combinatorial pin. This is not
+   M1/state[3]_GND_4_o_MUX_200_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   M1/state[3]_GND_4_o_MUX_200_o is sourced by a combinatorial pin. This is not
+   M1/state[3]_GND_4_o_MUX_308_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 DRC detected 0 errors and 2 warnings.  Please see the previously displayed

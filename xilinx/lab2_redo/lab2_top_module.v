@@ -46,53 +46,12 @@ module lab2_top_module(
 	clock clock50 (.CLK(CLK), .clkscale(SLOWCLOCK), .sclclk(wClock));
 	
 	//Instantiate the debouncers.
-
 	pbdebounce debounce_up(.clk(wClock), .button(BTNU), .pbreg(button_up));
 	pbdebounce debounce_down(.clk(wClock), .button(BTND), .pbreg(button_down));
 	pbdebounce debounce_left(.clk(wClock), .button(BTNL), .pbreg(button_left));
 	pbdebounce debounce_right(.clk(wClock), .button(BTNR), .pbreg(button_right));
 
-	 
-	bcd_add_controller_ver2 M1 (.clock(CLK),
-							.init(w0),
-							.loadAInput(button_left),
-							.loadBInput(button_right),
-							.displayLSDigit(button_up),
-							.displayMSDigit(button_down),
-							.loadAAck(w1),
-							.loadBAck(w2),
-							.displayAAck(w3),
-							.displayBAck(w4),
-							.displayLSAck(w5),
-							.displayMSAck(w6),
-							.initAck(w14),
-							.loadA(w8),
-							.loadB(w9),
-							.displayA(w10),
-							.displayB(w11),
-							.displayLS(w12),
-							.displayMS(w13)
-							);
 	
-	bcd_add_datapath M2 (.clock(CLK),
-							.input_value(SW[6:0]),
-							.init(w0),
-							.load_a(w8),
-							.load_b(w9),
-							.display_a(w10),
-							.display_b(w11),
-							.display_ls(w12),
-							.display_ms(w13),
-							.load_a_ack(w1),
-							.load_b_ack(w2),
-							.display_a_ack(w3),
-							.display_b_ack(w4),
-							.display_ls_ack(w5),
-							.display_ms_ack(w6),
-							.init_ack(w14),
-							.output_value(LED[7:0])
-							);
-
-
+	
 
 endmodule
