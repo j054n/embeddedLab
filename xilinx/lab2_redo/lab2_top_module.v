@@ -39,8 +39,8 @@ module lab2_top_module(
 	wire button_right;
 	wire wClock;
 	
-	wire w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14;
-
+	//Declare wires.
+	wire w1, w2, w3, w4, w5;
 	
 	//Instantiate the 50mhz clock to drive the debouncers.
 	clock clock50 (.CLK(CLK), .clkscale(SLOWCLOCK), .sclclk(wClock));
@@ -51,7 +51,29 @@ module lab2_top_module(
 	pbdebounce debounce_left(.clk(wClock), .button(BTNL), .pbreg(button_left));
 	pbdebounce debounce_right(.clk(wClock), .button(BTNR), .pbreg(button_right));
 
-	
-	
 
+	
+	
+	//Instantiate controller datapath modules.
+	lab2_controller M1(.CLK(wClock),
+							.INPUTLoadA(button_left),
+							.INPUTLoadB(button_right),
+							.INPUTLoadMS(button_up),
+							.INPUTLoadLS(button_down),
+							.CTRL_Init(w1),
+							.CTRL_LoadA(w2),
+							.CTRL_LoadB(w3),
+							.CTRL_LoadMS(w4),
+							.CTRL_LoadLS(w5));
+	
+	lab2_datapath_top M2(.CLK(wClock),
+								.INPUT_Number(SW[6:0]),
+								.CTRL_Init(w1),
+								.CTRL_LoadA(w2),
+								.CTRL_LoadB(w3),
+								.CTRL_LoadMS(w4),
+								.CTRL_LoadLS(w5),
+								.OUTPUT_Number(LED[7:0]));
+	
+	
 endmodule
