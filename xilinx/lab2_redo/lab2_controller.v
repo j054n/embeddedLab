@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module lab2_controller(
+	module lab2_controller(
     input CLK,
 	 input INPUTLoadA,
     input INPUTLoadB,

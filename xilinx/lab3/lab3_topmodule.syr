@@ -1,0 +1,703 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: lab3_topmodule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab3_topmodule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab3_topmodule"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : lab3_topmodule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_displaymodule.v" into library work
+Parsing module <lab3_displaymodule>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_datapath.v" into library work
+Parsing module <lab3_datapath>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_controller.v" into library work
+Parsing module <lab3_controller>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\ipcore_dir\div_gen_v3_0.v" into library work
+Parsing module <div_gen_v3_0>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" into library work
+Parsing module <lab3_topmodule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 71: Port dividendLOAD is not connected to this instance
+
+Elaborating module <lab3_topmodule>.
+
+Elaborating module <clock>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <lab3_controller>.
+
+Elaborating module <div_gen_v3_0>.
+WARNING:HDLCompiler:1127 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 58: Assignment to rfd ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 59: Size mismatch in connection of port <dividend>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 60: Size mismatch in connection of port <divisor>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 61: Size mismatch in connection of port <quotient>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 62: Size mismatch in connection of port <fractional>. Formal port size is 16-bit while actual signal size is 8-bit.
+
+Elaborating module <lab3_datapath>.
+WARNING:HDLCompiler:91 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_datapath.v" Line 34: Signal <tempValue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_datapath.v" Line 36: Signal <tempValue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <lab3_displaymodule>.
+WARNING:HDLCompiler:552 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" Line 71: Input port dividendLOAD is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab3_topmodule>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v".
+WARNING:Xst:2898 - Port 'dividendLOAD', unconnected in block instance 'displaymod', is tied to GND.
+INFO:Xst:3210 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_topmodule.v" line 56: Output port <rfd> of the instance <DIV> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <lab3_topmodule> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\clock.v".
+    Found 1-bit register for signal <sclclk>.
+    Found 32-bit register for signal <clkq>.
+    Found 32-bit adder for signal <clkq[31]_GND_2_o_add_1_OUT> created at line 12.
+    Found 32-bit comparator greater for signal <n0001> created at line 13
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 3-bit register for signal <pbshift<2:0>>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <lab3_controller>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_controller.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <dividendLOAD>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisorLOAD>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <remainderDISPLAY>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <trigger>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+	inferred   5 Multiplexer(s).
+Unit <lab3_controller> synthesized.
+
+Synthesizing Unit <lab3_datapath>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_datapath.v".
+    Found 8-bit register for signal <tempValue>.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <divisor<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred  16 Latch(s).
+Unit <lab3_datapath> synthesized.
+
+Synthesizing Unit <lab3_displaymodule>.
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab3\lab3_displaymodule.v".
+        INPUTVAL = 0
+        QUOTIENTVAL = 1
+        REMAINDERVAL = 2
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[7]_Mux_4_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[6]_Mux_6_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[5]_Mux_8_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[4]_Mux_10_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[3]_Mux_12_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[2]_Mux_14_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[1]_Mux_16_o> created at line 49.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_LED[0]_Mux_18_o> created at line 49.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 Latch(s).
+	inferred  10 Multiplexer(s).
+Unit <lab3_displaymodule> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 3-bit register                                        : 4
+ 32-bit register                                       : 1
+ 8-bit register                                        : 1
+# Latches                                              : 30
+ 1-bit latch                                           : 30
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 3-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/div_gen_v3_0.ngc>.
+Loading core <div_gen_v3_0> for timing and area information for instance <DIV>.
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
+Unit <clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 3-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    trigger in unit <lab3_controller>
+    remainderDISPLAY in unit <lab3_controller>
+    divisorLOAD in unit <lab3_controller>
+    dividendLOAD in unit <lab3_controller>
+    state_1 in unit <lab3_displaymodule>
+    state_0 in unit <lab3_displaymodule>
+
+
+Optimizing unit <lab3_datapath> ...
+
+Optimizing unit <lab3_topmodule> ...
+
+Optimizing unit <lab3_displaymodule> ...
+
+Optimizing unit <lab3_controller> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab3_topmodule, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab3_topmodule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1357
+#      GND                         : 2
+#      INV                         : 49
+#      LUT1                        : 67
+#      LUT2                        : 95
+#      LUT3                        : 274
+#      LUT4                        : 3
+#      LUT5                        : 20
+#      MULT_AND                    : 17
+#      MUXCY                       : 417
+#      VCC                         : 2
+#      XORCY                       : 411
+# FlipFlops/Latches                : 962
+#      FD                          : 56
+#      FDE                         : 876
+#      LD                          : 22
+#      LDE_1                       : 8
+# Shift Registers                  : 34
+#      SRLC16E                     : 34
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 12
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             954  out of  54576     1%  
+ Number of Slice LUTs:                  542  out of  27288     1%  
+    Number used as Logic:               508  out of  27288     1%  
+    Number used as Memory:               34  out of   6408     0%  
+       Number used as SRL:               34
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1095
+   Number with an unused Flip Flop:     141  out of   1095    12%  
+   Number with an unused LUT:           553  out of   1095    50%  
+   Number of fully used LUT-FF pairs:   401  out of   1095    36%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    218     9%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------+----------------------------+-------+
+Clock Signal                                                                 | Clock buffer(FF name)      | Load  |
+-----------------------------------------------------------------------------+----------------------------+-------+
+CLK                                                                          | BUFGP                      | 950   |
+MECLK/sclclk                                                                 | NONE(DBD/pbshift_2)        | 16    |
+controller/dividendLOAD                                                      | NONE(datapath/divisor_0)   | 16    |
+displaymod/state[1]_GND_31_o_Mux_7_o(displaymod/state[1]_GND_31_o_Mux_7_o1:O)| NONE(*)(displaymod/LED_1)  | 8     |
+displaymod/state_0_G(displaymod/state_1_G:O)                                 | NONE(*)(displaymod/state_1)| 2     |
+controller/dividendLOAD_G(controller/dividendLOAD_G:O)                       | NONE(*)(controller/trigger)| 4     |
+-----------------------------------------------------------------------------+----------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.367ns (Maximum Frequency: 186.327MHz)
+   Minimum input arrival time before clock: 2.391ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.367ns (frequency: 186.327MHz)
+  Total number of paths / destination ports: 43729 / 909
+-------------------------------------------------------------------------
+Delay:               5.367ns (Levels of Logic = 35)
+  Source:            MECLK/clkq_0 (FF)
+  Destination:       MECLK/sclclk (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: MECLK/clkq_0 to MECLK/sclclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  MECLK/clkq_0 (MECLK/clkq_0)
+     INV:I->O              1   0.206   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_lut<0>_INV_0 (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<0> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<1> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<2> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<3> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<4> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<5> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<6> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<7> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<8> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<9> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<10> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<11> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<12> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<13> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<14> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<15> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<16> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<17> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<18> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<19> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<20> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<21> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<22> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<23> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<24> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<25> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<26> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<27> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<28> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<29> (MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<29>)
+     XORCY:CI->O           2   0.180   0.961  MECLK/Madd_clkq[31]_GND_2_o_add_1_OUT_xor<30> (MECLK/clkq[31]_GND_2_o_add_1_OUT<30>)
+     LUT5:I0->O            0   0.203   0.000  MECLK/Mcompar_n0001_lutdi3 (MECLK/Mcompar_n0001_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  MECLK/Mcompar_n0001_cy<4> (MECLK/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O          33   0.258   1.305  MECLK/Mcompar_n0001_cy<5> (MECLK/Mcompar_n0001_cy<5>)
+     FDE:CE                    0.322          MECLK/sclclk
+    ----------------------------------------
+    Total                      5.367ns (2.484ns logic, 2.883ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MECLK/sclclk'
+  Clock period: 1.841ns (frequency: 543.257MHz)
+  Total number of paths / destination ports: 24 / 12
+-------------------------------------------------------------------------
+Delay:               1.841ns (Levels of Logic = 1)
+  Source:            DBL/pbreg (FF)
+  Destination:       DBL/pbreg (FF)
+  Source Clock:      MECLK/sclclk rising
+  Destination Clock: MECLK/sclclk rising
+
+  Data Path: DBL/pbreg to DBL/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   1.089  DBL/pbreg (DBL/pbreg)
+     LUT5:I0->O            1   0.203   0.000  DBL/pbreg_rstpot (DBL/pbreg_rstpot)
+     FD:D                      0.102          DBL/pbreg
+    ----------------------------------------
+    Total                      1.841ns (0.752ns logic, 1.089ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MECLK/sclclk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.391ns (Levels of Logic = 2)
+  Source:            BTND (PAD)
+  Destination:       DBD/pbreg (FF)
+  Destination Clock: MECLK/sclclk rising
+
+  Data Path: BTND to DBD/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.864  BTND_IBUF (BTND_IBUF)
+     LUT5:I1->O            1   0.203   0.000  DBD/pbreg_rstpot (DBD/pbreg_rstpot)
+     FD:D                      0.102          DBD/pbreg
+    ----------------------------------------
+    Total                      2.391ns (1.527ns logic, 0.864ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.940ns (Levels of Logic = 1)
+  Source:            SW<7> (PAD)
+  Destination:       datapath/tempValue_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SW<7> to datapath/tempValue_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  SW_7_IBUF (SW_7_IBUF)
+     FD:D                      0.102          datapath/tempValue_7
+    ----------------------------------------
+    Total                      1.940ns (1.324ns logic, 0.616ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'displaymod/state[1]_GND_31_o_Mux_7_o'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.326ns (Levels of Logic = 2)
+  Source:            SW<1> (PAD)
+  Destination:       displaymod/LED_1 (LATCH)
+  Destination Clock: displaymod/state[1]_GND_31_o_Mux_7_o falling
+
+  Data Path: SW<1> to displaymod/LED_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.864  SW_1_IBUF (SW_1_IBUF)
+     LUT5:I1->O            1   0.203   0.000  displaymod/Mmux_state[1]_LED[1]_Mux_16_o11 (displaymod/state[1]_LED[1]_Mux_16_o)
+     LD:D                      0.037          displaymod/LED_1
+    ----------------------------------------
+    Total                      2.326ns (1.462ns logic, 0.864ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'displaymod/state[1]_GND_31_o_Mux_7_o'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            displaymod/LED_7 (LATCH)
+  Destination:       LED<7> (PAD)
+  Source Clock:      displaymod/state[1]_GND_31_o_Mux_7_o falling
+
+  Data Path: displaymod/LED_7 to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  displaymod/LED_7 (displaymod/LED_7)
+     OBUF:I->O                 2.571          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+CLK                      |    5.367|         |         |         |
+controller/dividendLOAD  |    1.984|    1.984|         |         |
+controller/dividendLOAD_G|         |    3.006|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MECLK/sclclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MECLK/sclclk   |    1.841|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock controller/dividendLOAD
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+CLK                      |    1.100|         |    1.100|         |
+controller/dividendLOAD_G|         |    1.702|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock controller/dividendLOAD_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MECLK/sclclk   |         |         |    1.649|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock displaymod/state[1]_GND_31_o_Mux_7_o
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+CLK                 |         |         |    1.371|         |
+displaymod/state_0_G|         |         |    1.912|         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock displaymod/state_0_G
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+controller/dividendLOAD_G|         |         |    3.029|         |
+-------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.07 secs
+ 
+--> 
+
+Total memory usage is 251692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   41 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
