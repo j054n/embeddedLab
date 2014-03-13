@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Mar 09 12:30:10 2013">
+<application name="pn" timeStamp="Wed Mar 12 21:52:17 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="01E4717F35CA407AB62EF05F663A7DD3" type="project"/>
 <property name="ProjectIteration" value="144" type="project"/>
-<property name="ProjectFile" value="C:/s6EDPGA-v14/Chapter 4/rs232/atlusbuart/atlusbuart.xise" type="project"/>
+<property name="ProjectFile" value="C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/atlusbuart.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2013-02-07T16:31:31" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">

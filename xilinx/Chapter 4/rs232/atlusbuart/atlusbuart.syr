@@ -1,16 +1,16 @@
-Release 14.3 - xst P.40xd (nt)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.07 secs
  
 --> Reading design: atlusbuart.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 4\rs232\atlusbuart\remote_sources\_\_\_\Chapter 3\peripherals\clock.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\rs232\atlusbuart\remote_sources\_\_\_\Chapter 3\peripherals\clock.v" into library work
 Parsing module <clock>.
-Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v" into library work
 Parsing module <txmit>.
-Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v" into library work
 Parsing module <rcvr>.
-Analyzing Verilog file "C:\s6EDPGA-v14\Chapter 4\rs232\atlusbuart\atlusbuart.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\rs232\atlusbuart\atlusbuart.v" into library work
 Parsing module <atlusbuart>.
 Parsing module <genusbuart>.
 
@@ -124,12 +124,12 @@ Elaborating module <atlusbuart>.
 Elaborating module <clock>.
 
 Elaborating module <rcvr>.
-WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <txmit>.
-WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v" Line 36: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v" Line 36: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <genusbuart>.
 
@@ -138,13 +138,13 @@ Elaborating module <genusbuart>.
 =========================================================================
 
 Synthesizing Unit <atlusbuart>.
-    Related source file is "C:\s6EDPGA-v14\Chapter 4\rs232\atlusbuart\atlusbuart.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\rs232\atlusbuart\atlusbuart.v".
     Summary:
 	no macro.
 Unit <atlusbuart> synthesized.
 
 Synthesizing Unit <clock>.
-    Related source file is "C:\s6EDPGA-v14\Chapter 4\rs232\atlusbuart\remote_sources\_\_\_\Chapter 3\peripherals\clock.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\rs232\atlusbuart\remote_sources\_\_\_\Chapter 3\peripherals\clock.v".
     Found 1-bit register for signal <sclclk>.
     Found 32-bit register for signal <clkq>.
     Found 32-bit adder for signal <clkq[31]_GND_2_o_add_1_OUT> created at line 12.
@@ -156,7 +156,7 @@ Synthesizing Unit <clock>.
 Unit <clock> synthesized.
 
 Synthesizing Unit <rcvr>.
-    Related source file is "C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v".
     Found 1-bit register for signal <rxd1>.
     Found 4-bit register for signal <clkdiv>.
     Found 8-bit register for signal <rbr>.
@@ -182,7 +182,7 @@ Synthesizing Unit <rcvr>.
 Unit <rcvr> synthesized.
 
 Synthesizing Unit <txmit>.
-    Related source file is "C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v".
     Found 4-bit register for signal <no_bits_sent>.
     Found 1-bit register for signal <wrn1>.
     Found 1-bit register for signal <clk1x_en>.
@@ -204,7 +204,7 @@ Synthesizing Unit <txmit>.
 Unit <txmit> synthesized.
 
 Synthesizing Unit <genusbuart>.
-    Related source file is "C:\s6EDPGA-v14\Chapter 4\rs232\atlusbuart\atlusbuart.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\rs232\atlusbuart\atlusbuart.v".
     Found 1-bit register for signal <wrn>.
     Found 8-bit register for signal <tdin>.
     Found 1-bit register for signal <rdrst>.
@@ -744,12 +744,12 @@ M1/sclclk      |    1.128|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.47 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.03 secs
  
 --> 
 
-Total memory usage is 187756 kilobytes
+Total memory usage is 251188 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)

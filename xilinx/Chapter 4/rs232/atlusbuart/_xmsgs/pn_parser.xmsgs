@@ -5,19 +5,19 @@
 <!--     behavior or data corruption.  It is strongly advised that -->
 <!--     users do not edit the contents of this file.              -->
 <!--                                                               -->
-<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/s6EDPGA-v14/Chapter 4/peripherals/rcvr.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/peripherals/rcvr.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/s6EDPGA-v14/Chapter 4/peripherals/txmit.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/peripherals/txmit.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/s6EDPGA-v14/Chapter 4/rs232/atlusbuart/atlusbuart.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/atlusbuart.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/s6EDPGA-v14/Chapter 4/rs232/atlusbuart/remote_sources/_/_/_/Chapter 3/peripherals/clock.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/remote_sources/_/_/_/Chapter 3/peripherals/clock.v&quot; into library work</arg>
 </msg>
 
 </messages>

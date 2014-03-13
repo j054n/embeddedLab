@@ -5,16 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v" Line 35: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v" Line 35: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\s6EDPGA-v14\Chapter 4\peripherals\rcvr.v" Line 68: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\rcvr.v" Line 68: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v" Line 36: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v" Line 36: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\s6EDPGA-v14\Chapter 4\peripherals\txmit.v" Line 67: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 4\peripherals\txmit.v" Line 67: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

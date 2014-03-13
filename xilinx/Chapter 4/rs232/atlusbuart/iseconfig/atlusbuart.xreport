@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-08-27T12:39:54</DateModified>
+  <DateModified>2014-03-12T20:36:55</DateModified>
   <ModuleName>atlusbuart</ModuleName>
   <SummaryTimeStamp>2013-03-05T19:52:31</SummaryTimeStamp>
-  <SavedFilePath>C:/s6EDPGA-v14/Chapter 4/rs232/atlusbuart/iseconfig/atlusbuart.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/s6EDPGA-v14/Chapter 4/rs232/atlusbuart\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/iseconfig/atlusbuart.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart\</ImplementationReportsDirectory>
   <DateInitialized>2013-02-10T15:21:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

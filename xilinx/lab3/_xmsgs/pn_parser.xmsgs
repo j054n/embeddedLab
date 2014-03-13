@@ -8,7 +8,22 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/clock.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/lab3_controller.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/lab3_datapath.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/lab3_displaymodule.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/lab3_topmodule.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/pbdebounce.v&quot; into library work</arg>
 </msg>
 
 </messages>

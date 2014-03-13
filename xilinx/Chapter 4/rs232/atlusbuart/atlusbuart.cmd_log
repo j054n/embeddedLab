@@ -819,3 +819,4 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off atlusbuart_map.ncd atlusbuart.ncd atlusbuart.pcf 
 trce -intstyle ise -e 3 -s 3 -n 3 -xml atlusbuart.twx atlusbuart.ncd -o atlusbuart.twr atlusbuart.pcf -ucf atlusbuart.ucf 
 bitgen -intstyle ise -f atlusbuart.ut atlusbuart.ncd 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/atlusbuart.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/Chapter 4/rs232/atlusbuart/atlusbuart.syr" 
