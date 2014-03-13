@@ -1,0 +1,298 @@
+// Nexys3 and Atlys Spartan-6 FPGA Board
+// Crystal Clock Oscillator  clkosc.v
+// c 2012 Embedded Design using Programmable Gate Arrays
+//        Second Edition   Dennis Silage
+
+module clock(input CLK, input [31:0] clkscale, output reg sclclk);
+									// CLK crystal clock oscillator 100 MHz
+reg [31:0] clkq = 0;			// clock register, initial value of 0
+	
+always@(posedge CLK)
+	begin
+		clkq=clkq+1;			// increment clock register
+			if (clkq>=clkscale)  	// clock scaling
+				begin
+					sclclk=~sclclk;	// output clock
+					clkq=0;		// reset clock register
+				end
+	 end
+
+endmodule
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    20:14:26 02/26/2014 
+// Design Name: 
+// Module Name:    lab3_controller 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module lab3_controller(input  UP, 
+								input DOWN, 
+								input LEFT, 
+								input RIGHT, 
+								output reg dividendLOAD, 
+								output reg divisorLOAD,
+								output reg remainderDISPLAY, 
+								output reg trigger
+    );
+
+always @(UP or DOWN or LEFT or RIGHT)
+	
+	begin
+	
+		if(LEFT)
+			begin
+				dividendLOAD = 1;
+				divisorLOAD = 0;
+				remainderDISPLAY = 0;
+				trigger = 0;
+			end
+			
+		else if(RIGHT)
+			begin
+				divisorLOAD = 1;
+				dividendLOAD = 0;
+				remainderDISPLAY = 0;
+				trigger = 0;
+			end
+		
+		else if(UP)
+			begin
+				trigger = 1;
+				remainderDISPLAY = 0;
+				dividendLOAD = 0;
+				divisorLOAD = 0;
+			end
+			
+		else if(DOWN)
+			begin
+				remainderDISPLAY = 1;
+				dividendLOAD = 0;
+				divisorLOAD = 0;
+				trigger = 0;
+			end
+		
+	end
+endmodule
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    20:25:01 02/26/2014 
+// Design Name: 
+// Module Name:    lab3_datapath 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module lab3_datapath(input CLK, input dividendLOAD, input divisorLOAD,input [7:0] inputValue, output reg [7:0] dividend, output reg [7:0] divisor
+    );
+
+reg [7:0] tempValue;
+
+always@(posedge CLK)
+	begin
+		tempValue <= inputValue;
+	end
+
+always@(dividendLOAD, divisorLOAD)
+	begin
+		if(dividendLOAD)
+			dividend = tempValue;
+		else if(divisorLOAD)
+			divisor = tempValue;
+	end
+
+endmodule
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:27:22 02/26/2014 
+// Design Name: 
+// Module Name:    lab3_displaymodule 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module lab3_displaymodule(input dividendLOAD, 
+									input divisorLOAD, 
+									input [7:0] inputNumber, 
+									input [7:0] quotient, 
+									input [7:0] fract, 
+									input remainderDISPLAY,
+									input trigger, 
+									output reg [7:0] LED
+    );
+
+parameter INPUTVAL = 0, QUOTIENTVAL = 1, REMAINDERVAL = 2;
+
+reg [1:0] state=0;
+
+//handle some inputs.
+always@(dividendLOAD, divisorLOAD, trigger, remainderDISPLAY)
+	begin
+		if(dividendLOAD || divisorLOAD)
+			state = INPUTVAL;
+		else if(trigger)
+			state = QUOTIENTVAL;
+		else if(remainderDISPLAY)
+			state = REMAINDERVAL;
+	end
+	
+//handle the states.
+always@(inputNumber,quotient,fract, state)
+	begin
+		case(state)
+		
+			INPUTVAL:
+			begin
+			LED [7:0] = inputNumber;
+			end
+				
+			REMAINDERVAL:
+			begin
+			LED [7:0] = fract;
+			end
+			
+			QUOTIENTVAL:
+			begin
+			LED [7:0] = quotient;
+			end
+				
+		endcase //end of case statement.
+	
+	end
+
+
+endmodule
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    19:44:14 02/26/2014 
+// Design Name: 
+// Module Name:    lab3_topmodule 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module lab3_topmodule(input CLK, input BTNL, input BTNR, input BTNU, input BTND, input [7:0] SW, output [7:0] LED
+    );
+
+
+//Declare wires to connect my modules.
+wire trigger;
+wire dividendLOAD;
+wire divisorLOAD;
+wire remainderDISPLAY;
+wire [7:0] quotient;
+wire [7:0] fractional;
+wire [7:0] dividend;
+wire [7:0] divisor;
+
+//Instantiate modules.
+clock MECLK(CLK, 1000000, buttonClock);
+
+pbdebounce DBU(buttonClock, BTNU, UP);
+
+pbdebounce DBD(buttonClock, BTND, DOWN);
+
+pbdebounce DBL(buttonClock, BTNL, LEFT);
+
+pbdebounce DBR(buttonClock, BTNR, RIGHT);
+
+lab3_controller controller(.UP(UP),
+									.DOWN(DOWN), 
+									.LEFT(LEFT), 
+									.RIGHT(RIGHT), 
+									.dividendLOAD(dividendLOAD), 
+									.divisorLOAD(divisorLOAD), 
+									.remainderDISPLAY(remainderDISPLAY), 
+									.trigger(trigger));
+
+
+div_gen_v3_0 DIV(.clk(CLK),
+						.ce(trigger), 
+						.rfd(rfd), 
+						.dividend(dividend), 
+						.divisor(divisor), 
+						.quotient(quotient), 
+						.fractional(fractional));
+
+lab3_datapath datapath(.CLK(CLK),
+								.dividendLOAD(dividendLOAD),
+								.divisorLOAD(divisorLOAD),
+								.inputValue(SW),
+								.dividend(dividend),
+								.divisor(divisor));
+								
+lab3_displaymodule displaymod(.divisorLOAD(divisorLOAD),
+										.inputNumber(SW),
+										.quotient(quotient),
+										.fract(fractional),
+										.remainderDISPLAY(remainderDISPLAY),
+										.trigger(trigger),
+										.LED(LED));
+										
+
+
+endmodule
+// Push Button Debounce pbdebounce.v
+// c 2013 Embedded Design using Programmable Gate Arrays  Dennis Silage
+
+module pbdebounce(input clk, input button, output reg pbreg); 
+
+reg [3:0] pbshift;
+	
+always@(posedge clk)
+	begin
+		pbshift=pbshift<<1;
+		pbshift[0]=button;
+	if (pbshift==0)
+		pbreg=0;
+	if (pbshift==15)
+		pbreg=1;			
+	end
+
+endmodule
+
