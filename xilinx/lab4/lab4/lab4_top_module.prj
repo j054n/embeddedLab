@@ -1,0 +1,7 @@
+verilog work "binary16BitTo4DigitHex.v"
+verilog work "asciiTo4BitBinary.v"
+verilog work "addTwoNumbers.v"
+verilog work "lab4DataPath.v"
+verilog work "lab4Control.v"
+verilog work "clock.v"
+verilog work "lab4_top_module.v"

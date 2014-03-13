@@ -21,12 +21,61 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab4.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lab4_top_module.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lab4_top_module.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab4_top_module.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lab4_top_module.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab4_top_module.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab4_top_module_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab4_top_module_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab4_top_module_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+    <transform xil_pn:end_ts="1394751317" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1394751317">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7592081336483774769" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:in_ck="-2674893606188367078" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4020452992828722560" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:in_ck="3962231364331651273" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4674422909284731537" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:in_ck="3962231364331651273" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751317" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5203750250383900746" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1394751326" xil_pn:in_ck="-5353606121455037236" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7084055694907859377" xil_pn:start_ts="1394751317">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="lab4_top_module.lso"/>
+      <outfile xil_pn:name="lab4_top_module.prj"/>
+      <outfile xil_pn:name="lab4_top_module.syr"/>
+      <outfile xil_pn:name="lab4_top_module.xst"/>
+      <outfile xil_pn:name="lab4_top_module_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

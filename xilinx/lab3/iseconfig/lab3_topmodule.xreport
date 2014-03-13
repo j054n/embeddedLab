@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-10T22:06:14</DateModified>
+  <DateModified>2014-03-13T18:02:03</DateModified>
   <ModuleName>lab3_topmodule</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3/iseconfig/lab3_topmodule.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab3</ImplementationReportsDirectory>
+  <SavedFilePath>/home/vmartin/github/embeddedLab/xilinx/lab3/iseconfig/lab3_topmodule.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/vmartin/github/embeddedLab/xilinx/lab3/</ImplementationReportsDirectory>
   <DateInitialized>2014-03-10T22:06:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

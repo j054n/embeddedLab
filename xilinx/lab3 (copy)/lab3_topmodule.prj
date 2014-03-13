@@ -1,0 +1,7 @@
+verilog work "pbdebounce.v"
+verilog work "lab3_displaymodule.v"
+verilog work "lab3_datapath.v"
+verilog work "lab3_controller.v"
+verilog work "ipcore_dir/div_gen_v3_0.v"
+verilog work "clock.v"
+verilog work "lab3_topmodule.v"

@@ -1,0 +1,875 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'lab3_topmodule'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o lab3_topmodule_map.ncd lab3_topmodule.ngd
+lab3_topmodule.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Feb 26 23:16:00 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    5
+Slice Logic Utilization:
+  Number of Slice Registers:                   790 out of  54,576    1%
+    Number used as Flip Flops:                 768
+    Number used as Latches:                     22
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        647 out of  27,288    2%
+    Number used as logic:                      466 out of  27,288    1%
+      Number using O6 output only:             330
+      Number using O5 output only:              77
+      Number using O5 and O6:                   59
+      Number used as ROM:                        0
+    Number used as Memory:                      19 out of   6,408    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            19
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                 15
+    Number used exclusively as route-thrus:    162
+      Number with same-slice register load:    159
+      Number with same-slice carry load:         3
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   221 out of   6,822    3%
+  Number of MUXCYs used:                       448 out of  13,644    3%
+  Number of LUT Flip Flop pairs used:          726
+    Number with an unused Flip Flop:           137 out of     726   18%
+    Number with an unused LUT:                  79 out of     726   10%
+    Number of fully used LUT-FF pairs:         510 out of     726   70%
+    Number of unique control sets:               8
+    Number of slice register sites lost
+      to control set restrictions:              24 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        21 out of     218    9%
+    Number of LOCed IOBs:                       20 out of      21   95%
+    IOB Latches:                                 8
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   8 out of     376    2%
+    Number used as OLOGIC2s:                     8
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.55
+
+Peak Memory Usage:  455 MB
+Total REAL time to MAP completion:  9 mins 12 secs 
+Total CPU time to MAP completion:   8 mins 46 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: SW<7>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: SW<0>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<1>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<2>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<3>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<4>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<5>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<6>   IOSTANDARD = LVCMOS33
+   	 Comp: SW<7>   IOSTANDARD = LVCMOS25
+
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   displaymod/state[1]_GND_31_o_Mux_7_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net controller/dividendLOAD_G
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net displaymod/state_0_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network DIV/quotient<15> has no load.
+INFO:LIT:395 - The above info message is repeated 33 more times for the
+   following (max. 5 shown):
+   DIV/quotient<14>,
+   DIV/quotient<13>,
+   DIV/quotient<12>,
+   DIV/quotient<11>,
+   DIV/quotient<10>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 21 IOs, 20 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 277 block(s) removed
+  24 block(s) optimized away
+ 279 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "DIV/quotient<15>" is sourceless and has been removed.
+The signal "DIV/quotient<14>" is sourceless and has been removed.
+The signal "DIV/quotient<13>" is sourceless and has been removed.
+The signal "DIV/quotient<12>" is sourceless and has been removed.
+The signal "DIV/quotient<11>" is sourceless and has been removed.
+The signal "DIV/quotient<10>" is sourceless and has been removed.
+The signal "DIV/quotient<9>" is sourceless and has been removed.
+The signal "DIV/quotient<8>" is sourceless and has been removed.
+The signal "DIV/fractional<15>" is sourceless and has been removed.
+The signal "DIV/fractional<14>" is sourceless and has been removed.
+The signal "DIV/fractional<13>" is sourceless and has been removed.
+The signal "DIV/fractional<12>" is sourceless and has been removed.
+The signal "DIV/fractional<11>" is sourceless and has been removed.
+The signal "DIV/fractional<10>" is sourceless and has been removed.
+The signal "DIV/fractional<9>" is sourceless and has been removed.
+The signal "DIV/fractional<8>" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000045" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000046" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000047" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000048" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000ca" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000534" (FF) removed.
+  The signal "DIV/blk00000003/sig000006df" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000053c" (FF) removed.
+    The signal "DIV/blk00000003/sig000006e7" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000545" (FF) removed.
+      The signal "DIV/blk00000003/sig000006f0" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000054f" (FF) removed.
+        The signal "DIV/blk00000003/sig000006fa" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000055a" (FF) removed.
+          The signal "DIV/blk00000003/sig00000705" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000566" (FF) removed.
+            The signal "DIV/blk00000003/sig00000711" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000573" (FF) removed.
+              The signal "DIV/blk00000003/sig0000071e" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk00000581" (FF) removed.
+                The signal "DIV/blk00000003/sig0000072c" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk00000794" (BUF) removed.
+                  The signal "DIV/blk00000003/sig000000f9" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000088" (FF) removed.
+                    The signal "DIV/blk00000003/sig000000fa" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000772" (ROM) removed.
+                      The signal "DIV/blk00000003/sig0000079d" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk000005da" (XOR) removed.
+                        The signal "DIV/blk00000003/sig0000079e" is sourceless and has been removed.
+                         Sourceless block "DIV/blk00000003/blk000005f4" (FF) removed.
+                       Sourceless block "DIV/blk00000003/blk000005db" (MUX) removed.
+                        The signal "DIV/blk00000003/sig00000799" is sourceless and has been removed.
+                         Sourceless block "DIV/blk00000003/blk000005d8" (XOR) removed.
+                          The signal "DIV/blk00000003/sig0000079b" is sourceless and has been removed.
+                           Sourceless block "DIV/blk00000003/blk000005f3" (FF) removed.
+                         Sourceless block "DIV/blk00000003/blk000005d9" (MUX) removed.
+                          The signal "DIV/blk00000003/sig00000796" is sourceless and has been removed.
+                           Sourceless block "DIV/blk00000003/blk000005d6" (XOR) removed.
+                            The signal "DIV/blk00000003/sig00000798" is sourceless and has been removed.
+                             Sourceless block "DIV/blk00000003/blk000005f2" (FF) removed.
+                           Sourceless block "DIV/blk00000003/blk000005d7" (MUX) removed.
+                            The signal "DIV/blk00000003/sig00000793" is sourceless and has been removed.
+                             Sourceless block "DIV/blk00000003/blk000005d4" (XOR) removed.
+                              The signal "DIV/blk00000003/sig00000795" is sourceless and has been removed.
+                               Sourceless block "DIV/blk00000003/blk000005f1" (FF) removed.
+                             Sourceless block "DIV/blk00000003/blk000005d5" (MUX) removed.
+                              The signal "DIV/blk00000003/sig00000790" is sourceless and has been removed.
+                               Sourceless block "DIV/blk00000003/blk000005d2" (XOR) removed.
+                                The signal "DIV/blk00000003/sig00000792" is sourceless and has been removed.
+                                 Sourceless block "DIV/blk00000003/blk000005f0" (FF) removed.
+                               Sourceless block "DIV/blk00000003/blk000005d3" (MUX) removed.
+                                The signal "DIV/blk00000003/sig0000078d" is sourceless and has been removed.
+                                 Sourceless block "DIV/blk00000003/blk000005d0" (XOR) removed.
+                                  The signal "DIV/blk00000003/sig0000078f" is sourceless and has been removed.
+                                   Sourceless block "DIV/blk00000003/blk000005ef" (FF) removed.
+                                 Sourceless block "DIV/blk00000003/blk000005d1" (MUX) removed.
+                                  The signal "DIV/blk00000003/sig0000078a" is sourceless and has been removed.
+                                   Sourceless block "DIV/blk00000003/blk000005cf" (XOR) removed.
+                                    The signal "DIV/blk00000003/sig0000078c" is sourceless and has been removed.
+                                     Sourceless block "DIV/blk00000003/blk000005ee" (FF) removed.
+The signal "DIV/blk00000003/sig000000cb" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000066" (FF) removed.
+  The signal "DIV/blk00000003/sig000000cc" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000533" (FF) removed.
+    The signal "DIV/blk00000003/sig000006de" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk0000053b" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e6" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000544" (FF) removed.
+        The signal "DIV/blk00000003/sig000006ef" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000054e" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f9" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000559" (FF) removed.
+            The signal "DIV/blk00000003/sig00000704" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000565" (FF) removed.
+              The signal "DIV/blk00000003/sig00000710" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk00000572" (FF) removed.
+                The signal "DIV/blk00000003/sig0000071d" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk00000580" (FF) removed.
+                  The signal "DIV/blk00000003/sig0000072b" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000795" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000f7" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000087" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000f8" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000773" (ROM) removed.
+                        The signal "DIV/blk00000003/sig0000079a" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000cd" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000067" (FF) removed.
+  The signal "DIV/blk00000003/sig000000ce" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000532" (FF) removed.
+    The signal "DIV/blk00000003/sig000006dd" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk0000053a" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e5" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000543" (FF) removed.
+        The signal "DIV/blk00000003/sig000006ee" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000054d" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f8" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000558" (FF) removed.
+            The signal "DIV/blk00000003/sig00000703" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000564" (FF) removed.
+              The signal "DIV/blk00000003/sig0000070f" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk00000571" (FF) removed.
+                The signal "DIV/blk00000003/sig0000071c" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk0000057f" (FF) removed.
+                  The signal "DIV/blk00000003/sig0000072a" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000796" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000f5" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000086" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000f6" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000774" (ROM) removed.
+                        The signal "DIV/blk00000003/sig00000797" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000cf" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000068" (FF) removed.
+  The signal "DIV/blk00000003/sig000000d0" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000531" (FF) removed.
+    The signal "DIV/blk00000003/sig000006dc" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000539" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e4" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000542" (FF) removed.
+        The signal "DIV/blk00000003/sig000006ed" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000054c" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f7" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000557" (FF) removed.
+            The signal "DIV/blk00000003/sig00000702" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000563" (FF) removed.
+              The signal "DIV/blk00000003/sig0000070e" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk00000570" (FF) removed.
+                The signal "DIV/blk00000003/sig0000071b" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk0000057e" (FF) removed.
+                  The signal "DIV/blk00000003/sig00000729" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000797" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000f3" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000085" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000f4" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000775" (ROM) removed.
+                        The signal "DIV/blk00000003/sig00000794" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000d1" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000069" (FF) removed.
+  The signal "DIV/blk00000003/sig000000d2" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000530" (FF) removed.
+    The signal "DIV/blk00000003/sig000006db" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000538" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e3" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000541" (FF) removed.
+        The signal "DIV/blk00000003/sig000006ec" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000054b" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f6" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000556" (FF) removed.
+            The signal "DIV/blk00000003/sig00000701" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000562" (FF) removed.
+              The signal "DIV/blk00000003/sig0000070d" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk0000056f" (FF) removed.
+                The signal "DIV/blk00000003/sig0000071a" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk0000057d" (FF) removed.
+                  The signal "DIV/blk00000003/sig00000728" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000798" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000f1" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000084" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000f2" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000776" (ROM) removed.
+                        The signal "DIV/blk00000003/sig00000791" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000d3" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000006a" (FF) removed.
+  The signal "DIV/blk00000003/sig000000d4" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000052f" (FF) removed.
+    The signal "DIV/blk00000003/sig000006da" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000537" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e2" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000540" (FF) removed.
+        The signal "DIV/blk00000003/sig000006eb" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000054a" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f5" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000555" (FF) removed.
+            The signal "DIV/blk00000003/sig00000700" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000561" (FF) removed.
+              The signal "DIV/blk00000003/sig0000070c" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk0000056e" (FF) removed.
+                The signal "DIV/blk00000003/sig00000719" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk0000057c" (FF) removed.
+                  The signal "DIV/blk00000003/sig00000727" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk00000799" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000ef" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000083" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000f0" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000777" (ROM) removed.
+                        The signal "DIV/blk00000003/sig0000078e" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000d5" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000006b" (FF) removed.
+  The signal "DIV/blk00000003/sig000000d6" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000052e" (FF) removed.
+    The signal "DIV/blk00000003/sig000006d9" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000536" (FF) removed.
+      The signal "DIV/blk00000003/sig000006e1" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000053f" (FF) removed.
+        The signal "DIV/blk00000003/sig000006ea" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000549" (FF) removed.
+          The signal "DIV/blk00000003/sig000006f4" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000554" (FF) removed.
+            The signal "DIV/blk00000003/sig000006ff" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000560" (FF) removed.
+              The signal "DIV/blk00000003/sig0000070b" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk0000056d" (FF) removed.
+                The signal "DIV/blk00000003/sig00000718" is sourceless and has been removed.
+                 Sourceless block "DIV/blk00000003/blk0000057b" (FF) removed.
+                  The signal "DIV/blk00000003/sig00000726" is sourceless and has been removed.
+                   Sourceless block "DIV/blk00000003/blk0000079a" (BUF) removed.
+                    The signal "DIV/blk00000003/sig000000ed" is sourceless and has been removed.
+                     Sourceless block "DIV/blk00000003/blk00000082" (FF) removed.
+                      The signal "DIV/blk00000003/sig000000ee" is sourceless and has been removed.
+                       Sourceless block "DIV/blk00000003/blk00000778" (ROM) removed.
+                        The signal "DIV/blk00000003/sig0000078b" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000000d8" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000006d" (FF) removed.
+The signal "DIV/blk00000003/sig000000d9" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000006e" (FF) removed.
+The signal "DIV/blk00000003/sig000000da" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000006f" (FF) removed.
+The signal "DIV/blk00000003/sig000000db" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000070" (FF) removed.
+The signal "DIV/blk00000003/sig000000dc" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000071" (FF) removed.
+The signal "DIV/blk00000003/sig000000de" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000073" (FF) removed.
+The signal "DIV/blk00000003/sig000000df" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000074" (FF) removed.
+The signal "DIV/blk00000003/sig000000e0" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000075" (FF) removed.
+The signal "DIV/blk00000003/sig000000e1" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000076" (FF) removed.
+The signal "DIV/blk00000003/sig000000e3" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000078" (FF) removed.
+The signal "DIV/blk00000003/sig000000e4" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000079" (FF) removed.
+The signal "DIV/blk00000003/sig000000e5" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000007a" (FF) removed.
+The signal "DIV/blk00000003/sig000000e7" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000007c" (FF) removed.
+The signal "DIV/blk00000003/sig000000e8" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000007d" (FF) removed.
+The signal "DIV/blk00000003/sig000000ea" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000007f" (FF) removed.
+The signal "DIV/blk00000003/sig000000fb" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000089" (FF) removed.
+  The signal "DIV/blk00000003/sig000000fc" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000771" (ROM) removed.
+    The signal "DIV/blk00000003/sig000007a0" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005dc" (XOR) removed.
+      The signal "DIV/blk00000003/sig000007a1" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk000005f5" (FF) removed.
+     Sourceless block "DIV/blk00000003/blk000005dd" (MUX) removed.
+      The signal "DIV/blk00000003/sig0000079c" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000010e" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005ad" (AND) removed.
+  The signal "DIV/blk00000003/sig00000738" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058b" (MUX) removed.
+    The signal "DIV/blk00000003/sig00000739" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005a8" (MUX) removed.
+      The signal "DIV/blk00000003/sig00000773" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk000005bd" (FF) removed.
+        The signal "DIV/blk00000003/sig00000778" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005a9" (XOR) removed.
+      The signal "DIV/blk00000003/sig00000774" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk000005be" (FF) removed.
+        The signal "DIV/blk00000003/sig00000779" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000751" (ROM) removed.
+  The signal "DIV/blk00000003/sig00000736" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058a" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000737" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005bf" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077a" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000760" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007bb" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk000005fe" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007bc" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk0000061d" (FF) removed.
+The signal "DIV/blk00000003/sig00000110" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005ae" (AND) removed.
+  The signal "DIV/blk00000003/sig0000073d" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058d" (MUX) removed.
+    The signal "DIV/blk00000003/sig00000735" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000750" (ROM) removed.
+  The signal "DIV/blk00000003/sig0000073b" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058c" (XOR) removed.
+    The signal "DIV/blk00000003/sig0000073c" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c0" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077b" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000075f" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007be" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk000005ff" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007bf" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk0000061e" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk00000600" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007ba" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000112" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005af" (AND) removed.
+  The signal "DIV/blk00000003/sig00000741" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058f" (MUX) removed.
+    The signal "DIV/blk00000003/sig0000073a" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000074f" (ROM) removed.
+  The signal "DIV/blk00000003/sig0000073f" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk0000058e" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000740" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c1" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077c" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000075e" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007c1" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000601" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007c2" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk0000061f" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk00000602" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007bd" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000114" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005b0" (AND) removed.
+  The signal "DIV/blk00000003/sig00000745" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000591" (MUX) removed.
+    The signal "DIV/blk00000003/sig0000073e" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000074e" (ROM) removed.
+  The signal "DIV/blk00000003/sig00000743" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000590" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000744" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c2" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077d" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000075d" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007c4" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000603" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007c5" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000620" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk00000604" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007c0" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000116" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005b1" (AND) removed.
+  The signal "DIV/blk00000003/sig00000749" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000593" (MUX) removed.
+    The signal "DIV/blk00000003/sig00000742" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000074d" (ROM) removed.
+  The signal "DIV/blk00000003/sig00000747" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000592" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000748" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c3" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077e" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000075c" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007c7" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000605" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007c8" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000621" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk00000606" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007c3" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000118" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005b2" (AND) removed.
+  The signal "DIV/blk00000003/sig0000074d" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000595" (MUX) removed.
+    The signal "DIV/blk00000003/sig00000746" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000074c" (ROM) removed.
+  The signal "DIV/blk00000003/sig0000074b" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000594" (XOR) removed.
+    The signal "DIV/blk00000003/sig0000074c" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c4" (FF) removed.
+      The signal "DIV/blk00000003/sig0000077f" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000075b" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007ca" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000607" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007cb" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000622" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk00000608" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007c6" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000011a" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005b3" (AND) removed.
+  The signal "DIV/blk00000003/sig00000751" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000597" (MUX) removed.
+    The signal "DIV/blk00000003/sig0000074a" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000075a" (ROM) removed.
+  The signal "DIV/blk00000003/sig0000074f" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000596" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000750" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c5" (FF) removed.
+      The signal "DIV/blk00000003/sig00000780" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000769" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007cd" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000609" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007ce" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000623" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk0000060a" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007c9" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000011c" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000005b4" (AND) removed.
+  The signal "DIV/blk00000003/sig00000755" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000599" (MUX) removed.
+    The signal "DIV/blk00000003/sig0000074e" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000759" (ROM) removed.
+  The signal "DIV/blk00000003/sig00000753" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000598" (XOR) removed.
+    The signal "DIV/blk00000003/sig00000754" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk000005c6" (FF) removed.
+      The signal "DIV/blk00000003/sig00000781" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk00000768" (ROM) removed.
+        The signal "DIV/blk00000003/sig000007d0" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk0000060b" (XOR) removed.
+          The signal "DIV/blk00000003/sig000007d1" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000624" (FF) removed.
+         Sourceless block "DIV/blk00000003/blk0000060c" (MUX) removed.
+          The signal "DIV/blk00000003/sig000007cc" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000024c" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000001b4" (FF) removed.
+  The signal "DIV/blk00000003/sig00000250" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000291" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000001d7" (FF) removed.
+  The signal "DIV/blk00000003/sig00000296" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000002d7" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000001fa" (FF) removed.
+  The signal "DIV/blk00000003/sig000002dc" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000031d" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000021d" (FF) removed.
+  The signal "DIV/blk00000003/sig00000322" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000363" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000240" (FF) removed.
+  The signal "DIV/blk00000003/sig00000368" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000003a9" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000263" (FF) removed.
+  The signal "DIV/blk00000003/sig000003ae" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000003ef" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000286" (FF) removed.
+  The signal "DIV/blk00000003/sig000003f4" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000435" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000002a9" (FF) removed.
+  The signal "DIV/blk00000003/sig0000043a" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000047b" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000002cc" (FF) removed.
+  The signal "DIV/blk00000003/sig00000480" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000004c1" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000002ef" (FF) removed.
+  The signal "DIV/blk00000003/sig000004c5" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000506" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000312" (FF) removed.
+  The signal "DIV/blk00000003/sig0000050a" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000054b" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000335" (FF) removed.
+  The signal "DIV/blk00000003/sig0000054f" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000590" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk00000358" (FF) removed.
+  The signal "DIV/blk00000003/sig00000594" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000005d5" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000037b" (FF) removed.
+  The signal "DIV/blk00000003/sig000005d9" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000061a" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000039e" (FF) removed.
+  The signal "DIV/blk00000003/sig0000061e" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000624" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c3" (FF) removed.
+  The signal "DIV/blk00000003/sig00000665" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000627" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c4" (FF) removed.
+  The signal "DIV/blk00000003/sig00000666" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000062a" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c5" (FF) removed.
+  The signal "DIV/blk00000003/sig00000667" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000062d" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c6" (FF) removed.
+  The signal "DIV/blk00000003/sig00000668" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000630" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c7" (FF) removed.
+  The signal "DIV/blk00000003/sig00000669" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000633" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c8" (FF) removed.
+  The signal "DIV/blk00000003/sig0000066a" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000636" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c9" (FF) removed.
+  The signal "DIV/blk00000003/sig0000066b" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000639" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003ca" (FF) removed.
+  The signal "DIV/blk00000003/sig0000066c" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000065f" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk000003c1" (FF) removed.
+  The signal "DIV/blk00000003/sig00000663" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000006e0" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000053d" (FF) removed.
+  The signal "DIV/blk00000003/sig000006e8" is sourceless and has been removed.
+   Sourceless block "DIV/blk00000003/blk00000546" (FF) removed.
+    The signal "DIV/blk00000003/sig000006f1" is sourceless and has been removed.
+     Sourceless block "DIV/blk00000003/blk00000550" (FF) removed.
+      The signal "DIV/blk00000003/sig000006fb" is sourceless and has been removed.
+       Sourceless block "DIV/blk00000003/blk0000055b" (FF) removed.
+        The signal "DIV/blk00000003/sig00000706" is sourceless and has been removed.
+         Sourceless block "DIV/blk00000003/blk00000567" (FF) removed.
+          The signal "DIV/blk00000003/sig00000712" is sourceless and has been removed.
+           Sourceless block "DIV/blk00000003/blk00000574" (FF) removed.
+            The signal "DIV/blk00000003/sig0000071f" is sourceless and has been removed.
+             Sourceless block "DIV/blk00000003/blk00000582" (FF) removed.
+              The signal "DIV/blk00000003/sig0000072d" is sourceless and has been removed.
+               Sourceless block "DIV/blk00000003/blk00000793" (BUF) removed.
+The signal "DIV/blk00000003/sig00000752" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig00000759" is sourceless and has been removed.
+ Sourceless block "DIV/blk00000003/blk0000059b" (MUX) removed.
+The signal "DIV/blk00000003/sig00000772" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig0000079f" is sourceless and has been removed.
+The signal "DIV/blk00000003/sig000007cf" is sourceless and has been removed.
+Unused block "DIV/blk00000001" (ONE) removed.
+Unused block "DIV/blk00000002" (ZERO) removed.
+Unused block "DIV/blk00000003/blk00000065" (FF) removed.
+Unused block "DIV/blk00000003/blk0000006c" (FF) removed.
+Unused block "DIV/blk00000003/blk00000072" (FF) removed.
+Unused block "DIV/blk00000003/blk00000077" (FF) removed.
+Unused block "DIV/blk00000003/blk0000007b" (FF) removed.
+Unused block "DIV/blk00000003/blk0000007e" (FF) removed.
+Unused block "DIV/blk00000003/blk00000080" (FF) removed.
+Unused block "DIV/blk00000003/blk00000092" (FF) removed.
+Unused block "DIV/blk00000003/blk00000093" (FF) removed.
+Unused block "DIV/blk00000003/blk00000094" (FF) removed.
+Unused block "DIV/blk00000003/blk00000095" (FF) removed.
+Unused block "DIV/blk00000003/blk00000096" (FF) removed.
+Unused block "DIV/blk00000003/blk00000097" (FF) removed.
+Unused block "DIV/blk00000003/blk00000098" (FF) removed.
+Unused block "DIV/blk00000003/blk00000099" (FF) removed.
+Unused block "DIV/blk00000003/blk000001b1" (MUX) removed.
+Unused block "DIV/blk00000003/blk000001d4" (MUX) removed.
+Unused block "DIV/blk00000003/blk000001f7" (MUX) removed.
+Unused block "DIV/blk00000003/blk0000021a" (MUX) removed.
+Unused block "DIV/blk00000003/blk0000023d" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000260" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000283" (MUX) removed.
+Unused block "DIV/blk00000003/blk000002a6" (MUX) removed.
+Unused block "DIV/blk00000003/blk000002c9" (MUX) removed.
+Unused block "DIV/blk00000003/blk000002ec" (MUX) removed.
+Unused block "DIV/blk00000003/blk0000030f" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000332" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000355" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000378" (MUX) removed.
+Unused block "DIV/blk00000003/blk0000039b" (MUX) removed.
+Unused block "DIV/blk00000003/blk000003a0" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a1" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a2" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a3" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a4" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a5" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a6" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003a7" (XOR) removed.
+Unused block "DIV/blk00000003/blk000003be" (MUX) removed.
+Unused block "DIV/blk00000003/blk00000535" (FF) removed.
+Unused block "DIV/blk00000003/blk000005ac" (AND) removed.
+Unused block "DIV/blk00000003/blk000005b5" (AND) removed.
+Unused block "DIV/blk00000003/blk000005df" (MUX) removed.
+Unused block "DIV/blk00000003/blk0000060e" (MUX) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		DIV/blk00000003/blk00000004
+VCC 		DIV/blk00000003/blk00000005
+FDE 		DIV/blk00000003/blk00000006
+   optimized to 0
+FDE 		DIV/blk00000003/blk00000007
+   optimized to 0
+FDE 		DIV/blk00000003/blk00000008
+   optimized to 0
+FDE 		DIV/blk00000003/blk00000009
+   optimized to 0
+FDE 		DIV/blk00000003/blk00000048
+   optimized to 0
+FDE 		DIV/blk00000003/blk00000049
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000062e
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000062f
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000630
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000631
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000632
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063a
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063b
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063c
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063d
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063e
+   optimized to 0
+LUT2 		DIV/blk00000003/blk0000063f
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000640
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000648
+   optimized to 0
+LUT2 		DIV/blk00000003/blk00000649
+   optimized to 0
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BTND                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTNL                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTNR                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTNU                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| CLK                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OLATCH       |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<7>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

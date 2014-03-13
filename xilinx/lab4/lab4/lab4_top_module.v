@@ -38,6 +38,8 @@ module lab4_top_module(
 	wire [7:0] w11;
 	wire w12;
 	
+	reg dataReady;
+	
 	//set initial values for transmit and receive initalization.
 	parameter rdrstval = 0;
 	parameter wrnval = 0;
@@ -51,7 +53,7 @@ module lab4_top_module(
 							.loadSecondSign(w4),
 							.addNumbers(w5),
 							.displayAnswer(w6),
-							.dataReady(0)
+							.dataReady(dataReady)
 							);
 							
 	lab4DataPath M2 (.CLK(CLK),
@@ -68,21 +70,26 @@ module lab4_top_module(
 							);
 
 	//Instantiate Clocks
-	clock C0 (CLK, 326, clk16x);       // 9600 b/sec
-	clock C1 (CLK, 5000, genclk);      // 10 kHz
+	clock C0 (.CLK(CLK), .clkscale(326), .sclclk(clk16x));       // 9600 b/sec
+	clock C1 (.CLK(CLK), .clkscale(5000), .sclclk(genclk));      // 10 kHz
 							
 	//Instantiate modules to handle transmit/receive.
-	rcvr M3 (rbr, rdrdy, rxd, clk16x, rdrstval);
 	
-	txmit M4 (.tdin(w8)
+	txmit M4(	.tdin(w11),
 					.tbuf(TXD),
 					.clk16x(clk16x),
 					.wrn(wrnval),
-					.txd(1),
+					.txd(1)
 					);
-				
-							
-	rcvr M3 (
-    
+			
+	
+
+	rcvr M5( .rxd(RXD),
+				.clk16x(clk16x),
+				.rdrst(1),
+				.rbr(w11),
+				.rdrdy(w9),
+				);
+
 
     endmodule

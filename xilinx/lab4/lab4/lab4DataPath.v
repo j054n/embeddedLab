@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module lab4DataPath(
     input [7:0] dataIn,
-    output [7:0] dataOut,
+    output reg [7:0] dataOut,
     input loadFirstSign,
     input loadFirstDigit,
     input loadSecondDigit,
@@ -29,7 +29,31 @@ module lab4DataPath(
     input displayAnswer,
     input CLK
     );
+	 
+	 reg [3:0] temp4;
+	 reg [15:0] numberA;
+	 reg [15:0] numberB;
+	 reg [15:0] answer;
+	 reg [7:0] hex1, hex2, hex3, hex4;
+	 
+	 asciiTo4BitBinary  U1(.input8BitBinary(dataIn),
+											.output4BitBinary(temp4)
+											);
+											
+	 binary16BitTo4DigitHex  U2(.inputBinary16Bit(answer),
+													.hexDigit0(hex1),
+													.hexDigit1(hex2),
+													.hexDigit3(hex3),
+													.hexDigit3(hex4)
+													);
+	 
+	 
+	 addTwoNumbers U3(.NumberA(numberA),
+									.NumberB(numberB),
+									.Result(answer)
+									);
+	 
 
-
+	//dataOut = hex1;
 
 endmodule
