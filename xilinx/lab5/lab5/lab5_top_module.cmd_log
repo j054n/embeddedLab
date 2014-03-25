@@ -35,3 +35,45 @@ xst -intstyle ise -ifn "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_t
 xst -intstyle ise -ifn "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
 xst -intstyle ise -ifn "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+bitgen -intstyle ise -f lab5_top_module.ut lab5_top_module.ncd 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+bitgen -intstyle ise -f lab5_top_module.ut lab5_top_module.ncd 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+bitgen -intstyle ise -f lab5_top_module.ut lab5_top_module.ncd 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+bitgen -intstyle ise -f lab5_top_module.ut lab5_top_module.ncd 
+xst -intstyle ise -ifn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.xst" -ofn "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd lab5_top_module.pcf 
+par -w -intstyle ise -ol high -mt off lab5_top_module_map.ncd lab5_top_module.ncd lab5_top_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf 
+bitgen -intstyle ise -f lab5_top_module.ut lab5_top_module.ncd 

@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.29 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.30 secs
  
---> 
-Reading design: lab5_top_module.prj
+--> Reading design: lab5_top_module.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -111,13 +108,12 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/ipcore_dir/singenerator.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\ipcore_dir\singenerator.v" into library work
 Parsing module <singenerator>.
-Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/Chapter 3/peripherals/clock.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 3\peripherals\clock.v" into library work
 Parsing module <clock>.
-Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" into library work
+Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" into library work
 Parsing module <lab5_top_module>.
-WARNING:HDLCompiler:1335 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 23: Port SW must not be declared to be an array
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -128,42 +124,45 @@ Elaborating module <lab5_top_module>.
 Elaborating module <clock>.
 
 Elaborating module <singenerator>.
-WARNING:HDLCompiler:1127 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 67: Assignment to phase_out ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 78: Result of 4-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 89: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 95: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 101: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 107: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 113: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 119: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 125: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 131: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 137: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 143: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 149: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 69: Assignment to phase_out ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 95: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 101: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 107: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 113: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 119: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 125: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 131: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 137: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 143: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 149: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 155: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 161: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 167: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 173: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 180: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 186: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <lab5_top_module>.
-    Related source file is "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v".
-        clock25MHZ = 20
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v".
+        clock50MHZ = 1
 WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" line 64: Output port <phase_out> of the instance <M2> is unconnected or connected to loadless signal.
-    Found 1-bit register for signal <LED>.
-    Found 4-bit register for signal <stateConstant>.
+INFO:Xst:3210 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" line 66: Output port <phase_out> of the instance <M2> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <stateConstant>.
     Found 1-bit register for signal <dacSYNC>.
     Found 1-bit register for signal <dacDINA>.
-    Found 4-bit adder for signal <stateConstant[3]_GND_1_o_add_11_OUT> created at line 149.
+    Found 5-bit adder for signal <stateConstant[4]_GND_1_o_add_17_OUT> created at line 186.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   7 D-type flip-flop(s).
-	inferred  10 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <lab5_top_module> synthesized.
 
 Synthesizing Unit <clock>.
-    Related source file is "/home/vmartin/github/embeddedLab/xilinx/Chapter 3/peripherals/clock.v".
+    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 3\peripherals\clock.v".
     Found 1-bit register for signal <sclclk>.
     Found 32-bit register for signal <clkq>.
     Found 32-bit adder for signal <clkq[31]_GND_2_o_add_1_OUT> created at line 12.
@@ -180,16 +179,16 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
- 4-bit adder                                           : 1
-# Registers                                            : 6
- 1-bit register                                        : 4
+ 5-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 3
  32-bit register                                       : 1
- 4-bit register                                        : 1
+ 5-bit register                                        : 1
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 10
- 1-bit 2-to-1 multiplexer                              : 8
- 4-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 12
+ 5-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -199,7 +198,6 @@ Macro Statistics
 
 Reading core <ipcore_dir/singenerator.ngc>.
 Loading core <singenerator> for timing and area information for instance <M2>.
-WARNING:Xst:1710 - FF/Latch <dacSYNC> (without init value) has a constant value of 0 in block <lab5_top_module>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <clock>.
 The following registers are absorbed into counter <clkq>: 1 register on signal <clkq>.
@@ -211,23 +209,22 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
- 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
 # Counters                                             : 1
  32-bit up counter                                     : 1
 # Registers                                            : 8
  Flip-Flops                                            : 8
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 10
- 1-bit 2-to-1 multiplexer                              : 8
- 4-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 12
+ 5-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <dacSYNC> (without init value) has a constant value of 0 in block <lab5_top_module>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <lab5_top_module> ...
 
@@ -241,8 +238,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 39
- Flip-Flops                                            : 39
+# Registers                                            : 40
+ Flip-Flops                                            : 40
 
 =========================================================================
 
@@ -265,27 +262,27 @@ Top Level Output File Name         : lab5_top_module.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 336
+# BELS                             : 343
 #      GND                         : 3
 #      INV                         : 3
 #      LUT1                        : 62
-#      LUT2                        : 60
-#      LUT3                        : 2
-#      LUT4                        : 4
-#      LUT5                        : 12
-#      LUT6                        : 2
-#      MUXCY                       : 96
+#      LUT2                        : 62
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      LUT5                        : 16
+#      LUT6                        : 3
+#      MUXCY                       : 97
 #      VCC                         : 2
-#      XORCY                       : 90
-# FlipFlops/Latches                : 124
-#      FD                          : 123
+#      XORCY                       : 92
+# FlipFlops/Latches                : 125
+#      FD                          : 124
 #      FDE                         : 1
 # RAMS                             : 1
 #      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 4
-#      OBUF                        : 4
+# IO Buffers                       : 11
+#      OBUF                        : 11
 
 Device utilization summary:
 ---------------------------
@@ -294,20 +291,20 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             124  out of  54576     0%  
- Number of Slice LUTs:                  145  out of  27288     0%  
-    Number used as Logic:               145  out of  27288     0%  
+ Number of Slice Registers:             125  out of  54576     0%  
+ Number of Slice LUTs:                  149  out of  27288     0%  
+    Number used as Logic:               149  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    231
-   Number with an unused Flip Flop:     107  out of    231    46%  
-   Number with an unused LUT:            86  out of    231    37%  
-   Number of fully used LUT-FF pairs:    38  out of    231    16%  
+ Number of LUT Flip Flop pairs used:    234
+   Number with an unused Flip Flop:     109  out of    234    46%  
+   Number with an unused LUT:            85  out of    234    36%  
+   Number of fully used LUT-FF pairs:    40  out of    234    17%  
    Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                           7
- Number of bonded IOBs:                   5  out of    218     2%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  12  out of    218     5%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of    116     0%  
@@ -335,7 +332,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-M1/sclclk                          | NONE(stateConstant_0)  | 6     |
+M1/sclclk                          | NONE(stateConstant_0)  | 7     |
 CLK                                | BUFGP                  | 119   |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -348,9 +345,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.367ns (Maximum Frequency: 186.327MHz)
+   Minimum period: 5.348ns (Maximum Frequency: 186.989MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 3.820ns
+   Maximum output required time after clock: 3.874ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -359,34 +356,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'M1/sclclk'
-  Clock period: 3.944ns (frequency: 253.534MHz)
-  Total number of paths / destination ports: 27 / 6
+  Clock period: 3.740ns (frequency: 267.348MHz)
+  Total number of paths / destination ports: 41 / 7
 -------------------------------------------------------------------------
-Delay:               3.944ns (Levels of Logic = 3)
-  Source:            stateConstant_0 (FF)
+Delay:               3.740ns (Levels of Logic = 3)
+  Source:            stateConstant_2 (FF)
   Destination:       dacDINA (FF)
   Source Clock:      M1/sclclk rising
   Destination Clock: M1/sclclk rising
 
-  Data Path: stateConstant_0 to dacDINA
+  Data Path: stateConstant_2 to dacDINA
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.447   1.031  stateConstant_0 (stateConstant_0)
-     LUT3:I0->O            1   0.205   0.808  stateConstant[3]_dacDINA_Mux_14_o2 (stateConstant[3]_dacDINA_Mux_14_o2)
-     LUT5:I2->O            1   0.205   0.944  stateConstant[3]_dacDINA_Mux_14_o3 (stateConstant[3]_dacDINA_Mux_14_o)
-     LUT6:I0->O            1   0.203   0.000  dacDINA_rstpot (dacDINA_rstpot)
+     FD:C->Q               9   0.447   1.174  stateConstant_2 (stateConstant_2)
+     LUT5:I0->O            1   0.203   0.580  stateConstant[4]_dacDINA_Mux_20_o1 (stateConstant[4]_dacDINA_Mux_20_o1)
+     LUT6:I5->O            1   0.205   0.827  stateConstant[4]_dacDINA_Mux_20_o2 (stateConstant[4]_dacDINA_Mux_20_o2)
+     LUT6:I2->O            1   0.203   0.000  dacDINA_rstpot (dacDINA_rstpot)
      FD:D                      0.102          dacDINA
     ----------------------------------------
-    Total                      3.944ns (1.162ns logic, 2.782ns route)
-                                       (29.5% logic, 70.5% route)
+    Total                      3.740ns (1.160ns logic, 2.580ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 5.367ns (frequency: 186.327MHz)
-  Total number of paths / destination ports: 35988 / 131
+  Clock period: 5.348ns (frequency: 186.989MHz)
+  Total number of paths / destination ports: 36252 / 131
 -------------------------------------------------------------------------
-Delay:               5.367ns (Levels of Logic = 35)
+Delay:               5.348ns (Levels of Logic = 34)
   Source:            M1/clkq_0 (FF)
   Destination:       M1/sclclk (FF)
   Source Clock:      CLK rising
@@ -427,21 +424,39 @@ Delay:               5.367ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.019   0.000  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<26> (M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<26>)
      MUXCY:CI->O           1   0.019   0.000  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<27> (M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<27>)
      MUXCY:CI->O           1   0.019   0.000  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<28> (M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<28>)
-     MUXCY:CI->O           1   0.019   0.000  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<29> (M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<29>)
-     MUXCY:CI->O           0   0.019   0.000  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<30> (M1/Madd_clkq[31]_GND_2_o_add_1_OUT_cy<30>)
-     XORCY:CI->O           2   0.180   0.961  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_xor<31> (M1/clkq[31]_GND_2_o_add_1_OUT<31>)
+     XORCY:CI->O           2   0.180   0.961  M1/Madd_clkq[31]_GND_2_o_add_1_OUT_xor<29> (M1/clkq[31]_GND_2_o_add_1_OUT<29>)
      LUT5:I0->O            0   0.203   0.000  M1/Mcompar_n0001_lutdi5 (M1/Mcompar_n0001_lutdi5)
-     MUXCY:DI->O          33   0.384   1.305  M1/Mcompar_n0001_cy<5> (M1/Mcompar_n0001_cy<5>)
+     MUXCY:DI->O           1   0.145   0.000  M1/Mcompar_n0001_cy<5> (M1/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O          33   0.258   1.305  M1/Mcompar_n0001_cy<6> (M1/Mcompar_n0001_cy<6>)
      FDE:CE                    0.322          M1/sclclk
     ----------------------------------------
-    Total                      5.367ns (2.484ns logic, 2.883ns route)
-                                       (46.3% logic, 53.7% route)
+    Total                      5.348ns (2.465ns logic, 2.883ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/sclclk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              3.874ns (Levels of Logic = 1)
+  Source:            stateConstant_1 (FF)
+  Destination:       LED<1> (PAD)
+  Source Clock:      M1/sclclk rising
+
+  Data Path: stateConstant_1 to LED<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  stateConstant_1 (stateConstant_1)
+     OBUF:I->O                 2.571          LED_1_OBUF (LED<1>)
+    ----------------------------------------
+    Total                      3.874ns (3.018ns logic, 0.856ns route)
+                                       (77.9% logic, 22.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              3.820ns (Levels of Logic = 1)
+Offset:              3.847ns (Levels of Logic = 1)
   Source:            M1/sclclk (FF)
   Destination:       dacCLK (PAD)
   Source Clock:      CLK rising
@@ -450,30 +465,11 @@ Offset:              3.820ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              8   0.447   0.802  M1/sclclk (M1/sclclk)
+     FDE:C->Q              9   0.447   0.829  M1/sclclk (M1/sclclk)
      OBUF:I->O                 2.571          dacCLK_OBUF (dacCLK)
     ----------------------------------------
-    Total                      3.820ns (3.018ns logic, 0.802ns route)
-                                       (79.0% logic, 21.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/sclclk'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            dacDINA (FF)
-  Destination:       dacDINA (PAD)
-  Source Clock:      M1/sclclk rising
-
-  Data Path: dacDINA to dacDINA
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  dacDINA (dacDINA_OBUF)
-     OBUF:I->O                 2.571          dacDINA_OBUF (dacDINA)
-    ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      3.847ns (3.018ns logic, 0.829ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 
@@ -485,7 +481,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.367|         |         |         |
+CLK            |    5.348|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock M1/sclclk
@@ -493,22 +489,21 @@ Clock to Setup on destination clock M1/sclclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.564|         |         |         |
-M1/sclclk      |    3.944|         |         |         |
+CLK            |    4.430|         |         |         |
+M1/sclclk      |    3.740|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 8.54 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.27 secs
  
 --> 
 
-
-Total memory usage is 391632 kilobytes
+Total memory usage is 231456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   17 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

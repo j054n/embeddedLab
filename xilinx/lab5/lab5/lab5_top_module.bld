@@ -1,12 +1,13 @@
-Release 14.7 ngdbuild P.20131013 (lin64)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p xc6slx45-csg324-3
-lab5_top_module.ngc lab5_top_module.ngd
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc atlys.ucf -p
+xc6slx45-csg324-3 lab5_top_module.ngc lab5_top_module.ngd
 
 Reading NGO file
-"/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.ngc" ...
+"C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.
+ngc" ...
 Loading design module "ipcore_dir/singenerator.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -14,118 +15,6 @@ Done.
 Annotating constraints to design from ucf file "atlys.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<0>" 	LOC = "U18"	|>
-   [atlys.ucf(104)]: NET "LED<0>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<0>" 	LOC = "U18"	|> [atlys.ucf(104)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(104)]: NET "LED<0>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<1>" 	LOC = "M14"	|>
-   [atlys.ucf(105)]: NET "LED<1>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<1>" 	LOC = "M14"	|> [atlys.ucf(105)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(105)]: NET "LED<1>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<2>" 	LOC = "N14" |>
-   [atlys.ucf(106)]: NET "LED<2>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<2>" 	LOC = "N14" |> [atlys.ucf(106)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(106)]: NET "LED<2>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<3>" 	LOC = "L14"	|>
-   [atlys.ucf(107)]: NET "LED<3>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<3>" 	LOC = "L14"	|> [atlys.ucf(107)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(107)]: NET "LED<3>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<4>" 	LOC = "M13"	|>
-   [atlys.ucf(108)]: NET "LED<4>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<4>" 	LOC = "M13"	|> [atlys.ucf(108)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(108)]: NET "LED<4>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<5>" 	LOC = "D4"	|>
-   [atlys.ucf(109)]: NET "LED<5>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<5>" 	LOC = "D4"	|> [atlys.ucf(109)]' could not be found and so the
-   Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(109)]: NET "LED<5>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<6>" 	LOC = "P16"	|>
-   [atlys.ucf(110)]: NET "LED<6>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<6>" 	LOC = "P16"	|> [atlys.ucf(110)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(110)]: NET "LED<6>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "LED<7>" 	LOC = "N12"	|>
-   [atlys.ucf(111)]: NET "LED<7>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "LED<7>" 	LOC = "N12"	|> [atlys.ucf(111)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
-   [atlys.ucf(111)]: NET "LED<7>" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
 Done...
 
 Checking expanded design ...
@@ -138,14 +27,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:    16
-  Number of warnings:   8
+  Number of errors:     0
+  Number of warnings:   0
 
-Total memory usage is 405632 kilobytes
+Total memory usage is 172644 kilobytes
 
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   4 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "lab5_top_module.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   12 sec
 
 Writing NGDBUILD log file "lab5_top_module.bld"...

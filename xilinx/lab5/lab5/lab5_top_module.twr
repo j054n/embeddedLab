@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
-3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab5_top_module.twx lab5_top_module.ncd -o
 lab5_top_module.twr lab5_top_module.pcf -ucf atlys.ucf
 
 Design file:              lab5_top_module.ncd
@@ -37,7 +37,7 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-dacCLK      |        10.596(R)|      SLOW  |         6.157(R)|      FAST  |CLK_BUFGP         |   0.000|
+dacCLK      |        10.675(R)|      SLOW  |         6.288(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -45,18 +45,18 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    6.933|         |         |         |
+CLK            |    6.599|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Mar 23 16:59:17 2014 
+Analysis completed Mon Mar 24 23:38:27 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 437 MB
+Peak Memory Usage: 287 MB
 
 
 

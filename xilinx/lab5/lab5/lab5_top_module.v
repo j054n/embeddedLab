@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 module lab5_top_module(
     input CLK,
-    input SW[1:0],
+    input [1:0] SW,
 	 output dacCLK,
 	 //output reg dacDINB,
 	 output reg dacDINA,
 	 output reg dacSYNC,
-	 output reg LED
+	 output [7:0] LED
     );
 
 //Set DAC friendly names.
@@ -40,16 +40,18 @@ module lab5_top_module(
 //assign JA10 = dacCLK;
  
 //Set a clock to power the DAC.
-parameter clock25MHZ = 20;
+//parameter clock25MHZ = 50000000; //Test at 1mhz just to see if this thing is actually writing data out.
+//parameter clock25MHZ = 2;
+parameter clock50MHZ = 1;
 
 //Set parameters for the state machine which has 13 states.
 //Set it to a default of 0.
-reg [3:0] stateConstant = 0;
+reg [4:0] stateConstant = 0;
 
-//Various registers.
+//Various registers and wires.
 wire [5:0] sine;
 wire [27:0] phase_out;
-reg [11:0] outputVal;
+reg [15:0] outputVal;
 
 //reg [1:0] dacCLK;
 
@@ -57,7 +59,7 @@ reg [11:0] outputVal;
 //Instantiate modules.
 
 //Clock to power the DAC.
-clock M1(.CLK(CLK), .clkscale(clock25MHZ), .sclclk(dacCLK));
+clock M1(.CLK(CLK), .clkscale(clock50MHZ), .sclclk(dacCLK));
 
 
 //Singenerator
@@ -67,91 +69,125 @@ singenerator M2 (
   .phase_out(phase_out) // output [27 : 0] phase_out
 );
 
+assign LED = stateConstant;
+
+
 
 //Statemachine to get us a pure 1000Hz tone.
 always @(posedge dacCLK) begin	
 	
 	//Set data to be sent to the output.
-	outputVal[11:6] = 4'b0000;
-	outputVal[5:0] = sine;
+	outputVal[15:12] = 4'b0000;  //Set two who gives a crap values and then 2 0s for default operation.
+	outputVal[11:6] =  6'b000000; //Set most sig digits to 0.
+	outputVal[5:0] = sine;		  //Set the least sig digits to whatever the sine value is.
 	
-	LED = stateConstant;
 	
 	case(stateConstant)
 		0: begin
 				//Begin state... What to do here?
+				dacSYNC = 1;
 				stateConstant = 1;
 			end
 			
 		1: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[11];
+				dacDINA = outputVal[15];
 				stateConstant = stateConstant + 1;
 			end
 			
 		2: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[10];
+				dacDINA = outputVal[14];
 				stateConstant = stateConstant + 1;
 			end
 		
 		3: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[9];
+				dacDINA = outputVal[13];
 				stateConstant = stateConstant + 1;
 			end
 		
 		4: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[8];
+				dacDINA = outputVal[12];
 				stateConstant = stateConstant + 1;
 			end
 		
 		5: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[7];
+				dacDINA = outputVal[11];
 				stateConstant = stateConstant + 1;
 			end
 		
 		6: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[6];
+				dacDINA = outputVal[10];
 				stateConstant = stateConstant + 1;
 			end
 		
 		7: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[5];
+				dacDINA = outputVal[9];
 				stateConstant = stateConstant + 1;
 			end
 		
 		8: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[4];
+				dacDINA = outputVal[8];
 				stateConstant = stateConstant + 1;
 			end
 		
 		9: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[3];
+				dacDINA = outputVal[7];
 				stateConstant = stateConstant + 1;
 			end
 		
 		10: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[2];
+				dacDINA = outputVal[6];
 				stateConstant = stateConstant + 1;
 			end
 		
 		11: begin
 				dacSYNC = 0;
-				dacDINA = outputVal[1];
+				dacDINA = outputVal[5];
 				stateConstant = stateConstant + 1;
 			end
 		
 		12: begin
 				dacSYNC = 0;
+				dacDINA = outputVal[4];
+				stateConstant = stateConstant + 1; 
+			end
+
+		13: begin
+				dacSYNC = 0;
+				dacDINA = outputVal[3];
+				stateConstant = stateConstant + 1; 
+			end			
+		
+		14: begin
+				dacSYNC = 0;
+				dacDINA = outputVal[2];
+				stateConstant = stateConstant + 1; 
+			end
+			
+			
+		15: begin
+				dacSYNC = 0;
+				dacDINA = outputVal[1];
+				stateConstant = stateConstant + 1; 
+			end
+			
+		16: begin
+				dacSYNC = 0;
 				dacDINA = outputVal[0];
+				stateConstant = stateConstant + 1; 
+			end
+			
+		17: begin
+				dacSYNC = 1;
 				stateConstant = 0; //start over.
 			end
 		

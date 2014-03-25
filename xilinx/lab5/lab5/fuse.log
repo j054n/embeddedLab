@@ -1,0 +1,13 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest_isim_beh.exe -prj C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest_beh.prj work.mainTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/singenerator.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/../../Chapter 3/peripherals/clock.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" into library work
+Analyzing Verilog file "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest.v" into library work
+ERROR:HDLCompiler:1660 - "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest.v" Line 51: Procedural assignment to a non-register dacCLK is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest.v" Line 51: Procedural assignment to a non-register dacCLK is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:598 - "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest.v" Line 25: Module <mainTest> ignored due to previous errors.
+Verilog file C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest.v ignored due to errors
