@@ -1,0 +1,375 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'lab5_top_module'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o lab5_top_module_map.ncd lab5_top_module.ngd
+lab5_top_module.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun Mar 23 16:58:33 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                    67 out of  54,576    1%
+    Number used as Flip Flops:                  67
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        137 out of  27,288    1%
+    Number used as logic:                      114 out of  27,288    1%
+      Number using O6 output only:              43
+      Number using O5 output only:              60
+      Number using O5 and O6:                   11
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   6,408    0%
+    Number used exclusively as route-thrus:     23
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        23
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    36 out of   6,822    1%
+  Number of MUXCYs used:                       100 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          137
+    Number with an unused Flip Flop:            72 out of     137   52%
+    Number with an unused LUT:                   0 out of     137    0%
+    Number of fully used LUT-FF pairs:          65 out of     137   47%
+    Number of unique control sets:               3
+    Number of slice register sites lost
+      to control set restrictions:              13 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         6 out of     218    2%
+    Number of LOCed IOBs:                        6 out of       6  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          1 out of     232    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.73
+
+Peak Memory Usage:  739 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   12 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network SW<1>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 30 more times for the
+   following (max. 5 shown):
+   SW<0>_IBUF,
+   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<27>,
+   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<26>,
+   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<25>,
+   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<24>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  58 block(s) removed
+   5 block(s) optimized away
+  58 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<27>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<26>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<25>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<24>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<23>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<22>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<21>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<20>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<19>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<18>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<17>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<16>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<15>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<14>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<13>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<12>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<11>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<10>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<9>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<8>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<7>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<6>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<5>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<4>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<3>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<2>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<1>" is sourceless
+and has been removed.
+The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<0>" is sourceless
+and has been removed.
+The signal "M2/sig00000009" is sourceless and has been removed.
+ Sourceless block "M2/blk00000003" (FF) removed.
+  The signal "M2/sig0000003c" is sourceless and has been removed.
+The signal "M2/sig00000058" is sourceless and has been removed.
+ Sourceless block "M2/blk00000076" (FF) removed.
+The signal "M2/sig00000057" is sourceless and has been removed.
+ Sourceless block "M2/blk00000077" (FF) removed.
+The signal "M2/sig00000056" is sourceless and has been removed.
+ Sourceless block "M2/blk00000078" (FF) removed.
+The signal "M2/sig00000055" is sourceless and has been removed.
+ Sourceless block "M2/blk00000079" (FF) removed.
+The signal "M2/sig00000054" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007a" (FF) removed.
+The signal "M2/sig00000053" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007b" (FF) removed.
+The signal "M2/sig00000052" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007c" (FF) removed.
+The signal "M2/sig00000051" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007d" (FF) removed.
+The signal "M2/sig00000050" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007e" (FF) removed.
+The signal "M2/sig0000004f" is sourceless and has been removed.
+ Sourceless block "M2/blk0000007f" (FF) removed.
+The signal "M2/sig0000004e" is sourceless and has been removed.
+ Sourceless block "M2/blk00000080" (FF) removed.
+The signal "M2/sig0000004d" is sourceless and has been removed.
+ Sourceless block "M2/blk00000081" (FF) removed.
+The signal "M2/sig0000004c" is sourceless and has been removed.
+ Sourceless block "M2/blk00000082" (FF) removed.
+The signal "M2/sig0000004b" is sourceless and has been removed.
+ Sourceless block "M2/blk00000083" (FF) removed.
+The signal "M2/sig0000004a" is sourceless and has been removed.
+ Sourceless block "M2/blk00000084" (FF) removed.
+The signal "M2/sig00000049" is sourceless and has been removed.
+ Sourceless block "M2/blk00000085" (FF) removed.
+The signal "M2/sig00000048" is sourceless and has been removed.
+ Sourceless block "M2/blk00000086" (FF) removed.
+The signal "M2/sig00000047" is sourceless and has been removed.
+ Sourceless block "M2/blk00000087" (FF) removed.
+The signal "M2/sig00000046" is sourceless and has been removed.
+ Sourceless block "M2/blk00000088" (FF) removed.
+The signal "M2/sig00000045" is sourceless and has been removed.
+ Sourceless block "M2/blk00000089" (FF) removed.
+The signal "M2/sig00000044" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008a" (FF) removed.
+The signal "M2/sig00000043" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008b" (FF) removed.
+The signal "M2/sig00000042" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008c" (FF) removed.
+The signal "M2/sig00000041" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008d" (FF) removed.
+The signal "M2/sig00000040" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008e" (FF) removed.
+The signal "M2/sig0000003f" is sourceless and has been removed.
+ Sourceless block "M2/blk0000008f" (FF) removed.
+The signal "M2/sig0000003e" is sourceless and has been removed.
+ Sourceless block "M2/blk00000090" (FF) removed.
+The signal "M2/sig0000003d" is sourceless and has been removed.
+ Sourceless block "M2/blk00000091" (FF) removed.
+Unused block "M2/blk00000020/blk00000074" (MUX) removed.
+Unused block "M2/blk00000092" (FF) removed.
+Unused block "M2/blk00000093" (FF) removed.
+Unused block "M2/blk00000094" (FF) removed.
+Unused block "M2/blk00000095" (FF) removed.
+Unused block "M2/blk00000096" (FF) removed.
+Unused block "M2/blk00000097" (FF) removed.
+Unused block "M2/blk00000098" (FF) removed.
+Unused block "M2/blk00000099" (FF) removed.
+Unused block "M2/blk0000009a" (FF) removed.
+Unused block "M2/blk0000009b" (FF) removed.
+Unused block "M2/blk0000009c" (FF) removed.
+Unused block "M2/blk0000009d" (FF) removed.
+Unused block "M2/blk0000009e" (FF) removed.
+Unused block "M2/blk0000009f" (FF) removed.
+Unused block "M2/blk000000a0" (FF) removed.
+Unused block "M2/blk000000a1" (FF) removed.
+Unused block "M2/blk000000a2" (FF) removed.
+Unused block "M2/blk000000a3" (FF) removed.
+Unused block "M2/blk000000a4" (FF) removed.
+Unused block "M2/blk000000a5" (FF) removed.
+Unused block "M2/blk000000a6" (FF) removed.
+Unused block "M2/blk000000a7" (FF) removed.
+Unused block "M2/blk000000a8" (FF) removed.
+Unused block "M2/blk000000a9" (FF) removed.
+Unused block "M2/blk000000aa" (FF) removed.
+Unused block "M2/blk000000ab" (FF) removed.
+Unused block "M2/blk000000ac" (FF) removed.
+Unused block "M2/blk000000ad" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+VCC 		M2/blk00000001
+GND 		M2/blk00000002
+GND 		M2/blk00000020/blk00000021
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| dacCLK                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dacDINA                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dacSYNC                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

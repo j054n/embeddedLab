@@ -36,6 +36,54 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1395340464" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1395340464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340464" xil_pn:in_ck="-1071844764069659136" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1395340464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addTwoNumbers.v"/>
+      <outfile xil_pn:name="asciiTo4BitBinary.v"/>
+      <outfile xil_pn:name="binary16BitTo4DigitHex.v"/>
+      <outfile xil_pn:name="clock.v"/>
+      <outfile xil_pn:name="lab4Control.v"/>
+      <outfile xil_pn:name="lab4DataPath.v"/>
+      <outfile xil_pn:name="lab4_top_module.v"/>
+      <outfile xil_pn:name="rcvr.v"/>
+      <outfile xil_pn:name="testv.v"/>
+      <outfile xil_pn:name="txmit.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340464" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3004772426341690643" xil_pn:start_ts="1395340464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340464" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3192807811073956693" xil_pn:start_ts="1395340464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340465" xil_pn:in_ck="-2674893606188367078" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4020452992828722560" xil_pn:start_ts="1395340464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340465" xil_pn:in_ck="-1071844764069659136" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1395340465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addTwoNumbers.v"/>
+      <outfile xil_pn:name="asciiTo4BitBinary.v"/>
+      <outfile xil_pn:name="binary16BitTo4DigitHex.v"/>
+      <outfile xil_pn:name="clock.v"/>
+      <outfile xil_pn:name="lab4Control.v"/>
+      <outfile xil_pn:name="lab4DataPath.v"/>
+      <outfile xil_pn:name="lab4_top_module.v"/>
+      <outfile xil_pn:name="rcvr.v"/>
+      <outfile xil_pn:name="testv.v"/>
+      <outfile xil_pn:name="txmit.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1395340472" xil_pn:in_ck="982917350297036934" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6104112529260578343" xil_pn:start_ts="1395340465">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
     <transform xil_pn:end_ts="1394751317" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1394751317">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -68,6 +116,8 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="lab4_top_module.lso"/>
       <outfile xil_pn:name="lab4_top_module.prj"/>

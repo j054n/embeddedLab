@@ -1,0 +1,17 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/vmartin/github/embeddedLab/xilinx/lab4/lab4/testv_isim_beh.exe -prj /home/vmartin/github/embeddedLab/xilinx/lab4/lab4/testv_beh.prj work.testv work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/binary16BitTo4DigitHex.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/asciiTo4BitBinary.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/addTwoNumbers.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/txmit.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/rcvr.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4DataPath.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4Control.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/clock.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4_top_module.v" into library work
+ERROR:HDLCompiler:718 - "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4_top_module.v" Line 87: Port connections cannot be mixed ordered and named
+ERROR:HDLCompiler:598 - "/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4_top_module.v" Line 21: Module <lab4_top_module> ignored due to previous errors.
+Verilog file /home/vmartin/github/embeddedLab/xilinx/lab4/lab4/lab4_top_module.v ignored due to errors

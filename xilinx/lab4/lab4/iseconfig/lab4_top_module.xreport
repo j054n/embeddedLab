@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-13T18:02:41</DateModified>
+  <DateModified>2014-03-23T11:40:34</DateModified>
   <ModuleName>lab4_top_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/vmartin/github/embeddedLab/xilinx/lab4/lab4/iseconfig/lab4_top_module.xreport</SavedFilePath>
