@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: lab5_top_module.prj
+--> 
+Reading design: lab5_top_module.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,15 +111,15 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\ipcore_dir\singenerator.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/ipcore_dir/singenerator.v" into library work
 Parsing module <singenerator>.
-Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\da2dac.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/da2dac.v" into library work
 Parsing module <da2dac>.
-Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 3\peripherals\clock.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/Chapter 3/peripherals/clock.v" into library work
 Parsing module <clock>.
-Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\sineMaker.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/sineMaker.v" into library work
 Parsing module <sineMaker>.
-Analyzing Verilog file "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" into library work
+Analyzing Verilog file "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" into library work
 Parsing module <lab5_top_module>.
 
 =========================================================================
@@ -124,13 +127,13 @@ Parsing module <lab5_top_module>.
 =========================================================================
 
 Elaborating module <lab5_top_module>.
-WARNING:HDLCompiler:413 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v" Line 44: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v" Line 45: Result of 32-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <clock>.
-WARNING:HDLCompiler:1016 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\sineMaker.v" Line 67: Port phase_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/sineMaker.v" Line 67: Port phase_out is not connected to this instance
 
 Elaborating module <sineMaker>.
-WARNING:HDLCompiler:872 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\sineMaker.v" Line 49: Using initial value of daccmd since it is never assigned
+WARNING:HDLCompiler:872 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/sineMaker.v" Line 49: Using initial value of daccmd since it is never assigned
 
 Elaborating module <singenerator>.
 
@@ -141,12 +144,12 @@ Elaborating module <da2dac>.
 =========================================================================
 
 Synthesizing Unit <lab5_top_module>.
-    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.v".
+    Related source file is "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/lab5_top_module.v".
         periodClockValue = 25000000
-        ENDVAL = 41
+        ENDVAL = 37
     Found 32-bit register for signal <currentVal>.
     Found 1-bit register for signal <dacDINA>.
-    Found 32-bit adder for signal <currentVal[31]_GND_1_o_add_32_OUT> created at line 121.
+    Found 32-bit adder for signal <currentVal[31]_GND_1_o_add_28_OUT> created at line 116.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -154,7 +157,7 @@ Synthesizing Unit <lab5_top_module>.
 Unit <lab5_top_module> synthesized.
 
 Synthesizing Unit <clock>.
-    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\Chapter 3\peripherals\clock.v".
+    Related source file is "/home/vmartin/github/embeddedLab/xilinx/Chapter 3/peripherals/clock.v".
     Found 1-bit register for signal <sclclk>.
     Found 32-bit register for signal <clkq>.
     Found 32-bit adder for signal <clkq[31]_GND_2_o_add_1_OUT> created at line 12.
@@ -166,10 +169,10 @@ Synthesizing Unit <clock>.
 Unit <clock> synthesized.
 
 Synthesizing Unit <sineMaker>.
-    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\sineMaker.v".
+    Related source file is "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/sineMaker.v".
         clock25mhz = 2
         clock50mhz = 1
-INFO:Xst:3210 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\sineMaker.v" line 67: Output port <phase_out> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/sineMaker.v" line 67: Output port <phase_out> of the instance <M2> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <comState>.
     Found 12-bit register for signal <digitalData>.
     Found 1-bit register for signal <dacdav>.
@@ -190,7 +193,7 @@ INFO:Xst:3210 - "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\
 Unit <sineMaker> synthesized.
 
 Synthesizing Unit <da2dac>.
-    Related source file is "C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\da2dac.v".
+    Related source file is "/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/da2dac.v".
     Found 1-bit register for signal <davdac>.
     Found 1-bit register for signal <dacsync>.
     Found 1-bit register for signal <dacsck>.
@@ -533,24 +536,24 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'tpClock/sclclk'
   Clock period: 3.402ns (frequency: 293.966MHz)
-  Total number of paths / destination ports: 65 / 6
+  Total number of paths / destination ports: 66 / 6
 -------------------------------------------------------------------------
 Delay:               3.402ns (Levels of Logic = 5)
   Source:            currentVal_0 (FF)
-  Destination:       currentVal_3 (FF)
+  Destination:       currentVal_2 (FF)
   Source Clock:      tpClock/sclclk rising
   Destination Clock: tpClock/sclclk rising
 
-  Data Path: currentVal_0 to currentVal_3
+  Data Path: currentVal_0 to currentVal_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDSE:C->Q             3   0.447   0.650  currentVal_0 (currentVal_0)
-     INV:I->O              1   0.206   0.000  Madd_currentVal[31]_GND_1_o_add_32_OUT_lut<0>_INV_0 (Madd_currentVal[31]_GND_1_o_add_32_OUT_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Madd_currentVal[31]_GND_1_o_add_32_OUT_cy<0> (Madd_currentVal[31]_GND_1_o_add_32_OUT_cy<0>)
-     XORCY:CI->O           2   0.180   0.617  Madd_currentVal[31]_GND_1_o_add_32_OUT_xor<1> (currentVal[31]_GND_1_o_add_32_OUT<1>)
-     LUT2:I1->O            2   0.205   0.617  currentVal[31]_GND_1_o_equal_34_o<31>_SW0 (N5)
-     LUT6:I5->O            1   0.205   0.000  Mmux_currentVal[31]_GND_1_o_mux_34_OUT281 (currentVal[31]_GND_1_o_mux_34_OUT<5>)
+     INV:I->O              1   0.206   0.000  Madd_currentVal[31]_GND_1_o_add_28_OUT_lut<0>_INV_0 (Madd_currentVal[31]_GND_1_o_add_28_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_currentVal[31]_GND_1_o_add_28_OUT_cy<0> (Madd_currentVal[31]_GND_1_o_add_28_OUT_cy<0>)
+     XORCY:CI->O           2   0.180   0.617  Madd_currentVal[31]_GND_1_o_add_28_OUT_xor<1> (currentVal[31]_GND_1_o_add_28_OUT<1>)
+     LUT2:I1->O            2   0.205   0.617  currentVal[31]_GND_1_o_equal_30_o<31>_SW0 (N5)
+     LUT6:I5->O            1   0.205   0.000  Mmux_currentVal[31]_GND_1_o_mux_30_OUT281 (currentVal[31]_GND_1_o_mux_30_OUT<5>)
      FDRE:D                    0.102          currentVal_5
     ----------------------------------------
     Total                      3.402ns (1.517ns logic, 1.885ns route)
@@ -667,7 +670,7 @@ Offset:              3.320ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   1.222   0.721  SW_1_IBUF (SW_1_IBUF)
-     LUT2:I0->O            6   0.203   0.744  GND_1_o_GND_1_o_AND_27_o1 (GND_1_o_GND_1_o_AND_27_o)
+     LUT2:I0->O            6   0.203   0.744  GND_1_o_GND_1_o_AND_23_o1 (GND_1_o_GND_1_o_AND_23_o)
      FDSE:S                    0.430          currentVal_0
     ----------------------------------------
     Total                      3.320ns (1.855ns logic, 1.465ns route)
@@ -774,12 +777,13 @@ tpClock/sclclk |    3.402|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 25.67 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 11.17 secs
  
 --> 
 
-Total memory usage is 248724 kilobytes
+
+Total memory usage is 393212 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   99 (   0 filtered)
