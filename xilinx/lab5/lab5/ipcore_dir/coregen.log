@@ -3,5 +3,69 @@ Applying current project options...
 Finished applying current project options.
 WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
    core. Overriding with simulation file type 'Structural'.
-Cancelled executing Tcl generator.
+WARNING:sim - A core named 'singenerator' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'singenerator'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+WARNING:sim - A core named 'singenerator' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'singenerator'...
+Delivering associated files for 'singenerator'...
+Generating implementation netlist for 'singenerator'...
+INFO:sim - Pre-processing HDL files for 'singenerator'...
+Running synthesis for 'singenerator'
+Running ngcbuild...
+Writing VEO instantiation template for 'singenerator'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Writing Verilog structural simulation model for 'singenerator'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Delivered 2 files into directory
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'singenerator'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: singenerator.xco
+XMDF file found: singenerator_xmdf.tcl
+Adding
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator.asy -view all -origin_type imported
+Adding
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator.ngc -view all -origin_type created
+Checking file
+"C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_
+cg/singenerator.ngc" for project device match ...
+File
+"C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_
+cg/singenerator.ngc" device information matches project device.
+Adding
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator.sym -view all -origin_type imported
+Adding
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tm
+   p/_cg/singenerator.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/ipcore_dir/tmp/_c
+g/singenerator.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/singenerator"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
 Wrote CGP file for project 'singenerator'.

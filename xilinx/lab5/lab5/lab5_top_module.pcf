@@ -1,10 +1,12 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Mar 24 23:37:44 2014
+// Written by: Map P.20131013 on Wed Mar 26 23:55:41 2014
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "SW<1>" LOCATE = SITE "D14" LEVEL 1;
+COMP "CLK" LOCATE = SITE "L15" LEVEL 1;
 COMP "dacSYNC" LOCATE = SITE "V9" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "D14" LEVEL 1;
 COMP "LED<0>" LOCATE = SITE "U18" LEVEL 1;
 COMP "LED<1>" LOCATE = SITE "M14" LEVEL 1;
 COMP "LED<2>" LOCATE = SITE "N14" LEVEL 1;
@@ -15,7 +17,5 @@ COMP "LED<6>" LOCATE = SITE "P16" LEVEL 1;
 COMP "LED<7>" LOCATE = SITE "N12" LEVEL 1;
 COMP "dacDINA" LOCATE = SITE "T9" LEVEL 1;
 COMP "dacCLK" LOCATE = SITE "T4" LEVEL 1;
-COMP "CLK" LOCATE = SITE "L15" LEVEL 1;
-COMP "SW<0>" LOCATE = SITE "A10" LEVEL 1;
 SCHEMATIC END;
 

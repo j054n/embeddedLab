@@ -1,3 +1,5 @@
 verilog work "ipcore_dir/singenerator.v"
+verilog work "da2dac.v"
 verilog work "../../Chapter 3/peripherals/clock.v"
+verilog work "sineMaker.v"
 verilog work "lab5_top_module.v"

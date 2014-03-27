@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-25T00:42:14</DateModified>
+  <DateModified>2014-03-26T22:34:15</DateModified>
   <ModuleName>lab5_top_module</ModuleName>
-  <SummaryTimeStamp>2014-03-24T23:39:11</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-03-25T01:28:55</SummaryTimeStamp>
   <SavedFilePath>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/iseconfig/lab5_top_module.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5\</ImplementationReportsDirectory>
   <DateInitialized>2014-03-23T12:34:08</DateInitialized>

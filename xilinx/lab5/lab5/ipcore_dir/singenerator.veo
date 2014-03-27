@@ -67,8 +67,8 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 singenerator your_instance_name (
   .clk(clk), // input clk
-  .sine(sine), // output [5 : 0] sine
-  .phase_out(phase_out) // output [27 : 0] phase_out
+  .sine(sine), // output [11 : 0] sine
+  .phase_out(phase_out) // output [25 : 0] phase_out
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -8,10 +8,10 @@ PINATTR PinName clk
 PINATTR Polarity IN
 LINE Wide 352 176 320 176
 PIN 352 176 RIGHT 36
-PINATTR PinName sine[5:0]
+PINATTR PinName sine[11:0]
 PINATTR Polarity OUT
 LINE Wide 352 240 320 240
 PIN 352 240 RIGHT 36
-PINATTR PinName phase_out[27:0]
+PINATTR PinName phase_out[25:0]
 PINATTR Polarity OUT
 

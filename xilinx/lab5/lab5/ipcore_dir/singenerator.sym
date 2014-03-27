@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="singenerator">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-3-23T17:18:27</timestamp>
+    <timestamp>2014-3-25T6:22:2</timestamp>
     <pin polarity="Input" x="0" y="80" name="clk" />
-    <pin polarity="Output" x="352" y="176" name="sine[5:0]" />
-    <pin polarity="Output" x="352" y="240" name="phase_out[27:0]" />
+    <pin polarity="Output" x="352" y="176" name="sine[11:0]" />
+    <pin polarity="Output" x="352" y="240" name="phase_out[25:0]" />
     <graph>
         <text style="fontsize:40;fontname:Arial" x="32" y="32">singenerator</text>
         <rect width="288" x="32" y="32" height="384" />
         <line x2="32" y1="80" y2="80" x1="0" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin clk" />
         <line x2="320" y1="176" y2="176" style="linewidth:W" x1="352" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="176" type="pin sine[5:0]" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="176" type="pin sine[11:0]" />
         <line x2="320" y1="240" y2="240" style="linewidth:W" x1="352" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="240" type="pin phase_out[27:0]" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="240" type="pin phase_out[25:0]" />
     </graph>
 </symbol>

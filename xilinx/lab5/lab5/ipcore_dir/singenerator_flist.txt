@@ -1,7 +1,5 @@
 # Output products list for <singenerator>
-_xmsgs/pn_parser.xmsgs
-singenerator/doc/dds_compiler_v4_0_vinfo.html
-singenerator/doc/dds_ds558.pdf
+_xmsgs\pn_parser.xmsgs
 singenerator.asy
 singenerator.gise
 singenerator.ngc
@@ -10,6 +8,8 @@ singenerator.v
 singenerator.veo
 singenerator.xco
 singenerator.xise
+singenerator\doc\dds_compiler_v4_0_vinfo.html
+singenerator\doc\dds_ds558.pdf
 singenerator_flist.txt
 singenerator_readme.txt
 singenerator_xmdf.tcl

@@ -11,40 +11,49 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Mar 24 23:37:10 2014
+Mapped Date    : Wed Mar 26 23:55:11 2014
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                    68 out of  54,576    1%
-    Number used as Flip Flops:                  68
+  Number of Slice Registers:                   140 out of  54,576    1%
+    Number used as Flip Flops:                 140
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        139 out of  27,288    1%
-    Number used as logic:                      116 out of  27,288    1%
-      Number using O6 output only:              44
-      Number using O5 output only:              60
-      Number using O5 and O6:                   12
+  Number of Slice LUTs:                        346 out of  27,288    1%
+    Number used as logic:                      160 out of  27,288    1%
+      Number using O6 output only:              74
+      Number using O5 output only:              52
+      Number using O5 and O6:                   34
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   6,408    0%
-    Number used exclusively as route-thrus:     23
-      Number with same-slice register load:      0
-      Number with same-slice carry load:        23
+    Number used as Memory:                     156 out of   6,408    2%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:          148
+        Number using O6 output only:           148
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:             8
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  4
+    Number used exclusively as route-thrus:     30
+      Number with same-slice register load:      8
+      Number with same-slice carry load:        22
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    36 out of   6,822    1%
-  Number of MUXCYs used:                       100 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          139
-    Number with an unused Flip Flop:            73 out of     139   52%
-    Number with an unused LUT:                   0 out of     139    0%
-    Number of fully used LUT-FF pairs:          66 out of     139   47%
-    Number of unique control sets:               3
+  Number of occupied Slices:                   103 out of   6,822    1%
+  Number of MUXCYs used:                       112 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          356
+    Number with an unused Flip Flop:           233 out of     356   65%
+    Number with an unused LUT:                  10 out of     356    2%
+    Number of fully used LUT-FF pairs:         113 out of     356   31%
+    Number of unique control sets:              12
     Number of slice register sites lost
-      to control set restrictions:              12 out of  54,576    1%
+      to control set restrictions:              60 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -55,19 +64,22 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        14 out of     218    6%
     Number of LOCed IOBs:                       14 out of      14  100%
+    IOB Flip Flops:                              1
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of     116    0%
-  Number of RAMB8BWERs:                          1 out of     232    1%
+  Number of RAMB8BWERs:                          0 out of     232    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
-    Number used as BUFGs:                        1
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     376    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     256    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -81,11 +93,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.78
+Average Fanout of Non-Clock Nets:                4.83
 
-Peak Memory Usage:  450 MB
-Total REAL time to MAP completion:  35 secs 
-Total CPU time to MAP completion:   24 secs 
+Peak Memory Usage:  452 MB
+Total REAL time to MAP completion:  31 secs 
+Total CPU time to MAP completion:   30 secs 
 
 Table of Contents
 -----------------
@@ -108,21 +120,18 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network SW<1>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 30 more times for the
+INFO:LIT:243 - Logical network
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<25> has no load.
+INFO:LIT:395 - The above info message is repeated 102 more times for the
    following (max. 5 shown):
-   SW<0>_IBUF,
-   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<27>,
-   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<26>,
-   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<25>,
-   M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<24>
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<24>,
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<23>,
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<22>,
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<21>,
+   T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<20>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -138,9 +147,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  58 block(s) removed
+ 153 block(s) removed
    5 block(s) optimized away
-  58 signal(s) removed
+ 163 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -155,156 +164,354 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<27>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<26>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<25>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<24>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<23>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<22>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<21>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<20>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<19>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<18>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<17>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<16>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<15>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<14>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<13>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<12>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<11>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<10>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<9>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<8>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<7>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<6>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<5>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<4>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<3>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<2>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<1>" is sourceless
-and has been removed.
-The signal "M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_2<0>" is sourceless
-and has been removed.
-The signal "M2/sig00000009" is sourceless and has been removed.
- Sourceless block "M2/blk00000003" (FF) removed.
-  The signal "M2/sig0000003c" is sourceless and has been removed.
-The signal "M2/sig00000058" is sourceless and has been removed.
- Sourceless block "M2/blk00000076" (FF) removed.
-The signal "M2/sig00000057" is sourceless and has been removed.
- Sourceless block "M2/blk00000077" (FF) removed.
-The signal "M2/sig00000056" is sourceless and has been removed.
- Sourceless block "M2/blk00000078" (FF) removed.
-The signal "M2/sig00000055" is sourceless and has been removed.
- Sourceless block "M2/blk00000079" (FF) removed.
-The signal "M2/sig00000054" is sourceless and has been removed.
- Sourceless block "M2/blk0000007a" (FF) removed.
-The signal "M2/sig00000053" is sourceless and has been removed.
- Sourceless block "M2/blk0000007b" (FF) removed.
-The signal "M2/sig00000052" is sourceless and has been removed.
- Sourceless block "M2/blk0000007c" (FF) removed.
-The signal "M2/sig00000051" is sourceless and has been removed.
- Sourceless block "M2/blk0000007d" (FF) removed.
-The signal "M2/sig00000050" is sourceless and has been removed.
- Sourceless block "M2/blk0000007e" (FF) removed.
-The signal "M2/sig0000004f" is sourceless and has been removed.
- Sourceless block "M2/blk0000007f" (FF) removed.
-The signal "M2/sig0000004e" is sourceless and has been removed.
- Sourceless block "M2/blk00000080" (FF) removed.
-The signal "M2/sig0000004d" is sourceless and has been removed.
- Sourceless block "M2/blk00000081" (FF) removed.
-The signal "M2/sig0000004c" is sourceless and has been removed.
- Sourceless block "M2/blk00000082" (FF) removed.
-The signal "M2/sig0000004b" is sourceless and has been removed.
- Sourceless block "M2/blk00000083" (FF) removed.
-The signal "M2/sig0000004a" is sourceless and has been removed.
- Sourceless block "M2/blk00000084" (FF) removed.
-The signal "M2/sig00000049" is sourceless and has been removed.
- Sourceless block "M2/blk00000085" (FF) removed.
-The signal "M2/sig00000048" is sourceless and has been removed.
- Sourceless block "M2/blk00000086" (FF) removed.
-The signal "M2/sig00000047" is sourceless and has been removed.
- Sourceless block "M2/blk00000087" (FF) removed.
-The signal "M2/sig00000046" is sourceless and has been removed.
- Sourceless block "M2/blk00000088" (FF) removed.
-The signal "M2/sig00000045" is sourceless and has been removed.
- Sourceless block "M2/blk00000089" (FF) removed.
-The signal "M2/sig00000044" is sourceless and has been removed.
- Sourceless block "M2/blk0000008a" (FF) removed.
-The signal "M2/sig00000043" is sourceless and has been removed.
- Sourceless block "M2/blk0000008b" (FF) removed.
-The signal "M2/sig00000042" is sourceless and has been removed.
- Sourceless block "M2/blk0000008c" (FF) removed.
-The signal "M2/sig00000041" is sourceless and has been removed.
- Sourceless block "M2/blk0000008d" (FF) removed.
-The signal "M2/sig00000040" is sourceless and has been removed.
- Sourceless block "M2/blk0000008e" (FF) removed.
-The signal "M2/sig0000003f" is sourceless and has been removed.
- Sourceless block "M2/blk0000008f" (FF) removed.
-The signal "M2/sig0000003e" is sourceless and has been removed.
- Sourceless block "M2/blk00000090" (FF) removed.
-The signal "M2/sig0000003d" is sourceless and has been removed.
- Sourceless block "M2/blk00000091" (FF) removed.
-Unused block "M2/blk00000020/blk00000074" (MUX) removed.
-Unused block "M2/blk00000092" (FF) removed.
-Unused block "M2/blk00000093" (FF) removed.
-Unused block "M2/blk00000094" (FF) removed.
-Unused block "M2/blk00000095" (FF) removed.
-Unused block "M2/blk00000096" (FF) removed.
-Unused block "M2/blk00000097" (FF) removed.
-Unused block "M2/blk00000098" (FF) removed.
-Unused block "M2/blk00000099" (FF) removed.
-Unused block "M2/blk0000009a" (FF) removed.
-Unused block "M2/blk0000009b" (FF) removed.
-Unused block "M2/blk0000009c" (FF) removed.
-Unused block "M2/blk0000009d" (FF) removed.
-Unused block "M2/blk0000009e" (FF) removed.
-Unused block "M2/blk0000009f" (FF) removed.
-Unused block "M2/blk000000a0" (FF) removed.
-Unused block "M2/blk000000a1" (FF) removed.
-Unused block "M2/blk000000a2" (FF) removed.
-Unused block "M2/blk000000a3" (FF) removed.
-Unused block "M2/blk000000a4" (FF) removed.
-Unused block "M2/blk000000a5" (FF) removed.
-Unused block "M2/blk000000a6" (FF) removed.
-Unused block "M2/blk000000a7" (FF) removed.
-Unused block "M2/blk000000a8" (FF) removed.
-Unused block "M2/blk000000a9" (FF) removed.
-Unused block "M2/blk000000aa" (FF) removed.
-Unused block "M2/blk000000ab" (FF) removed.
-Unused block "M2/blk000000ac" (FF) removed.
-Unused block "M2/blk000000ad" (FF) removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<25>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<24>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<23>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<22>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<21>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<20>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<19>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<18>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<17>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<16>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<15>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<14>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<13>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<12>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<11>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<10>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<9>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<8>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<7>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<6>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<5>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<4>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<3>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<2>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<1>" is
+sourceless and has been removed.
+The signal "T1/M2/U0/i_synth/i_phase_out.del/opt_has_pipe.pipe_6<0>" is
+sourceless and has been removed.
+The signal "T1/M2/sig00000003" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000003" (FF) removed.
+  The signal "T1/M2/sig00000038" is sourceless and has been removed.
+The signal "T1/M2/sig00000052" is sourceless and has been removed.
+The signal "T1/M2/sig00000051" is sourceless and has been removed.
+The signal "T1/M2/sig00000050" is sourceless and has been removed.
+The signal "T1/M2/sig0000004f" is sourceless and has been removed.
+The signal "T1/M2/sig0000004e" is sourceless and has been removed.
+The signal "T1/M2/sig0000004d" is sourceless and has been removed.
+The signal "T1/M2/sig0000004c" is sourceless and has been removed.
+The signal "T1/M2/sig0000004b" is sourceless and has been removed.
+The signal "T1/M2/sig0000004a" is sourceless and has been removed.
+The signal "T1/M2/sig00000049" is sourceless and has been removed.
+The signal "T1/M2/sig00000048" is sourceless and has been removed.
+The signal "T1/M2/sig00000047" is sourceless and has been removed.
+The signal "T1/M2/sig00000046" is sourceless and has been removed.
+The signal "T1/M2/sig00000045" is sourceless and has been removed.
+The signal "T1/M2/sig00000044" is sourceless and has been removed.
+The signal "T1/M2/sig00000043" is sourceless and has been removed.
+The signal "T1/M2/sig00000042" is sourceless and has been removed.
+The signal "T1/M2/sig00000041" is sourceless and has been removed.
+The signal "T1/M2/sig00000040" is sourceless and has been removed.
+The signal "T1/M2/sig0000003f" is sourceless and has been removed.
+The signal "T1/M2/sig0000003e" is sourceless and has been removed.
+The signal "T1/M2/sig0000003d" is sourceless and has been removed.
+The signal "T1/M2/sig0000003c" is sourceless and has been removed.
+The signal "T1/M2/sig0000003b" is sourceless and has been removed.
+The signal "T1/M2/sig0000003a" is sourceless and has been removed.
+The signal "T1/M2/sig00000039" is sourceless and has been removed.
+The signal "T1/M2/sig00000053" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000088" (XOR) removed.
+  The signal "T1/M2/sig000000dd" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000136" (FF) removed.
+    The signal "T1/M2/sig0000014f" is sourceless and has been removed.
+The signal "T1/M2/sig0000015c" is sourceless and has been removed.
+The signal "T1/M2/sig00000054" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000089" (XOR) removed.
+  The signal "T1/M2/sig000000dc" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000137" (FF) removed.
+    The signal "T1/M2/sig0000014e" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008a" (MUX) removed.
+The signal "T1/M2/sig000000f4" is sourceless and has been removed.
+The signal "T1/M2/sig00000055" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008b" (XOR) removed.
+  The signal "T1/M2/sig000000db" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000138" (FF) removed.
+    The signal "T1/M2/sig0000014d" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008c" (MUX) removed.
+The signal "T1/M2/sig000000f3" is sourceless and has been removed.
+The signal "T1/M2/sig00000056" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008d" (XOR) removed.
+  The signal "T1/M2/sig000000da" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000139" (FF) removed.
+    The signal "T1/M2/sig0000014c" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008e" (MUX) removed.
+The signal "T1/M2/sig000000f2" is sourceless and has been removed.
+The signal "T1/M2/sig00000057" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000008f" (XOR) removed.
+  The signal "T1/M2/sig000000d9" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013a" (FF) removed.
+    The signal "T1/M2/sig0000014b" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000090" (MUX) removed.
+The signal "T1/M2/sig000000f1" is sourceless and has been removed.
+The signal "T1/M2/sig00000058" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000091" (XOR) removed.
+  The signal "T1/M2/sig000000d8" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013b" (FF) removed.
+    The signal "T1/M2/sig0000014a" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000092" (MUX) removed.
+The signal "T1/M2/sig000000f0" is sourceless and has been removed.
+The signal "T1/M2/sig00000059" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000093" (XOR) removed.
+  The signal "T1/M2/sig000000d7" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013c" (FF) removed.
+    The signal "T1/M2/sig00000149" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000094" (MUX) removed.
+The signal "T1/M2/sig000000ef" is sourceless and has been removed.
+The signal "T1/M2/sig0000005a" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000095" (XOR) removed.
+  The signal "T1/M2/sig000000d6" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013d" (FF) removed.
+    The signal "T1/M2/sig00000148" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000096" (MUX) removed.
+The signal "T1/M2/sig000000ee" is sourceless and has been removed.
+The signal "T1/M2/sig0000005b" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000097" (XOR) removed.
+  The signal "T1/M2/sig000000d5" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013e" (FF) removed.
+    The signal "T1/M2/sig00000147" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000098" (MUX) removed.
+The signal "T1/M2/sig000000ed" is sourceless and has been removed.
+The signal "T1/M2/sig0000005c" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000099" (XOR) removed.
+  The signal "T1/M2/sig000000d4" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000013f" (FF) removed.
+    The signal "T1/M2/sig00000146" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000009a" (MUX) removed.
+The signal "T1/M2/sig000000ec" is sourceless and has been removed.
+The signal "T1/M2/sig0000005d" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000009b" (XOR) removed.
+  The signal "T1/M2/sig000000d3" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000140" (FF) removed.
+    The signal "T1/M2/sig00000145" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000009c" (MUX) removed.
+The signal "T1/M2/sig000000eb" is sourceless and has been removed.
+The signal "T1/M2/sig0000015e" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000009d" (XOR) removed.
+  The signal "T1/M2/sig000000d2" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000141" (FF) removed.
+    The signal "T1/M2/sig00000144" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000009e" (MUX) removed.
+The signal "T1/M2/sig000000ea" is sourceless and has been removed.
+The signal "T1/M2/sig00000081" is sourceless and has been removed.
+The signal "T1/M2/sig0000008a" is sourceless and has been removed.
+The signal "T1/M2/sig00000092" is sourceless and has been removed.
+The signal "T1/M2/sig0000009a" is sourceless and has been removed.
+The signal "T1/M2/sig000000a3" is sourceless and has been removed.
+The signal "T1/M2/sig000000ac" is sourceless and has been removed.
+The signal "T1/M2/sig000000b5" is sourceless and has been removed.
+The signal "T1/M2/sig000000be" is sourceless and has been removed.
+The signal "T1/M2/sig000000c7" is sourceless and has been removed.
+The signal "T1/M2/sig000000d0" is sourceless and has been removed.
+The signal "T1/M2/sig00000142" is sourceless and has been removed.
+The signal "T1/M2/sig00000114" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000134" (FF) removed.
+  The signal "T1/M2/sig00000135" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk0000015b" (ROM) removed.
+ Sourceless block "T1/M2/blk00000135" (FF) removed.
+  The signal "T1/M2/sig00000134" is sourceless and has been removed.
+   Sourceless block "T1/M2/blk00000164" (ROM) removed.
+The signal "T1/M2/sig0000012b" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000015a" (ROM) removed.
+ Sourceless block "T1/M2/blk0000017e" (ROM) removed.
+The signal "T1/M2/sig00000141" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000015c" (ROM) removed.
+ Sourceless block "T1/M2/blk0000015d" (ROM) removed.
+ Sourceless block "T1/M2/blk0000015e" (ROM) removed.
+ Sourceless block "T1/M2/blk0000015f" (ROM) removed.
+ Sourceless block "T1/M2/blk00000160" (ROM) removed.
+ Sourceless block "T1/M2/blk00000161" (ROM) removed.
+ Sourceless block "T1/M2/blk00000162" (ROM) removed.
+ Sourceless block "T1/M2/blk00000163" (ROM) removed.
+ Sourceless block "T1/M2/blk0000017b" (ROM) removed.
+The signal "T1/M2/sig0000012c" is sourceless and has been removed.
+The signal "T1/M2/sig0000012d" is sourceless and has been removed.
+The signal "T1/M2/sig0000012e" is sourceless and has been removed.
+The signal "T1/M2/sig0000012f" is sourceless and has been removed.
+The signal "T1/M2/sig00000130" is sourceless and has been removed.
+The signal "T1/M2/sig00000131" is sourceless and has been removed.
+The signal "T1/M2/sig00000132" is sourceless and has been removed.
+The signal "T1/M2/sig00000133" is sourceless and has been removed.
+The signal "T1/M2/sig00000160" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000181" (FF) removed.
+The signal "T1/M2/sig00000161" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000183" (FF) removed.
+The signal "T1/M2/sig00000162" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000185" (FF) removed.
+The signal "T1/M2/sig00000163" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000187" (FF) removed.
+The signal "T1/M2/sig00000164" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000189" (FF) removed.
+The signal "T1/M2/sig00000165" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000018b" (FF) removed.
+The signal "T1/M2/sig00000166" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000018d" (FF) removed.
+The signal "T1/M2/sig00000167" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000018f" (FF) removed.
+The signal "T1/M2/sig00000168" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000191" (FF) removed.
+The signal "T1/M2/sig00000169" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000193" (FF) removed.
+The signal "T1/M2/sig0000016a" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000195" (FF) removed.
+The signal "T1/M2/sig0000016b" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000197" (FF) removed.
+The signal "T1/M2/sig0000016c" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk00000199" (FF) removed.
+The signal "T1/M2/sig0000016d" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000019b" (FF) removed.
+The signal "T1/M2/sig0000016e" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000019d" (FF) removed.
+The signal "T1/M2/sig0000016f" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk0000019f" (FF) removed.
+The signal "T1/M2/sig00000170" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001a1" (FF) removed.
+The signal "T1/M2/sig00000171" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001a3" (FF) removed.
+The signal "T1/M2/sig00000172" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001a5" (FF) removed.
+The signal "T1/M2/sig00000173" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001a7" (FF) removed.
+The signal "T1/M2/sig00000174" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001a9" (FF) removed.
+The signal "T1/M2/sig00000175" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001ab" (FF) removed.
+The signal "T1/M2/sig00000176" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001ad" (FF) removed.
+The signal "T1/M2/sig00000177" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001af" (FF) removed.
+The signal "T1/M2/sig00000178" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001b1" (FF) removed.
+The signal "T1/M2/sig0000017a" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001b5" (FF) removed.
+The signal "T1/M2/sig0000017b" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001b7" (FF) removed.
+The signal "T1/M2/sig0000017c" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001b9" (FF) removed.
+The signal "T1/M2/sig0000017d" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001bb" (FF) removed.
+The signal "T1/M2/sig0000017e" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001bd" (FF) removed.
+The signal "T1/M2/sig0000017f" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001bf" (FF) removed.
+The signal "T1/M2/sig00000180" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001c1" (FF) removed.
+The signal "T1/M2/sig00000181" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001c3" (FF) removed.
+The signal "T1/M2/sig00000182" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001c5" (FF) removed.
+The signal "T1/M2/sig00000183" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001c7" (FF) removed.
+The signal "T1/M2/sig00000184" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001c9" (FF) removed.
+The signal "T1/M2/sig00000186" is sourceless and has been removed.
+ Sourceless block "T1/M2/blk000001cd" (FF) removed.
+Unused block "T1/M2/blk0000001e/blk0000006c" (MUX) removed.
+Unused block "T1/M2/blk0000006e" (FF) removed.
+Unused block "T1/M2/blk0000006f" (FF) removed.
+Unused block "T1/M2/blk00000070" (FF) removed.
+Unused block "T1/M2/blk00000071" (FF) removed.
+Unused block "T1/M2/blk00000072" (FF) removed.
+Unused block "T1/M2/blk00000073" (FF) removed.
+Unused block "T1/M2/blk00000074" (FF) removed.
+Unused block "T1/M2/blk00000075" (FF) removed.
+Unused block "T1/M2/blk00000076" (FF) removed.
+Unused block "T1/M2/blk00000077" (FF) removed.
+Unused block "T1/M2/blk00000078" (FF) removed.
+Unused block "T1/M2/blk00000079" (FF) removed.
+Unused block "T1/M2/blk0000007a" (FF) removed.
+Unused block "T1/M2/blk0000007b" (FF) removed.
+Unused block "T1/M2/blk0000007c" (FF) removed.
+Unused block "T1/M2/blk0000007d" (FF) removed.
+Unused block "T1/M2/blk0000007e" (FF) removed.
+Unused block "T1/M2/blk0000007f" (FF) removed.
+Unused block "T1/M2/blk00000080" (FF) removed.
+Unused block "T1/M2/blk00000081" (FF) removed.
+Unused block "T1/M2/blk00000082" (FF) removed.
+Unused block "T1/M2/blk00000083" (FF) removed.
+Unused block "T1/M2/blk00000084" (FF) removed.
+Unused block "T1/M2/blk00000085" (FF) removed.
+Unused block "T1/M2/blk00000086" (FF) removed.
+Unused block "T1/M2/blk00000087" (FF) removed.
+Unused block "T1/M2/blk00000133" (FF) removed.
+Unused block "T1/M2/blk00000180" (SRLC16E) removed.
+Unused block "T1/M2/blk00000182" (SRLC16E) removed.
+Unused block "T1/M2/blk00000184" (SRLC16E) removed.
+Unused block "T1/M2/blk00000186" (SRLC16E) removed.
+Unused block "T1/M2/blk00000188" (SRLC16E) removed.
+Unused block "T1/M2/blk0000018a" (SRLC16E) removed.
+Unused block "T1/M2/blk0000018c" (SRLC16E) removed.
+Unused block "T1/M2/blk0000018e" (SRLC16E) removed.
+Unused block "T1/M2/blk00000190" (SRLC16E) removed.
+Unused block "T1/M2/blk00000192" (SRLC16E) removed.
+Unused block "T1/M2/blk00000194" (SRLC16E) removed.
+Unused block "T1/M2/blk00000196" (SRLC16E) removed.
+Unused block "T1/M2/blk00000198" (SRLC16E) removed.
+Unused block "T1/M2/blk0000019a" (SRLC16E) removed.
+Unused block "T1/M2/blk0000019c" (SRLC16E) removed.
+Unused block "T1/M2/blk0000019e" (SRLC16E) removed.
+Unused block "T1/M2/blk000001a0" (SRLC16E) removed.
+Unused block "T1/M2/blk000001a2" (SRLC16E) removed.
+Unused block "T1/M2/blk000001a4" (SRLC16E) removed.
+Unused block "T1/M2/blk000001a6" (SRLC16E) removed.
+Unused block "T1/M2/blk000001a8" (SRLC16E) removed.
+Unused block "T1/M2/blk000001aa" (SRLC16E) removed.
+Unused block "T1/M2/blk000001ac" (SRLC16E) removed.
+Unused block "T1/M2/blk000001ae" (SRLC16E) removed.
+Unused block "T1/M2/blk000001b0" (SRLC16E) removed.
+Unused block "T1/M2/blk000001b4" (SRLC16E) removed.
+Unused block "T1/M2/blk000001b6" (SRLC16E) removed.
+Unused block "T1/M2/blk000001b8" (SRLC16E) removed.
+Unused block "T1/M2/blk000001ba" (SRLC16E) removed.
+Unused block "T1/M2/blk000001bc" (SRLC16E) removed.
+Unused block "T1/M2/blk000001be" (SRLC16E) removed.
+Unused block "T1/M2/blk000001c0" (SRLC16E) removed.
+Unused block "T1/M2/blk000001c2" (SRLC16E) removed.
+Unused block "T1/M2/blk000001c4" (SRLC16E) removed.
+Unused block "T1/M2/blk000001c6" (SRLC16E) removed.
+Unused block "T1/M2/blk000001c8" (SRLC16E) removed.
+Unused block "T1/M2/blk000001cc" (SRLC16E) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-VCC 		M2/blk00000001
-GND 		M2/blk00000002
-GND 		M2/blk00000020/blk00000021
+VCC 		T1/M2/blk00000001
+GND 		T1/M2/blk00000002
+GND 		T1/M2/blk0000001e/blk0000001f
 GND 		XST_GND
 VCC 		XST_VCC
 
@@ -330,7 +537,7 @@ Section 6 - IOB Properties
 | SW<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | SW<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | dacCLK                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| dacDINA                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dacDINA                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
 | dacSYNC                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

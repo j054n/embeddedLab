@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sun Mar 23 17:17:29 2014
+# Date: Tue Mar 25 06:20:02 2014
 #
 ##############################################################
 #
@@ -44,19 +44,19 @@ CSET channel_pin=false
 CSET channels=1
 CSET clock_enable=false
 CSET component_name=singenerator
-CSET dds_clock_rate=100
+CSET dds_clock_rate=25
 CSET dsp48_use=Minimal
 CSET explicit_period=false
 CSET frequency_resolution=0.4
 CSET gui_behaviour=Coregen
 CSET has_phase_out=true
-CSET latency=2
+CSET latency=6
 CSET latency_configuration=Auto
-CSET memory_type=Auto
+CSET memory_type=Distributed_ROM
 CSET negative_cosine=false
 CSET negative_sine=false
 CSET noise_shaping=Auto
-CSET optimization_goal=Auto
+CSET optimization_goal=Area
 CSET output_frequency1=0.001
 CSET output_frequency10=0
 CSET output_frequency11=0
@@ -74,7 +74,7 @@ CSET output_frequency7=0
 CSET output_frequency8=0
 CSET output_frequency9=0
 CSET output_selection=Sine
-CSET output_width=6
+CSET output_width=12
 CSET parameter_entry=System_Parameters
 CSET partspresent=Phase_Generator_and_SIN_COS_LUT
 CSET period=1
@@ -96,7 +96,7 @@ CSET phase_offset_angles6=0
 CSET phase_offset_angles7=0
 CSET phase_offset_angles8=0
 CSET phase_offset_angles9=0
-CSET phase_width=28
+CSET phase_width=26
 CSET pinc1=101001111100
 CSET pinc10=0
 CSET pinc11=0
@@ -133,10 +133,10 @@ CSET por_mode=false
 CSET rdy=false
 CSET rfd=false
 CSET sclr_pin=false
-CSET spurious_free_dynamic_range=36
+CSET spurious_free_dynamic_range=72
 # END Parameters
 # BEGIN Extra information
 MISC pkg_timestamp=2012-08-28T14:48:35Z
 # END Extra information
 GENERATE
-# CRC:  b63af39
+# CRC: e417d19d

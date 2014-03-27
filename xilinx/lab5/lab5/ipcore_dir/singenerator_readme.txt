@@ -1,5 +1,5 @@
 The following files were generated for 'singenerator' in directory
-/home/vmartin/github/embeddedLab/xilinx/lab5/lab5/ipcore_dir/
+C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\ipcore_dir\
 
 Generate XCO file:
    CORE Generator input file containing the parameters used to generate a core.
