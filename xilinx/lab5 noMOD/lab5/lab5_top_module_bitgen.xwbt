@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.ncd
+OUTFILE=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5\lab5_top_module.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\vmartin\Documents\GitHub\embeddedLab\xilinx\lab5\lab5
+LICENSE=WebPack
+USER_INFO=210668025_0_0_019

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vmartin/Documents/GitHub/embeddedLab/xilinx/lab5/lab5/mainTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mainTest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/mainTest/dacCLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dacCLK</obj_property>
+      <obj_property name="ObjectShortName">dacCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/dacDINA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dacDINA</obj_property>
+      <obj_property name="ObjectShortName">dacDINA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/dacSYNC" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dacSYNC</obj_property>
+      <obj_property name="ObjectShortName">dacSYNC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/LED" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LED[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/SW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/uut/M1/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/uut/M1/clkscale" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">clkscale[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkscale[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/uut/M1/sclclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclclk</obj_property>
+      <obj_property name="ObjectShortName">sclclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mainTest/uut/M1/clkq" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">clkq[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkq[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+# Output products list for <sinclut>
+sinclut/doc/dds_compiler_v4_0_vinfo.html
+sinclut/doc/dds_ds558.pdf
+sinclut.asy
+sinclut.gise
+sinclut.ngc
+sinclut.sym
+sinclut.v
+sinclut.veo
+sinclut.xco
+sinclut.xise
+sinclut_flist.txt
+sinclut_readme.txt
+sinclut_xmdf.tcl

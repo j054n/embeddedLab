@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/singenerator.v"
+verilog work "../../Chapter 3/peripherals/clock.v"
+verilog work "lab5_top_module.v"
+verilog work "mainTest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
