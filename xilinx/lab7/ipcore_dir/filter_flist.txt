@@ -1,0 +1,15 @@
+# Output products list for <filter>
+filter.asy
+filter.gise
+filter.mif
+filter.ngc
+filter.sym
+filter.v
+filter.veo
+filter.xco
+filter.xise
+filterCOEFF_auto0_0.mif
+filter_flist.txt
+filter_readme.txt
+filter_xmdf.tcl
+filterfilt_decode_rom.mif

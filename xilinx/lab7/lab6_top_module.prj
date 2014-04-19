@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/filter.v"
+verilog work "da2dac.v"
+verilog work "clock.v"
+verilog work "ad1adc.v"
+verilog work "top_io_wrapper.v"
